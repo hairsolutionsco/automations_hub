@@ -4,6 +4,14 @@
       "github": {
         "type": "http",
         "url": "https://api.githubcopilot.com/mcp/"
+      },
+      "notion": {
+        "type": "http",
+        "url": "https://mcp.notion.com/mcp"
+      },
+      "automations-golf": {
+        "type": "sse",
+        "url": "http://127.0.0.1:3000"
       }
     }
   }

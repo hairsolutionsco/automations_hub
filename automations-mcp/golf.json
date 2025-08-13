@@ -1,0 +1,11 @@
+{
+  "name": "automations-mcp",
+  "description": "MCP server for automation hub with n8n, Notion, and GitHub integration",
+  "host": "127.0.0.1",
+  "port": 3000,
+  "transport": "sse",
+  "opentelemetry_enabled": false,
+  "auth": {
+    "enabled": false
+  }
+} 
