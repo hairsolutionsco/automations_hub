@@ -3,10 +3,28 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "n8n:start": "cd n8n && npm run start",
+    "n8n:dev": "cd n8n && npm run dev",
+    "n8n:export": "cd n8n && npm run export",
+    "n8n:import": "cd n8n && npm run import",
+    "n8n:cloud:export": "cd n8n && npm run cloud:export",
+    "n8n:cloud:import": "cd n8n && npm run cloud:import",
+    "hubspot:auth": "cd hubspot && npm run auth",
+    "hubspot:whoami": "cd hubspot && npm run whoami",
+    "hubspot:mcp:start": "cd hubspot && npm run mcp:start",
+    "hubspot:mcp:dev": "cd hubspot && npm run mcp:dev",
+    "shopify:auth": "cd shopify && npm run login",
+    "shopify:whoami": "cd shopify && npm run whoami",
+    "golf:build": "cd automations-mcp && golf build dev",
+    "golf:run": "cd automations-mcp && golf run",
+    "golf:start": "cd automations-mcp && golf build dev && golf run",
+    "mcp:start:all": "concurrently \"npm run golf:start\" \"npm run hubspot:mcp:dev\"",
     "cloud:export": "n8n export:workflow --all --output workflows --separate --baseUrl $N8N_CLOUD_INSTANCE_URL --userEmail $N8N_USER_EMAIL --password $N8N_API_KEY",
     "cloud:import": "n8n import:workflow --input workflows --separate --baseUrl $N8N_CLOUD_INSTANCE_URL --userEmail $N8N_USER_EMAIL --password $N8N_API_KEY",
     "workflows:sync": "npm run cloud:export && git add workflows/ && git status"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
   "dependencies": {}
 }

@@ -1,0 +1,29 @@
+{
+  "name": "shopify-automation",
+  "version": "1.0.0",
+  "description": "Shopify automation tools and CLI",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Shopify CLI ready'",
+    "login": "shopify auth login",
+    "logout": "shopify auth logout",
+    "whoami": "shopify auth list",
+    "app:dev": "shopify app dev",
+    "app:build": "shopify app build",
+    "app:deploy": "shopify app deploy",
+    "app:generate": "shopify app generate",
+    "theme:dev": "shopify theme dev",
+    "theme:build": "shopify theme build",
+    "theme:deploy": "shopify theme push",
+    "theme:pull": "shopify theme pull",
+    "theme:list": "shopify theme list",
+    "product:list": "shopify admin product list",
+    "collection:list": "shopify admin collection list",
+    "order:list": "shopify admin order list",
+    "customer:list": "shopify admin customer list"
+  },
+  "dependencies": {
+    "@shopify/cli": "^3.69.0",
+    "concurrently": "^9.2.0"
+  }
+}
