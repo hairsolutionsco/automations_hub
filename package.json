@@ -1,0 +1,13 @@
+{
+  "name": "automation-hub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "n8n:start": "n8n",
+    "n8n:import": "n8n import:workflow --input workflows --separate",
+    "n8n:export": "n8n export:workflow --all --output workflows --separate",
+    "dev": "npm run n8n:start"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
