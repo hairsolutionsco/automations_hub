@@ -1,0 +1,44 @@
+{
+  "name": "shopify-agent-features",
+  "version": "1.0.0",
+  "description": "Shopify Agent Commerce integration package",
+  "type": "module",
+  "main": "api_server.py",
+  "scripts": {
+    "start": "python api_server.py",
+    "dev": "uvicorn api_server:app --reload --host 0.0.0.0 --port 8000",
+    "test": "python -m pytest tests/",
+    "lint": "flake8 .",
+    "format": "black .",
+    "status": "curl http://localhost:8000/api/status",
+    "demo": "open http://localhost:8000/demo"
+  },
+  "dependencies": {
+    "fastapi": "^0.104.1",
+    "uvicorn": "^0.24.0",
+    "httpx": "^0.25.2",
+    "pydantic": "^2.5.0"
+  },
+  "devDependencies": {
+    "pytest": "^7.4.3",
+    "pytest-asyncio": "^0.21.1",
+    "black": "^23.11.0",
+    "flake8": "^6.1.0"
+  },
+  "keywords": [
+    "shopify",
+    "agent",
+    "commerce",
+    "mcp",
+    "ai",
+    "catalog",
+    "cart",
+    "checkout"
+  ],
+  "author": "Your Organization",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/automations-hub.git"
+  }
+}

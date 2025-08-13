@@ -45,6 +45,17 @@ All systems operational and ready for:
 - Advanced inventory management automation
 - Real-time sales and analytics workflows
 
+### 🤖 NEW: Shopify Agent Features (Early Access)
+- **Catalog Search**: Search across hundreds of millions of products
+- **Universal Cart**: Multi-merchant shopping cart management
+- **Checkout Kit**: Branded, compliant checkout experiences
+- **Web Components**: Rich, interactive product displays
+- **AI Commerce**: Native shopping for AI conversations
+
+**Status**: Ready for setup (requires Shopify early access approval)
+**Location**: `/shopify/agent/` directory
+**Documentation**: See `/shopify/agent/README.md`
+
 ---
 
 ## Setup

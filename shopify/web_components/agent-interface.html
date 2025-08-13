@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Agent Product Display</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .product-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .product-card {
+            border: 1px solid #e1e5e9;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+            background: #fff;
+        }
+        
+        .product-image {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+        
+        .product-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .product-description {
+            color: #6c757d;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        
+        .product-price {
+            font-size: 16px;
+            font-weight: 600;
+            color: #28a745;
+            margin-bottom: 12px;
+        }
+        
+        .product-options {
+            margin-bottom: 16px;
+        }
+        
+        .option-group {
+            margin-bottom: 8px;
+        }
+        
+        .option-label {
+            font-weight: 500;
+            margin-bottom: 4px;
+            display: block;
+        }
+        
+        .option-values {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .option-value {
+            padding: 6px 12px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            background: #f8f9fa;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .option-value:hover {
+            background: #e9ecef;
+            border-color: #adb5bd;
+        }
+        
+        .option-value.selected {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        
+        .option-value.unavailable {
+            opacity: 0.5;
+            cursor: not-allowed;
+            text-decoration: line-through;
+        }
+        
+        .add-to-cart-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            width: 100%;
+        }
+        
+        .add-to-cart-btn:hover {
+            background: #0056b3;
+        }
+        
+        .add-to-cart-btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        
+        .cart-container {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 2px solid #e9ecef;
+        }
+        
+        .cart-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #2c3e50;
+        }
+        
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .cart-item-info {
+            flex: 1;
+        }
+        
+        .cart-item-name {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        
+        .cart-item-options {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        
+        .cart-item-price {
+            font-weight: 600;
+            color: #28a745;
+        }
+        
+        .cart-total {
+            font-size: 18px;
+            font-weight: 600;
+            text-align: right;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 2px solid #2c3e50;
+        }
+        
+        .checkout-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            width: 100%;
+            margin-top: 16px;
+        }
+        
+        .checkout-btn:hover {
+            background: #1e7e34;
+        }
+        
+        .agent-branding {
+            text-align: center;
+            margin-bottom: 24px;
+            padding: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+        }
+        
+        .agent-logo {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .agent-tagline {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="agent-branding">
+            <div class="agent-logo">🤖 Your AI Shopping Assistant</div>
+            <div class="agent-tagline">Powered by Shopify Agent Commerce</div>
+        </div>
+        
+        <div id="products-container">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+        
+        <div class="cart-container" id="cart-container" style="display: none;">
+            <div class="cart-title">Universal Cart</div>
+            <div id="cart-items"></div>
+            <div class="cart-total" id="cart-total">Total: $0.00</div>
+            <button class="checkout-btn" id="checkout-btn" onclick="initiateCheckout()">
+                Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- Load Shopify web components -->
+    <script src="https://cdn.shopify.com/storefront/web-components.js"></script>
+    
+    <script>
+        let universalCart = {
+            id: null,
+            items: [],
+            total: 0,
+            checkoutUrl: null
+        };
+
+        // Function to render product from catalog search
+        function renderProduct(product, container) {
+            const productElement = document.createElement('div');
+            productElement.className = 'product-card';
+            productElement.innerHTML = `
+                <div class="product-title">${product.title}</div>
+                <div class="product-description">${product.description}</div>
+                <div class="product-price">
+                    $${product.priceRange.min.amount} - $${product.priceRange.max.amount} ${product.priceRange.min.currencyCode}
+                </div>
+                <div class="product-options" id="options-${product.id}">
+                    ${product.options.map(option => `
+                        <div class="option-group">
+                            <label class="option-label">${option.name}:</label>
+                            <div class="option-values">
+                                ${option.values.map(value => `
+                                    <div class="option-value ${value.availableForSale ? '' : 'unavailable'}" 
+                                         data-option="${option.name}" 
+                                         data-value="${value.value}"
+                                         onclick="selectOption(this)">
+                                        ${value.value}
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('${product.id}')">
+                    Add to Cart
+                </button>
+            `;
+            
+            if (product.images && product.images.length > 0) {
+                const img = document.createElement('img');
+                img.className = 'product-image';
+                img.src = product.images[0].url;
+                img.alt = product.images[0].altText || product.title;
+                productElement.insertBefore(img, productElement.firstChild);
+            }
+            
+            container.appendChild(productElement);
+        }
+
+        // Function to render Shopify web component
+        function renderShopifyComponent(resourceUrl, container) {
+            const iframe = document.createElement('iframe');
+            iframe.src = resourceUrl;
+            iframe.style.width = '100%';
+            iframe.style.height = '400px';
+            iframe.style.border = 'none';
+            iframe.style.borderRadius = '8px';
+            
+            // Apply custom styling to the iframe
+            iframe.onload = function() {
+                const customCss = `
+                    shopify-product-card::part(product-title) {
+                        font-weight: 600;
+                        color: #2c3e50;
+                    }
+                    shopify-product-card::part(product-price) {
+                        color: #28a745;
+                        font-weight: 600;
+                    }
+                `;
+                
+                iframe.contentWindow.postMessage({
+                    type: "ui-lifecycle-iframe-render-data",
+                    payload: {
+                        renderData: {
+                            customCss
+                        }
+                    }
+                }, '*');
+            };
+            
+            container.appendChild(iframe);
+        }
+
+        // Function to select product options
+        function selectOption(element) {
+            if (element.classList.contains('unavailable')) return;
+            
+            // Remove selection from other options in the same group
+            const optionGroup = element.parentElement;
+            optionGroup.querySelectorAll('.option-value').forEach(option => {
+                option.classList.remove('selected');
+            });
+            
+            // Select the clicked option
+            element.classList.add('selected');
+        }
+
+        // Function to add product to Universal Cart
+        async function addToCart(productId) {
+            // Collect selected options
+            const optionsContainer = document.getElementById(`options-${productId}`);
+            const selectedOptions = {};
+            
+            optionsContainer.querySelectorAll('.option-value.selected').forEach(option => {
+                const optionName = option.dataset.option;
+                const optionValue = option.dataset.value;
+                selectedOptions[optionName] = optionValue;
+            });
+
+            // Call your MCP server to update the cart
+            try {
+                const response = await fetch('/api/update-cart', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        cart_id: universalCart.id,
+                        add_items: [{
+                            product_variant_id: productId,
+                            quantity: 1,
+                            options: selectedOptions
+                        }]
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    universalCart.id = result.cart_id;
+                    universalCart.checkoutUrl = result.checkout_url;
+                    updateCartDisplay(result.data);
+                    
+                    // Show cart container
+                    document.getElementById('cart-container').style.display = 'block';
+                } else {
+                    alert('Failed to add item to cart: ' + result.message);
+                }
+            } catch (error) {
+                console.error('Error adding to cart:', error);
+                alert('Error adding item to cart');
+            }
+        }
+
+        // Function to update cart display
+        function updateCartDisplay(cartData) {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartTotalElement = document.getElementById('cart-total');
+            
+            cartItemsContainer.innerHTML = '';
+            let total = 0;
+
+            if (cartData.cartGroups) {
+                cartData.cartGroups.forEach(group => {
+                    group.carts.forEach(cart => {
+                        cart.lines.forEach(line => {
+                            const itemElement = document.createElement('div');
+                            itemElement.className = 'cart-item';
+                            itemElement.innerHTML = `
+                                <div class="cart-item-info">
+                                    <div class="cart-item-name">${line.merchandise.product.title}</div>
+                                    <div class="cart-item-options">
+                                        Qty: ${line.quantity}
+                                        ${line.merchandise.selectedOptions.map(opt => 
+                                            `${opt.name}: ${opt.value}`
+                                        ).join(', ')}
+                                    </div>
+                                </div>
+                                <div class="cart-item-price">
+                                    $${line.cost.totalAmount.amount} ${line.cost.totalAmount.currencyCode}
+                                </div>
+                            `;
+                            cartItemsContainer.appendChild(itemElement);
+                            total += parseFloat(line.cost.totalAmount.amount);
+                        });
+                    });
+                });
+            }
+
+            cartTotalElement.textContent = `Total: $${total.toFixed(2)}`;
+        }
+
+        // Function to initiate checkout
+        function initiateCheckout() {
+            if (!universalCart.checkoutUrl) {
+                alert('No checkout URL available');
+                return;
+            }
+
+            // Use Shopify Checkout Kit
+            const checkoutElement = document.createElement('shopify-checkout');
+            document.body.appendChild(checkoutElement);
+            
+            checkoutElement.src = universalCart.checkoutUrl;
+            checkoutElement.open();
+        }
+
+        // Example function to search catalog and display results
+        async function searchCatalog(query) {
+            try {
+                const response = await fetch('/api/search-catalog', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        query: query,
+                        limit: 5,
+                        ships_to: 'US'
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    const container = document.getElementById('products-container');
+                    container.innerHTML = '';
+                    
+                    // Render traditional product cards
+                    if (result.products) {
+                        result.products.forEach(product => {
+                            renderProduct(product, container);
+                        });
+                    }
+                    
+                    // Render Shopify web components
+                    if (result.ui_resources) {
+                        result.ui_resources.forEach(resource => {
+                            if (resource.mimeType === 'text/uri-list') {
+                                renderShopifyComponent(resource.text, container);
+                            }
+                        });
+                    }
+                } else {
+                    alert('Search failed: ' + result.message);
+                }
+            } catch (error) {
+                console.error('Error searching catalog:', error);
+                alert('Error searching catalog');
+            }
+        }
+
+        // Initialize with a sample search
+        document.addEventListener('DOMContentLoaded', function() {
+            // You can call searchCatalog('running shoes') here to test
+            console.log('Shopify Agent interface initialized');
+        });
+    </script>
+</body>
+</html>
