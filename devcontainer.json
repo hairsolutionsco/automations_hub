@@ -40,6 +40,5 @@
       "requireLocalPort": false
     }
   },
-  "postCreateCommand": "/bin/bash .devcontainer/post-create.sh",
   "remoteUser": "vscode"
 }

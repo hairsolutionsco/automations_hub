@@ -1,7 +1,7 @@
 {
   "name": "n8n-automation",
   "version": "1.0.0",
-  "description": "N8N automation tools and workflows",
+  "description": "N8N automation tools and workflows (uses global N8N CLI)",
   "type": "module",
   "scripts": {
     "start": "n8n start",
@@ -12,8 +12,6 @@
     "cloud:export": "n8n export:workflow --all --output workflows --separate --baseUrl $N8N_CLOUD_INSTANCE_URL --userEmail $N8N_USER_EMAIL --password $N8N_API_KEY",
     "cloud:import": "n8n import:workflow --input workflows --separate --baseUrl $N8N_CLOUD_INSTANCE_URL --userEmail $N8N_USER_EMAIL --password $N8N_API_KEY"
   },
-  "dependencies": {
-    "n8n": "^1.65.0"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
