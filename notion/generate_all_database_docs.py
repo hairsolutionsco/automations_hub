@@ -185,54 +185,52 @@ def generate_markdown_file(database_name, database_id, database_data):
 
 async def main():
     """Main function to process all databases."""
-    # Database inventory - you can update this list based on your notion-databases-inventory.md
+    # Database inventory - updated from notion-databases-inventory.md
     databases = {
         # CRM
-        "Contacts": "226f4e0d-84e0-814c-ad70-d478cebeee30",
         "Companies": "22bf4e0d-84e0-80bb-8d1c-c90710d44870",
-        "Deals": "226f4e0d-84e0-808c-af51-e09c154008db",
-        "Tasks": "226f4e0d-84e0-8168-8718-d8f6b2d1fe3d",
+        "Contacts": "226f4e0d-84e0-814c-ad70-d478cebeee30",
+        "Hair Orders Profiles": "248f4e0d-84e0-80ad-9d33-e90e5124c092",
+        "Emails": "228f4e0d-84e0-8185-a49d-c68df1c94301",
+        "Email Templates": "231f4e0d-84e0-80a9-a8d3-cbc04da25dcb",
+        "Customer Portal Data": "238f4e0d-84e0-80f9-b09f-ebe986c6cf2a",
         
         # Sales & Operations
-        "Hair Orders": "248f4e0d-84e0-80ad-9d33-e90e5124c092",
-        "Units": "239f4e0d-84e0-8017-b600-d74cfcaa3551",
-        "Plan Pricing": "239f4e0d-84e0-8017-b600-d74cfcaa3551",
-        "Business Insights": "226f4e0d-84e0-8171-9636-e1e73e2d1e3b",
-        "Hair System Catalogue": "22bf4e0d-84e0-80a3-8b72-d6d5af22e20a",
-        "N8N Management": "226f4e0d-84e0-8164-a85b-ee6b84c7b8ce",
-        "Quality Control": "226f4e0d-84e0-8182-ba01-e79cbc82cb61",
-        "Shipping": "226f4e0d-84e0-8130-b7b9-fe4c0d2a02df",
-        "Time tracking ⏰": "226f4e0d-84e0-819b-bcf0-c4f7b5d2d1e6",
+        "Deals": "226f4e0d-84e0-808c-af51-e09c154008db",
+        "Plans": "228f4e0d-84e0-815c-a108-e48054988ac0",
+        "Orders": "228f4e0d-84e0-816f-8511-fab726d2c6ef",
+        "Purchase Orders": "237f4e0d-84e0-807b-860c-cb9599ddaea0",
+        "Suppliers Inventory": "226f4e0d-84e0-814f-a468-d44302ee0478",
+        "Ad Campaigns": "226f4e0d-84e0-819d-be89-db73c48eaee4",
+        "Platform": "226f4e0d-84e0-81aa-a79c-ffad8081015e",
+        "Content": "226f4e0d-84e0-816a-ac2f-f089654d45fc",
         
         # Finances
-        "Accounting": "22bf4e0d-84e0-80a3-8b72-d6d5af22e20a",
-        "PayPal Transactions": "226f4e0d-84e0-8164-a85b-ee6b84c7b8ce",
-        "Stripe Charges": "226f4e0d-84e0-8182-ba01-e79cbc82cb61",
-        "Stripe Refunds": "226f4e0d-84e0-8130-b7b9-fe4c0d2a02df",
+        "Payments": "22af4e0d-84e0-80c3-a7d6-f0209d93081d",
+        "Incomes": "229f4e0d-84e0-8128-a0bf-d7631b6aa22d",
+        "Expenses": "226f4e0d-84e0-817e-84e2-c9a983663070",
+        "Recurring Expenses": "226f4e0d-84e0-813f-b2e9-d228f70676b9",
+        "Forecasted Payments": "22cf4e0d-84e0-802a-bf76-e564658fdc5f",
+        "Income Sources": "226f4e0d-84e0-81d9-b998-e61ecae5c421",
+        "Expense Categories": "226f4e0d-84e0-81a9-a37b-fc2aabd167c8",
+        "Debt Tracking": "226f4e0d-84e0-8130-8a9c-ce4a29ef7a35",
+        "Debt Overview": "226f4e0d-84e0-8171-aea1-d054e8cb0786",
+        "Budget Split 50/20/30": "226f4e0d-84e0-8187-bcb1-c1290226a0a2",
         
         # Management & Reports
-        "Employee Management": "226f4e0d-84e0-8169-9c3f-dd2a1c458ce4",
-        "Meetings": "22bf4e0d-84e0-80bb-8d1c-c90710d44870",
-        "Project Management": "226f4e0d-84e0-8164-a85b-ee6b84c7b8ce",
-        "Weekly Reports": "226f4e0d-84e0-8182-ba01-e79cbc82cb61",
+        "Business Projects": "226f4e0d-84e0-816d-a749-e741b1ac0b30",
+        "Tasks": "226f4e0d-84e0-8168-8718-d8f6b2d1fe3d",
+        "Daily Reports": "22cf4e0d-84e0-8036-a313-f6cfa1fa9801",
+        "Monthly Reports (Main)": "226f4e0d-84e0-8101-81e1-c9f2d6803291",
+        "Yearly Reports": "226f4e0d-84e0-8179-98cb-cca8ecbf0c15",
+        "Objectives": "226f4e0d-84e0-81f1-88a5-f0eb2eb1bd87",
+        "Key Results": "226f4e0d-84e0-815f-b434-c1a6e3a28e16",
+        "Hubspot Properties Management": "232f4e0d-84e0-8049-abb0-d5c04fa1628c",
         
         # Knowledge & Documents
-        "Client Support Knowledge Base": "226f4e0d-84e0-8169-9c3f-dd2a1c458ce4",
-        "Content & Media": "22bf4e0d-84e0-80bb-8d1c-c90710d44870",
-        "Customer Feedback": "226f4e0d-84e0-8164-a85b-ee6b84c7b8ce",
-        "Document Management": "226f4e0d-84e0-8182-ba01-e79cbc82cb61",
-        "FAQ Database": "226f4e0d-84e0-8130-b7b9-fe4c0d2a02df",
-        "Internal Documentation": "226f4e0d-84e0-819b-bcf0-c4f7b5d2d1e6",
-        "Legal Documents": "22bf4e0d-84e0-80a3-8b72-d6d5af22e20a",
-        "Operations Manual": "226f4e0d-84e0-8164-a85b-ee6b84c7b8ce",
-        "Process Documentation": "226f4e0d-84e0-8182-ba01-e79cbc82cb61",
-        "Product Documentation": "226f4e0d-84e0-8130-b7b9-fe4c0d2a02df",
-        "SOPs & Procedures": "226f4e0d-84e0-819b-bcf0-c4f7b5d2d1e6",
-        "SOP Templates": "22bf4e0d-84e0-80a3-8b72-d6d5af22e20a",
-        "Standard Operating Procedures": "226f4e0d-84e0-8164-a85b-ee6b84c7b8ce",
-        "Team Knowledge Base": "226f4e0d-84e0-8182-ba01-e79cbc82cb61",
-        "Training Materials": "226f4e0d-84e0-8130-b7b9-fe4c0d2a02df",
-        "Work Instructions": "226f4e0d-84e0-819b-bcf0-c4f7b5d2d1e6"
+        "Business Resources": "226f4e0d-84e0-8135-a4f7-ee34b04fe01b",
+        "Products & Pricing Catalog": "232f4e0d-84e0-8000-aad7-de8ff9504fd1",
+        "Plan Pricing": "239f4e0d-84e0-8017-b600-d74cfcaa3551"
     }
     
     print("🚀 Starting database documentation generation...")

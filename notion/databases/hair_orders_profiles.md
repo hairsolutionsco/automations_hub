@@ -1,8 +1,8 @@
-# Contacts Database
+# Hair Orders Profiles Database
 
-**Database ID:** `226f4e0d-84e0-814c-ad70-d478cebeee30`
+**Database ID:** `248f4e0d-84e0-80ad-9d33-e90e5124c092`
 
-**Created:** 2025-07-04T20:24:00.000Z
+**Created:** 2025-08-07T22:01:00.000Z
 **Last Modified:** 2025-08-13T19:15:00.000Z
 **Total Properties:** 75
 
@@ -40,11 +40,11 @@
 - `Phone Number`
 
 ### relation (7)
+- `Associated Contact`
 - `Associated Deals`
 - `Associated Orders`
 - `Associated Payment`
 - `Associated Plans`
-- `Hair Orders Profiles`
 - `Plan Pricing`
 - `Tasks`
 
@@ -126,6 +126,10 @@
 
 ### Archive (Associated Companies)
 - **Type:** `rich_text`
+
+### Associated Contact
+- **Type:** `relation`
+- **Related Database:** `226f4e0d-84e0-814c-ad70-d478cebeee30`
 
 ### Associated Deals
 - **Type:** `relation`
@@ -324,10 +328,6 @@
   - `4" additional (Total 10")`
   - `2" additional (Total 8")`
 
-### Hair Orders Profiles
-- **Type:** `relation`
-- **Related Database:** `248f4e0d-84e0-80ad-9d33-e90e5124c092`
-
 ### Hairline Details
 - **Type:** `multi_select`
 - **Options:**
@@ -492,6 +492,7 @@ Width 1/3 From Back – W3 =
 ### Order Type
 - **Type:** `select`
 - **Options:**
+  - `Premade`
   - `Custom`
 
 ### Payment Status
@@ -616,13 +617,13 @@ Width 1/3 From Back – W3 =
 
 ## 🚫 Empty & Unused Properties
 
-*Analysis based on 1804 pages*
+*Analysis based on 1806 pages*
 
 ### Completely Empty Properties (6)
 *These properties have no data in any page:*
 
+- `Associated Contact` (relation)
 - `Files & media` (files)
-- `Hair Orders Profiles` (relation)
 - `Last Order Date` (rollup)
 - `Next Activity Date` (date)
 - `Sales Status` (rich_text)
@@ -632,23 +633,23 @@ Width 1/3 From Back – W3 =
 *These properties have data in less than 5% of pages:*
 
 - `Currency` (rich_text) - 99.9% empty, only 1 pages with data
-- `Order Type` (select) - 99.9% empty, only 1 pages with data
 - `Plan Pricing` (relation) - 99.9% empty, only 1 pages with data
 - `Order Email` (rich_text) - 99.7% empty, only 5 pages with data
 - `Access Point Location` (rich_text) - 99.7% empty, only 6 pages with data
 - `Shipping` (rich_text) - 99.2% empty, only 14 pages with data
 - `Date of last meeting booked in meetings tool` (rich_text) - 99.2% empty, only 14 pages with data
 - `Tasks` (relation) - 98.3% empty, only 31 pages with data
-- `Shipping Profile` (multi_select) - 98.0% empty, only 36 pages with data
-- `Associated Plans` (relation) - 97.4% empty, only 47 pages with data
-- `Street Address 2` (rich_text) - 97.0% empty, only 55 pages with data
+- `Shipping Profile` (multi_select) - 98.0% empty, only 37 pages with data
+- `Associated Plans` (relation) - 97.3% empty, only 48 pages with data
+- `Street Address 2` (rich_text) - 96.9% empty, only 56 pages with data
+- `Order Type` (select) - 96.9% empty, only 56 pages with data
 - `Recent Sales Email Clicked Date` (rich_text) - 95.7% empty, only 78 pages with data
 
 ## Related Databases
 
 - **Associated Payment** (`22af4e0d-84e0-80c3-a7d6-f0209d93081d`)
 - **Associated Orders** (`228f4e0d-84e0-816f-8511-fab726d2c6ef`)
-- **Hair Orders Profiles** (`248f4e0d-84e0-80ad-9d33-e90e5124c092`)
+- **Associated Contact** (`226f4e0d-84e0-814c-ad70-d478cebeee30`)
 - **Plan Pricing** (`239f4e0d-84e0-8017-b600-d74cfcaa3551`)
 - **Associated Deals** (`226f4e0d-84e0-808c-af51-e09c154008db`)
 - **Associated Plans** (`228f4e0d-84e0-815c-a108-e48054988ac0`)
@@ -656,4 +657,4 @@ Width 1/3 From Back – W3 =
 
 ---
 
-*Documentation generated on 2025-08-13 19:50:07*
+*Documentation generated on 2025-08-13 19:50:08*

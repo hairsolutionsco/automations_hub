@@ -1,4 +1,4 @@
-# Untitled Database
+# Deals Database
 
 **Database ID:** `226f4e0d-84e0-808c-af51-e09c154008db`
 
@@ -10,18 +10,83 @@
 
 ## Properties Overview
 
-- **Button** (2): `Refund Payment`, `Create Income`
-- **Checkbox** (3): `Emergency List`, `To check`, `Orders Complete`
-- **Date** (5): `Plan End Date`, `Payment Date`, `Plan Start Date`, `Close Date`, `Last Activity Date`
-- **Formula** (9): `Profit`, `Auto Total`, `Current Month?`, `Formula`, `Income Status`, `Current Month profit`, `Time since order`, `Retail Price`, `Income`
-- **Multi_Select** (1): `Deal Profile`
-- **Number** (10): `Annual contract value`, `Amount (USD)`, `Annual recurring revenue`, `Exchange rate`, `Monthly recurring revenue`, `Override Total`, `Amount`, `Deal Size (#)`, `Qty`, `Hubspot Deals Record ID`
-- **Relation** (8): `Associated Plan`, `Associated Client`, `Inventory Products`, `Linked Subscriptions`, `Associated Contacts`, `Associated Orders`, `Tasks`, `Month`
-- **Rich_Text** (5): `Summary`, `Deal Name`, `Deal Name (Archive)`, `Orders Tasks`, `Next Activity Date`
-- **Rollup** (4): `Rollup 2`, `Rollup`, `profi`, `Rollup 1`
-- **Select** (5): `Deal Type`, `Priority`, `Deal Size`, `Deal Stage`, `Currency`
-- **Title** (1): `Name`
-- **Unique_Id** (1): `Notion Deals Record ID`
+### button (2)
+- `Create Income`
+- `Refund Payment`
+
+### checkbox (3)
+- `Emergency List`
+- `Orders Complete`
+- `To check`
+
+### date (5)
+- `Close Date`
+- `Last Activity Date`
+- `Payment Date`
+- `Plan End Date`
+- `Plan Start Date`
+
+### formula (9)
+- `Auto Total`
+- `Current Month profit`
+- `Current Month?`
+- `Formula`
+- `Income`
+- `Income Status`
+- `Profit`
+- `Retail Price`
+- `Time since order`
+
+### multi_select (1)
+- `Deal Profile`
+
+### number (10)
+- `Amount`
+- `Amount (USD)`
+- `Annual contract value`
+- `Annual recurring revenue`
+- `Deal Size (#)`
+- `Exchange rate`
+- `Hubspot Deals Record ID`
+- `Monthly recurring revenue`
+- `Override Total`
+- `Qty`
+
+### relation (8)
+- `Associated Client`
+- `Associated Contacts`
+- `Associated Orders`
+- `Associated Plan`
+- `Inventory Products`
+- `Linked Subscriptions`
+- `Month`
+- `Tasks`
+
+### rich_text (5)
+- `Deal Name`
+- `Deal Name (Archive)`
+- `Next Activity Date`
+- `Orders Tasks`
+- `Summary`
+
+### rollup (4)
+- `Rollup`
+- `Rollup 1`
+- `Rollup 2`
+- `profi`
+
+### select (5)
+- `Currency`
+- `Deal Size`
+- `Deal Stage`
+- `Deal Type`
+- `Priority`
+
+### title (1)
+- `Name`
+
+### unique_id (1)
+- `Notion Deals Record ID`
 
 ---
 
@@ -29,19 +94,15 @@
 
 ### Amount
 - **Type:** `number`
-- **Format:** `number`
 
 ### Amount (USD)
 - **Type:** `number`
-- **Format:** `dollar`
 
 ### Annual contract value
 - **Type:** `number`
-- **Format:** `number`
 
 ### Annual recurring revenue
 - **Type:** `number`
-- **Format:** `number`
 
 ### Associated Client
 - **Type:** `relation`
@@ -71,7 +132,11 @@
 
 ### Currency
 - **Type:** `select`
-- **Options:** `USD`, `GBP`, `EUR`, `CAD`
+- **Options:**
+  - `USD`
+  - `GBP`
+  - `EUR`
+  - `CAD`
 
 ### Current Month profit
 - **Type:** `formula`
@@ -89,30 +154,69 @@
 
 ### Deal Profile
 - **Type:** `multi_select`
-- **Options:** `Hair Sale`, `Plan`, `Wholesale`, `Retail`, `Hair Sale,Plan`, `Hair Sale,Retail`, `Hair Sale,Wholesale`, `Products Sale,Retail`, `Hair Sale,E-Commerce`, `Products Sale,Wholesale`, `Shipment/Repair/Other`, `Training/Certification`, `Products Sale,E-Commerce`, `Hair`, `Multi-Unit`
+- **Options:**
+  - `Hair Sale`
+  - `Plan`
+  - `Wholesale`
+  - `Retail`
+  - `Hair Sale,Plan`
+  - `Hair Sale,Retail`
+  - `Hair Sale,Wholesale`
+  - `Products Sale,Retail`
+  - `Hair Sale,E-Commerce`
+  - `Products Sale,Wholesale`
+  - `Shipment/Repair/Other`
+  - `Training/Certification`
+  - `Products Sale,E-Commerce`
+  - `Hair`
+  - `Multi-Unit`
 
 ### Deal Size
 - **Type:** `select`
-- **Options:** `1 Unit`, `2 Units`, `3 Units`, `4 Units`, `5 Units`, `6 Units`, `9 Units`
+- **Options:**
+  - `1 Unit`
+  - `2 Units`
+  - `3 Units`
+  - `4 Units`
+  - `5 Units`
+  - `6 Units`
+  - `9 Units`
 
 ### Deal Size (#)
 - **Type:** `number`
-- **Format:** `number`
 
 ### Deal Stage
 - **Type:** `select`
-- **Options:** `Subscription Active`, `Plan Renewal Needed`, `Payment Issues`, `Paid-in-full`, `Open`, `Completed`, `Closed Won`
+- **Options:**
+  - `Subscription Active`
+  - `Plan Renewal Needed`
+  - `Payment Issues`
+  - `Paid-in-full`
+  - `Open`
+  - `Completed`
+  - `Closed Won`
 
 ### Deal Type
 - **Type:** `select`
-- **Options:** `Custom`, `Premade`, `Maintenance Products`, `Order Shipment`, `Template Shipment`, `In-Person Training`, `Accessories`, `Online Course`, `3-Unit`, `Single-Unit`, `4-Unit`, `6-Unit`
+- **Options:**
+  - `Custom`
+  - `Premade`
+  - `Maintenance Products`
+  - `Order Shipment`
+  - `Template Shipment`
+  - `In-Person Training`
+  - `Accessories`
+  - `Online Course`
+  - `3-Unit`
+  - `Single-Unit`
+  - `4-Unit`
+  - `6-Unit`
 
 ### Emergency List
 - **Type:** `checkbox`
 
 ### Exchange rate
 - **Type:** `number`
-- **Format:** `number`
 
 ### Formula
 - **Type:** `formula`
@@ -128,7 +232,6 @@
 
 ### Hubspot Deals Record ID
 - **Type:** `number`
-- **Format:** `number`
 
 ### Income
 - **Type:** `formula`
@@ -156,7 +259,6 @@ if(empty({{notion:block_property:blon:00000000-0000-0000-0000-000000000000:a8b53
 
 ### Monthly recurring revenue
 - **Type:** `number`
-- **Format:** `number`
 
 ### Name
 - **Type:** `title`
@@ -175,7 +277,6 @@ if(empty({{notion:block_property:blon:00000000-0000-0000-0000-000000000000:a8b53
 
 ### Override Total
 - **Type:** `number`
-- **Format:** `dollar`
 
 ### Payment Date
 - **Type:** `date`
@@ -188,7 +289,10 @@ if(empty({{notion:block_property:blon:00000000-0000-0000-0000-000000000000:a8b53
 
 ### Priority
 - **Type:** `select`
-- **Options:** `Low`, `Medium`, `High`
+- **Options:**
+  - `Low`
+  - `Medium`
+  - `High`
 
 ### Profit
 - **Type:** `formula`
@@ -196,7 +300,6 @@ if(empty({{notion:block_property:blon:00000000-0000-0000-0000-000000000000:a8b53
 
 ### Qty
 - **Type:** `number`
-- **Format:** `number`
 
 ### Refund Payment
 - **Type:** `button`
@@ -243,13 +346,51 @@ if(empty({{notion:block_property:blon:00000000-0000-0000-0000-000000000000:a8b53
 - **Rollup Property:** `Order Profile`
 - **Function:** `show_original`
 
----
+## 🚫 Empty & Unused Properties
 
-## Usage Notes
+*Analysis based on 942 pages*
 
-<!-- Add any specific usage notes, business logic, or important information about this database -->
+### Completely Empty Properties (16)
+*These properties have no data in any page:*
+
+- `Associated Contacts` (relation)
+- `Auto Total` (formula)
+- `Current Month profit` (formula)
+- `Current Month?` (formula)
+- `Formula` (formula)
+- `Income` (formula)
+- `Income Status` (formula)
+- `Inventory Products` (relation)
+- `Linked Subscriptions` (relation)
+- `Month` (relation)
+- `Next Activity Date` (rich_text)
+- `Override Total` (number)
+- `Profit` (formula)
+- `Qty` (number)
+- `Retail Price` (formula)
+- `Time since order` (formula)
+
+### Mostly Empty Properties (6)
+*These properties have data in less than 5% of pages:*
+
+- `Associated Plan` (relation) - 99.9% empty, only 1 pages with data
+- `To check` (checkbox) - 99.7% empty, only 3 pages with data
+- `Orders Tasks` (rich_text) - 99.4% empty, only 6 pages with data
+- `Orders Complete` (checkbox) - 98.6% empty, only 13 pages with data
+- `Emergency List` (checkbox) - 96.9% empty, only 29 pages with data
+- `Tasks` (relation) - 96.9% empty, only 29 pages with data
 
 ## Related Databases
 
-<!-- List any databases that this one relates to or depends on -->
+- **Associated Plan** (`228f4e0d-84e0-815c-a108-e48054988ac0`)
+- **Associated Client** (`226f4e0d-84e0-814c-ad70-d478cebeee30`)
+- **Inventory Products** (`226f4e0d-84e0-814f-a468-d44302ee0478`)
+- **Linked Subscriptions** (`228f4e0d-84e0-815c-a108-e48054988ac0`)
+- **Associated Contacts** (`22bf4e0d-84e0-803f-98fe-f0a72401d33c`)
+- **Associated Orders** (`228f4e0d-84e0-816f-8511-fab726d2c6ef`)
+- **Tasks** (`226f4e0d-84e0-8168-8718-d8f6b2d1fe3d`)
+- **Month** (`226f4e0d-84e0-8101-81e1-c9f2d6803291`)
 
+---
+
+*Documentation generated on 2025-08-13 19:50:11*
