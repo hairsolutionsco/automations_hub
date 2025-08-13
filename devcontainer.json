@@ -1,0 +1,53 @@
+{
+  "name": "automation-hub",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "EditorConfig.EditorConfig",
+        "mikestead.dotenv",
+        "bierner.json-preview",
+        "eamodio.gitlens"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "files.insertFinalNewline": true,
+        "files.trimTrailingWhitespace": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+        "files.associations": {
+          "*.env*": "properties"
+        },
+        "json.maxItemsComputed": 500000
+      }
+    }
+  },
+  "containerEnv": {
+    "N8N_HOST": "localhost",
+    "N8N_PORT": "5678",
+    "N8N_PROTOCOL": "http",
+    "N8N_BASIC_AUTH_ACTIVE": "true",
+    "N8N_BASIC_AUTH_USER": "admin",
+    "N8N_BASIC_AUTH_PASSWORD": "change_me"
+  },
+  "forwardPorts": [5678],
+  "portsAttributes": {
+    "5678": {
+      "label": "n8n",
+      "protocol": "http",
+      "requireLocalPort": false
+    }
+  },
+  "postCreateCommand": "/bin/bash .devcontainer/post-create.sh",
+  "remoteUser": "vscode"
+}
