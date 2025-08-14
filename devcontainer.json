@@ -7,6 +7,9 @@
     },
     "ghcr.io/devcontainers/features/git:1": {}
   },
+  "containerEnv": {
+    "SHOPIFY_STORE_URL": "one-head-hair.myshopify.com"
+  },
   "customizations": {
     "vscode": {
       "extensions": [

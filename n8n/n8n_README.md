@@ -1,6 +1,42 @@
 # N8N Workflow Automation Platform
 
-This directory contains N8N automation platform integration with **full read/write access** through MCP (Model Context Protocol) servers for advanced AI-enhanced workflow automation.
+This directory contains N8N automation platform integration with **native Git version control** and **full read/write access** through MCP servers for advanced AI-enhanced workflow automation.
+
+## 🚀 Quick Agent Start Instructions
+
+### For AI Agents & Developers:
+
+**System Status**: ✅ **FULLY OPERATIONAL** - N8N with native Git integration ready
+
+**Immediate Actions**:
+```bash
+# Interactive Git sync system (recommended)
+npm run git:sync
+
+# Quick export/import
+npm run export    # Export all workflows from n8n
+npm run import    # Import all workflows to n8n
+
+# Cloud operations (if configured)
+npm run cloud:export
+npm run cloud:import
+
+# Start N8N locally
+npm start         # Local instance at http://localhost:5678
+```
+
+**Key Capabilities Ready**:
+- ✅ **Native Git Integration** - No custom APIs needed
+- ✅ **Workflow Version Control** - Individual JSON files per workflow
+- ✅ **Cross-Platform Triggers** - Notion, HubSpot, Shopify integrations
+- ✅ **MCP Server Access** - AI-enhanced workflow operations
+- ✅ **Security Configured** - Credentials protected via .gitignore
+
+**Quick Operations**:
+1. `npm run git:sync` → Interactive menu for all Git operations
+2. `npm run export` → Pull workflows from n8n to Git
+3. `npm run import` → Push workflows from Git to n8n
+4. `npm run validate` → Check workflow JSON integrity
 
 ## 🔑 Access & Permissions via MCP
 

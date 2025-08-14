@@ -2,18 +2,42 @@
 
 A comprehensive automation hub integrating **N8N**, **Notion**, **HubSpot**, and **Shopify** with advanced Model Context Protocol (MCP) servers for AI-enhanced operations and cross-platform data synchronization.
 
-## 🚀 Quick Start
+## 🚀 Quick Agent Start Instructions
 
-1. **Open in GitHub Codespaces** (recommended)
-2. **Install dependencies**: All CLIs are pre-configured per platform
-3. **Start MCP servers**:
+### For AI Agents & Developers:
+
+1. **Platform Status**: All systems are pre-configured and operational
+   - ✅ N8N workflows with native Git integration
+   - ✅ Notion database management (35+ databases documented)
+   - ✅ HubSpot CRM integration with MCP server
+   - ✅ Shopify e-commerce platform ready
+
+2. **Immediate Actions Available**:
    ```bash
-   npm run mcp:start:all
+   # N8N workflow management
+   cd n8n && npm run git:sync  # Interactive workflow Git sync
+   
+   # Notion operations
+   cd notion && python analyze_empty_properties.py  # Database analysis
+   
+   # HubSpot CRM
+   cd hubspot && npm run mcp:start  # Start HubSpot MCP server
+   
+   # Shopify management
+   cd shopify && npm run dev  # Start development environment
    ```
-4. **Start N8N**:
-   ```bash
-   npm run n8n:start
-   ```
+
+3. **Key Capabilities Ready for Use**:
+   - **Cross-platform automation** via N8N workflows
+   - **Real-time data sync** between all platforms
+   - **AI-enhanced operations** through MCP servers
+   - **Git-based version control** for all configurations
+
+4. **Access Points**:
+   - N8N: `http://localhost:5678` (when started)
+   - HubSpot MCP: `localhost:3000` (API endpoint)
+   - Shopify: Development store configured
+   - Notion: 35 databases documented and accessible
 
 ## 🏗️ Project Structure
 
@@ -44,10 +68,30 @@ automation-hub/
 │   ├── hubspot_README.md       # HubSpot platform documentation
 │   └── hubspot_examples.md     # Sample configurations
 ├── shopify/                      # Shopify E-commerce Integration  
-│   ├── products/                # Product management
-│   ├── collections/             # Collection management
-│   ├── web_components/          # Theme components
-│   ├── shopify_package.json    # Shopify CLI
+│   ├── apps/                   # Shopify Apps & Extensions
+│   │   └── shopify-agent/      # AI-enhanced shopping agent
+│   ├── themes/                 # Theme Development
+│   │   ├── current_theme/      # → Live theme (ecomus)
+│   │   ├── horizon_theme/      # → Development theme
+│   │   ├── ecomus_theme_*/     # Live Ecomus theme (394 files)
+│   │   └── horizon_theme_*/    # Horizon theme (367 files)
+│   ├── data/                   # Store Data & Backups
+│   │   └── store_backups/      # Complete store import (251 files)
+│   │       └── imported_data/  # Products, collections, customers, etc.
+│   ├── tools/                  # Development Tools
+│   │   └── scripts/            # Import & management scripts
+│   ├── components/             # Reusable Components
+│   ├── extensions/             # Shopify Extensions
+│   ├── config/                 # Configuration Files
+│   │   ├── .env.store         # Store configuration
+│   │   └── requirements.txt   # Python dependencies
+│   ├── docs/                   # Documentation
+│   │   ├── shopify_README.md  # Main documentation
+│   │   ├── IMPORT_SUMMARY.md  # Import details
+│   │   └── shopify_examples.md # Usage examples
+│   ├── shopify_package.json   # Shopify CLI & scripts
+│   ├── shopify_package-lock.json
+│   └── 🔗 shopify-cli         # Quick CLI access
 │   ├── shopify_package-lock.json
 │   ├── shopify_README.md       # Shopify platform documentation
 │   └── shopify_examples.md     # Sample configurations
@@ -61,6 +105,17 @@ automation-hub/
     ├── prompts/                # AI prompts
     └── golf.json              # MCP server config
 ```
+
+## 🎯 **Latest Updates**
+
+### **N8N Native Git Integration System** (August 14, 2025)
+- ✅ **Native n8n Commands**: Using built-in `export:workflow` and `import:workflow` 
+- ✅ **Perfect Git Integration**: Individual JSON files with `--separate` flag
+- ✅ **Interactive Sync Tool**: `npm run git:sync` for menu-driven operations
+- ✅ **Security Configured**: Credentials protected, sensitive data excluded
+- ✅ **Zero Dependencies**: No custom APIs or complex tooling needed
+
+**Quick Start**: `cd n8n && npm run git:sync`
 
 ## 🛠️ Platform Management
 
@@ -81,8 +136,11 @@ npm run hubspot:mcp:start  # Start HubSpot MCP server
 
 ### Shopify E-commerce
 ```bash
-npm run shopify:auth       # Authenticate with Shopify
-npm run shopify:whoami     # Check auth status
+npm run shopify:auth         # Authenticate with Shopify
+npm run shopify:whoami       # Check auth status
+npm run shopify:import       # Import all store data and themes
+npm run shopify:dev          # Start theme development server
+npm run shopify:deploy       # Deploy theme changes to store
 ```
 
 ### Golf MCP Multi-Tool Server
@@ -125,7 +183,8 @@ npm run mcp:start:all      # Starts Golf + HubSpot MCP servers concurrently
 ### 📊 Business Intelligence
 - **35 Notion databases** fully documented and accessible
 - **HubSpot CRM data** with automated workflows
-- **Shopify e-commerce** metrics and management
+- **Complete Shopify store import**: Products, themes, customers, orders
+- **Theme development environment**: Live + Horizon themes ready for customization
 - **Automated reporting** through N8N workflows
 
 ## � Authentication Setup
@@ -138,10 +197,11 @@ npm run mcp:start:all      # Starts Golf + HubSpot MCP servers concurrently
 **HubSpot**:
 - Configure via: `npm run hubspot:auth`
 
-**Shopify**:
-- `SHOPIFY_STORE_URL` (e.g., https://your-store.myshopify.com)
-- `SHOPIFY_ACCESS_TOKEN` (Private app token)
-- Configure via: `npm run shopify:auth`
+**Shopify** (fully configured):
+- `SHOPIFY_STORE_URL` ✅ (one-head-hair.myshopify.com)
+- `SHOPIFY_ADMIN_API_ACCESS_TOKEN` ✅
+- **Store Data Imported**: 184 products, 19 collections, 42 pages, 3,941 customers
+- **Themes Available**: Live Ecomus theme + Horizon 2025 development theme
 
 **N8N Cloud** (optional):
 - `N8N_CLOUD_INSTANCE_URL`

@@ -7,10 +7,19 @@
     "start": "n8n start",
     "start:tunnel": "n8n start --tunnel",
     "dev": "n8n start --tunnel",
-    "export": "n8n export:workflow --all --output workflows --separate",
-    "import": "n8n import:workflow --input workflows --separate",
-    "cloud:export": "n8n export:workflow --all --output workflows --separate --baseUrl $N8N_CLOUD_INSTANCE_URL --userEmail $N8N_USER_EMAIL --password $N8N_API_KEY",
-    "cloud:import": "n8n import:workflow --input workflows --separate --baseUrl $N8N_CLOUD_INSTANCE_URL --userEmail $N8N_USER_EMAIL --password $N8N_API_KEY"
+    "export": "n8n export:workflow --backup --output workflows",
+    "export:all": "n8n export:workflow --all --output workflows",
+    "export:creds": "n8n export:credentials --output credentials/credentials.json",
+    "import": "n8n import:workflow --separate --input workflows",
+    "import:creds": "n8n import:credentials --input credentials/credentials.json",
+    "cloud:export": "n8n export:workflow --backup --output workflows --baseUrl $N8N_CLOUD_INSTANCE_URL --userEmail $N8N_USER_EMAIL --password $N8N_API_KEY",
+    "cloud:import": "n8n import:workflow --separate --input workflows --baseUrl $N8N_CLOUD_INSTANCE_URL --userEmail $N8N_USER_EMAIL --password $N8N_API_KEY",
+    "cloud:export:creds": "n8n export:credentials --output credentials/credentials.json --baseUrl $N8N_CLOUD_INSTANCE_URL --userEmail $N8N_USER_EMAIL --password $N8N_API_KEY",
+    "cloud:import:creds": "n8n import:credentials --input credentials/credentials.json --baseUrl $N8N_CLOUD_INSTANCE_URL --userEmail $N8N_USER_EMAIL --password $N8N_API_KEY",
+    "git:sync": "./scripts/n8n_git_sync.sh",
+    "validate": "find workflows -name '*.json' -exec python3 -m json.tool {} \\;",
+    "backup": "tar -czf backups/workflows_backup_$(date +%Y%m%d_%H%M%S).tar.gz workflows/ credentials/",
+    "status": "echo 'Workflows:' && ls -la workflows/ && echo 'Credentials:' && ls -la credentials/"
   },
   "dependencies": {},
   "devDependencies": {}

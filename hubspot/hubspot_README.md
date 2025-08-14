@@ -2,7 +2,43 @@
 
 This directory contains HubSpot CRM integration with **full read/write access** through MCP (Model Context Protocol) servers for advanced AI-enhanced customer relationship management and sales automation.
 
-## 🔑 Access & Permissions via MCP
+## � Quick Agent Start Instructions
+
+### For AI Agents & Developers:
+
+**System Status**: ✅ **FULLY OPERATIONAL** - HubSpot CRM with dual MCP servers ready
+
+**Immediate Actions**:
+```bash
+# Start HubSpot MCP server
+npm run mcp:start
+
+# Authenticate with HubSpot (if needed)
+npm run auth
+
+# Quick CRM operations
+npm run contacts:list    # List all contacts
+npm run deals:sync      # Sync deals data
+npm run properties:list # List custom properties
+
+# Cross-platform sync
+npm run sync:notion     # Sync with Notion databases
+```
+
+**Key Capabilities Ready**:
+- ✅ **Dual MCP Servers** - Official HubSpot + Golf custom integrations
+- ✅ **Full CRM Access** - Contacts, companies, deals, orders management
+- ✅ **Custom Properties** - Create and manage HubSpot properties
+- ✅ **Cross-Platform Sync** - Real-time data flow with Notion/N8N/Shopify
+- ✅ **Workflow Automation** - HubSpot workflows + N8N integrations
+
+**Quick Operations**:
+1. `npm run mcp:start` → Start HubSpot MCP server for AI operations
+2. `npm run auth` → Authenticate with HubSpot CRM
+3. `npm run objects:manage` → Manage CRM objects (contacts/companies/deals)
+4. `npm run workflows:deploy` → Deploy HubSpot workflow automation
+
+## �🔑 Access & Permissions via MCP
 
 **IMPORTANT**: This environment provides complete HubSpot CRM capabilities through:
 - **HubSpot MCP Server**: Official HubSpot MCP server with direct API access

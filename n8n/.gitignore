@@ -1,0 +1,52 @@
+# N8N Git Integration - Security and Cleanup
+
+# Sensitive files - NEVER commit these
+credentials/credentials.json
+**/password*
+**/secret*
+**/api_key*
+**/*token*
+.env
+.env.local
+.env.production
+
+# Workflows containing sensitive data
+**/payment-*.json
+**/stripe-*.json
+**/api-*.json
+
+# N8N specific
+.n8n/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files (keep local only)
+backups/*.tar.gz
+backups/*.zip
+
+# Test files
+test_*.json
+*_test.json
