@@ -438,7 +438,7 @@
         "charge.dispute.updated",
         "charge.refund.updated"
       ],
-      "webhookSecret": "whsec_hPdS8O3r2xhsGTeca2ELS7d3A3LXG3ax"
+      "webhookSecret": "THIS IS A SENSITIVE KEY AND NEEDS TO BE REPLACED BY A N8N CREDENTIAL"
     },
     "node:Schedule Trigger": {
       "recurrenceRules": []
