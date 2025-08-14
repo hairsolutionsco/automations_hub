@@ -1,42 +1,27 @@
-# N8N Native Git Integration Guide
+# N8N Cloud Integration Guide
 
-## Overview
+## ⚠️ CRITICAL DISCOVERY
 
-N8N has excellent **built-in capabilities** for version control and automation exchange with Git repositories. You don't need complex custom systems - n8n's native commands handle everything efficiently.
+**n8n CLI commands DO NOT WORK with cloud instances.** 
+After extensive testing, **REST API calls are the ONLY reliable method** for n8n cloud workflows.
 
-## Native N8N Commands
+## Working Methods for Cloud Instances
 
-### Export Workflows
+### ✅ REST API Export (PROVEN WORKING)
 ```bash
-# Export all workflows as separate files (perfect for Git)
-n8n export:workflow --backup --output=workflows/
+# Export all workflows from cloud
+./tools/export_workflows_api.sh
 
-# Export specific workflow
-n8n export:workflow --id=workflow_id --output=my_workflow.json
-
-# Export all workflows to single file
-n8n export:workflow --all --output=all_workflows.json
+# Manual API call example
+curl -H "X-N8N-API-KEY: $N8N_API_KEY" \
+     "$N8N_CLOUD_INSTANCE_URL/api/v1/workflows"
 ```
 
-### Import Workflows  
+### ❌ n8n CLI (FAILS WITH CLOUD)
 ```bash
-# Import all workflows from directory
-n8n import:workflow --separate --input=workflows/
-
-# Import single workflow file
-n8n import:workflow --input=my_workflow.json
-
-# Import to specific user/project
-n8n import:workflow --input=workflows/ --separate --userId=user_id
-```
-
-### Export/Import Credentials
-```bash
-# Export credentials
-n8n export:credentials --output=credentials.json
-
-# Import credentials  
-n8n import:credentials --input=credentials.json
+# These commands FAIL with cloud instances:
+n8n export:workflow --backup --output=workflows/  # ❌ FAILS
+n8n import:workflow --separate --input=workflows/ # ❌ FAILS
 ```
 
 ## Perfect Git Workflow

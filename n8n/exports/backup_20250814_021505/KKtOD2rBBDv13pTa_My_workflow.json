@@ -1,0 +1,443 @@
+{
+  "createdAt": "2025-08-11T23:30:32.110Z",
+  "updatedAt": "2025-08-12T01:29:04.000Z",
+  "id": "KKtOD2rBBDv13pTa",
+  "name": "My workflow",
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "events": [
+          "payment_intent.succeeded",
+          "payment_intent.payment_failed",
+          "charge.refunded",
+          "payout.paid",
+          "charge.failed",
+          "charge.succeeded",
+          "charge.updated",
+          "charge.dispute.created",
+          "charge.dispute.closed",
+          "charge.dispute.funds_withdrawn",
+          "charge.dispute.updated",
+          "charge.refund.updated"
+        ]
+      },
+      "id": "e73725d8-dd60-495b-aa49-b8f55c98a72a",
+      "name": "Stripe Trigger",
+      "type": "n8n-nodes-base.stripeTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1056,
+        16
+      ],
+      "webhookId": "8c6ab334-a080-4e07-ac55-3080a7c7edc9",
+      "credentials": {
+        "stripeApi": {
+          "id": "3q1LYGrkaZIDtJar",
+          "name": "Stripe account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {}
+          ]
+        }
+      },
+      "id": "f5919f4c-7345-45f4-b82f-c53bb660d0fa",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -1056,
+        192
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.gocardless.com/payments",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "created_at[gte]",
+              "value": "2025-07-12T00:00:00Z"
+            },
+            {
+              "name": "created_at[lte]",
+              "value": "2025-08-11T23:59:59Z"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "specifyHeaders": "json",
+        "jsonHeaders": "{\n  \"GoCardless-Version\": \"2015-07-06\",\n  \"Accept\": \"application/json\"\n}",
+        "options": {}
+      },
+      "id": "20a0b421-14cb-44dc-8252-72764e3b009a",
+      "name": "HTTP Request — GoCardless (confirmed,last_30d)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        -816,
+        192
+      ],
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "Zjro27xRan8oQvXj",
+          "name": "GoCardless Auth"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "3c617aae-34a1-4516-a83a-41681a15be70",
+      "name": "Function — Normalize Stripe",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [
+        -816,
+        -336
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "0ec1eb70-3ffa-405d-af5f-d530e55d3b66",
+      "name": "Function — Normalize GoCardless",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [
+        -592,
+        192
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "passThrough",
+        "options": {}
+      },
+      "id": "f7e999a4-d017-40ca-9568-bb53800441c8",
+      "name": "Merge (Stripe+GC)",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 2,
+      "position": [
+        -368,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "getAll",
+        "databaseId": {
+          "mode": "id",
+          "value": "22af4e0d84e080c3a7d6f0209d93081d"
+        },
+        "options": {}
+      },
+      "id": "f71be57e-163f-4b1b-a20d-b68b08f0c919",
+      "name": "Notion — Get by payment_id",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2,
+      "position": [
+        80,
+        -80
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "4jkKCiAXGH1iVwyi",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{$items(\"Notion — Get by payment_id\").length > 0}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "e015e4b1-9129-4fba-9a2a-2dadb2a5525f",
+      "name": "IF — Page exists?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        288,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "update"
+      },
+      "id": "5c710394-9925-46aa-99e5-eeb3cbc16c07",
+      "name": "Notion — Update Page",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2,
+      "position": [
+        512,
+        -176
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "4jkKCiAXGH1iVwyi",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "databaseId": {
+          "mode": "id",
+          "value": "22af4e0d84e080c3a7d6f0209d93081d"
+        },
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Name",
+              "title": [
+                {
+                  "text": {
+                    "content": "={{$json.payment_id}}"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "provider"
+            },
+            {
+              "key": "payment_id",
+              "richText": [
+                {
+                  "text": {
+                    "content": "={{$json.payment_id}}"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "invoice_id",
+              "richText": [
+                {
+                  "text": {
+                    "content": "={{$json.invoice_id || ''}}"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "deal_id",
+              "richText": [
+                {
+                  "text": {
+                    "content": "={{$json.deal_id || ''}}"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "client_id",
+              "richText": [
+                {
+                  "text": {
+                    "content": "={{$json.client_id || ''}}"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "amount"
+            },
+            {
+              "key": "currency"
+            },
+            {
+              "key": "fees"
+            },
+            {
+              "key": "net"
+            },
+            {
+              "key": "payout_id",
+              "richText": [
+                {
+                  "text": {
+                    "content": "={{$json.payout_id || ''}}"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "status"
+            },
+            {
+              "key": "created_at",
+              "date": {
+                "start": "={{$json.created_at}}"
+              }
+            },
+            {
+              "key": "available_at",
+              "date": {
+                "start": "={{$json.available_at}}"
+              }
+            },
+            {
+              "key": "posted_at",
+              "date": {
+                "start": "={{$json.posted_at}}"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "25cef17b-e19b-4b76-b972-26140ecbbef4",
+      "name": "Notion — Create Page",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2,
+      "position": [
+        512,
+        48
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "4jkKCiAXGH1iVwyi",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.aiTransform",
+      "typeVersion": 1,
+      "position": [
+        -816,
+        -16
+      ],
+      "id": "8ca37f93-3821-4224-a8ec-3f27b7caea02",
+      "name": "AI Transform"
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request — GoCardless (confirmed,last_30d)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notion — Get by payment_id": {
+      "main": [
+        [
+          {
+            "node": "IF — Page exists?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF — Page exists?": {
+      "main": [
+        [
+          {
+            "node": "Notion — Update Page",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Notion — Create Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Stripe Trigger": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "9a910012-b6b4-4dd2-b67b-2995b97a112a",
+  "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-08-11T23:30:32.113Z",
+      "updatedAt": "2025-08-11T23:30:32.113Z",
+      "role": "workflow:owner",
+      "workflowId": "KKtOD2rBBDv13pTa",
+      "projectId": "u6WAzHuF44mOtWuS",
+      "project": {
+        "createdAt": "2025-07-31T11:39:40.287Z",
+        "updatedAt": "2025-07-31T11:39:43.247Z",
+        "id": "u6WAzHuF44mOtWuS",
+        "name": "Vincent Laroche <info@oneheadhair.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "projectRelations": [
+          {
+            "createdAt": "2025-07-31T11:39:40.287Z",
+            "updatedAt": "2025-07-31T11:39:40.287Z",
+            "role": "project:personalOwner",
+            "userId": "dff742c4-a194-47d4-8a7c-d82d35aabc7e",
+            "projectId": "u6WAzHuF44mOtWuS",
+            "user": {
+              "createdAt": "2025-07-31T11:39:38.886Z",
+              "updatedAt": "2025-08-13T03:03:26.000Z",
+              "id": "dff742c4-a194-47d4-8a7c-d82d35aabc7e",
+              "email": "info@oneheadhair.com",
+              "firstName": "Vincent",
+              "lastName": "Laroche",
+              "personalizationAnswers": null,
+              "settings": {
+                "userActivated": true,
+                "firstSuccessfulWorkflowId": "VsaLkCvopP9TByf8",
+                "userActivatedAt": 1754031653108,
+                "easyAIWorkflowOnboarded": true,
+                "npsSurvey": {
+                  "waitingForResponse": true,
+                  "ignoredCount": 0,
+                  "lastShownAt": 1754957886802
+                }
+              },
+              "role": "global:owner",
+              "disabled": false,
+              "mfaEnabled": false,
+              "lastActiveAt": "2025-08-13",
+              "isPending": false
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "tags": []
+}

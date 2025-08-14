@@ -1,3 +1,33 @@
 {
-  "message": "Not Found"
+  "name": "Email Management Workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "email-start-node",
+      "name": "Start",
+      "type": "n8n-nodes-base.start",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "content": "# Email Management Workflow\n\nThis is a placeholder for email management automation.\n\n**Note**: This file was corrupted and has been reset to a basic template.\nPlease recreate the actual email management workflow in n8n cloud."
+      },
+      "id": "email-note-node",
+      "name": "Workflow Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [460, 300]
+    }
+  ],
+  "connections": {},
+  "active": false,
+  "settings": {},
+  "versionId": "template-version",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "restored": true,
+    "restoredDate": "2025-08-14",
+    "originallyCorrupted": true
+  }
 }

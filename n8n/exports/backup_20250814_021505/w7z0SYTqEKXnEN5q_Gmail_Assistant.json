@@ -1,0 +1,1180 @@
+{
+  "createdAt": "2025-08-12T12:13:03.097Z",
+  "updatedAt": "2025-08-14T01:09:41.000Z",
+  "id": "w7z0SYTqEKXnEN5q",
+  "name": "Gmail Assistant",
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "triggerAtDay": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "fc6db808-e14c-411e-b8a9-95a478bb34b0",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [
+        -2912,
+        80
+      ],
+      "typeVersion": 1.2
+    },
+    {
+      "parameters": {},
+      "id": "97a376c1-46b2-484f-ad55-576a619abf62",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        -2912,
+        256
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "=You are an AI assistant integrated with n8n, designed to manage Gmail-related tasks through secure OAuth2 access. Your goal is to interpret user instructions, handle email operations accurately, and follow Workspace policies and formatting rules.\n\nAvailable Tools:\n\t•\tCreate Email: Sends an email to a specified recipient.\n\t•\tCreate Draft: Creates a draft email in the user’s Gmail account.\n\t•\tGet Emails: Retrieves emails based on filters such as sender, subject, date, or labels.\n\t•\tGoogle Contacts: Looks up and verifies recipient email addresses from the user’s contacts.\n\t•\tLabel & Organize: Adds, removes, or modifies Gmail labels for inbox organization.\n\nCore Instructions:\n\t1.\tUnderstand User Intent: Parse the request to identify the exact Gmail action needed (send, draft, retrieve, label, or search).\n\t2.\tEmail Address Verification: Before sending or drafting, verify the address with Google Contacts. If multiple results are found, ask for clarification.\n\t3.\tTool Selection: Pick the tool(s) that best match the user’s request.\n\t4.\tClarification: If the request lacks required info (e.g., recipient address, subject, search criteria), ask clarifying questions before execution.\n\t5.\tData Privacy: Do not expose or share any email content outside the requested action.\n\nEmail Formatting Guidelines:\n\t•\tTone: Use a clear, professional, and friendly tone. Adapt to any specific tone requested by the user.\n\t•\tConciseness: Keep messages focused and to the point. Avoid unnecessary words or excessive formality unless requested.\n\t•\tSign-off: End each composed or drafted email with the user’s preferred closing (default: Best regards, [User Name]).\n\nExample Workflow (Sending an Email):\n\t1.\tUser: “Send an email to Alex asking for the updated project timeline.”\n\t2.\tAI (Internal): Identify that sending an email is required. First, verify Alex’s address.\n\t3.\tAI uses Google Contacts with “Alex”.\n\t4.\tAI (If confirmed): “I found Alex’s email.”\n\t5.\tAI uses Create Email:\n\t•\tSubject: “Updated Project Timeline”\n\t•\tBody: “Hi Alex, Could you please share the updated project timeline? Thanks. Best regards, [User Name]”\n\t6.\tAI (If address not confirmed or multiple found): Ask user to provide or confirm the correct address.\n\nYour primary objective is to handle Gmail tasks efficiently, respect Google Workspace policies, maintain accuracy in recipient handling, and deliver results in the requested format.\n"
+        }
+      },
+      "id": "4b81240f-897f-4b10-bca1-eb91cb42bc37",
+      "name": "Email Assistant",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "position": [
+        -2656,
+        192
+      ],
+      "typeVersion": 1.9
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "hairsolutions-email-pa",
+        "contextWindowLength": 50
+      },
+      "id": "4349a951-c0c0-4508-b0bf-46a10a2fd1a4",
+      "name": "Simple Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "position": [
+        -2608,
+        432
+      ],
+      "typeVersion": 1.3
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "returnAll": "={{ $fromAI('Return_All', ``, 'boolean') }}",
+        "filters": {
+          "labelIds": [
+            "Label_5151750749488724401",
+            "Label_7518716752151077752"
+          ],
+          "readStatus": "unread"
+        }
+      },
+      "id": "ef1b3b31-2de0-4801-9e49-b702debd4eae",
+      "name": "Unread Emails - FYI",
+      "type": "n8n-nodes-base.gmailTool",
+      "position": [
+        -3120,
+        464
+      ],
+      "webhookId": "44a76d68-61fb-42b5-a7eb-f3ccc7a0d2d1",
+      "typeVersion": 2.1
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "returnAll": "={{ $fromAI('Return_All', ``, 'boolean') }}",
+        "filters": {
+          "labelIds": [
+            "INBOX",
+            "UNREAD"
+          ],
+          "readStatus": "unread"
+        }
+      },
+      "id": "90496f93-13c0-48df-921a-12db3d77176f",
+      "name": "Unread Emails - To Respond",
+      "type": "n8n-nodes-base.gmailTool",
+      "position": [
+        -3136,
+        176
+      ],
+      "webhookId": "44a76d68-61fb-42b5-a7eb-f3ccc7a0d2d1",
+      "typeVersion": 2.1
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "messageId": "={{ $fromAI('Message_ID', ``, 'string') }}"
+      },
+      "id": "19454cf6-91b4-4c2d-9cb5-fe41f5566aba",
+      "name": "Get Email",
+      "type": "n8n-nodes-base.gmailTool",
+      "position": [
+        -3120,
+        624
+      ],
+      "webhookId": "27137976-d22b-4d15-9c86-b8b8d6a97e7b",
+      "typeVersion": 2.1
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "filters": {
+          "labelIds": [
+            "SENT"
+          ],
+          "q": "=to:{{ $fromAI('email') }}"
+        }
+      },
+      "id": "75115b32-bf6d-46f1-8df2-4f2d458610a1",
+      "name": "Check Sent",
+      "type": "n8n-nodes-base.gmailTool",
+      "position": [
+        -3120,
+        320
+      ],
+      "webhookId": "0854fad3-622e-44b4-9d61-5aae13c61433",
+      "typeVersion": 2.1
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.notion.com/v1/databases/[NOTION_EMAIL_CONTEXT_DB_ID]/query",
+        "authentication": "headerAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "cbd2050e-376d-441f-879f-4138c3949c0a",
+      "name": "Notion Context Lookup",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        -1840,
+        544
+      ],
+      "typeVersion": 4.2
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.notion.com/v1/databases/[NOTION_CONTACTS_DB_ID]/query",
+        "authentication": "headerAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "e45d9eb1-7832-4fe9-b826-970e30bca794",
+      "name": "Notion Contacts Lookup",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        -1168,
+        656
+      ],
+      "typeVersion": 4.2
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.notion.com/v1/databases/[NOTION_ORDERS_DB_ID]/query",
+        "authentication": "headerAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "ed6d3db0-3a29-4ccc-9d82-b17e5a92d538",
+      "name": "Notion Orders Lookup",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        -1472,
+        656
+      ],
+      "typeVersion": 4.2
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "Run the task.",
+        "options": {
+          "systemMessage": "=**Objective:** Manage meeting follow-ups for Vincent Laroche (vincent.laroche@oneheadhair.com). Flag meetings from last 3 days needing action. Use Calendar, Gmail Sent, and Fireflies transcripts if available.\n**High-value keywords:** order, shipment, supplier, PO, invoice, payment, chargeback, Stripe reserve, renewal, salon wholesale.\n**Outputs:**\n1) Potential Issue (no transcript/unclear).\n2) Action Required (follow-up pending).",
+          "maxIterations": 50
+        }
+      },
+      "id": "6c1008a5-1479-4074-b3b7-4d825881ed00",
+      "name": "Follow Up Assistant",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "position": [
+        -1888,
+        192
+      ],
+      "typeVersion": 1.9
+    },
+    {
+      "parameters": {
+        "toolDescription": "Fetch call transcripts by participant email.",
+        "method": "POST",
+        "url": "https://api.fireflies.ai/graphql",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer [REDACTED_FIREFLIES_API_TOKEN]"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"query\": \"query Transcripts($participantEmail: String) { transcripts(participant_email: $participantEmail) { id title date duration participants host_email organizer_email transcript_url summary { action_items keywords overview short_summary } } }\",\n  \"variables\": { \"participantEmail\": \"{{ $fromAI('email') }}\" }\n}",
+        "options": {}
+      },
+      "id": "4e9685ce-e6fa-4730-b1d9-e8b8ec5c8dd4",
+      "name": "Fetch FireFlies",
+      "type": "n8n-nodes-base.httpRequestTool",
+      "position": [
+        -1488,
+        384
+      ],
+      "typeVersion": 4.2
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "Run the task.",
+        "options": {
+          "systemMessage": "=**Objective:** Synthesize Email triage + Follow-ups into one prioritized daily brief for Vincent. Use **Notion** as truth via upstream agents. Include counts by priority and list drafted replies. No general advice.\n**Groups:** 🔴 Overdue/High, 🚨 Immediate Today, 🟡 Other Outstanding, 📧 Email Responses Due Today, 📞 Meeting Follow-ups.\n**Output:** Markdown suitable for Slack/Email."
+        }
+      },
+      "id": "9f376bee-bf2e-4585-a645-1d8255971af7",
+      "name": "Master Orchestrator Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "position": [
+        -992,
+        80
+      ],
+      "typeVersion": 1.9
+    },
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -2912,
+        -80
+      ],
+      "id": "108ffd79-c2a5-4064-a1ad-0fef10806c8a",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -2752,
+        416
+      ],
+      "id": "71f0e6e5-6991-4d5b-a626-4081be7dd18f",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "4X9TIhDpjNa5gM9J",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('To', ``, 'string') }}",
+        "subject": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Subject', ``, 'string') }}",
+        "message": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message', ``, 'string') }}",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2288,
+        608
+      ],
+      "id": "71b6caf0-72de-420a-8a46-778b7255da68",
+      "name": "Send a message in Gmail",
+      "webhookId": "bb0c8946-ba59-44f9-be60-3df08d1ac50a",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "addLabels",
+        "messageId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message_ID', ``, 'string') }}",
+        "labelIds": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Label_Names_or_IDs', ``, 'string') }}"
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2288,
+        448
+      ],
+      "id": "c7f4d40e-2b88-480a-ac2c-5849a849c933",
+      "name": "Add label to message in Gmail",
+      "webhookId": "04ea5036-c01a-467d-9a91-6bf58cd8a8d7",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "messageId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message_ID', ``, 'string') }}"
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2272,
+        304
+      ],
+      "id": "f6415fcb-7e6e-4d66-8e43-774b567cab1c",
+      "name": "Delete a message in Gmail",
+      "webhookId": "841f6e5c-e126-4a0b-ad27-7542c434a1ad",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "messageId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message_ID', ``, 'string') }}",
+        "simple": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Simplify', ``, 'boolean') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2272,
+        144
+      ],
+      "id": "d8738cfd-a5d5-4ba8-b3fc-e3652da3f357",
+      "name": "Get a message in Gmail",
+      "webhookId": "2b869c90-007b-4282-868d-692052633984",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "returnAll": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Return_All', ``, 'boolean') }}",
+        "simple": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Simplify', ``, 'boolean') }}",
+        "filters": {},
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2272,
+        -16
+      ],
+      "id": "9f22888b-b19e-43b6-9b1d-d7ea5b0b75ce",
+      "name": "Get many messages in Gmail",
+      "webhookId": "2518f40b-70a4-4a83-90a9-beb82f9d21bd",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "markAsRead",
+        "messageId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message_ID', ``, 'string') }}"
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2256,
+        -160
+      ],
+      "id": "cfb05680-cc47-4cfe-a6bc-c6df1aba7b8c",
+      "name": "Mark a message as read in Gmail",
+      "webhookId": "e9e06606-399e-484b-bdac-3ed6e7128aa7",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "removeLabels",
+        "messageId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message_ID', ``, 'string') }}",
+        "labelIds": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Label_Names_or_IDs', ``, 'string') }}"
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2096,
+        -160
+      ],
+      "id": "b539eac6-a2b2-4e18-919d-95a9d1c6766a",
+      "name": "Remove label from message in Gmail",
+      "webhookId": "2e9baea6-bfbc-47fd-be94-1d7ba773aa25",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "reply",
+        "messageId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message_ID', ``, 'string') }}",
+        "message": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message', ``, 'string') }}",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2096,
+        -16
+      ],
+      "id": "efa3c72a-ae6d-4f3d-83bf-e4c54164255b",
+      "name": "Reply to a message in Gmail",
+      "webhookId": "5ad4af5d-8c3f-403e-ba57-1d4016a1f612",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendAndWait",
+        "sendTo": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('To', ``, 'string') }}",
+        "subject": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Subject', ``, 'string') }}",
+        "message": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -1968,
+        -176
+      ],
+      "id": "386934b0-c9cf-4e5a-b7e6-04154e0d4122",
+      "name": "Send message and wait for response in Gmail",
+      "webhookId": "daff180f-7798-4d0b-92f4-637fed60bbbb",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "label",
+        "operation": "create",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2784,
+        -208
+      ],
+      "id": "98a2a65f-3bd8-4f20-8b72-10b41d19c8a3",
+      "name": "Create a label in Gmail",
+      "webhookId": "c59f7efa-fecd-43b7-9bb3-be4a6e737ad3",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "label",
+        "operation": "delete",
+        "labelId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Label_ID', ``, 'string') }}"
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2672,
+        -208
+      ],
+      "id": "1ceca5ad-4098-44fe-81b1-56a074643c9d",
+      "name": "Delete a label in Gmail",
+      "webhookId": "aff2955c-72c9-4591-8024-babb7e555348",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "label",
+        "operation": "get",
+        "labelId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Label_ID', ``, 'string') }}"
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2528,
+        -208
+      ],
+      "id": "2b8d5748-6733-4468-80ac-c278b72caca8",
+      "name": "Get a label info in Gmail",
+      "webhookId": "bb66d06b-a287-42de-8910-a3ea923283c6",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "label",
+        "returnAll": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Return_All', ``, 'boolean') }}"
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2400,
+        -208
+      ],
+      "id": "5c42e676-41bc-43ad-a195-c2913185fb4c",
+      "name": "Get many labels in Gmail",
+      "webhookId": "7b859200-d715-4c6e-a81a-0f4874c7b3e3",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "draft",
+        "subject": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Subject', ``, 'string') }}",
+        "emailType": "html",
+        "message": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2784,
+        -352
+      ],
+      "id": "440714d5-2567-4f49-a61f-2d9147759803",
+      "name": "Create a draft in Gmail",
+      "webhookId": "aa06c90e-20d8-4113-9a5b-bea05204f7dd",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "draft",
+        "operation": "delete",
+        "messageId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Draft_ID', ``, 'string') }}"
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2672,
+        -352
+      ],
+      "id": "0fc93d3d-f82b-4bef-9cbe-b77a69f6280f",
+      "name": "Delete a draft in Gmail",
+      "webhookId": "91e7dba6-1372-4bef-af65-464e163a7aee",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "draft",
+        "operation": "get",
+        "messageId": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Draft_ID', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2544,
+        -368
+      ],
+      "id": "c7d26ddd-8565-42ab-acb2-1b0fa2927292",
+      "name": "Get a draft in Gmail",
+      "webhookId": "f276d09e-f3e0-4487-aaf2-f2421b92a1aa",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "draft",
+        "operation": "getAll",
+        "returnAll": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Return_All', ``, 'boolean') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.1,
+      "position": [
+        -2416,
+        -368
+      ],
+      "id": "69596836-1103-4867-951b-47ae6c4d011a",
+      "name": "Get many drafts in Gmail",
+      "webhookId": "fe59bb35-2941-4c9c-9295-9698536b0197",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "iRhtr9mcBtiwn0Jn",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        -2480,
+        432
+      ],
+      "id": "4bc71894-2b8a-409f-b436-a9f181e5a38a",
+      "name": "Think"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -2912,
+        416
+      ],
+      "id": "8e091c72-cf64-4fdc-b7f2-45d690963eaf",
+      "name": "When chat message received",
+      "webhookId": "ead11e2b-eb4c-47c5-a615-007c96d91fce"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1.1,
+      "position": [
+        -2560,
+        544
+      ],
+      "id": "696e2764-5dc5-4d52-8d59-6935885e585e",
+      "name": "MCP Client"
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Unread Emails - FYI": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Unread Emails - To Respond": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Email": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Sent": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Email Assistant": {
+      "main": [
+        [
+          {
+            "node": "Follow Up Assistant",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch FireFlies": {
+      "ai_tool": [
+        [
+          {
+            "node": "Follow Up Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Follow Up Assistant": {
+      "main": [
+        [
+          {
+            "node": "Master Orchestrator Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Master Orchestrator Agent": {
+      "main": [
+        []
+      ]
+    },
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a message in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Add label to message in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a message in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a message in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many messages in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mark a message as read in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Remove label from message in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Reply to a message in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send message and wait for response in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a label in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a label in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a label info in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many labels in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a draft in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a draft in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a draft in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many drafts in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Think": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client": {
+      "ai_tool": [
+        [
+          {
+            "node": "Email Assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": null,
+  "pinData": {
+    "When Executed by Another Workflow": [
+      {
+        "json": {
+          "query": "Send an email to Vincent saying this is a test"
+        }
+      }
+    ]
+  },
+  "versionId": "e6a824b5-b78f-4879-aa1a-cd5ec40644e1",
+  "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-08-12T12:13:03.101Z",
+      "updatedAt": "2025-08-12T12:13:03.101Z",
+      "role": "workflow:owner",
+      "workflowId": "w7z0SYTqEKXnEN5q",
+      "projectId": "u6WAzHuF44mOtWuS",
+      "project": {
+        "createdAt": "2025-07-31T11:39:40.287Z",
+        "updatedAt": "2025-07-31T11:39:43.247Z",
+        "id": "u6WAzHuF44mOtWuS",
+        "name": "Vincent Laroche <info@oneheadhair.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "projectRelations": [
+          {
+            "createdAt": "2025-07-31T11:39:40.287Z",
+            "updatedAt": "2025-07-31T11:39:40.287Z",
+            "role": "project:personalOwner",
+            "userId": "dff742c4-a194-47d4-8a7c-d82d35aabc7e",
+            "projectId": "u6WAzHuF44mOtWuS",
+            "user": {
+              "createdAt": "2025-07-31T11:39:38.886Z",
+              "updatedAt": "2025-08-13T03:03:26.000Z",
+              "id": "dff742c4-a194-47d4-8a7c-d82d35aabc7e",
+              "email": "info@oneheadhair.com",
+              "firstName": "Vincent",
+              "lastName": "Laroche",
+              "personalizationAnswers": null,
+              "settings": {
+                "userActivated": true,
+                "firstSuccessfulWorkflowId": "VsaLkCvopP9TByf8",
+                "userActivatedAt": 1754031653108,
+                "easyAIWorkflowOnboarded": true,
+                "npsSurvey": {
+                  "waitingForResponse": true,
+                  "ignoredCount": 0,
+                  "lastShownAt": 1754957886802
+                }
+              },
+              "role": "global:owner",
+              "disabled": false,
+              "mfaEnabled": false,
+              "lastActiveAt": "2025-08-13",
+              "isPending": false
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "tags": [
+    {
+      "createdAt": "2025-08-12T11:44:08.486Z",
+      "updatedAt": "2025-08-12T11:44:08.486Z",
+      "id": "NR6Ch5Nvrd046S93",
+      "name": "Personal Assistant"
+    }
+  ]
+}

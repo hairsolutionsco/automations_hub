@@ -10,33 +10,39 @@ This directory contains N8N automation platform integration with **native Git ve
 
 **Immediate Actions**:
 ```bash
-# Interactive Git sync system (recommended)
+# ⚠️ CRITICAL: Use REST API scripts for cloud workflows (CLI doesn't work)
+./tools/export_workflows_api.sh  # Export from cloud (PROVEN METHOD)
+
+# Interactive Git sync (uses REST API internally)
 npm run git:sync
 
-# Quick export/import
-npm run export    # Export all workflows from n8n
-npm run import    # Import all workflows to n8n
+# Legacy CLI (LOCAL ONLY - does NOT work with cloud)
+npm run export    # ❌ FAILS with cloud instances
+npm run import    # ❌ FAILS with cloud instances
 
-# Cloud operations (if configured)
-npm run cloud:export
-npm run cloud:import
-
-# Start N8N locally
+# Start N8N locally (for development)
 npm start         # Local instance at http://localhost:5678
 ```
 
 **Key Capabilities Ready**:
-- ✅ **Native Git Integration** - No custom APIs needed
-- ✅ **Workflow Version Control** - Individual JSON files per workflow
+- ✅ **REST API Integration** - Proven method for cloud workflows
+- ❌ **n8n CLI Limitation** - Does NOT work with cloud instances
+- ✅ **Workflow Version Control** - Individual JSON files per workflow  
 - ✅ **Cross-Platform Triggers** - Notion, HubSpot, Shopify integrations
 - ✅ **MCP Server Access** - AI-enhanced workflow operations
 - ✅ **Security Configured** - Credentials protected via .gitignore
 
 **Quick Operations**:
-1. `npm run git:sync` → Interactive menu for all Git operations
-2. `npm run export` → Pull workflows from n8n to Git
-3. `npm run import` → Push workflows from Git to n8n
+1. `./tools/export_workflows_api.sh` → Export workflows from cloud (WORKS)
+2. `npm run git:sync` → Interactive menu for Git operations  
+3. ❌ `npm run export/import` → CLI commands (FAIL with cloud)
 4. `npm run validate` → Check workflow JSON integrity
+
+## ⚠️ CRITICAL: Cloud vs Local Methods
+
+**For N8N Cloud Instances (hairsolutionsco.app.n8n.cloud):**
+- ✅ **USE**: REST API scripts (`./tools/export_workflows_api.sh`)
+- ❌ **AVOID**: n8n CLI commands (they don't work with cloud)
 
 ## 🔑 Access & Permissions via MCP
 
