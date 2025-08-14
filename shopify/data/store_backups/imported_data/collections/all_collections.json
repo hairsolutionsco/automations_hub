@@ -1,0 +1,586 @@
+[
+  {
+    "id": 309037007009,
+    "handle": "front-partial-hair-systems",
+    "title": "Front Partial Hair Systems",
+    "updated_at": "2025-07-07T16:49:37-04:00",
+    "body_html": "",
+    "published_at": "2025-02-02T16:01:31-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "premade-hair-systems",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "frontal"
+      },
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "front partial"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/309037007009",
+    "image": {
+      "created_at": "2025-02-02T16:01:30-05:00",
+      "alt": null,
+      "width": 600,
+      "height": 857,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/frontal_hair_system.jpg?v=1738530090"
+    }
+  },
+  {
+    "id": 298170155169,
+    "handle": "hair-care",
+    "title": "Hair Care",
+    "updated_at": "2025-07-07T16:49:36-04:00",
+    "body_html": "<meta charset=\"utf-8\">\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Explore our exclusive range of hair care products, specially formulated for hair systems and hairpieces. Ensure the longevity and natural appearance of your hair replacement solutions with OneHead Hair Solutions</li>\n</ul>",
+    "published_at": "2023-11-16T02:55:24-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "type",
+        "relation": "equals",
+        "condition": "Hair Care"
+      },
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "shampoo"
+      },
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "conditioner"
+      },
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "leave-in conditioner"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/298170155169",
+    "image": {
+      "created_at": "2023-11-16T02:55:23-05:00",
+      "alt": null,
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collection-image-hair-care.jpg?v=1702654044"
+    }
+  },
+  {
+    "id": 292991729825,
+    "handle": "hair-fibers-non-surgical-hair-loss-solution",
+    "title": "Hair Fibers | Non-Surgical Hair Loss Solution",
+    "updated_at": "2025-07-07T16:49:36-04:00",
+    "body_html": "",
+    "published_at": "2022-11-11T05:24:16-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "",
+    "disjunctive": false,
+    "rules": [
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "hair fibers"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/292991729825"
+  },
+  {
+    "id": 292991762593,
+    "handle": "mens-hair-replacement-course",
+    "title": "Hair Replacement Certification",
+    "updated_at": "2025-07-07T16:49:36-04:00",
+    "body_html": "",
+    "published_at": "2022-11-11T05:25:05-05:00",
+    "sort_order": "manual",
+    "template_suffix": "",
+    "disjunctive": false,
+    "rules": [
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "training"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/292991762593"
+  },
+  {
+    "id": 292991598753,
+    "handle": "hair-systems",
+    "title": "High-Quality Men's Hair Systems",
+    "updated_at": "2025-07-07T16:49:36-04:00",
+    "body_html": "<meta charset=\"utf-8\"><span data-mce-fragment=\"1\">Discover top-tier men's hair replacement systems. Choose from custom or ready-made options for a seamless, natural look. Experience confidence with\u00a0non-surgical,\u00a0innovative hair replacement solutions.</span>",
+    "published_at": "2022-11-11T05:18:44-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "premade-hair-systems",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "hair system"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/292991598753"
+  },
+  {
+    "id": 308981039265,
+    "handle": "lace-hair-systems",
+    "title": "Lace Hair Systems",
+    "updated_at": "2025-07-07T16:49:37-04:00",
+    "body_html": "<p><meta charset=\"utf-8\">Discover the ultimate in lightweight comfort with our <strong>lace hair systems</strong>. Designed for breathability and a natural appearance, these systems are perfect for active lifestyles and warmer climates. Each lace hair system is meticulously crafted with premium-grade human hair to ensure a seamless blend with your natural look. Whether you\u2019re seeking all-day comfort or a discreet solution, our lace systems provide the perfect balance of style and functionality. Explore our collection and experience the confidence of a flawless finish tailored to your needs.</p>",
+    "published_at": "2025-01-24T16:47:44-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "premade-hair-systems",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "lace"
+      },
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "lace front"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/308981039265",
+    "image": {
+      "created_at": "2025-01-24T17:02:22-05:00",
+      "alt": null,
+      "width": 2000,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/Lace_Hair_Systems_-_Collection_Banner.png?v=1737756142"
+    }
+  },
+  {
+    "id": 298169991329,
+    "handle": "liquid-adhesive",
+    "title": "Liquid Adhesives",
+    "updated_at": "2025-07-07T16:49:36-04:00",
+    "body_html": "",
+    "published_at": "2023-11-16T02:45:43-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "type",
+        "relation": "equals",
+        "condition": "Liquid Adhesive"
+      },
+      {
+        "column": "type",
+        "relation": "equals",
+        "condition": "Liquid Adhesives"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/298169991329",
+    "image": {
+      "created_at": "2023-11-16T02:46:33-05:00",
+      "alt": null,
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collection-image-liquid_adhesives-1200x1200.jpg?v=1702654048"
+    }
+  },
+  {
+    "id": 292991697057,
+    "handle": "lux-hair-hair-systems-products",
+    "title": "Lux Hair",
+    "updated_at": "2025-07-07T16:49:36-04:00",
+    "body_html": "",
+    "published_at": "2022-11-11T05:23:04-05:00",
+    "sort_order": "manual",
+    "template_suffix": "",
+    "disjunctive": false,
+    "rules": [
+      {
+        "column": "vendor",
+        "relation": "equals",
+        "condition": "Lux Hair"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/292991697057",
+    "image": {
+      "created_at": "2023-11-16T01:57:36-05:00",
+      "alt": null,
+      "width": 800,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collections-lux-hair-header-mobile-800x1000.jpg?v=1702654052"
+    }
+  },
+  {
+    "id": 298367287457,
+    "handle": "maintenance-products",
+    "title": "Maintenance Products",
+    "updated_at": "2025-07-07T16:49:37-04:00",
+    "body_html": "<meta charset=\"utf-8\"><span data-mce-fragment=\"1\">Keep your hairpiece well bonded and in perfect condition with our hair systems attachment and maintenance products. From adhesive and tape to gentle cleansers and conditioners, find everything you need for optimal hair system care at OneHead Hair Solutions.</span>",
+    "published_at": "2023-11-20T15:26:46-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "vendor",
+        "relation": "equals",
+        "condition": "Lux Hair"
+      },
+      {
+        "column": "vendor",
+        "relation": "equals",
+        "condition": "Professional Hair Labs"
+      },
+      {
+        "column": "vendor",
+        "relation": "equals",
+        "condition": "Sunshine Tape"
+      },
+      {
+        "column": "vendor",
+        "relation": "equals",
+        "condition": "Walker Tape"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/298367287457",
+    "image": {
+      "created_at": "2023-11-20T15:27:16-05:00",
+      "alt": null,
+      "width": 1000,
+      "height": 1400,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/Home_-_Header_-_Mobile_-_JPG_-_Maintenance_Products_-_2160x1080_44645c19-41d2-4735-a9a6-800844e63296.jpg?v=1702654055"
+    }
+  },
+  {
+    "id": 309036974241,
+    "handle": "mono-hair-systems",
+    "title": "Mono Hair Systems",
+    "updated_at": "2025-07-07T16:49:37-04:00",
+    "body_html": "",
+    "published_at": "2025-02-02T16:00:30-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "premade-hair-systems",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "monofilament"
+      },
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "mono"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/309036974241",
+    "image": {
+      "created_at": "2025-02-02T16:00:29-05:00",
+      "alt": null,
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/monofilament-hair-system-image-1_5a7eb683-c407-4e81-b338-1c502249c8c9.jpg?v=1738530030"
+    }
+  },
+  {
+    "id": 292991664289,
+    "handle": "professional-hair-labs-hair-systems-products",
+    "title": "Professional Hair Labs",
+    "updated_at": "2025-07-07T16:49:36-04:00",
+    "body_html": "",
+    "published_at": "2022-11-11T05:22:43-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "vendor",
+        "relation": "equals",
+        "condition": "Professional Hair Labs"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/292991664289",
+    "image": {
+      "created_at": "2023-11-16T02:52:33-05:00",
+      "alt": null,
+      "width": 1600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collection-banner-desktop-pro-hair-labs.png?v=1700121153"
+    }
+  },
+  {
+    "id": 298366599329,
+    "handle": "removers-solvents",
+    "title": "Removers & Solvents",
+    "updated_at": "2025-07-07T16:49:37-04:00",
+    "body_html": "",
+    "published_at": "2023-11-20T15:16:16-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "type",
+        "relation": "equals",
+        "condition": "Removers"
+      },
+      {
+        "column": "type",
+        "relation": "equals",
+        "condition": "Adhesive Remover"
+      },
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "solvent"
+      },
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "citrus solvent"
+      },
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "remover"
+      },
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "removers"
+      },
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "adhesive remover"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/298366599329",
+    "image": {
+      "created_at": "2023-11-20T15:16:15-05:00",
+      "alt": null,
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collection-image-removers.jpg?v=1700511376"
+    }
+  },
+  {
+    "id": 298169860257,
+    "handle": "prep-scalp-treatment",
+    "title": "Scalp Prep & Treatment",
+    "updated_at": "2025-07-07T16:49:36-04:00",
+    "body_html": "",
+    "published_at": "2023-11-16T02:01:54-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "type",
+        "relation": "equals",
+        "condition": "Preparation"
+      },
+      {
+        "column": "type",
+        "relation": "equals",
+        "condition": "Skin Care"
+      },
+      {
+        "column": "type",
+        "relation": "equals",
+        "condition": "Scalp Protector"
+      },
+      {
+        "column": "type",
+        "relation": "equals",
+        "condition": "Scalp Treatments"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/298169860257",
+    "image": {
+      "created_at": "2023-11-16T02:43:54-05:00",
+      "alt": null,
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collection-image-pre-scalp-treatments-1200x1200.jpg?v=1702654058"
+    }
+  },
+  {
+    "id": 308981137569,
+    "handle": "skin-hair-systems",
+    "title": "Skin Hair Systems",
+    "updated_at": "2025-07-07T16:49:37-04:00",
+    "body_html": "<p><meta charset=\"utf-8\">Achieve a flawless and realistic look with our <strong>skin hair systems</strong>, expertly designed for durability and seamless blending. These systems mimic the natural scalp with a smooth, undetectable base, offering a comfortable and secure fit. Ideal for everyday wear, skin hair systems are easy to apply and maintain, making them a practical solution for men seeking a natural appearance. Browse our collection to find the perfect skin hair system and enjoy the confidence of a full, rejuvenated style.</p>",
+    "published_at": "2025-01-24T17:04:14-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "premade-hair-systems",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "skin"
+      },
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "skin perimeter"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/308981137569",
+    "image": {
+      "created_at": "2025-01-24T17:04:13-05:00",
+      "alt": null,
+      "width": 2000,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/Skin_Hair_Systems_-_Collection_Banner.png?v=1737756254"
+    }
+  },
+  {
+    "id": 298170187937,
+    "handle": "sunshine-tape",
+    "title": "Sunshine Tape",
+    "updated_at": "2025-07-07T16:49:36-04:00",
+    "body_html": "",
+    "published_at": "2023-11-16T02:57:39-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "vendor",
+        "relation": "equals",
+        "condition": "Sunshine Tape"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/298170187937",
+    "image": {
+      "created_at": "2023-11-16T02:57:38-05:00",
+      "alt": "",
+      "width": 1600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collection-banner-sunshine-tape.png?v=1700121458"
+    }
+  },
+  {
+    "id": 291638476961,
+    "handle": "tapes",
+    "title": "Tapes",
+    "updated_at": "2025-07-07T16:49:36-04:00",
+    "body_html": "<meta charset=\"utf-8\"><span data-mce-fragment=\"1\">Find strong, reliable tapes and adhesives for your hair systems at OneHead Hair. Our products ensure a secure fit and comfortable wear for your hairpieces, all day long.</span>",
+    "published_at": "2022-09-20T06:13:35-04:00",
+    "sort_order": "manual",
+    "template_suffix": "",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "tag",
+        "relation": "equals",
+        "condition": "Tape"
+      },
+      {
+        "column": "type",
+        "relation": "equals",
+        "condition": "Tapes"
+      },
+      {
+        "column": "type",
+        "relation": "equals",
+        "condition": "Tape Roll"
+      },
+      {
+        "column": "type",
+        "relation": "equals",
+        "condition": "Tape Rolls"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/291638476961",
+    "image": {
+      "created_at": "2022-09-20T06:21:19-04:00",
+      "alt": "",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/walker-tape-ultra-hold-c-contours.jpg?v=1700117711"
+    }
+  },
+  {
+    "id": 292991631521,
+    "handle": "walker-tape-hair-systems-products",
+    "title": "Walker Tape",
+    "updated_at": "2025-07-07T16:49:36-04:00",
+    "body_html": "",
+    "published_at": "2022-11-11T05:22:02-05:00",
+    "sort_order": "best-selling",
+    "template_suffix": "",
+    "disjunctive": true,
+    "rules": [
+      {
+        "column": "vendor",
+        "relation": "equals",
+        "condition": "Walker Tape"
+      }
+    ],
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/292991631521",
+    "image": {
+      "created_at": "2023-11-16T02:47:48-05:00",
+      "alt": null,
+      "width": 800,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collections-walker-tape-header-mobile-800x1000.jpg?v=1700120869"
+    }
+  },
+  {
+    "id": 298194206881,
+    "handle": "black-friday-sale",
+    "title": "Black Friday Sale",
+    "updated_at": "2025-07-07T16:49:36-04:00",
+    "body_html": "",
+    "published_at": "2023-11-17T10:40:45-05:00",
+    "sort_order": "manual",
+    "template_suffix": "collection",
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/298194206881"
+  },
+  {
+    "id": 298796482721,
+    "handle": "mens-hair-systems",
+    "title": "Men's Hair Systems",
+    "updated_at": "2025-07-07T16:49:37-04:00",
+    "body_html": "<p>Explore our collection of men's hair systems at OneHead Hair Solutions, where craftsmanship meets innovation. Each hair system is thoughtfully designed to offer a seamless and natural look, catering to a variety of hair thinning patterns and personal styles. Our premium hairpieces are crafted with meticulous attention to detail, ensuring a blend of comfort, durability, and aesthetic appeal.</p>\n<p>Our diverse range includes various base designs and color options, allowing for a personalized solution that suits your unique needs. The systems feature high-quality materials that mimic the natural movement and appearance of real hair, providing a confidence-boosting experience. At OneHead Hair Solutions, we pride ourselves on delivering not just a product but a transformative solution that supports you on your journey to renewed self-assurance and well-being.</p>\n<p>Experience the combination of expertise, empathy, and reliability with our men's hair systems, designed to be a trustworthy companion in your hair replacement journey. Our commitment is to offer exceptional quality and a supportive, understanding approach, ensuring that each hair system becomes a source of comfort and confidence.</p>",
+    "published_at": "2023-12-14T09:38:21-05:00",
+    "sort_order": "manual",
+    "template_suffix": "premade-hair-systems",
+    "published_scope": "web",
+    "admin_graphql_api_id": "gid://shopify/Collection/298796482721",
+    "image": {
+      "created_at": "2024-11-21T16:18:37-05:00",
+      "alt": null,
+      "width": 2000,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/Men_s_Hair_Systems_Collection_Image.jpg?v=1737756285"
+    }
+  }
+]

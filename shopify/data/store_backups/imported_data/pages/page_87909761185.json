@@ -1,0 +1,13 @@
+{
+  "id": 87909761185,
+  "title": "My Wishlist",
+  "shop_id": 27691155508,
+  "handle": "wishlist",
+  "body_html": null,
+  "author": "Shopify API",
+  "created_at": "2022-01-29T18:43:09-05:00",
+  "updated_at": "2022-01-29T18:44:00-05:00",
+  "published_at": "2022-01-29T18:44:00-05:00",
+  "template_suffix": "socialshopwave",
+  "admin_graphql_api_id": "gid://shopify/OnlineStorePage/87909761185"
+}

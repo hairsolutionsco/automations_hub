@@ -1,0 +1,133 @@
+{
+  "id": 7805757685921,
+  "title": "Skin Safe White Glue - Extended Wear",
+  "body_html": "<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Sunshine Skin Safe Extended Wear Liquid Adhesive is a powerful white liquid adhesive that dries clear. Ideal for lace bases, it can also be used with skin and poly perimeters on lace or monofilament bases, and provides a hold time of three to five weeks.\u00a0</span></p>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Hold: Extended Wear (3-5 weeks)</li>\n<li data-mce-fragment=\"1\">No mess clean up\u00a0<br data-mce-fragment=\"1\">\n</li>\n<li data-mce-fragment=\"1\">Dries Clear</li>\n<li data-mce-fragment=\"1\">Water-Based</li>\n</ul>\n<h2 data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"><small data-mce-fragment=\"1\">Directions:\u00a0</small></span></h2>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Step 1:\u00a0Prepare the scalp with 99% alcohol.\u00a0<br data-mce-fragment=\"1\">Step 2:\u00a0Use the brush to apply a thin, even coat to scalp, and blow dry until tacky.\u00a0<br data-mce-fragment=\"1\">Step 3:\u00a0Repeat once more, then press hair system onto scalp, firmly holding for 10 seconds.\u00a0</span></p>",
+  "vendor": "Sunshine Tape",
+  "product_type": "Liquid Adhesives",
+  "created_at": "2023-11-13T09:09:53-05:00",
+  "handle": "sunshine-skin-safe-white-glue-extended-wear",
+  "updated_at": "2025-07-07T16:32:54-04:00",
+  "published_at": "2023-11-13T09:09:49-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "water-based, white glue",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805757685921",
+  "variants": [
+    {
+      "id": 43408611147937,
+      "product_id": 7805757685921,
+      "title": "0.5 oz",
+      "price": "6.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "0.5 oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:09:53-05:00",
+      "updated_at": "2024-03-02T05:51:38-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45509898862753,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408611147937",
+      "image_id": 37899764367521
+    },
+    {
+      "id": 43408611180705,
+      "product_id": 7805757685921,
+      "title": "4 oz",
+      "price": "39.99",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "4 oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:09:53-05:00",
+      "updated_at": "2024-03-02T05:51:38-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 272,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "ST-WEW-4",
+      "weight": 0.6,
+      "weight_unit": "lb",
+      "inventory_item_id": 45509898895521,
+      "inventory_quantity": 5,
+      "old_inventory_quantity": 5,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408611180705",
+      "image_id": 37899764334753
+    }
+  ],
+  "options": [
+    {
+      "id": 9945501761697,
+      "product_id": 7805757685921,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "0.5 oz",
+        "4 oz"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899764334753,
+      "alt": "Skin Safe White Glue - Extended Wear - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805757685921,
+      "created_at": "2023-11-13T09:09:53-05:00",
+      "updated_at": "2023-12-15T11:03:08-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899764334753",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SSWhiteGlue_ExtWear_4oz.jpg?v=1702656188",
+      "variant_ids": [
+        43408611180705
+      ]
+    },
+    {
+      "id": 37899764367521,
+      "alt": "Skin Safe White Glue - Extended Wear - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805757685921,
+      "created_at": "2023-11-13T09:09:53-05:00",
+      "updated_at": "2023-12-15T11:03:05-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899764367521",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SSWhiteGlue_ExtWear_05oz.jpg?v=1702656184",
+      "variant_ids": [
+        43408611147937
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899764334753,
+    "alt": "Skin Safe White Glue - Extended Wear - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805757685921,
+    "created_at": "2023-11-13T09:09:53-05:00",
+    "updated_at": "2023-12-15T11:03:08-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899764334753",
+    "width": 1250,
+    "height": 1250,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SSWhiteGlue_ExtWear_4oz.jpg?v=1702656188",
+    "variant_ids": [
+      43408611180705
+    ]
+  }
+}

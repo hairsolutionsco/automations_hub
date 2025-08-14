@@ -1,0 +1,150 @@
+{
+  "id": 7809717862561,
+  "title": "Fine Welded Monofilament",
+  "body_html": "\n    <p> </p>\n    <h2>Men's Monofilament Hair System</h2>\n    <p>Men's Monofilament Hair System: Durable and Natural Looking \n Our Men's Monofilament Hair System offers a perfect blend of durability and comfort, crafted from high-quality monofilament material. Unlike lace systems, this monofilament design provides enhanced resistance, ensuring a longer lifespan without sacrificing breathability. \n Featuring a freestyle hair attachment, this system allows for ultimate styling flexibility. Choose any look you desire with ease, from slick back to side part. Additionally, the front knots are carefully bleached, creating an indistinguishable and natural-looking hairline. \n Suited for both first-time buyers and those with an active lifestyle, this hair replacement system is a versatile choice. \n Base Material \n Premium Monofilament \n Dimensions \n Standard 10 x 8 inches (Length x Width) \n Hair Quality \n Top-tier A-Grade Indian Hair \n Density Level \n Medium to Light Density (90%-110%) \n Wave Style \n Classic Body Wave \n Longevity \n Estimated 4-6 Months\n\n\ud83d\udca1 Why Choose This Hair System?\n- Ultra-thin, natural-looking base for seamless blending\n- Lightweight and breathable for all-day comfort\n- Designed for durability with proper maintenance\n- Ideal for achieving a natural hairline with a secure fit\n\n\ud83d\uded2 Order now and enjoy a confidence-boosting, natural look!</p>\n    <h4>Key Features:</h4>\n    <ul>\n        <li>\n<strong>Base Material:</strong> High-quality polyurethane</li>\n        <li>\n<strong>Default Size:</strong> Standard dimensions available</li>\n        <li>\n<strong>Hair Quality:</strong> Premium Indian Remy hair</li>\n        <li>\n<strong>Density:</strong> Medium-light for a natural look</li>\n        <li>\n<strong>Wave/Curl Pattern:</strong> Standard body wave</li>\n        <li>\n<strong>Lifespan:</strong> 3-6 months with proper care</li>\n    </ul>\n    <p>Designed for comfort, durability, and a seamless natural appearance.</p>\n    ",
+  "vendor": "OneHead Hair Solutions",
+  "product_type": "Men's Hair Systems",
+  "created_at": "2023-11-17T10:53:09-05:00",
+  "handle": "fine-welded-monofilament-hair-system",
+  "updated_at": "2025-07-07T16:33:20-04:00",
+  "published_at": "2023-11-17T10:53:08-05:00",
+  "template_suffix": "premade-hair-systems",
+  "published_scope": "web",
+  "tags": "Lace Base, Mono Base, Monofilament Base, Ready-to-wear",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7809717862561",
+  "variants": [
+    {
+      "id": 43433047097505,
+      "product_id": 7809717862561,
+      "title": "Default Title",
+      "price": "299.00",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-17T10:53:09-05:00",
+      "updated_at": "2025-01-24T17:14:23-05:00",
+      "taxable": true,
+      "barcode": null,
+      "fulfillment_service": "manual",
+      "grams": 385,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": null,
+      "weight": 385.0,
+      "weight_unit": "g",
+      "inventory_item_id": 45534300602529,
+      "inventory_quantity": 1000,
+      "old_inventory_quantity": 1000,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43433047097505",
+      "image_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": 9949621125281,
+      "product_id": 7809717862561,
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37925654888609,
+      "alt": "Mono Select | Fine Welded Monofilament Hair System - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7809717862561,
+      "created_at": "2023-11-17T10:53:22-05:00",
+      "updated_at": "2025-02-12T10:31:25-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925654888609",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/monofilament-hair-system-image-1_5a7eb683-c407-4e81-b338-1c502249c8c9.jpg?v=1739374285",
+      "variant_ids": []
+    },
+    {
+      "id": 37925654921377,
+      "alt": "Mono Select | Fine Welded Monofilament Hair System - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7809717862561,
+      "created_at": "2023-11-17T10:53:22-05:00",
+      "updated_at": "2025-02-12T10:31:26-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925654921377",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/monofilament-hairline-image-1_f46c7e82-a4c7-4b62-8431-d771d6c61a9a.jpg?v=1739374286",
+      "variant_ids": []
+    },
+    {
+      "id": 37925654954145,
+      "alt": "Mono Select | Fine Welded Monofilament Hair System - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7809717862561,
+      "created_at": "2023-11-17T10:53:22-05:00",
+      "updated_at": "2025-02-12T10:31:26-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925654954145",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/mono-hair-system-for-men-hairpiece-view-3_2f6f6f7b-daf4-4963-8f44-628b3ac34f4a.jpg?v=1739374286",
+      "variant_ids": []
+    },
+    {
+      "id": 37925654986913,
+      "alt": "Mono Select | Fine Welded Monofilament Hair System - OneHead Hair Solutions",
+      "position": 4,
+      "product_id": 7809717862561,
+      "created_at": "2023-11-17T10:53:22-05:00",
+      "updated_at": "2025-02-12T10:31:26-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925654986913",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/mono-hair-system-for-men-hairpiece-view-2_85bd7957-2d7b-423b-a0d0-3983a2172551.jpg?v=1739374286",
+      "variant_ids": []
+    },
+    {
+      "id": 37925655019681,
+      "alt": "Mono Select | Fine Welded Monofilament Hair System - OneHead Hair Solutions",
+      "position": 5,
+      "product_id": 7809717862561,
+      "created_at": "2023-11-17T10:53:22-05:00",
+      "updated_at": "2025-02-12T10:31:26-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925655019681",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/mono-hair-system-for-men-hairpiece-view-4_56bdc178-81f2-4fbc-952e-e103cf3d5ebd.jpg?v=1739374286",
+      "variant_ids": []
+    },
+    {
+      "id": 37925655085217,
+      "alt": "Mono Select | Fine Welded Monofilament Hair System - OneHead Hair Solutions",
+      "position": 6,
+      "product_id": 7809717862561,
+      "created_at": "2023-11-17T10:53:23-05:00",
+      "updated_at": "2025-02-12T10:31:26-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925655085217",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/mono-hair-system-for-men-hairpiece-view-6_5ee3e4d3-a9c6-48aa-8956-5bb0588b245c.jpg?v=1739374286",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37925654888609,
+    "alt": "Mono Select | Fine Welded Monofilament Hair System - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7809717862561,
+    "created_at": "2023-11-17T10:53:22-05:00",
+    "updated_at": "2025-02-12T10:31:25-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37925654888609",
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/monofilament-hair-system-image-1_5a7eb683-c407-4e81-b338-1c502249c8c9.jpg?v=1739374285",
+    "variant_ids": []
+  }
+}

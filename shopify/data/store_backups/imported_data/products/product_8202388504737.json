@@ -1,0 +1,177 @@
+{
+  "id": 8202388504737,
+  "title": "C-22 Adhesive Remover Solvent Spray (Copy)",
+  "body_html": "<p><meta charset=\"utf-8\"><span data-mce-fragment=\"1\">Lux Hair' C-22 Hair Solvent has been developed to remove adhesive residues quickly and effectively from hair systems and the scalp. It is an effective solvent for all kind of adhesives and tapes.</span><br></p>\n<p>\u00a0</p>\n<h5 class=\"et_pb_toggle_title\">Advantages</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img class=\"wp-image-145 alignnone size-full\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" alt=\"\" width=\"44\" height=\"3\" data-mce-src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\"></p>\n<ul>\n<li>Fast-acting hair solvent for removing adhesive residues.</li>\n<li>Less aggressive than other solvents on the market.</li>\n<li>Contains moisturizing active ingredients.</li>\n<li>Specific formulation for cleaning hair prostheses, wigs, and extensions.</li>\n</ul>\n<p>\u00a0</p>\n<h5 class=\"et_pb_toggle_title\">Active Ingredients</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img class=\"wp-image-145 alignnone size-full\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" alt=\"\" width=\"44\" height=\"3\" data-mce-src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\"></p>\n<p>With lanolin, citrus oils, and other organic moisturizing agents.</p>\n<p>\u00a0<br></p>\n<h5 class=\"et_pb_toggle_title\">Recommendations for use</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img class=\"wp-image-145 alignnone size-full\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" alt=\"\" width=\"44\" height=\"3\" data-mce-src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\"></p>\n<ul>\n<li>Spray C22 and leave on for a maximum of 1 minute while massaging the scalp to remove persistent glue residues.</li>\n<li>After cleaning, wash the piece with shampoo and brush it.</li>\n<li>Finally, rinse with plenty of water.</li>\n</ul>\n<div class=\"et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_2  et_pb_toggle_close\">\n<h5 class=\"et_pb_toggle_title\"><br></h5>\n</div>\n<div class=\"et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_3 et_clickable et_pb_toggle_open\">\n<h5 class=\"et_pb_toggle_title\">Product safety data sheet</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img height=\"3\" width=\"44\" alt=\"\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" class=\"wp-image-145 alignnone size-full\"></p>\n<p><a href=\"https://luxhair.es/en/Product/luxhair-c22-solvent#:~:text=safety%20data%20sheet-,Link,-Related%20products\" target=\"_blank\" rel=\"noopener noreferrer\">Link</a></p>\n</div>\n</div>\n</div>\n</div>\n</div>\n<ul></ul>",
+  "vendor": "Lux Hair",
+  "product_type": "Removers",
+  "created_at": "2025-02-12T16:49:52-05:00",
+  "handle": "c-22-adhesive-remover-solvent-spray-copy",
+  "updated_at": "2025-07-07T16:33:22-04:00",
+  "published_at": "2025-02-12T16:49:51-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "adhesive remover, citrus solvent, removers",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/8202388504737",
+  "variants": [
+    {
+      "id": 44845623705761,
+      "product_id": 8202388504737,
+      "title": "100 ml",
+      "price": "16.00",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "100 ml",
+      "option2": null,
+      "option3": null,
+      "created_at": "2025-02-12T16:49:52-05:00",
+      "updated_at": "2025-02-12T16:49:53-05:00",
+      "taxable": true,
+      "barcode": "B087KRQ5L7",
+      "fulfillment_service": "manual",
+      "grams": 100,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "LHC22100",
+      "weight": 100.0,
+      "weight_unit": "g",
+      "inventory_item_id": 46959271379105,
+      "inventory_quantity": 999,
+      "old_inventory_quantity": 999,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/44845623705761",
+      "image_id": 37899829608609
+    },
+    {
+      "id": 44845623738529,
+      "product_id": 8202388504737,
+      "title": "250 ml",
+      "price": "23.71",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "250 ml",
+      "option2": null,
+      "option3": null,
+      "created_at": "2025-02-12T16:49:52-05:00",
+      "updated_at": "2025-02-12T16:49:52-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 100,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "LHC22250",
+      "weight": 100.0,
+      "weight_unit": "g",
+      "inventory_item_id": 46959271411873,
+      "inventory_quantity": 1000,
+      "old_inventory_quantity": 1000,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/44845623738529",
+      "image_id": 37899829641377
+    },
+    {
+      "id": 44845623771297,
+      "product_id": 8202388504737,
+      "title": "1L",
+      "price": "53.12",
+      "position": 3,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "1L",
+      "option2": null,
+      "option3": null,
+      "created_at": "2025-02-12T16:49:52-05:00",
+      "updated_at": "2025-02-12T16:49:52-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 100,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "LHC221000",
+      "weight": 100.0,
+      "weight_unit": "g",
+      "inventory_item_id": 46959271444641,
+      "inventory_quantity": 998,
+      "old_inventory_quantity": 998,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/44845623771297",
+      "image_id": 37899829674145
+    }
+  ],
+  "options": [
+    {
+      "id": 10416683810977,
+      "product_id": 8202388504737,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "100 ml",
+        "250 ml",
+        "1L"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899829608609,
+      "alt": "C-22 Solvent - hairreplacement.shop",
+      "position": 1,
+      "product_id": 8202388504737,
+      "created_at": "2023-11-13T09:31:54-05:00",
+      "updated_at": "2023-12-15T10:41:28-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899829608609",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/lux-hair-c-22-adhesive-remover-solvent-spray-100-ml_9a2067a3-dd0d-415a-9e02-e25ce97063ff.jpg?v=1702654888",
+      "variant_ids": [
+        44845623705761
+      ]
+    },
+    {
+      "id": 37899829641377,
+      "alt": "C-22 Solvent - hairreplacement.shop",
+      "position": 2,
+      "product_id": 8202388504737,
+      "created_at": "2023-11-13T09:31:54-05:00",
+      "updated_at": "2023-12-15T10:42:16-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899829641377",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/LUXHAIR-AMAZON-C22250-1.jpg?v=1702654936",
+      "variant_ids": [
+        44845623738529
+      ]
+    },
+    {
+      "id": 37899829674145,
+      "alt": "C-22 Solvent - hairreplacement.shop",
+      "position": 3,
+      "product_id": 8202388504737,
+      "created_at": "2023-11-13T09:31:54-05:00",
+      "updated_at": "2023-12-15T10:42:13-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899829674145",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/LUXHAIR-AMAZON-C221L-1.jpg?v=1702654933",
+      "variant_ids": [
+        44845623771297
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899829608609,
+    "alt": "C-22 Solvent - hairreplacement.shop",
+    "position": 1,
+    "product_id": 8202388504737,
+    "created_at": "2023-11-13T09:31:54-05:00",
+    "updated_at": "2023-12-15T10:41:28-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899829608609",
+    "width": 1500,
+    "height": 1500,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/lux-hair-c-22-adhesive-remover-solvent-spray-100-ml_9a2067a3-dd0d-415a-9e02-e25ce97063ff.jpg?v=1702654888",
+    "variant_ids": [
+      44845623705761
+    ]
+  }
+}

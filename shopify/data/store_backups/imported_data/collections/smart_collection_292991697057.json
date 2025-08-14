@@ -1,0 +1,27 @@
+{
+  "id": 292991697057,
+  "handle": "lux-hair-hair-systems-products",
+  "title": "Lux Hair",
+  "updated_at": "2025-07-07T16:49:36-04:00",
+  "body_html": "",
+  "published_at": "2022-11-11T05:23:04-05:00",
+  "sort_order": "manual",
+  "template_suffix": "",
+  "disjunctive": false,
+  "rules": [
+    {
+      "column": "vendor",
+      "relation": "equals",
+      "condition": "Lux Hair"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/292991697057",
+  "image": {
+    "created_at": "2023-11-16T01:57:36-05:00",
+    "alt": null,
+    "width": 800,
+    "height": 1000,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collections-lux-hair-header-mobile-800x1000.jpg?v=1702654052"
+  }
+}

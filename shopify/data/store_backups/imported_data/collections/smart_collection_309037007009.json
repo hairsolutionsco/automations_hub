@@ -1,0 +1,32 @@
+{
+  "id": 309037007009,
+  "handle": "front-partial-hair-systems",
+  "title": "Front Partial Hair Systems",
+  "updated_at": "2025-07-07T16:49:37-04:00",
+  "body_html": "",
+  "published_at": "2025-02-02T16:01:31-05:00",
+  "sort_order": "best-selling",
+  "template_suffix": "premade-hair-systems",
+  "disjunctive": true,
+  "rules": [
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "frontal"
+    },
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "front partial"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/309037007009",
+  "image": {
+    "created_at": "2025-02-02T16:01:30-05:00",
+    "alt": null,
+    "width": 600,
+    "height": 857,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/frontal_hair_system.jpg?v=1738530090"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": 7805759062177,
+  "title": "Blue Hole Punch Tape Strips",
+  "body_html": "<p data-mce-fragment=\"1\">Ideal for delicate hair systems. The Blue Hole Punch Tape Strips offer an exceptionally strong, secure, long-lasting hold of up to 4 weeks.\u00a0</p>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Hold: Maximum Wear (2-4 weeks)</li>\n<li data-mce-fragment=\"1\">Comparable: Walker's Extenda-Bond\u00ae</li>\n<li data-mce-fragment=\"1\">1.5\u201d x 3/4\u201d Mini\u2019s come in a pack of 36\u00a0</li>\n<li data-mce-fragment=\"1\">1.5\u201d x 12\u201d Strips come in a box of 100</li>\n</ul>\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">Directions:\u00a0</strong></p>\n<p data-mce-fragment=\"1\">Step 1: Peel the scored line on strips and contours<br data-mce-fragment=\"1\">Step 2: Place tape onto the system where you want it, carefully avoiding touching the adhesive.\u00a0<br data-mce-fragment=\"1\">Step 3: Remove the remaining liner, and apply it to your client's scalp.</p>",
+  "vendor": "Sunshine Tape",
+  "product_type": "Tapes",
+  "created_at": "2023-11-13T09:12:54-05:00",
+  "handle": "blue-hole-punch-strips",
+  "updated_at": "2025-07-07T16:32:58-04:00",
+  "published_at": "2023-11-13T09:12:46-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "tape contour strips",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805759062177",
+  "variants": [
+    {
+      "id": 43408634085537,
+      "product_id": 7805759062177,
+      "title": "1/2\" width / 3/4\" length / 36 pcs",
+      "price": "5.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "1/2\" width",
+      "option2": "3/4\" length",
+      "option3": "36 pcs",
+      "created_at": "2023-11-13T09:12:54-05:00",
+      "updated_at": "2024-03-02T05:51:41-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 14,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "ST-BHP-M",
+      "weight": 0.03,
+      "weight_unit": "lb",
+      "inventory_item_id": 45509921800353,
+      "inventory_quantity": 5,
+      "old_inventory_quantity": 5,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408634085537",
+      "image_id": 37899770101921
+    }
+  ],
+  "options": [
+    {
+      "id": 9945503301793,
+      "product_id": 7805759062177,
+      "name": "Width",
+      "position": 1,
+      "values": [
+        "1/2\" width"
+      ]
+    },
+    {
+      "id": 9945503334561,
+      "product_id": 7805759062177,
+      "name": "Length",
+      "position": 2,
+      "values": [
+        "3/4\" length"
+      ]
+    },
+    {
+      "id": 9945503367329,
+      "product_id": 7805759062177,
+      "name": "Size",
+      "position": 3,
+      "values": [
+        "36 pcs"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899770101921,
+      "alt": "Blue Hole Punch Tape Strips - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805759062177,
+      "created_at": "2023-11-13T09:12:54-05:00",
+      "updated_at": "2023-12-15T10:59:30-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899770101921",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_BHP_Mini_01_2000x_2aa2ad00-9a92-4867-a554-ac89c87256c9.webp?v=1702655970",
+      "variant_ids": [
+        43408634085537
+      ]
+    },
+    {
+      "id": 37899770134689,
+      "alt": "Blue Hole Punch Tape Strips - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805759062177,
+      "created_at": "2023-11-13T09:12:54-05:00",
+      "updated_at": "2023-12-15T10:59:24-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899770134689",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_BHP_02_2000x_1.webp?v=1702655964",
+      "variant_ids": []
+    },
+    {
+      "id": 37899770200225,
+      "alt": "Blue Hole Punch Tape Strips - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7805759062177,
+      "created_at": "2023-11-13T09:12:54-05:00",
+      "updated_at": "2023-12-15T10:59:18-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899770200225",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_BHP_01_2000x_bf62e7cd-1fa3-4436-8441-5b5875b51fb2.webp?v=1702655958",
+      "variant_ids": []
+    },
+    {
+      "id": 37899770232993,
+      "alt": "Blue Hole Punch Tape Strips - OneHead Hair Solutions",
+      "position": 4,
+      "product_id": 7805759062177,
+      "created_at": "2023-11-13T09:12:54-05:00",
+      "updated_at": "2023-12-15T10:59:21-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899770232993",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_BHP_01_CU_2000x_8e9e128e-d21f-48ae-9551-8cc5bbfa0e90.webp?v=1702655961",
+      "variant_ids": []
+    },
+    {
+      "id": 37899770265761,
+      "alt": "Blue Hole Punch Tape Strips - OneHead Hair Solutions",
+      "position": 5,
+      "product_id": 7805759062177,
+      "created_at": "2023-11-13T09:12:54-05:00",
+      "updated_at": "2023-12-15T10:59:28-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899770265761",
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_BHP_02_CU_2000x_a68e2ae4-4ca0-4f2d-b365-9183b5a30d7a.webp?v=1702655968",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37899770101921,
+    "alt": "Blue Hole Punch Tape Strips - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805759062177,
+    "created_at": "2023-11-13T09:12:54-05:00",
+    "updated_at": "2023-12-15T10:59:30-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899770101921",
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_BHP_Mini_01_2000x_2aa2ad00-9a92-4867-a554-ac89c87256c9.webp?v=1702655970",
+    "variant_ids": [
+      43408634085537
+    ]
+  }
+}

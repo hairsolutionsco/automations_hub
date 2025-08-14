@@ -1,0 +1,115 @@
+{
+  "id": 8202734993569,
+  "title": "Remove-All Scalp Exfoliating Gel for Hair Piece Users 8oz",
+  "body_html": "<div><div id=\"productDescription\" class=\"a-section a-spacing-small\">\n <p><span>Rejuvenate your skin between adhesive applications with Pro Hair Labs Remove-All Scalp Exfoliating Gel. Itl is a highly effective exfoliating gel formulated with a unique compound of scrubbing beads and essential elements designed to remove dead, dry skin and surface oils on the scalp and promote strong, healthy skin. The Remove-All Exfoliating Gel does not contain any harsh chemicals, allergens such as nut shells or toxins so you can feel confident that this product is 100% safe and gentle on your delicate skin. This mildly exfoliating gel also helps control skin oils for a better adhesive bond.</span></p>\n</div></div><div><div id=\"feature-bullets\" class=\"a-section a-spacing-medium a-spacing-top-small\">\n <ul class=\"a-unordered-list a-vertical a-spacing-mini\">\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> REMOVES DEAD SKIN - Remove-All Scalp Exfoliating Gel from Pro Hair Labs is specially formulated to gently remove layers of dead skin from your scalp between adhesive applications. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> HYPO-ALLORGENIC - Contains no harsh chemicals or toxins, this scalp exfoliators for hair piece users is gentle on your skin. It gentle exfoliating beads contain no crushed nut shells leaving your skin soft, smooth and healthy. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> MINIMAL SKIN ABRASION - Our scrubbing beads are created at a ratio to ensure that the abrasions created on the scalp are very minimal ensuring both safety and impressive results and leaving a healthy scalp. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> PROMOTES HEALTHY SCALP - Professional Hair Labs Remove-All is an scalp exfoliator designed to remove dead skin layers and promote a healthy and balanced scalp. It removes oil and dead skin cells from scalp promoting a healthy scalp and a better bonding surface. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> EASY APPLICATION - Apply a small amount of Remove-All directly to the scalp and message gently. Then, rinse thoroughly with warm water. Use before each adhesive application to prepare the skin for a strong bond. </span></li>\n </ul>\n <div data-csa-c-content-id=\"voyager-product-details-jumplink\" data-csa-c-slot-id=\"voyager-product-details-jumplink\" data-csa-c-type=\"link\" class=\"a-section aok-hidden\">\n<span class=\"caretnext\">\u203a</span> <a id=\"seeMoreDetailsLink\" class=\"a-link-normal\" href=\"#productDetails\"> See more product details </a>\n </div>\n</div></div><div><div class=\"a-section a-spacing-small a-spacing-top-small\">\n <table class=\"a-normal a-spacing-micro\">\n  <tbody>\n   <tr class=\"a-spacing-small po-item_form\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Item Form</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Gel</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-brand\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Brand</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Professional Hair Labs</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-product_benefit\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Product Benefits</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Removes dead skin, promotes healthy scalp, controls skin oils, and offers easy application</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-skin_type\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Skin Type</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Dry</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-target_use_body_part\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Use for</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Whole Body</span></td>\n   </tr>\n  </tbody>\n </table>\n</div></div>",
+  "vendor": "OneHead Hair Solutions",
+  "product_type": "",
+  "created_at": "2025-02-13T06:04:59-05:00",
+  "handle": "remove-all-scalp-exfoliating-gel-for-hair-piece-users-8oz",
+  "updated_at": "2025-07-04T20:52:07-04:00",
+  "published_at": null,
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/8202734993569",
+  "variants": [
+    {
+      "id": 44846216380577,
+      "product_id": 8202734993569,
+      "title": "Default Title",
+      "price": "29.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": "29.99",
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "created_at": "2025-02-13T06:04:59-05:00",
+      "updated_at": "2025-02-13T06:05:01-05:00",
+      "taxable": true,
+      "barcode": "B01LXWO9GR",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": null,
+      "requires_shipping": true,
+      "sku": "B01LXWO9GR",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 46959823323297,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/44846216380577",
+      "image_id": 41040761520289
+    }
+  ],
+  "options": [
+    {
+      "id": 10417053106337,
+      "product_id": 8202734993569,
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 41040761520289,
+      "alt": null,
+      "position": 1,
+      "product_id": 8202734993569,
+      "created_at": "2025-02-13T06:04:59-05:00",
+      "updated_at": "2025-02-13T06:05:01-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040761520289",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/713_KdSciJL._SL1500.jpg?v=1739444701",
+      "variant_ids": [
+        44846216380577
+      ]
+    },
+    {
+      "id": 41040761618593,
+      "alt": null,
+      "position": 2,
+      "product_id": 8202734993569,
+      "created_at": "2025-02-13T06:04:59-05:00",
+      "updated_at": "2025-02-13T06:05:02-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040761618593",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/71kKFTVwK2L._SL1500.jpg?v=1739444701",
+      "variant_ids": []
+    },
+    {
+      "id": 41040761585825,
+      "alt": null,
+      "position": 3,
+      "product_id": 8202734993569,
+      "created_at": "2025-02-13T06:04:59-05:00",
+      "updated_at": "2025-02-13T06:05:02-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040761585825",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/71QxT_Vi_WL._SL1500.jpg?v=1739444701",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 41040761520289,
+    "alt": null,
+    "position": 1,
+    "product_id": 8202734993569,
+    "created_at": "2025-02-13T06:04:59-05:00",
+    "updated_at": "2025-02-13T06:05:01-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/41040761520289",
+    "width": 1500,
+    "height": 1500,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/713_KdSciJL._SL1500.jpg?v=1739444701",
+    "variant_ids": [
+      44846216380577
+    ]
+  }
+}

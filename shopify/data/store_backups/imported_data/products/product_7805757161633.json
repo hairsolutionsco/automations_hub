@@ -1,0 +1,89 @@
+{
+  "id": 7805757161633,
+  "title": "Skin Prep Protector Spray",
+  "body_html": "<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Sunshine Skin Prep coats the scalp with a protective, waterproof barrier to help prevent irritation from tapes and liquid adhesives.</span></p>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Comparable to Walker's Scalp Protector\u00ae\u00a0</span></p>",
+  "vendor": "Sunshine Tape",
+  "product_type": "Skin Care",
+  "created_at": "2023-11-13T09:09:03-05:00",
+  "handle": "skin-prep",
+  "updated_at": "2025-07-07T16:32:52-04:00",
+  "published_at": "2023-11-13T09:09:01-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "scalp protector",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805757161633",
+  "variants": [
+    {
+      "id": 43408604037281,
+      "product_id": 7805757161633,
+      "title": "2 oz",
+      "price": "5.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "2 oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:09:03-05:00",
+      "updated_at": "2024-03-02T05:51:38-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 64,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "ST-SP-2",
+      "weight": 0.14,
+      "weight_unit": "lb",
+      "inventory_item_id": 45509891752097,
+      "inventory_quantity": 4,
+      "old_inventory_quantity": 4,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408604037281",
+      "image_id": 37899762696353
+    }
+  ],
+  "options": [
+    {
+      "id": 9945501335713,
+      "product_id": 7805757161633,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "2 oz"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899762696353,
+      "alt": "Skin Prep Protector Spray - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805757161633,
+      "created_at": "2023-11-13T09:09:03-05:00",
+      "updated_at": "2023-12-15T11:02:41-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899762696353",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SkinPrep_2oz.jpg?v=1702656161",
+      "variant_ids": [
+        43408604037281
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899762696353,
+    "alt": "Skin Prep Protector Spray - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805757161633,
+    "created_at": "2023-11-13T09:09:03-05:00",
+    "updated_at": "2023-12-15T11:02:41-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899762696353",
+    "width": 1250,
+    "height": 1250,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SkinPrep_2oz.jpg?v=1702656161",
+    "variant_ids": [
+      43408604037281
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": 7805765222561,
+  "title": "Dermal Mud Scalp Mask",
+  "body_html": "<meta charset=\"utf-8\">\n<h1 data-mce-fragment=\"1\">\n<meta charset=\"utf-8\">\n<span>Professional Hair Lab's Scalp Treatment Dermal Mud Mask 8oz</span>\n</h1>\n<h2 data-mce-fragment=\"1\">\n<meta charset=\"utf-8\">\n<span>Scalp Treatment Dermal Mud Mask 8oz</span>\n</h2>\n<p data-mce-fragment=\"1\">Sometimes your scalp needs a bit more love and attention, and when you are having regular cosmetic bonding procedures performed, it is even more important to take care of the skin underneath. That\u2019s why\u00a0<a href=\"http://www.prohairlabs.com/\" data-mce-fragment=\"1\" data-mce-href=\"http://www.prohairlabs.com/\">Pro Hair Labs have developed Dermal Mud</a>\u00a0\u2013 a non-invasive scalp mask to gently draw out toxins and oils from the scalp, leaving skin soft, healthy and rejuvenated.</p>\n<p data-mce-fragment=\"1\">Our Dermal Mud mask is a quick drying, effective remedy for dry, oily or otherwise poor condition skin, making it ideal as a treatment for any head in preparation for the cosmetic bonding process. As with all our products, we\u2019ve put safety first, so you can be confident that the treatment will be comfortable, safe and a pleasant experience all round.</p>",
+  "vendor": "Professional Hair Labs",
+  "product_type": "Skin Care",
+  "created_at": "2023-11-13T09:23:35-05:00",
+  "handle": "professional-hair-labs-dermal-mud-scalp-mask-8oz",
+  "updated_at": "2025-07-07T16:33:08-04:00",
+  "published_at": "2023-11-13T09:23:31-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "mask, oily skin, scalp treatment",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805765222561",
+  "variants": [
+    {
+      "id": 43408721510561,
+      "product_id": 7805765222561,
+      "title": "8 oz",
+      "price": "24.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "8 oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:23:35-05:00",
+      "updated_at": "2024-09-24T10:23:36-04:00",
+      "taxable": false,
+      "barcode": "PHDM08",
+      "fulfillment_service": "manual",
+      "grams": 241,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "PHDM08",
+      "weight": 0.531,
+      "weight_unit": "lb",
+      "inventory_item_id": 45510009225377,
+      "inventory_quantity": 15,
+      "old_inventory_quantity": 15,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408721510561",
+      "image_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": 9945509462177,
+      "product_id": 7805765222561,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "8 oz"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899801591969,
+      "alt": "Dermal Mud Scalp Mask - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805765222561,
+      "created_at": "2023-11-13T09:23:35-05:00",
+      "updated_at": "2023-12-15T10:47:21-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899801591969",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-1-professional-hair-labs-dermal-mud-8oz-600x600.jpg?v=1702655241",
+      "variant_ids": []
+    },
+    {
+      "id": 37899801624737,
+      "alt": "Dermal Mud Scalp Mask - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805765222561,
+      "created_at": "2023-11-13T09:23:35-05:00",
+      "updated_at": "2023-12-15T10:47:37-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899801624737",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-2-professional-hair-labs-dermal-mud-8oz-600x600.jpg?v=1702655257",
+      "variant_ids": []
+    },
+    {
+      "id": 37899801657505,
+      "alt": "Dermal Mud Scalp Mask - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7805765222561,
+      "created_at": "2023-11-13T09:23:35-05:00",
+      "updated_at": "2023-12-15T10:48:01-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899801657505",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-3-professional-hair-labs-dermal-mud-8oz-600x600.jpg?v=1702655281",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37899801591969,
+    "alt": "Dermal Mud Scalp Mask - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805765222561,
+    "created_at": "2023-11-13T09:23:35-05:00",
+    "updated_at": "2023-12-15T10:47:21-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899801591969",
+    "width": 600,
+    "height": 600,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-1-professional-hair-labs-dermal-mud-8oz-600x600.jpg?v=1702655241",
+    "variant_ids": []
+  }
+}

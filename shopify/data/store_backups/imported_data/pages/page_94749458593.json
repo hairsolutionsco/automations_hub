@@ -1,0 +1,13 @@
+{
+  "id": 94749458593,
+  "title": "Portfolio",
+  "shop_id": 27691155508,
+  "handle": "portfolio",
+  "body_html": "",
+  "author": null,
+  "created_at": "2023-11-29T17:44:20-05:00",
+  "updated_at": "2023-11-29T17:44:20-05:00",
+  "published_at": "2023-11-29T17:44:20-05:00",
+  "template_suffix": "portfolio",
+  "admin_graphql_api_id": "gid://shopify/OnlineStorePage/94749458593"
+}

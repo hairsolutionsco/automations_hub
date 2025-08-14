@@ -1,0 +1,137 @@
+{
+  "id": 7809717436577,
+  "title": "Hybrid Lace with Skin Perimeters and Lace Front (V-Shaped Front)",
+  "body_html": "\n    <p> </p>\n    <h2>Lace and Skin Hair System with V-Shaped Front Hairline</h2>\n    <p>Lace and Skin Hair System with V-Shaped Front Hairline: The Ultimate in Natural Look and Comfort \n Unlock the perfect blend of comfort and authenticity with our French Lace and Skin Hair System, featuring a distinctive V-shaped front hairline. This innovative design integrates French lace in the central region and skin polyurethane at the edges and the frontal hairline. The V-shaped front captures the subtle nuances of a slightly receded hairline, offering a realistic look that resonates with many users. \n One of the standout features of this hairpiece is its seamless front line, achieved through meticulously knotted lace. The hybrid design combines the breathability of lace and the robust, long-lasting bond of polyurethane. This unique composition offers an array of bonding options, from liquid adhesives to tapes, giving you the freedom to choose the method that best fits your lifestyle. \n While this model showcases the benefits of a dual-base system, it's essential to note that it complements our range of all-lace and all-skin hair systems. Each design in our collection serves different needs and lifestyles, empowering you to find your ideal match. \n Key Features: \n \n \n Base Material:  Expertly crafted from French lace at the top and front, reinforced by 0.06 mm polyurethane all around. Features a natural-looking V-shaped hairline. \n \n Default Size:  Available in multiple base sizes for a tailored fit. \n \n Hair Grade:  Comprised of luxurious A-Grade Indian Hair. \n \n Density:  A medium-light density of 90-110% offers a natural yet full look. \n \n Wave/Curl:  Designed with a standard body wave, perfect for versatile styling. \n \n Lifespan:  Durably constructed for a lifespan of 4 to 6 months with proper care. \n \n Choose our Lace and Skin Hair System with a V-Shaped Front Hairline for an undetectable, comfortable, and personalized hair replacement experience.\n\n\ud83d\udca1 Why Choose This Hair System?\n- Ultra-thin, natural-looking base for seamless blending\n- Lightweight and breathable for all-day comfort\n- Designed for durability with proper maintenance\n- Ideal for achieving a natural hairline with a secure fit\n\n\ud83d\uded2 Order now and enjoy a confidence-boosting, natural look!</p>\n    <h4>Key Features:</h4>\n    <ul>\n        <li>\n<strong>Base Material:</strong> High-quality polyurethane</li>\n        <li>\n<strong>Default Size:</strong> Standard dimensions available</li>\n        <li>\n<strong>Hair Quality:</strong> Premium Indian Remy hair</li>\n        <li>\n<strong>Density:</strong> Medium-light for a natural look</li>\n        <li>\n<strong>Wave/Curl Pattern:</strong> Standard body wave</li>\n        <li>\n<strong>Lifespan:</strong> 3-6 months with proper care</li>\n    </ul>\n    <p>Designed for comfort, durability, and a seamless natural appearance.</p>\n    ",
+  "vendor": "OneHead Hair Solutions",
+  "product_type": "Men's Hair Systems",
+  "created_at": "2023-11-17T10:50:37-05:00",
+  "handle": "hybrid-french-lace-hair-system-with-skin-perimeters-and-lace-front-v-shaped-front-hairline",
+  "updated_at": "2025-07-07T16:33:20-04:00",
+  "published_at": "2023-11-17T10:50:36-05:00",
+  "template_suffix": "premade-hair-systems",
+  "published_scope": "web",
+  "tags": "French Lace, Lace Base, Ready-to-wear, Skin Base, Super Thin Skin, Ultra Thin Skin",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7809717436577",
+  "variants": [
+    {
+      "id": 43433041100961,
+      "product_id": 7809717436577,
+      "title": "Default Title",
+      "price": "299.00",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-17T10:50:38-05:00",
+      "updated_at": "2025-01-24T17:14:24-05:00",
+      "taxable": true,
+      "barcode": null,
+      "fulfillment_service": "manual",
+      "grams": 385,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": null,
+      "weight": 385.0,
+      "weight_unit": "g",
+      "inventory_item_id": 45534294540449,
+      "inventory_quantity": 1000,
+      "old_inventory_quantity": 1000,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43433041100961",
+      "image_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": 9949620502689,
+      "product_id": 7809717436577,
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37925635326113,
+      "alt": "Hybrid Edge Lace (V-Front) | Hybrid French Lace Hair System with Skin Perimeters and Lace Front | V-Shaped Front Hairline - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7809717436577,
+      "created_at": "2023-11-17T10:50:51-05:00",
+      "updated_at": "2025-02-12T10:31:23-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925635326113",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/hybrid-mono-top-skin-perimeter-lace-front-image-1_20922311-0bfb-4099-b89b-59a5ea39bdc9.jpg?v=1739374283",
+      "variant_ids": []
+    },
+    {
+      "id": 37925635489953,
+      "alt": "Hybrid Edge Lace (V-Front) | Hybrid French Lace Hair System with Skin Perimeters and Lace Front | V-Shaped Front Hairline - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7809717436577,
+      "created_at": "2023-11-17T10:50:52-05:00",
+      "updated_at": "2025-02-12T10:31:23-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925635489953",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/lace-hairline-image-1_b883927c-0d0c-4e0a-a376-991ab313dfb8.jpg?v=1739374283",
+      "variant_ids": []
+    },
+    {
+      "id": 37925635555489,
+      "alt": "Hybrid Edge Lace (V-Front) | Hybrid French Lace Hair System with Skin Perimeters and Lace Front | V-Shaped Front Hairline - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7809717436577,
+      "created_at": "2023-11-17T10:50:52-05:00",
+      "updated_at": "2025-02-12T10:31:23-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925635555489",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/hybrid-lace-poly-a-front-shape-hair-systems-toupee-view-3_e2d07516-be03-4500-8329-e8c230fde2dd.jpg?v=1739374283",
+      "variant_ids": []
+    },
+    {
+      "id": 37925635588257,
+      "alt": "Hybrid Edge Lace (V-Front) | Hybrid French Lace Hair System with Skin Perimeters and Lace Front | V-Shaped Front Hairline - OneHead Hair Solutions",
+      "position": 4,
+      "product_id": 7809717436577,
+      "created_at": "2023-11-17T10:50:52-05:00",
+      "updated_at": "2025-02-12T10:31:23-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925635588257",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/hybrid-lace-poly-a-front-shape-hair-systems-toupee-view-2_23318918-658a-4da7-b836-ab977c811d91.jpg?v=1739374283",
+      "variant_ids": []
+    },
+    {
+      "id": 37925635621025,
+      "alt": "Hybrid Edge Lace (V-Front) | Hybrid French Lace Hair System with Skin Perimeters and Lace Front | V-Shaped Front Hairline - OneHead Hair Solutions",
+      "position": 5,
+      "product_id": 7809717436577,
+      "created_at": "2023-11-17T10:50:52-05:00",
+      "updated_at": "2025-02-12T10:31:23-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925635621025",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/hybrid-lace-poly-a-front-shape-hair-systems-toupee-view-5_aa3578ce-12f7-4134-b9d0-56ca92a9ca6d.jpg?v=1739374283",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37925635326113,
+    "alt": "Hybrid Edge Lace (V-Front) | Hybrid French Lace Hair System with Skin Perimeters and Lace Front | V-Shaped Front Hairline - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7809717436577,
+    "created_at": "2023-11-17T10:50:51-05:00",
+    "updated_at": "2025-02-12T10:31:23-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37925635326113",
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/hybrid-mono-top-skin-perimeter-lace-front-image-1_20922311-0bfb-4099-b89b-59a5ea39bdc9.jpg?v=1739374283",
+    "variant_ids": []
+  }
+}

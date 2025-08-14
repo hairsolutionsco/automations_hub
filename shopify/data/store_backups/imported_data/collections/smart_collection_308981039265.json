@@ -1,0 +1,32 @@
+{
+  "id": 308981039265,
+  "handle": "lace-hair-systems",
+  "title": "Lace Hair Systems",
+  "updated_at": "2025-07-07T16:49:37-04:00",
+  "body_html": "<p><meta charset=\"utf-8\">Discover the ultimate in lightweight comfort with our <strong>lace hair systems</strong>. Designed for breathability and a natural appearance, these systems are perfect for active lifestyles and warmer climates. Each lace hair system is meticulously crafted with premium-grade human hair to ensure a seamless blend with your natural look. Whether you\u2019re seeking all-day comfort or a discreet solution, our lace systems provide the perfect balance of style and functionality. Explore our collection and experience the confidence of a flawless finish tailored to your needs.</p>",
+  "published_at": "2025-01-24T16:47:44-05:00",
+  "sort_order": "best-selling",
+  "template_suffix": "premade-hair-systems",
+  "disjunctive": true,
+  "rules": [
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "lace"
+    },
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "lace front"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/308981039265",
+  "image": {
+    "created_at": "2025-01-24T17:02:22-05:00",
+    "alt": null,
+    "width": 2000,
+    "height": 600,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/Lace_Hair_Systems_-_Collection_Banner.png?v=1737756142"
+  }
+}

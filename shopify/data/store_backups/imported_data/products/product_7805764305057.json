@@ -1,0 +1,144 @@
+{
+  "id": 7805764305057,
+  "title": "Application Brushes - Dozen",
+  "body_html": "<p></p>",
+  "vendor": "Walker Tape",
+  "product_type": "Tools",
+  "created_at": "2023-11-13T09:22:35-05:00",
+  "handle": "application-brushes-12-pcs-pack-the-hair-solutions-store",
+  "updated_at": "2025-07-31T15:29:57-04:00",
+  "published_at": "2023-11-13T09:22:30-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "brushes",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805764305057",
+  "variants": [
+    {
+      "id": 43408717250721,
+      "product_id": 7805764305057,
+      "title": "Large 6\"",
+      "price": "7.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "Large 6\"",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:22:36-05:00",
+      "updated_at": "2024-10-02T12:05:01-04:00",
+      "taxable": false,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 83,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "WB1212",
+      "weight": 0.183,
+      "weight_unit": "lb",
+      "inventory_item_id": 45510004965537,
+      "inventory_quantity": 15,
+      "old_inventory_quantity": 15,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408717250721",
+      "image_id": 37899799101601
+    },
+    {
+      "id": 43408717283489,
+      "product_id": 7805764305057,
+      "title": "Small 3\"",
+      "price": "5.99",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "Small 3\"",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:22:36-05:00",
+      "updated_at": "2024-09-24T10:23:17-04:00",
+      "taxable": false,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 227,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "WB1213",
+      "weight": 0.5,
+      "weight_unit": "lb",
+      "inventory_item_id": 45510004998305,
+      "inventory_quantity": 10,
+      "old_inventory_quantity": 10,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408717283489",
+      "image_id": 37899799134369
+    }
+  ],
+  "options": [
+    {
+      "id": 9945508249761,
+      "product_id": 7805764305057,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "Large 6\"",
+        "Small 3\""
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899799068833,
+      "alt": "Application Brushes - Dozen - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805764305057,
+      "created_at": "2023-11-13T09:22:36-05:00",
+      "updated_at": "2023-11-13T16:22:37-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899799068833",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/WK-BRSH-LG-012P_00_eae37515-7c67-4190-9126-4f995bc1e8c1.png?v=1702654351",
+      "variant_ids": []
+    },
+    {
+      "id": 37899799101601,
+      "alt": "Application Brushes - Dozen - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805764305057,
+      "created_at": "2023-11-13T09:22:36-05:00",
+      "updated_at": "2023-11-13T16:22:37-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899799101601",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/WK-BRSH-LG-012P_00.png?v=1702654354",
+      "variant_ids": [
+        43408717250721
+      ]
+    },
+    {
+      "id": 37899799134369,
+      "alt": "Application Brushes - Dozen - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7805764305057,
+      "created_at": "2023-11-13T09:22:36-05:00",
+      "updated_at": "2023-11-13T16:22:37-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899799134369",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/WK-BRSH-SM-012P_00.png?v=1702654358",
+      "variant_ids": [
+        43408717283489
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899799068833,
+    "alt": "Application Brushes - Dozen - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805764305057,
+    "created_at": "2023-11-13T09:22:36-05:00",
+    "updated_at": "2023-11-13T16:22:37-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899799068833",
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/WK-BRSH-LG-012P_00_eae37515-7c67-4190-9126-4f995bc1e8c1.png?v=1702654351",
+    "variant_ids": []
+  }
+}

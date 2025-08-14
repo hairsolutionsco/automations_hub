@@ -1,0 +1,230 @@
+{
+  "id": 7805758013601,
+  "title": "Super Lace Tape Contours Strips",
+  "body_html": "<span data-mce-fragment=\"1\">Made to be an extra strong and easy to remove option for lace systems, Super Lace offers the perfect solution for difficult to work with lace wigs. The exceptionally high tack makes this medical grade and hypo-allergenic tape a life saver for customers looking for the perfect fit. This tape will usually last about two weeks and as many as four weeks. It is also used as touch up tape on other lace systems.</span>",
+  "vendor": "Sunshine Tape",
+  "product_type": "Tapes",
+  "created_at": "2023-11-13T09:10:26-05:00",
+  "handle": "super-lace-contours",
+  "updated_at": "2025-07-07T16:32:56-04:00",
+  "published_at": "2023-11-13T09:10:19-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "tape contour strips",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805758013601",
+  "variants": [
+    {
+      "id": 43408614981793,
+      "product_id": 7805758013601,
+      "title": "CC Contour Shape / 3/4\" width",
+      "price": "5.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "CC Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:10:26-05:00",
+      "updated_at": "2024-03-02T05:51:39-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 41,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "ST-SL-AA",
+      "weight": 0.09,
+      "weight_unit": "lb",
+      "inventory_item_id": 45509902696609,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408614981793",
+      "image_id": 37899765416097
+    },
+    {
+      "id": 43408615014561,
+      "product_id": 7805758013601,
+      "title": "C Contour Shape / 3/4\" width",
+      "price": "5.99",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "C Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:10:26-05:00",
+      "updated_at": "2024-03-02T05:51:39-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 41,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "ST-SL-AA-2",
+      "weight": 0.09,
+      "weight_unit": "lb",
+      "inventory_item_id": 45509902729377,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408615014561",
+      "image_id": 37899765448865
+    },
+    {
+      "id": 43408615047329,
+      "product_id": 7805758013601,
+      "title": "AA Contour Shape / 3/4\" width",
+      "price": "5.99",
+      "position": 3,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "AA Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:10:26-05:00",
+      "updated_at": "2024-03-02T05:51:39-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 41,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "ST-SL-AA-3",
+      "weight": 0.09,
+      "weight_unit": "lb",
+      "inventory_item_id": 45509902762145,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408615047329",
+      "image_id": 37899765350561
+    },
+    {
+      "id": 43408615080097,
+      "product_id": 7805758013601,
+      "title": "A Contour Shape / 3/4\" width",
+      "price": "5.99",
+      "position": 4,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "A Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:10:26-05:00",
+      "updated_at": "2024-03-02T05:51:39-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 41,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "ST-SL-AA-4",
+      "weight": 0.09,
+      "weight_unit": "lb",
+      "inventory_item_id": 45509902794913,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408615080097",
+      "image_id": 37899765383329
+    }
+  ],
+  "options": [
+    {
+      "id": 9945502089377,
+      "product_id": 7805758013601,
+      "name": "Contour Shape",
+      "position": 1,
+      "values": [
+        "CC Contour Shape",
+        "C Contour Shape",
+        "AA Contour Shape",
+        "A Contour Shape"
+      ]
+    },
+    {
+      "id": 9945502122145,
+      "product_id": 7805758013601,
+      "name": "Wdth",
+      "position": 2,
+      "values": [
+        "3/4\" width"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899765350561,
+      "alt": "Super Lace Tape Contours Strips - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805758013601,
+      "created_at": "2023-11-13T09:10:26-05:00",
+      "updated_at": "2023-12-15T11:04:59-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899765350561",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SuperLace_AACurve_Strip.jpg?v=1702656298",
+      "variant_ids": [
+        43408615047329
+      ]
+    },
+    {
+      "id": 37899765383329,
+      "alt": "Super Lace Tape Contours Strips - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805758013601,
+      "created_at": "2023-11-13T09:10:26-05:00",
+      "updated_at": "2023-12-15T11:05:01-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899765383329",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SuperLace_ACurve_Strip.jpg?v=1702656301",
+      "variant_ids": [
+        43408615080097
+      ]
+    },
+    {
+      "id": 37899765416097,
+      "alt": "Super Lace Tape Contours Strips - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7805758013601,
+      "created_at": "2023-11-13T09:10:26-05:00",
+      "updated_at": "2023-12-15T11:05:08-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899765416097",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SuperLace_CCCurve_Strip.jpg?v=1702656308",
+      "variant_ids": [
+        43408614981793
+      ]
+    },
+    {
+      "id": 37899765448865,
+      "alt": "Super Lace Tape Contours Strips - OneHead Hair Solutions",
+      "position": 4,
+      "product_id": 7805758013601,
+      "created_at": "2023-11-13T09:10:26-05:00",
+      "updated_at": "2023-12-15T11:05:05-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899765448865",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SuperLace_BackCurve_Strip.jpg?v=1702656304",
+      "variant_ids": [
+        43408615014561
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899765350561,
+    "alt": "Super Lace Tape Contours Strips - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805758013601,
+    "created_at": "2023-11-13T09:10:26-05:00",
+    "updated_at": "2023-12-15T11:04:59-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899765350561",
+    "width": 1250,
+    "height": 1250,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SuperLace_AACurve_Strip.jpg?v=1702656298",
+    "variant_ids": [
+      43408615047329
+    ]
+  }
+}

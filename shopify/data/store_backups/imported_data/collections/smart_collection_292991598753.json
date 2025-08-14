@@ -1,0 +1,20 @@
+{
+  "id": 292991598753,
+  "handle": "hair-systems",
+  "title": "High-Quality Men's Hair Systems",
+  "updated_at": "2025-07-07T16:49:36-04:00",
+  "body_html": "<meta charset=\"utf-8\"><span data-mce-fragment=\"1\">Discover top-tier men's hair replacement systems. Choose from custom or ready-made options for a seamless, natural look. Experience confidence with\u00a0non-surgical,\u00a0innovative hair replacement solutions.</span>",
+  "published_at": "2022-11-11T05:18:44-05:00",
+  "sort_order": "best-selling",
+  "template_suffix": "premade-hair-systems",
+  "disjunctive": true,
+  "rules": [
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "hair system"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/292991598753"
+}

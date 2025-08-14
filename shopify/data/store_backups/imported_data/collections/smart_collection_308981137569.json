@@ -1,0 +1,32 @@
+{
+  "id": 308981137569,
+  "handle": "skin-hair-systems",
+  "title": "Skin Hair Systems",
+  "updated_at": "2025-07-07T16:49:37-04:00",
+  "body_html": "<p><meta charset=\"utf-8\">Achieve a flawless and realistic look with our <strong>skin hair systems</strong>, expertly designed for durability and seamless blending. These systems mimic the natural scalp with a smooth, undetectable base, offering a comfortable and secure fit. Ideal for everyday wear, skin hair systems are easy to apply and maintain, making them a practical solution for men seeking a natural appearance. Browse our collection to find the perfect skin hair system and enjoy the confidence of a full, rejuvenated style.</p>",
+  "published_at": "2025-01-24T17:04:14-05:00",
+  "sort_order": "best-selling",
+  "template_suffix": "premade-hair-systems",
+  "disjunctive": true,
+  "rules": [
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "skin"
+    },
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "skin perimeter"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/308981137569",
+  "image": {
+    "created_at": "2025-01-24T17:04:13-05:00",
+    "alt": null,
+    "width": 2000,
+    "height": 600,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/Skin_Hair_Systems_-_Collection_Banner.png?v=1737756254"
+  }
+}

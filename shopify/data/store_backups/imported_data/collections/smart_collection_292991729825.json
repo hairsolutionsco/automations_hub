@@ -1,0 +1,20 @@
+{
+  "id": 292991729825,
+  "handle": "hair-fibers-non-surgical-hair-loss-solution",
+  "title": "Hair Fibers | Non-Surgical Hair Loss Solution",
+  "updated_at": "2025-07-07T16:49:36-04:00",
+  "body_html": "",
+  "published_at": "2022-11-11T05:24:16-05:00",
+  "sort_order": "best-selling",
+  "template_suffix": "",
+  "disjunctive": false,
+  "rules": [
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "hair fibers"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/292991729825"
+}

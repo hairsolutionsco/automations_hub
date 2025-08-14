@@ -1,0 +1,142 @@
+{
+  "id": 7805766008993,
+  "title": "Ultra Hold Tape Contour Strips",
+  "body_html": "<h2>Ultra Hold\u00a0Tape Contour Strips by Walker Tape is the ultimate in extended use wear tape for hair systems which can hold for up to 4+ weeks.</h2>\n<p>Ultra Hold\u00a0Tape Contour Strips is made from Urethane and with a dull finish it has an extremely flexible bond making it great for use with lace systems.</p>\n<ul>\n<li><strong>New design backing liner carries the Walker Tape logo \u2013 \u2018W ULTRA-HOLD\u2019</strong></li>\n</ul>\n<p>Ultra Hold Tape has become the number 1 market leader in double sided tapes for Hair Systems. You wont find longer hold times or a more secure bond. Depending on your personal body chemistry and lifestyle a 4+ week hold is very achievable.</p>\n<p><strong>\u201cThis tape is great! If you like Super Tape, you will love this tape. It gives you stronger hold and this tape has no shine effect detected through your lace system\u201d</strong></p>\n<p><strong>\u201cIt gave me the best hold time that I have ever experienced, twenty three days. During that time I didnt have to do any front hairline touch up, as I normally do\u201d</strong></p>\n<p>What sets Ultra Hold Tape apart is the fingerprint in the tape. Basically the fingerprint keeps the tape from shining which makes the unit less detectable. It is super tacky,\u00a0\u00a0flexible and waterproof so you can swim, shower and live your life without worry of it letting go.</p>\n<ul>\n<li>Packs of 36 pcs</li>\n<li>2-4 week hold time</li>\n<li>Super tacky,\u00a0\u00a0flexible and waterproof</li>\n<li><strong>New design backing liner carries the Walker Tape logo \u2013 \u2018W ULTRA-HOLD\u2019</strong></li>\n<li>The liner is white but the actual tape is clear.</li>\n</ul>\n<p>Manufacturer: Walker Tape \u2013 the leader\u00a0in Hair Replacement supplies</p>\n<p>Walker Tape Description</p>\n<p>Ultra Hold Tape is the most tacky, flexible, and long-lasting tape we make. Comparable to Super Tape, Air Flex, and GeoBond, you will get the longest hold you\u2019ve ever had from a tape. Ultra Hold can hold strong for 6+ Weeks. It has a urethane carrier that is extra stretchy, making it comfortable to wear and great for flexible lace base materials. It also features our \u2018fingerprint\u2019 textured pattern to reduce shine. The liner is white but the actual tape is clear.</p>\n<p><b>Hold:<span>\u00a0</span></b>Maximum wear (2-4+ weeks) tapes are the longest lasting tapes we make. Depending on temperature, humidity, and body oils, they can last up to six weeks. Because they\u2019re usually the most tacky, they require more skill to apply.</p>\n<p>Ultra Hold Tape is best removed with C22 solvent.</p>\n<div class=\"fl-row fl-row-full-width fl-row-bg-none fl-node-5dc9192ddb47f\" data-node=\"5dc9192ddb47f\">\n<div class=\"fl-row-content-wrap\">\n<div class=\"fl-row-content fl-row-fixed-width fl-node-content\">\n<div class=\"fl-col-group fl-node-5dc91c310753d\" data-node=\"5dc91c310753d\">\n<div class=\"fl-col fl-node-5dc91c3107678\" data-node=\"5dc91c3107678\">\n<div class=\"fl-col-content fl-node-content\">\n<div class=\"fl-module fl-module-fl-woo-product-tabs fl-node-5dc91c3107486\" data-node=\"5dc91c3107486\">\n<div class=\"fl-module-content fl-node-content\">\n<div class=\"woocommerce-tabs wc-tabs-wrapper r-tabs\">\n<div class=\"woocommerce-Tabs-panel woocommerce-Tabs-panel--directions panel entry-content wc-tab r-tabs-panel r-tabs-state-active\" id=\"tab-directions\" role=\"tabpanel\" aria-labelledby=\"tab-title-directions\">\n<ol class=\"ol1\"></ol>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>",
+  "vendor": "Walker Tape",
+  "product_type": "Tapes",
+  "created_at": "2023-11-13T09:24:25-05:00",
+  "handle": "walker-tape-ultra-hold-tape-c-contour-36-pcs",
+  "updated_at": "2025-07-31T01:49:34-04:00",
+  "published_at": "2023-11-13T09:24:23-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "tape contour strips",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805766008993",
+  "variants": [
+    {
+      "id": 43408731799713,
+      "product_id": 7805766008993,
+      "title": "CC Contour Shape / 3/4\" width",
+      "price": "6.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "CC Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:24:26-05:00",
+      "updated_at": "2024-09-24T10:23:19-04:00",
+      "taxable": false,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 26,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "WUHCC36",
+      "weight": 0.057,
+      "weight_unit": "lb",
+      "inventory_item_id": 45510019514529,
+      "inventory_quantity": 11,
+      "old_inventory_quantity": 11,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408731799713",
+      "image_id": 37899802411169
+    },
+    {
+      "id": 43408731832481,
+      "product_id": 7805766008993,
+      "title": "C Contour Shape / 3/4\" width",
+      "price": "6.99",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "C Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:24:26-05:00",
+      "updated_at": "2024-09-24T10:47:00-04:00",
+      "taxable": false,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 26,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "WUHC36",
+      "weight": 0.057,
+      "weight_unit": "lb",
+      "inventory_item_id": 45510019547297,
+      "inventory_quantity": 22,
+      "old_inventory_quantity": 22,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408731832481",
+      "image_id": 37899802443937
+    }
+  ],
+  "options": [
+    {
+      "id": 9945510183073,
+      "product_id": 7805766008993,
+      "name": "Contour Shape",
+      "position": 1,
+      "values": [
+        "CC Contour Shape",
+        "C Contour Shape"
+      ]
+    },
+    {
+      "id": 9945510215841,
+      "product_id": 7805766008993,
+      "name": "Width",
+      "position": 2,
+      "values": [
+        "3/4\" width"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899802411169,
+      "alt": "Ultra Hold Tape Contour Strips - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805766008993,
+      "created_at": "2023-11-13T09:24:26-05:00",
+      "updated_at": "2023-11-13T16:22:44-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899802411169",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/WK-ULHT-CT-00CC_00.png?v=1699885466",
+      "variant_ids": [
+        43408731799713
+      ]
+    },
+    {
+      "id": 37899802443937,
+      "alt": "Walker Tape's Ultra Hold Adhesive Hair Systems Contour Tape C Shape 36pcs",
+      "position": 2,
+      "product_id": 7805766008993,
+      "created_at": "2023-11-13T09:24:26-05:00",
+      "updated_at": "2023-11-13T09:24:26-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899802443937",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/walker-ultra-hold-c-shape-contour-adhesive-tape-strips-36-pcs_a45e22ee-3c3e-43d9-b059-a7c72239cb4d.jpg?v=1699885466",
+      "variant_ids": [
+        43408731832481
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899802411169,
+    "alt": "Ultra Hold Tape Contour Strips - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805766008993,
+    "created_at": "2023-11-13T09:24:26-05:00",
+    "updated_at": "2023-11-13T16:22:44-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899802411169",
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/WK-ULHT-CT-00CC_00.png?v=1699885466",
+    "variant_ids": [
+      43408731799713
+    ]
+  }
+}

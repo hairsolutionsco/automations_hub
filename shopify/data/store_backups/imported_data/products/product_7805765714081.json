@@ -1,0 +1,85 @@
+{
+  "id": 7805765714081,
+  "title": "Leave-In Conditioner",
+  "body_html": "<p><meta charset=\"utf-8\"><span>Our Leave-In Conditioner is an essential part of the prep process. It\u2019s designed to help de-frizz and rejuvenate your client\u2019s system and bio hair. It\u2019s one of the best ways to extend the life of a system and keep it looking great.</span></p>\n<div class=\"fl-row fl-row-full-width fl-row-bg-none fl-node-5dc9192ddb47f\" data-node=\"5dc9192ddb47f\">\n<div class=\"fl-row-content-wrap\">\n<div class=\"fl-row-content fl-row-fixed-width fl-node-content\">\n<div class=\"fl-col-group fl-node-5dc91c310753d\" data-node=\"5dc91c310753d\">\n<div class=\"fl-col fl-node-5dc91c3107678\" data-node=\"5dc91c3107678\">\n<div class=\"fl-col-content fl-node-content\">\n<div class=\"fl-module fl-module-fl-woo-product-tabs fl-node-5dc91c3107486\" data-node=\"5dc91c3107486\">\n<div class=\"fl-module-content fl-node-content\">\n<div class=\"woocommerce-tabs wc-tabs-wrapper r-tabs\">\n<div class=\"woocommerce-Tabs-panel woocommerce-Tabs-panel--directions panel entry-content wc-tab r-tabs-panel r-tabs-state-active\" id=\"tab-directions\" role=\"tabpanel\" aria-labelledby=\"tab-title-directions\">\n<ol class=\"ol1\"></ol>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>",
+  "vendor": "Walker Tape",
+  "product_type": "Leave-in Conditioner",
+  "created_at": "2023-11-13T09:23:58-05:00",
+  "handle": "walker-tape-hair-systems-moisturizing-leave-in-conditioner-4oz",
+  "updated_at": "2025-07-07T16:33:09-04:00",
+  "published_at": null,
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "conditioner, hair care, leave-in conditioner, maintenance products",
+  "status": "draft",
+  "admin_graphql_api_id": "gid://shopify/Product/7805765714081",
+  "variants": [
+    {
+      "id": 43408728228001,
+      "product_id": 7805765714081,
+      "title": "4 oz",
+      "price": "124.47",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "4 oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:23:58-05:00",
+      "updated_at": "2024-03-02T05:51:47-05:00",
+      "taxable": false,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": null,
+      "requires_shipping": true,
+      "sku": "WLIC04",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45510015942817,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408728228001",
+      "image_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": 9945509888161,
+      "product_id": 7805765714081,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "4 oz"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899802050721,
+      "alt": "Walker Tape's Hair System Refreshing Leave-In Conditioner Spray 4oz",
+      "position": 1,
+      "product_id": 7805765714081,
+      "created_at": "2023-11-13T09:23:58-05:00",
+      "updated_at": "2023-11-13T09:23:58-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899802050721",
+      "width": 2400,
+      "height": 2400,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/walker-tape-hair-systems-leave-in-conditioner-spray-4-oz_e0d2de58-e113-4f62-b68a-67ab785112f8.jpg?v=1702655388",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37899802050721,
+    "alt": "Walker Tape's Hair System Refreshing Leave-In Conditioner Spray 4oz",
+    "position": 1,
+    "product_id": 7805765714081,
+    "created_at": "2023-11-13T09:23:58-05:00",
+    "updated_at": "2023-11-13T09:23:58-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899802050721",
+    "width": 2400,
+    "height": 2400,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/walker-tape-hair-systems-leave-in-conditioner-spray-4-oz_e0d2de58-e113-4f62-b68a-67ab785112f8.jpg?v=1702655388",
+    "variant_ids": []
+  }
+}

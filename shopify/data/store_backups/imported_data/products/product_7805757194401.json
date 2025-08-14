@@ -1,0 +1,133 @@
+{
+  "id": 7805757194401,
+  "title": "Skin Safe White Glue - Daily Wear",
+  "body_html": "<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Sunshine Skin Safe Daily Wear White Liquid Adhesive is a brush-on, water-based, non-flammable liquid adhesive that provides a hold time of one to 14 days. A thinner version of Sunshine Skin Safe White Glue Extended Wear Liquid Toupee and Wig Adhesive, it can be used on lace, skin, and poly perimeters on lace or monofilament bases.</span></p>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Hold:\u00a0Daily Wear (1-14 days)</li>\n<li data-mce-fragment=\"1\">No mess clean up\u00a0<br data-mce-fragment=\"1\">\n</li>\n<li data-mce-fragment=\"1\">Dries Clear</li>\n<li data-mce-fragment=\"1\">Water-Based</li>\n</ul>\n<h2 data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"><small data-mce-fragment=\"1\">Directions:\u00a0</small></span></h2>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Step 1:\u00a0Prepare the scalp with 99% alcohol.\u00a0<br data-mce-fragment=\"1\">Step 2:\u00a0Use the brush to apply a thin, even coat to scalp, and blow dry until tacky.\u00a0<br data-mce-fragment=\"1\">Step 3:\u00a0Repeat once more, then press hair system onto scalp, firmly holding for 10 seconds.</span></p>",
+  "vendor": "Sunshine Tape",
+  "product_type": "Liquid Adhesives",
+  "created_at": "2023-11-13T09:09:10-05:00",
+  "handle": "sunshine-skin-safe-white-glue-daily-wear",
+  "updated_at": "2025-07-07T16:32:53-04:00",
+  "published_at": null,
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "adhesive, liquid adhesive, water-based",
+  "status": "archived",
+  "admin_graphql_api_id": "gid://shopify/Product/7805757194401",
+  "variants": [
+    {
+      "id": 43408604070049,
+      "product_id": 7805757194401,
+      "title": "0.5 oz",
+      "price": "0.00",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "0.5 oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:09:10-05:00",
+      "updated_at": "2024-03-02T05:51:38-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45509891784865,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408604070049",
+      "image_id": 37899762925729
+    },
+    {
+      "id": 43408604102817,
+      "product_id": 7805757194401,
+      "title": "4 oz",
+      "price": "0.00",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "4 oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:09:10-05:00",
+      "updated_at": "2024-03-02T05:51:38-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45509891817633,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408604102817",
+      "image_id": 37899762892961
+    }
+  ],
+  "options": [
+    {
+      "id": 9945501368481,
+      "product_id": 7805757194401,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "0.5 oz",
+        "4 oz"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899762892961,
+      "alt": "Skin Safe White Glue - Daily Wear - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805757194401,
+      "created_at": "2023-11-13T09:09:10-05:00",
+      "updated_at": "2023-12-15T11:03:01-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899762892961",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SSWhiteGlue_DailyWear_4oz_63bdb0f1-86e5-436a-9a88-89e8dea309c4.jpg?v=1702656181",
+      "variant_ids": [
+        43408604102817
+      ]
+    },
+    {
+      "id": 37899762925729,
+      "alt": "Skin Safe White Glue - Daily Wear - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805757194401,
+      "created_at": "2023-11-13T09:09:10-05:00",
+      "updated_at": "2023-12-15T11:02:54-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899762925729",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SSWhiteGlue_DailyWear_05oz_a86c0213-7385-4ee3-bc19-baa0a1eaaad5.jpg?v=1702656174",
+      "variant_ids": [
+        43408604070049
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899762892961,
+    "alt": "Skin Safe White Glue - Daily Wear - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805757194401,
+    "created_at": "2023-11-13T09:09:10-05:00",
+    "updated_at": "2023-12-15T11:03:01-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899762892961",
+    "width": 1250,
+    "height": 1250,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SSWhiteGlue_DailyWear_4oz_63bdb0f1-86e5-436a-9a88-89e8dea309c4.jpg?v=1702656181",
+    "variant_ids": [
+      43408604102817
+    ]
+  }
+}

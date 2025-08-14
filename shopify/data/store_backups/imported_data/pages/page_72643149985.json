@@ -1,0 +1,13 @@
+{
+  "id": 72643149985,
+  "title": "HTML sitemap for articles",
+  "shop_id": 27691155508,
+  "handle": "avada-sitemap-articles",
+  "body_html": "<div class=\"avada-sitemap-row\">\n<h3>Blog Posts</h3>\n<ul><li><a href=\"https://oneheadhair.com/blogs/hair-loss-testimonials/my-hair-replacement-story\">My Hair Replacement Journey</a></li></ul>\n</div><style>\n.avada-sitemap-row {\n  margin-bottom: 2rem;\n}\n\n.avada-sitemap-row a {\n  color: inherit;\n}\n\n.avada-sitemap-row > h3 {\n  margin-bottom: 10px;\n}\n\n.avada-sitemap-row > ul {\n  margin-left: 0;\n  margin-bottom: 5px;\n  columns: 3;\n  -webkit-columns: 3;\n  -moz-columns: 3;\n}\n\n.avada-sitemap-row > ul > li {\n  margin-bottom: 5px;\n  max-width: 250px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  list-style: inside;\n  font-size: 1rem;\n  color: #7c7c7c;\n}\n\n.avada-sitemap-powered-by {\n  margin-top: 3rem;\n  font-family: Arial,sans-serif;\n  text-align: right;\n  color: #7c7c7c !important;\n  font-size: 11px !important;\n}\n\n.avada-sitemap-row + .avada-sitemap-powered-by > a {\n  text-decoration: none;\n  border-bottom: unset;\n  color: #7c7c7c;\n}\n\n.rte .avada-sitemap-row > ul > li > a, .rte .avada-sitemap-row > li > a {\n  border-bottom: unset;\n}\n\n@media only screen and (max-width: 600px) {\n  .avada-sitemap-row > ul {\n    columns: 2;\n    -webkit-columns: 2;\n    -moz-columns: 2;\n  }\n\n  .avada-sitemap-row > ul > li {\n    font-size: 16px;\n  }\n}\n\n@media only screen and (max-width: 360px) {\n    .avada-sitemap-row > ul {\n      columns: 1;\n      -webkit-columns: 1;\n      -moz-columns: 1;\n    }\n}\n</style>",
+  "author": "Shopify API",
+  "created_at": "2020-12-10T17:59:26-05:00",
+  "updated_at": "2021-08-02T23:48:33-04:00",
+  "published_at": "2020-12-10T17:59:26-05:00",
+  "template_suffix": null,
+  "admin_graphql_api_id": "gid://shopify/OnlineStorePage/72643149985"
+}

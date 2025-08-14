@@ -1,0 +1,142 @@
+{
+  "id": 7805765877921,
+  "title": "Lace Front Support Tape Contour Strips",
+  "body_html": "<h1><strong><meta charset=\"utf-8\"> <span>Walker Tape's Lace Front Adhesive Hair Systems Contour Tape</span></strong></h1>\n<h2><strong><span>Lace Front Contour Tape</span></strong></h2>\n<p><strong>Lace Front Support Contour Tape Strips (Blue Liner tape)\u00a0is by far our most popular hair system tape. With its dull finish and an amazing 2-4 week\u00a0hold everyone who uses it \u2013 loves it.\u00a0If you havent tried it we highly recommend\u00a0it!</strong></p>\n<p>Lace Front Support Contour Tapes have all the great hold and finish of Lace Front Support Tape roll in easy to use CC and C Contour shapes</p>\n<p>The dull finish makes it perfect for lace front systems as it reduces the effect of shine sometimes visible at the front edge of the unit.</p>\n<p>We recommend Lace Front Support Contour Tapes C to ensure a great hold and long time wear during active/busy days on set.\u00a0Lace Front Support Contour tapes are perfect for all types of lace units.</p>\n<p>Lace Front Support tape is one of our top sellers. It\u2019s famous for it\u2019s dull finish and strong hold. It is odorless and bacteria resistant. It lifts easily, minimizing damage to delicate lace systems. The liner is blue but the actual tape is clear.</p>\n<p><strong>HOLD<br></strong>Maximum wear (2-4+ weeks) tapes are the longest lasting tapes we make. Depending on temperature, humidity, and body oils, they can last up to six weeks. Because they\u2019re usually the most tacky, they require more skill to apply.</p>\n<h3><strong>Available in packs of 36 pcs.\u00a0</strong></h3>\n<p>Lace Front Support Tape manufacturer: Walker Tape\u00a0\u2013 the leader in Hair Replacement Supplies</p>\n<ol class=\"ol1\"></ol>\n<div data-node=\"5dc9192ddb47f\" class=\"fl-row fl-row-full-width fl-row-bg-none fl-node-5dc9192ddb47f\">\n<div class=\"fl-row-content-wrap\">\n<div class=\"fl-row-content fl-row-fixed-width fl-node-content\">\n<div data-node=\"5dc91c310753d\" class=\"fl-col-group fl-node-5dc91c310753d\">\n<div data-node=\"5dc91c3107678\" class=\"fl-col fl-node-5dc91c3107678\">\n<div class=\"fl-col-content fl-node-content\">\n<div data-node=\"5dc91c3107486\" class=\"fl-module fl-module-fl-woo-product-tabs fl-node-5dc91c3107486\">\n<div class=\"fl-module-content fl-node-content\">\n<div class=\"woocommerce-tabs wc-tabs-wrapper r-tabs\">\n<div aria-labelledby=\"tab-title-directions\" role=\"tabpanel\" id=\"tab-directions\" class=\"woocommerce-Tabs-panel woocommerce-Tabs-panel--directions panel entry-content wc-tab r-tabs-panel r-tabs-state-active\">\n<ol class=\"ol1\"></ol>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>",
+  "vendor": "Walker Tape",
+  "product_type": "Tapes",
+  "created_at": "2023-11-13T09:24:20-05:00",
+  "handle": "walker-tape-lace-front-tape-c-contour-36-pcs",
+  "updated_at": "2025-07-07T16:33:10-04:00",
+  "published_at": "2023-11-13T09:24:17-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "tape contour strips",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805765877921",
+  "variants": [
+    {
+      "id": 43408728457377,
+      "product_id": 7805765877921,
+      "title": "CC Contour Shape / 3/4\" width",
+      "price": "6.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "CC Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:24:20-05:00",
+      "updated_at": "2024-09-24T10:23:16-04:00",
+      "taxable": false,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 26,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "WLFCC36",
+      "weight": 0.057,
+      "weight_unit": "lb",
+      "inventory_item_id": 45510016172193,
+      "inventory_quantity": 23,
+      "old_inventory_quantity": 23,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408728457377",
+      "image_id": 37899802312865
+    },
+    {
+      "id": 43408728490145,
+      "product_id": 7805765877921,
+      "title": "C Contour Shape / 3/4\" width",
+      "price": "6.99",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "C Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:24:20-05:00",
+      "updated_at": "2024-09-24T10:23:17-04:00",
+      "taxable": false,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 26,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "WLFC36",
+      "weight": 0.057,
+      "weight_unit": "lb",
+      "inventory_item_id": 45510016204961,
+      "inventory_quantity": 16,
+      "old_inventory_quantity": 16,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408728490145",
+      "image_id": 37899802345633
+    }
+  ],
+  "options": [
+    {
+      "id": 9945510052001,
+      "product_id": 7805765877921,
+      "name": "Contour Shape",
+      "position": 1,
+      "values": [
+        "CC Contour Shape",
+        "C Contour Shape"
+      ]
+    },
+    {
+      "id": 9945510084769,
+      "product_id": 7805765877921,
+      "name": "Width",
+      "position": 2,
+      "values": [
+        "3/4\" width"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899802312865,
+      "alt": "Lace Front Support Tape Contour Strips - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805765877921,
+      "created_at": "2023-11-13T09:24:20-05:00",
+      "updated_at": "2023-11-13T16:22:44-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899802312865",
+      "width": 800,
+      "height": 800,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/walker-lace-front-cc-shape-contour-adhesive-tape-strips-36-pcs_743ec08c-9123-40a2-877e-4251478a0830.jpg?v=1699885460",
+      "variant_ids": [
+        43408728457377
+      ]
+    },
+    {
+      "id": 37899802345633,
+      "alt": "Walker Tape's Lace Front Adhesive Hair Systems Contour Tape C Shape 36pcs",
+      "position": 2,
+      "product_id": 7805765877921,
+      "created_at": "2023-11-13T09:24:20-05:00",
+      "updated_at": "2023-11-13T09:24:20-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899802345633",
+      "width": 800,
+      "height": 800,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/walker-lace-front-c-shape-contour-adhesive-tape-strips-36-pcs_cf1fcd63-e6b6-47d6-a3ff-03a0682ef95d.jpg?v=1699885460",
+      "variant_ids": [
+        43408728490145
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899802312865,
+    "alt": "Lace Front Support Tape Contour Strips - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805765877921,
+    "created_at": "2023-11-13T09:24:20-05:00",
+    "updated_at": "2023-11-13T16:22:44-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899802312865",
+    "width": 800,
+    "height": 800,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/walker-lace-front-cc-shape-contour-adhesive-tape-strips-36-pcs_743ec08c-9123-40a2-877e-4251478a0830.jpg?v=1699885460",
+    "variant_ids": [
+      43408728457377
+    ]
+  }
+}

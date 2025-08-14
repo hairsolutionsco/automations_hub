@@ -1,0 +1,111 @@
+{
+  "id": 7805773938849,
+  "title": "Pro Series Leave-in Conditioner",
+  "body_html": "<h1>Professional Hair Lab's Pro Series Moisturiser Leave-in Conditioner Spray 8oz</h1>\n<h2>Pro Series Moisturiser Leave-in Conditioner Spray 8oz</h2>\n<p>This daily protection formula is formulated to hydrate and detangle hair \u201con the go.\u201d Packed with emollient-rich Argan Oil, replenishing proteins and humectants, the leave-in treatment helps strengthen strands, prevent breakage, split ends, and smooth out frizz for silky, strong hair. It also protects hair from daily exposure to external stressors like UV rays, heat, pollution, brushing, and abrasion.</p>\n<p>Suitable for all types of hair units</p>",
+  "vendor": "Professional Hair Labs",
+  "product_type": "Hair Care",
+  "created_at": "2023-11-13T09:32:02-05:00",
+  "handle": "professional-hair-labs-pro-series-leave-in-conditioner-8-oz",
+  "updated_at": "2025-07-07T16:33:19-04:00",
+  "published_at": "2023-11-13T09:31:57-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "conditioner, leave-in conditioner",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805773938849",
+  "variants": [
+    {
+      "id": 43408831742113,
+      "product_id": 7805773938849,
+      "title": "Default Title",
+      "price": "11.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:32:02-05:00",
+      "updated_at": "2025-02-23T13:26:02-05:00",
+      "taxable": true,
+      "barcode": "PHPSLI08",
+      "fulfillment_service": "manual",
+      "grams": 241,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "PHPSLI08",
+      "weight": 0.531,
+      "weight_unit": "lb",
+      "inventory_item_id": 45510119489697,
+      "inventory_quantity": 15,
+      "old_inventory_quantity": 15,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408831742113",
+      "image_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": 9945517883553,
+      "product_id": 7805773938849,
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899829969057,
+      "alt": "Pro Series Leave-in Conditioner - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805773938849,
+      "created_at": "2023-11-13T09:32:02-05:00",
+      "updated_at": "2023-12-15T10:47:30-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899829969057",
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-1-professional-hair-labs-pro-series-leave-in-conditioner-8oz-2000x2000.jpg?v=1702655250",
+      "variant_ids": []
+    },
+    {
+      "id": 37899830001825,
+      "alt": "Pro Series Leave-in Conditioner - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805773938849,
+      "created_at": "2023-11-13T09:32:02-05:00",
+      "updated_at": "2023-12-15T10:47:54-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899830001825",
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-2-professional-hair-labs-pro-series-leave-in-conditioner-8oz-2000x2000.jpg?v=1702655274",
+      "variant_ids": []
+    },
+    {
+      "id": 37899830034593,
+      "alt": "Pro Series Leave-in Conditioner - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7805773938849,
+      "created_at": "2023-11-13T09:32:02-05:00",
+      "updated_at": "2023-12-15T10:48:10-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899830034593",
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-3-professional-hair-labs-pro-series-leave-in-conditioner-8oz-2000x2000.jpg?v=1702655290",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37899829969057,
+    "alt": "Pro Series Leave-in Conditioner - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805773938849,
+    "created_at": "2023-11-13T09:32:02-05:00",
+    "updated_at": "2023-12-15T10:47:30-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899829969057",
+    "width": 2000,
+    "height": 2000,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-1-professional-hair-labs-pro-series-leave-in-conditioner-8oz-2000x2000.jpg?v=1702655250",
+    "variant_ids": []
+  }
+}

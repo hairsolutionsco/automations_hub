@@ -1,0 +1,109 @@
+{
+  "id": 7805764534433,
+  "title": "Medical 1522 Contour Adhesive Tape Strips",
+  "body_html": "<meta charset=\"utf-8\">\n<p data-mce-fragment=\"1\">Are you suffering from an allergy, or have you ever suffered from a hair allergy due to the incorrect placement of your hair prosthesis?</p>\n<p data-mce-fragment=\"1\">LuxHair wants to offer you the peace of mind of continuing to use your prosthesis normally and safely, even if you have an allergy, without having to give up your hair and still feel safe.</p>\n<p data-mce-fragment=\"1\">The 1522 tape is an old acquaintance of the industry that LuxHair brings to the market in a renewed format. This new tape is characterized by its gentleness on the scalp and easy cleaning. Being a harmless tape, it will never cause a skin reaction, even on users with the most sensitive skin, making this tape a great hypoallergenic option.</p>\n<p data-mce-fragment=\"1\">\u00a0</p>\n<h5 class=\"et_pb_toggle_title\">Advantages</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img height=\"3\" width=\"44\" alt=\"\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" class=\"wp-image-145 alignnone size-full\"></p>\n<ul>\n<li>Extra safe hold for up to 2 days</li>\n<li>Recommended for users who maintain their prosthesis daily or every few days.</li>\n<li>It contains the least aggressive adhesive on the market, which makes them very easy to remove.</li>\n<li>Transparent color, undetectable.</li>\n<li>Available in different contours: straight, LF, and CC.</li>\n<li>Specific formulation for hair adhesion in prostheses, wigs, and extensions.</li>\n</ul>\n<p>\u00a0<br></p>\n<h5 class=\"et_pb_toggle_title\">Format</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img height=\"3\" width=\"44\" alt=\"\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" class=\"wp-image-145 alignnone size-full\"></p>\n<p>Each bag contains 36 tapes.</p>\n<p>Size of each tape: 8,5 x 2 cm.</p>\n<p>\u00a0<br></p>\n<h5 class=\"et_pb_toggle_title\">Recommendations for use</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img height=\"3\" width=\"44\" alt=\"\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" class=\"wp-image-145 alignnone size-full\"></p>\n<ul>\n<li>Remove the paper from one side and glue it on the scalp at the desired attachment points. At the edges, placing the tape 2 millimeters behind the reference line is recommended.</li>\n<li>Once placed on the scalp, remove the paper from the other side of the adhesive to glue the hair system.</li>\n<li>For backcombed toupees, where\u00a0an ultra-realistic hairline is desired, liquid adhesive is highly recommended.</li>\n</ul>\n</div>\n</div>\n</div>\n<ul></ul>",
+  "vendor": "Lux Hair",
+  "product_type": "Tapes",
+  "created_at": "2023-11-13T09:22:59-05:00",
+  "handle": "lux-hair-medical-1522-contour-tape-36-pcs",
+  "updated_at": "2025-07-07T16:33:07-04:00",
+  "published_at": "2023-11-13T09:22:56-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "tape, tape contour strips",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805764534433",
+  "variants": [
+    {
+      "id": 43408718069921,
+      "product_id": 7805764534433,
+      "title": "36 pcs / CC Contour",
+      "price": "4.62",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "36 pcs",
+      "option2": "CC Contour",
+      "option3": null,
+      "created_at": "2023-11-13T09:22:59-05:00",
+      "updated_at": "2024-05-17T13:01:30-04:00",
+      "taxable": true,
+      "barcode": null,
+      "fulfillment_service": "manual",
+      "grams": 26,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "LH1522CC",
+      "weight": 26.08,
+      "weight_unit": "g",
+      "inventory_item_id": 45510005784737,
+      "inventory_quantity": 1000,
+      "old_inventory_quantity": 1000,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408718069921",
+      "image_id": 37899800150177
+    }
+  ],
+  "options": [
+    {
+      "id": 9945508544673,
+      "product_id": 7805764534433,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "36 pcs"
+      ]
+    },
+    {
+      "id": 9945508577441,
+      "product_id": 7805764534433,
+      "name": "Shape Options",
+      "position": 2,
+      "values": [
+        "CC Contour"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899800117409,
+      "alt": "Lux Hair's Medical 1522 Contour Adhesive Tape",
+      "position": 1,
+      "product_id": 7805764534433,
+      "created_at": "2023-11-13T09:22:59-05:00",
+      "updated_at": "2023-12-15T10:41:55-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899800117409",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/lux-hair-medical-1522-contour-adhesive-tape-strips-36-pcs_5380cfab-6ed9-462b-8aa1-2972c1f4ccc5.jpg?v=1702655493",
+      "variant_ids": []
+    },
+    {
+      "id": 37899800150177,
+      "alt": "Medical 1522 Contour Tape - The Hair Solutions Store",
+      "position": 2,
+      "product_id": 7805764534433,
+      "created_at": "2023-11-13T09:22:59-05:00",
+      "updated_at": "2023-12-15T10:43:00-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899800150177",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/LUXHAIR-AMAZON-MEDICAL1522-CC-3_d57f8c2a-c89a-4ab9-80f4-68665d860146.jpg?v=1702655497",
+      "variant_ids": [
+        43408718069921
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899800117409,
+    "alt": "Lux Hair's Medical 1522 Contour Adhesive Tape",
+    "position": 1,
+    "product_id": 7805764534433,
+    "created_at": "2023-11-13T09:22:59-05:00",
+    "updated_at": "2023-12-15T10:41:55-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899800117409",
+    "width": 1500,
+    "height": 1500,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/lux-hair-medical-1522-contour-adhesive-tape-strips-36-pcs_5380cfab-6ed9-462b-8aa1-2972c1f4ccc5.jpg?v=1702655493",
+    "variant_ids": []
+  }
+}

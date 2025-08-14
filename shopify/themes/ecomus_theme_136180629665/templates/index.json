@@ -1,0 +1,667 @@
+{
+  "sections": {
+    "custom_line_zFXegM": {
+      "type": "custom-line",
+      "disabled": true,
+      "settings": {
+        "line_style": "solid",
+        "line_width": 100,
+        "line_height": 1,
+        "line_cl": "#ebebeb",
+        "line_pos": "center",
+        "section_fullwidth": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_rate": 30
+      }
+    },
+    "c28ddbdb-d0df-4b86-9b0a-674df42ecc5c": {
+      "type": "slideshow",
+      "blocks": {
+        "742a3693-7d5d-4e92-914c-270e1d777d11": {
+          "type": "slide_base",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/women-slideshow_1.jpg",
+            "image_mb": "shopify:\/\/shop_images\/women-slideshow_1.jpg",
+            "url": "shopify:\/\/collections\/clothing-womens",
+            "banner_target": false,
+            "color_scheme": "scheme-1",
+            "heading": "Elegance",
+            "heading_fs": "h1",
+            "heading_fw": "normal",
+            "sub_heading": "From casual to formal, we've got you covered",
+            "sub_heading_fs": "h6",
+            "sub_heading_fw": "normal",
+            "btn_label": "Shop collection",
+            "btn_link": "shopify:\/\/collections\/clothing-womens",
+            "target": false,
+            "btn_size": "xl",
+            "btn_style": "solid",
+            "btn_fw": "medium",
+            "btn_icon": "1",
+            "content_position": "center-start",
+            "alignment": "left",
+            "hide_subtext_mb": true,
+            "content_position_mb": "center-start",
+            "alignment_mb": "left"
+          }
+        },
+        "slide_base_yepCLa": {
+          "type": "slide_base",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/women-slideshow_2.jpg",
+            "image_mb": "shopify:\/\/shop_images\/women-slideshow_2.jpg",
+            "url": "shopify:\/\/collections\/clothing-womens",
+            "banner_target": false,
+            "color_scheme": "scheme-1",
+            "heading": "Boutique",
+            "heading_fs": "h1",
+            "heading_fw": "normal",
+            "sub_heading": "From casual to formal, we've got you covered",
+            "sub_heading_fs": "h6",
+            "sub_heading_fw": "normal",
+            "btn_label": "Shop collection",
+            "btn_link": "shopify:\/\/collections\/clothing-womens",
+            "target": false,
+            "btn_size": "xl",
+            "btn_style": "solid",
+            "btn_fw": "medium",
+            "btn_icon": "1",
+            "content_position": "center-start",
+            "alignment": "left",
+            "hide_subtext_mb": true,
+            "content_position_mb": "center-start",
+            "alignment_mb": "left"
+          }
+        },
+        "slide_base_WEVAbq": {
+          "type": "slide_base",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/women-slideshow_3.jpg",
+            "image_mb": "shopify:\/\/shop_images\/women-slideshow_3.jpg",
+            "url": "shopify:\/\/collections\/clothing-womens",
+            "banner_target": false,
+            "color_scheme": "scheme-1",
+            "heading": "Luxury",
+            "heading_fs": "h1",
+            "heading_fw": "normal",
+            "sub_heading": "From casual to formal, we've got you covered",
+            "sub_heading_fs": "h6",
+            "sub_heading_fw": "normal",
+            "btn_label": "Shop collection",
+            "btn_link": "shopify:\/\/collections\/clothing-womens",
+            "target": false,
+            "btn_size": "xl",
+            "btn_style": "solid",
+            "btn_fw": "medium",
+            "btn_icon": "1",
+            "content_position": "center-start",
+            "alignment": "left",
+            "hide_subtext_mb": true,
+            "content_position_mb": "center-start",
+            "alignment_mb": "left"
+          }
+        }
+      },
+      "block_order": [
+        "742a3693-7d5d-4e92-914c-270e1d777d11",
+        "slide_base_yepCLa",
+        "slide_base_WEVAbq"
+      ],
+      "custom_css": [
+        ".hdt-slideshow .slide-item_base .hdt-slide_subheading {color: rgb(var(--color-foreground));}"
+      ],
+      "settings": {
+        "full_width": true,
+        "item_round": "rounded",
+        "image_height": "fixed",
+        "fixed_height": 700,
+        "image_height_mb": "fixed",
+        "fixed_height_mb": 400,
+        "color_scheme": "",
+        "loop": true,
+        "auto_play": 7,
+        "pause_hover": false,
+        "navUI": false,
+        "dotUI": true,
+        "dot_style": "bg_active",
+        "dot_direction": "horizontal",
+        "dot_align": "center",
+        "dot_space": 49,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_rate": 75
+      }
+    },
+    "282a0160-505d-43ff-b601-043a5a327bc2": {
+      "type": "collections-list",
+      "blocks": {
+        "template--20958100226352__282a0160-505d-43ff-b601-043a5a327bc1-collection_item-1": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "clothing-womens",
+            "image": "shopify:\/\/shop_images\/wm_ctgr1.jpg",
+            "title": "Tops",
+            "collection_link": ""
+          }
+        },
+        "template--20958100226352__282a0160-505d-43ff-b601-043a5a327bc1-collection_item-2": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "clothing-womens",
+            "image": "shopify:\/\/shop_images\/wm_ctgr2.jpg",
+            "title": "Sweatshirts",
+            "collection_link": ""
+          }
+        },
+        "4fb04760-f15f-40fb-9566-65e01d74325b": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "clothing-womens",
+            "image": "shopify:\/\/shop_images\/wm_ctgr3.jpg",
+            "title": "Swim",
+            "collection_link": ""
+          }
+        },
+        "64391ffc-c043-4f35-a51e-da90b7143a42": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "clothing-womens",
+            "image": "shopify:\/\/shop_images\/wm_ctgr4.jpg",
+            "title": "Dresses",
+            "collection_link": ""
+          }
+        },
+        "collection_item_nGjjRB": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "clothing-womens",
+            "image": "shopify:\/\/shop_images\/wm_ctgr5.jpg",
+            "title": "Cardigans",
+            "collection_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20958100226352__282a0160-505d-43ff-b601-043a5a327bc1-collection_item-1",
+        "template--20958100226352__282a0160-505d-43ff-b601-043a5a327bc1-collection_item-2",
+        "4fb04760-f15f-40fb-9566-65e01d74325b",
+        "64391ffc-c043-4f35-a51e-da90b7143a42",
+        "collection_item_nGjjRB"
+      ],
+      "custom_css": [
+        ".hdt-slider-collections.hdt-slides-1 .hdt-collection-style1 .hdt-collection-title {padding: 0 var(--spacing-3);}"
+      ],
+      "settings": {
+        "heading_align": "center",
+        "sec_heading": "Categories you might like",
+        "heading_tag": "h4",
+        "heading_size": "h4",
+        "sec_subheading": "",
+        "subheading_size": "hdt-text-base",
+        "heading_reverse": false,
+        "btn_heading_collection": false,
+        "heading_gap": 18,
+        "sec_heading_spacing": 68,
+        "collection_list": [],
+        "collection_des": "1",
+        "content_size": "xl",
+        "content_weight": "medium",
+        "text_transform": false,
+        "content_position": "end-center",
+        "content_padding": 24,
+        "image_ratio": "adapt_image",
+        "image_size": true,
+        "col_dk": "4",
+        "col_tb": "3",
+        "col_mb": "2",
+        "space_items": "x",
+        "half_item": false,
+        "navUI": true,
+        "nav_des": "default",
+        "nav_pos": "middle_in",
+        "dotUI": false,
+        "dots_pos": "default",
+        "section_fullwidth": false,
+        "boxed_fullwidth": false,
+        "boxed_content": false,
+        "color_scheme": "scheme-2",
+        "padding_top": 74,
+        "padding_bottom": 0,
+        "padding_rate": 40
+      }
+    },
+    "banner_qfQbew": {
+      "type": "banner",
+      "blocks": {
+        "banner_1_JRJaRj": {
+          "type": "banner_1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wm_btn_1.jpg",
+            "color_scheme": "scheme-67a7ca9f-3333-4245-b79f-2e9849d7e615",
+            "banner_url": "shopify:\/\/collections\/clothing-womens",
+            "banner_target": false,
+            "sub_heading": "",
+            "sub_heading_fs": "base",
+            "sub_heading_fw": "normal",
+            "sub_heading_space": 15,
+            "heading_first": false,
+            "heading": "The January Collection",
+            "heading_fs": "h5",
+            "heading_fw": "normal",
+            "heading_space": 29,
+            "btn_label": "Shop now",
+            "btn_link": "shopify:\/\/collections\/clothing-womens",
+            "target": false,
+            "btn_size": "base",
+            "btn_style": "solid",
+            "btn_fw": "semibold",
+            "btn_icon": "none",
+            "content_position": "end-center",
+            "alignment": "center",
+            "content_position_mb": "end-center",
+            "alignment_mb": "center"
+          }
+        },
+        "banner_1_bddA4X": {
+          "type": "banner_1",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wm_bn_2.jpg",
+            "color_scheme": "scheme-67a7ca9f-3333-4245-b79f-2e9849d7e615",
+            "banner_url": "shopify:\/\/collections\/clothing-womens",
+            "banner_target": false,
+            "sub_heading": "",
+            "sub_heading_fs": "base",
+            "sub_heading_fw": "normal",
+            "sub_heading_space": 15,
+            "heading_first": false,
+            "heading": "Olympia's picks",
+            "heading_fs": "h5",
+            "heading_fw": "normal",
+            "heading_space": 29,
+            "btn_label": "Shop now",
+            "btn_link": "shopify:\/\/collections\/clothing-womens",
+            "target": false,
+            "btn_size": "base",
+            "btn_style": "solid",
+            "btn_fw": "semibold",
+            "btn_icon": "none",
+            "content_position": "end-center",
+            "alignment": "center",
+            "content_position_mb": "end-center",
+            "alignment_mb": "center"
+          }
+        }
+      },
+      "block_order": [
+        "banner_1_JRJaRj",
+        "banner_1_bddA4X"
+      ],
+      "settings": {
+        "full_width": false,
+        "boxed_fullwidth": false,
+        "col_dk": "2",
+        "row_height": 660,
+        "content_pd_y": 56,
+        "content_pd_x": 15,
+        "space_item": 30,
+        "col_tb": "2",
+        "row_height_tb": 420,
+        "space_item_tb": 15,
+        "row_height_mb": 300,
+        "space_item_mb": 15,
+        "padding_top": 53,
+        "padding_bottom": 0,
+        "padding_rate": 30
+      }
+    },
+    "featured_collection_carousel_aFaMir": {
+      "type": "featured-collection-carousel",
+      "settings": {
+        "heading_align": "center",
+        "sec_heading": "Ecomus’s Favorites",
+        "heading_tag": "h4",
+        "heading_size": "h4",
+        "sec_subheading": "<p>Beautifully Functional. Purposefully Designed. Consciously Crafted.<\/p>",
+        "subheading_size": "lg",
+        "heading_reverse": false,
+        "btn_heading": false,
+        "nav_heading": "disable",
+        "heading_gap": 18,
+        "sec_heading_spacing": 61,
+        "collection": "womens-fashion",
+        "product_list": [],
+        "product_des": "1",
+        "image_ratio": "adapt_image",
+        "image_size": true,
+        "show_vendor": false,
+        "pr_border": "none",
+        "products_count": 5,
+        "col_dk": "4",
+        "col_tb": "3",
+        "col_mb": "2",
+        "half_item": false,
+        "navUI": true,
+        "nav_des": "default",
+        "nav_pos": "middle_in",
+        "dotUI": false,
+        "pagination_type": "none",
+        "paginate_pos": "center",
+        "dis_pagination": 30,
+        "btn_label": "View all",
+        "btn_style": "solid",
+        "btn_fw": "normal",
+        "section_fullwidth": false,
+        "color_scheme": "scheme-2",
+        "padding_top": 77,
+        "padding_bottom": 0,
+        "padding_rate": 40
+      }
+    },
+    "image_with_text_rhLwb7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_96TGtn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Redefining Fashion Excellence",
+            "heading_fs": "h3"
+          }
+        },
+        "sub_heading_ewxeRG": {
+          "type": "sub_heading",
+          "settings": {
+            "sub_heading": "Here is your chance to upgrade your wardrobe with a variation of styles",
+            "sub_fs": "lg"
+          }
+        },
+        "button_EiykUm": {
+          "type": "button",
+          "settings": {
+            "btn_label": "Read our stories",
+            "btn_link": "shopify:\/\/collections\/clothing-womens",
+            "target": false,
+            "btn_size": "base",
+            "btn_style": "solid",
+            "btn_fw": "semibold",
+            "btn_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_96TGtn",
+        "sub_heading_ewxeRG",
+        "button_EiykUm"
+      ],
+      "custom_css": [],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/wm_img_text_1.jpg",
+        "style_image": "1",
+        "image_effect": "lunc",
+        "color_scheme": "scheme-57ce891f-d6dc-475b-825f-7c5c1917fe6b",
+        "image_last": false,
+        "content_position": "center-start",
+        "alignment": "left",
+        "content_pl": 0,
+        "image_last_mb": false,
+        "content_position_mb": "center",
+        "alignment_mb": "center",
+        "padding_top": 79,
+        "padding_bottom": 91,
+        "padding_rate": 40
+      }
+    },
+    "testinonial_with_image_jarUfm": {
+      "type": "testinonial-with-image",
+      "blocks": {
+        "quote_qPxtaU": {
+          "type": "quote",
+          "settings": {
+            "heading": "PEOPLE ARE TALKING",
+            "content": "<p>\"I have been shopping with this web fashion site for over a year now and I can confidently say it is the best online fashion site out there.\"<\/p>",
+            "author": "Robert smith",
+            "product": "boxy-t-shirt",
+            "rating": 5,
+            "image_first": "shopify:\/\/shop_images\/wm_testi2.jpg",
+            "image_second": "shopify:\/\/shop_images\/wm_testi_1.jpg"
+          }
+        },
+        "quote_W4RDfh": {
+          "type": "quote",
+          "settings": {
+            "heading": "PEOPLE ARE TALKING",
+            "content": "<p>\"The shipping is always fast and the customer service team is friendly and helpful. I highly recommend this site to anyone looking for affordable clothing.\"<\/p>",
+            "author": "Robert smith",
+            "product": "boxy-t-shirt",
+            "rating": 5,
+            "image_first": "shopify:\/\/shop_images\/wm_testi_4.jpg",
+            "image_second": "shopify:\/\/shop_images\/wm_testi_3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "quote_qPxtaU",
+        "quote_W4RDfh"
+      ],
+      "settings": {
+        "dri_img_first": false,
+        "image_width": "two_img",
+        "font_size_content": "hdt-text-2xl",
+        "navUI": true,
+        "nav_pos": "middle_in",
+        "nav_des": "outline",
+        "dotUI": false,
+        "color_scheme": "",
+        "pr_rating": "#ff7b54",
+        "section_fullwidth": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_rate": 0
+      }
+    },
+    "custom_line_TU48An": {
+      "type": "custom-line",
+      "settings": {
+        "line_style": "solid",
+        "line_width": 100,
+        "line_height": 1,
+        "line_cl": "#ebebeb",
+        "line_pos": "center",
+        "section_fullwidth": true,
+        "padding_top": 83,
+        "padding_bottom": 81,
+        "padding_rate": 30
+      }
+    },
+    "icon_box_JfJQBV": {
+      "type": "icon-box",
+      "blocks": {
+        "item_hUHaQR": {
+          "type": "item",
+          "settings": {
+            "icon_svg": "box",
+            "custom_svg": "",
+            "icon_width": 30,
+            "icon_width_mb": 30,
+            "link": "",
+            "open_link": false,
+            "title": "Free Shipping",
+            "content": "<p>You will love at great low prices<\/p>",
+            "adding_border": false
+          }
+        },
+        "item_8DgxDV": {
+          "type": "item",
+          "settings": {
+            "icon_svg": "payment",
+            "custom_svg": "",
+            "icon_width": 30,
+            "icon_width_mb": 30,
+            "link": "",
+            "open_link": false,
+            "title": "Flexible Payment",
+            "content": "<p>Pay with Multiple Credit Cards<\/p>",
+            "adding_border": false
+          }
+        },
+        "item_yA96c3": {
+          "type": "item",
+          "settings": {
+            "icon_svg": "return",
+            "custom_svg": "",
+            "icon_width": 30,
+            "icon_width_mb": 30,
+            "link": "",
+            "open_link": false,
+            "title": "14 Day Returns",
+            "content": "<p>Within 30 days for an exchange<\/p>",
+            "adding_border": false
+          }
+        },
+        "item_Ygj8ca": {
+          "type": "item",
+          "settings": {
+            "icon_svg": "support",
+            "custom_svg": "",
+            "icon_width": 30,
+            "icon_width_mb": 30,
+            "link": "",
+            "open_link": false,
+            "title": "Premium Support",
+            "content": "<p>Outstanding premium support<\/p>",
+            "adding_border": false
+          }
+        }
+      },
+      "block_order": [
+        "item_hUHaQR",
+        "item_8DgxDV",
+        "item_yA96c3",
+        "item_Ygj8ca"
+      ],
+      "settings": {
+        "heading_align": "center",
+        "sec_heading": "",
+        "heading_tag": "h3",
+        "heading_size": "h4",
+        "sec_subheading": "",
+        "subheading_size": "lg",
+        "heading_reverse": false,
+        "heading_gap": 29,
+        "sec_heading_spacing": 30,
+        "icon_pos_center": true,
+        "icon_pos_center_mb": true,
+        "icon_circle": false,
+        "space_icon_heading": "medium",
+        "size_heading": "medium",
+        "heading_uppercase": false,
+        "space_heading_content": "small",
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "1",
+        "carousel_mobile": true,
+        "border_style": "1",
+        "fullwidth": false,
+        "boxed_fullwidth": false,
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 0,
+        "padding_rate": 40
+      }
+    },
+    "infinite_loop_slider_7e8f3X": {
+      "type": "infinite-loop-slider",
+      "blocks": {
+        "image_bdy7ML": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand-6.png",
+            "link_img": "",
+            "target": false
+          }
+        },
+        "image_9BmhcV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand-4.png",
+            "link_img": "",
+            "target": false
+          }
+        },
+        "image_4Kih8A": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Brand-2.png",
+            "link_img": "",
+            "target": false
+          }
+        },
+        "image_BWLfxc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand-1.png",
+            "link_img": "",
+            "target": false
+          }
+        },
+        "image_BN8DqF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand-3.png",
+            "link_img": "",
+            "target": false
+          }
+        },
+        "image_tQPN8B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand-5.png",
+            "link_img": "",
+            "target": false
+          }
+        }
+      },
+      "block_order": [
+        "image_bdy7ML",
+        "image_9BmhcV",
+        "image_4Kih8A",
+        "image_BWLfxc",
+        "image_BN8DqF",
+        "image_tQPN8B"
+      ],
+      "settings": {
+        "image_height": "adapt_image_first",
+        "fixed_height": 860,
+        "image_height_mb": "adapt_image_first",
+        "fixed_height_mb": 300,
+        "use_bg_content": false,
+        "col_dk": "8",
+        "col_tb": "4",
+        "col_mb": "2",
+        "speed": 0.3,
+        "direction": "rtl",
+        "marquee_pause_when_hover": false,
+        "content_position": "center",
+        "content_align": "center",
+        "content_position_mb": "center",
+        "content_align_mb": "center",
+        "color_scheme": "",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "padding_rate": 30
+      }
+    }
+  },
+  "order": [
+    "custom_line_zFXegM",
+    "c28ddbdb-d0df-4b86-9b0a-674df42ecc5c",
+    "282a0160-505d-43ff-b601-043a5a327bc2",
+    "banner_qfQbew",
+    "featured_collection_carousel_aFaMir",
+    "image_with_text_rhLwb7",
+    "testinonial_with_image_jarUfm",
+    "custom_line_TU48An",
+    "icon_box_JfJQBV",
+    "infinite_loop_slider_7e8f3X"
+  ]
+}

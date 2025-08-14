@@ -1,0 +1,243 @@
+{
+  "id": 7805758931105,
+  "title": "Lace Front Hold Contour Tape Strips",
+  "body_html": "<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Don\u2019t let the baby blue liner paper fool you!\u00a0 The Toupee and Wig tape itself is clear and has a matte finish which delivers a dull and non-shiny effect.\u00a0Perfect for lace systems and lace front wigs.\u00a0</span></p>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Base:\u00a0Lace</li>\n<li data-mce-fragment=\"1\">Bacteria Control and Odorless Properties</li>\n<li data-mce-fragment=\"1\">Shine: Dull (great for lace)</li>\n<li data-mce-fragment=\"1\">Hold:\u00a0Maximum<span data-mce-fragment=\"1\">\u00a0</span>Wear (2-4 weeks)</li>\n<li data-mce-fragment=\"1\">Liner: Blue (tape is clear)</li>\n<li data-mce-fragment=\"1\">Comparable: Walker's<span data-mce-fragment=\"1\">\u00a0</span>Lace Front Support\u00ae</li>\n</ul>\n<h2 data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"><small data-mce-fragment=\"1\">Directions:\u00a0</small></span></h2>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Step 1: Peel the scored line on strips and contours<br data-mce-fragment=\"1\">Step 2: Place tape onto the system where you want it, carefully avoiding touching the adhesive.\u00a0<br data-mce-fragment=\"1\">Step 3: Remove the remaining liner, and apply to your client's scalp.</span></p>\n<p data-mce-fragment=\"1\">\u00a0</p>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">All contours come in packs of 36, except for 6\" A Curve which comes in a p</span><span data-mce-fragment=\"1\">ack of 24, and\u00a0Bulk Bags which comes in a pack of 1,000.\u00a0\u00a0</span></p>",
+  "vendor": "Sunshine Tape",
+  "product_type": "Tapes",
+  "created_at": "2023-11-13T09:12:28-05:00",
+  "handle": "lace-front-hold-contours",
+  "updated_at": "2025-07-07T16:32:57-04:00",
+  "published_at": "2023-11-13T09:12:21-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "tape contour strips",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805758931105",
+  "variants": [
+    {
+      "id": 43408633594017,
+      "product_id": 7805758931105,
+      "title": "CC Contour Shape / 3/4\" width",
+      "price": "4.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "CC Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:12:28-05:00",
+      "updated_at": "2024-03-02T05:51:40-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 43,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "ST-LFH-CC",
+      "weight": 0.095,
+      "weight_unit": "lb",
+      "inventory_item_id": 45509921308833,
+      "inventory_quantity": 5,
+      "old_inventory_quantity": 5,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408633594017",
+      "image_id": 37899769217185
+    },
+    {
+      "id": 43408633626785,
+      "product_id": 7805758931105,
+      "title": "C Contour Shape / 3/4\" width",
+      "price": "4.99",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "C Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:12:28-05:00",
+      "updated_at": "2024-03-02T05:51:40-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 43,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "ST-LFH-CC-2",
+      "weight": 0.095,
+      "weight_unit": "lb",
+      "inventory_item_id": 45509921341601,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408633626785",
+      "image_id": 37899769249953
+    },
+    {
+      "id": 43408633659553,
+      "product_id": 7805758931105,
+      "title": "AA Contour Shape / 3/4\" width",
+      "price": "4.99",
+      "position": 3,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "AA Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:12:28-05:00",
+      "updated_at": "2024-03-02T05:51:40-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 43,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "ST-LFH-CC-3",
+      "weight": 0.095,
+      "weight_unit": "lb",
+      "inventory_item_id": 45509921374369,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408633659553",
+      "image_id": 37899769151649
+    },
+    {
+      "id": 43408633692321,
+      "product_id": 7805758931105,
+      "title": "A Contour Shape / 3/4\" width",
+      "price": "4.99",
+      "position": 4,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "A Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:12:28-05:00",
+      "updated_at": "2024-03-02T05:51:40-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 43,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "ST-LFH-CC-4",
+      "weight": 0.095,
+      "weight_unit": "lb",
+      "inventory_item_id": 45509921407137,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408633692321",
+      "image_id": 37899769184417
+    }
+  ],
+  "options": [
+    {
+      "id": 9945503072417,
+      "product_id": 7805758931105,
+      "name": "Contour Shape",
+      "position": 1,
+      "values": [
+        "CC Contour Shape",
+        "C Contour Shape",
+        "AA Contour Shape",
+        "A Contour Shape"
+      ]
+    },
+    {
+      "id": 9945503105185,
+      "product_id": 7805758931105,
+      "name": "Width",
+      "position": 2,
+      "values": [
+        "3/4\" width"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899769151649,
+      "alt": "Lace Front Hold Contour Tape Strips - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805758931105,
+      "created_at": "2023-11-13T09:12:28-05:00",
+      "updated_at": "2023-12-15T11:00:45-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899769151649",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_LaceFrontHold_AACurve_Strip.jpg?v=1702656045",
+      "variant_ids": [
+        43408633659553
+      ]
+    },
+    {
+      "id": 37899769184417,
+      "alt": "Lace Front Hold Contour Tape Strips - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805758931105,
+      "created_at": "2023-11-13T09:12:28-05:00",
+      "updated_at": "2023-12-15T11:00:49-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899769184417",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_LaceFrontHold_ACurve_Strip.jpg?v=1702656048",
+      "variant_ids": [
+        43408633692321
+      ]
+    },
+    {
+      "id": 37899769217185,
+      "alt": "Lace Front Hold Contour Tape Strips - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7805758931105,
+      "created_at": "2023-11-13T09:12:28-05:00",
+      "updated_at": "2023-12-15T11:00:59-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899769217185",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_LaceFrontHold_CCCurve_Strip.jpg?v=1702656059",
+      "variant_ids": [
+        43408633594017
+      ]
+    },
+    {
+      "id": 37899769249953,
+      "alt": "Lace Front Hold Contour Tape Strips - OneHead Hair Solutions",
+      "position": 4,
+      "product_id": 7805758931105,
+      "created_at": "2023-11-13T09:12:28-05:00",
+      "updated_at": "2023-12-15T11:00:51-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899769249953",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_LaceFrontHold_BackCurve_Strip.jpg?v=1702656051",
+      "variant_ids": [
+        43408633626785
+      ]
+    },
+    {
+      "id": 37899769282721,
+      "alt": "Lace Front Hold Contour Tape Strips - OneHead Hair Solutions",
+      "position": 5,
+      "product_id": 7805758931105,
+      "created_at": "2023-11-13T09:12:28-05:00",
+      "updated_at": "2023-12-15T11:00:56-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899769282721",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_LaceFrontHold_BackCurve_Strip_Front.jpg?v=1702656056",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37899769151649,
+    "alt": "Lace Front Hold Contour Tape Strips - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805758931105,
+    "created_at": "2023-11-13T09:12:28-05:00",
+    "updated_at": "2023-12-15T11:00:45-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899769151649",
+    "width": 1250,
+    "height": 1250,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_LaceFrontHold_AACurve_Strip.jpg?v=1702656045",
+    "variant_ids": [
+      43408633659553
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "id": 7805764337825,
+  "title": "Scalp Protector Liquid",
+  "body_html": "<p><meta charset=\"utf-8\"><span data-mce-fragment=\"1\">Specifically formulated to create a very thin, shine-free film that protects the scalp, preventing damage to the scalp during the application of hair adhesives and improving the adhesion of hair adhesives.</span></p>\n<p>\u00a0</p>\n<h5 class=\"et_pb_toggle_title\">Advantages</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img height=\"3\" width=\"44\" alt=\"\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" class=\"wp-image-145 alignnone size-full\"></p>\n<ul>\n<li>Protects the scalp, preventing irritation.</li>\n<li>Creates a very thin and undetectable protective film.</li>\n<li>Improves considerably the adhesion of tapes and liquid adhesives.</li>\n</ul>\n<p>\u00a0<br></p>\n<h5 class=\"et_pb_toggle_title\">Format</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img height=\"3\" width=\"44\" alt=\"\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" class=\"wp-image-145 alignnone size-full\"></p>\n<ul>\n<li>Each bottle, roll-on or spray, contains 50mL of product.</li>\n</ul>\n<p>\u00a0<br></p>\n<h5 class=\"et_pb_toggle_title\">Recommendations for use</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img height=\"3\" width=\"44\" alt=\"\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" class=\"wp-image-145 alignnone size-full\"></p>\n<ul>\n<li>Spread Scalp Protector with the cloth applicator on the areas of the scalp where the liquid adhesive or tape is to be applied later.</li>\n<li>After application, allow the liquid to dry until it is no longer sticky to the touch. A hairdryer can be used to speed up the drying process.</li>\n<li>For hygienic reasons, it is recommended that the use is personal so that the same applicator is not used for different hairpieces users.</li>\n</ul>\n<p>\u00a0</p>\n<div class=\"et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_2 et_pb_toggle_close\"></div>\n<div class=\"et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_2 et_pb_toggle_close\"></div>\n<div class=\"et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_3 et_clickable et_pb_toggle_open\">\n<h5 class=\"et_pb_toggle_title\">Safety data sheet</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img height=\"3\" width=\"44\" alt=\"\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" class=\"wp-image-145 alignnone size-full\"></p>\n<p><a href=\"https://luxhair.es/en/Product/scalp-protector-rollon#:~:text=Safety%20data%20sheet-,Link,-Related%20products\" target=\"_blank\" rel=\"noopener noreferrer\">Link</a></p>\n</div>\n</div>\n</div>\n</div>\n</div>\n<ul></ul>",
+  "vendor": "Lux Hair",
+  "product_type": "Skin Care",
+  "created_at": "2023-11-13T09:22:41-05:00",
+  "handle": "lux-hair-scalp-protector-50-ml",
+  "updated_at": "2025-07-07T16:33:06-04:00",
+  "published_at": "2023-11-13T09:22:38-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "preparation, scalp protector",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805764337825",
+  "variants": [
+    {
+      "id": 43408717316257,
+      "product_id": 7805764337825,
+      "title": "50 ml Dab-on",
+      "price": "5.59",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "50 ml Dab-on",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:22:41-05:00",
+      "updated_at": "2024-05-19T16:53:10-04:00",
+      "taxable": true,
+      "barcode": "B096731MQH",
+      "fulfillment_service": "manual",
+      "grams": 48,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "LHSPD50",
+      "weight": 47.94,
+      "weight_unit": "g",
+      "inventory_item_id": 45510005031073,
+      "inventory_quantity": 999,
+      "old_inventory_quantity": 999,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408717316257",
+      "image_id": 37899799298209
+    },
+    {
+      "id": 43408717349025,
+      "product_id": 7805764337825,
+      "title": "50 ml Spray",
+      "price": "5.59",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "50 ml Spray",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:22:41-05:00",
+      "updated_at": "2024-05-17T13:01:31-04:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 48,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "LHSPS50",
+      "weight": 47.94,
+      "weight_unit": "g",
+      "inventory_item_id": 45510005063841,
+      "inventory_quantity": 1000,
+      "old_inventory_quantity": 1000,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408717349025",
+      "image_id": 37899799330977
+    }
+  ],
+  "options": [
+    {
+      "id": 9945508282529,
+      "product_id": 7805764337825,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "50 ml Dab-on",
+        "50 ml Spray"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899799298209,
+      "alt": "Lux Hair's Scalp Protector Treatment 50ml",
+      "position": 1,
+      "product_id": 7805764337825,
+      "created_at": "2023-11-13T09:22:41-05:00",
+      "updated_at": "2023-11-13T09:22:41-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899799298209",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/lux-hair-scalp-treatment-protector-50-ml_37c1afbc-d17e-48de-b57f-89cb5c61c33d.jpg?v=1699885361",
+      "variant_ids": [
+        43408717316257
+      ]
+    },
+    {
+      "id": 37899799330977,
+      "alt": "Scalp Protector - The Hair Solutions Store",
+      "position": 2,
+      "product_id": 7805764337825,
+      "created_at": "2023-11-13T09:22:41-05:00",
+      "updated_at": "2023-11-13T09:22:41-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899799330977",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/LUXHAIR-AMAZON-SCALPPROTECTORSPRAY-1_67403c28-35ca-48ac-9b72-847c9cf78e8d.jpg?v=1699885361",
+      "variant_ids": [
+        43408717349025
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899799298209,
+    "alt": "Lux Hair's Scalp Protector Treatment 50ml",
+    "position": 1,
+    "product_id": 7805764337825,
+    "created_at": "2023-11-13T09:22:41-05:00",
+    "updated_at": "2023-11-13T09:22:41-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899799298209",
+    "width": 1500,
+    "height": 1500,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/lux-hair-scalp-treatment-protector-50-ml_37c1afbc-d17e-48de-b57f-89cb5c61c33d.jpg?v=1699885361",
+    "variant_ids": [
+      43408717316257
+    ]
+  }
+}

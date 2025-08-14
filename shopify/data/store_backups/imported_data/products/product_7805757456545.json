@@ -1,0 +1,133 @@
+{
+  "id": 7805757456545,
+  "title": "Silicone Elite Adhesive  - Extended Wear",
+  "body_html": "<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">High-quality, medical-grade Sunshine Silicone Elite Extended Wear Liquid is a thinner version of one of the strongest liquid adhesives available. It provides a secure hold (lasting three to four weeks, depending on body chemistry and lifestyle) and is excellent for use on skin bases, lace bases, and poly perimeters on lace or monofilament bases</span></p>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Hold:\u00a0Extended Wear (3-4 weeks)</li>\n<li data-mce-fragment=\"1\">Medical Grade</li>\n</ul>\n<h2 data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"><small data-mce-fragment=\"1\">Directions:\u00a0</small></span></h2>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Step 1:\u00a0Prepare the scalp with 99% alcohol.\u00a0<br data-mce-fragment=\"1\">Step 2:\u00a0Use the brush to apply a thin, even coat to scalp, and blow dry until tacky.\u00a0<br data-mce-fragment=\"1\">Step 3:\u00a0Repeat once more, then press hair system onto scalp, firmly holding for 10 seconds.\u00a0</span></p>",
+  "vendor": "Sunshine Tape",
+  "product_type": "Liquid Adhesives",
+  "created_at": "2023-11-13T09:09:40-05:00",
+  "handle": "sunshine-silicone-elite-extended-wear",
+  "updated_at": "2025-07-07T16:32:54-04:00",
+  "published_at": null,
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "silicone-based",
+  "status": "draft",
+  "admin_graphql_api_id": "gid://shopify/Product/7805757456545",
+  "variants": [
+    {
+      "id": 43408607674529,
+      "product_id": 7805757456545,
+      "title": "0.5 oz",
+      "price": "10.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "0.5 oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:09:40-05:00",
+      "updated_at": "2024-03-02T05:51:38-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45509895389345,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408607674529",
+      "image_id": 37899763744929
+    },
+    {
+      "id": 43408607707297,
+      "product_id": 7805757456545,
+      "title": "4 oz",
+      "price": "26.99",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "4 oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:09:40-05:00",
+      "updated_at": "2024-03-02T05:51:38-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45509895422113,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408607707297",
+      "image_id": 37899763777697
+    }
+  ],
+  "options": [
+    {
+      "id": 9945501597857,
+      "product_id": 7805757456545,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "0.5 oz",
+        "4 oz"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899763744929,
+      "alt": "Silicone Elite Adhesive  - Extended Wear - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805757456545,
+      "created_at": "2023-11-13T09:09:40-05:00",
+      "updated_at": "2023-12-15T11:02:27-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899763744929",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SiliconeElite_ExtWear_05oz.jpg?v=1702656146",
+      "variant_ids": [
+        43408607674529
+      ]
+    },
+    {
+      "id": 37899763777697,
+      "alt": "Silicone Elite Adhesive  - Extended Wear - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805757456545,
+      "created_at": "2023-11-13T09:09:40-05:00",
+      "updated_at": "2023-12-15T11:02:30-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899763777697",
+      "width": 1250,
+      "height": 1250,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SiliconeElite_ExtWear_4oz_175e0caa-473f-436a-b1f1-0f1c5fde74e5.jpg?v=1702656150",
+      "variant_ids": [
+        43408607707297
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899763744929,
+    "alt": "Silicone Elite Adhesive  - Extended Wear - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805757456545,
+    "created_at": "2023-11-13T09:09:40-05:00",
+    "updated_at": "2023-12-15T11:02:27-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899763744929",
+    "width": 1250,
+    "height": 1250,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST_SiliconeElite_ExtWear_05oz.jpg?v=1702656146",
+    "variant_ids": [
+      43408607674529
+    ]
+  }
+}

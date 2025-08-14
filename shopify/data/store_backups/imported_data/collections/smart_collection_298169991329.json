@@ -1,0 +1,32 @@
+{
+  "id": 298169991329,
+  "handle": "liquid-adhesive",
+  "title": "Liquid Adhesives",
+  "updated_at": "2025-07-07T16:49:36-04:00",
+  "body_html": "",
+  "published_at": "2023-11-16T02:45:43-05:00",
+  "sort_order": "best-selling",
+  "template_suffix": "",
+  "disjunctive": true,
+  "rules": [
+    {
+      "column": "type",
+      "relation": "equals",
+      "condition": "Liquid Adhesive"
+    },
+    {
+      "column": "type",
+      "relation": "equals",
+      "condition": "Liquid Adhesives"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/298169991329",
+  "image": {
+    "created_at": "2023-11-16T02:46:33-05:00",
+    "alt": null,
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collection-image-liquid_adhesives-1200x1200.jpg?v=1702654048"
+  }
+}

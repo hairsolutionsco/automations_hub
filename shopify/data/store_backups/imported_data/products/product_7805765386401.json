@@ -1,0 +1,98 @@
+{
+  "id": 7805765386401,
+  "title": "Ghost Mist UV Protector Finishing Conditioner Spray",
+  "body_html": "<meta charset=\"utf-8\"><meta charset=\"utf-8\">\n<h1><span>Professional Hair Lab's Ghost Mist Finishing Argan Oil Moisturiser Conditioner UV Protector Spray 6oz</span></h1>\n<h2>\n<meta charset=\"utf-8\"> <span>Ghost Mist\u00a0<meta charset=\"utf-8\">UV Protector Finishing Conditioner Spray 6oz</span>\n</h2>\n<p>Ghost Mist Finishing Spray with Argan Oil is a spray-on leave-in conditioner that protects your hair and gives it a lasting shine.</p>\n<p>Environmental conditions, daily styling, and natural wear and tear can suck the life out of your hair. Ghost Mist pumps that life right back in, with a blend of antioxidants and Vitamin E found in Argan Oil. It even provides natural UV protection!</p>\n<p>Another way Ghost Mist protects your hair is by detangling it. Your system will be easy to maintain throughout the day, whether it\u2019s human or synthetic. Ghost Mist Finishing Spray gives your hair a barrier against environmental damage\u2014and your blow-dryer\u2014and seals up your split ends to prevent further damage. It\u2019s even safe for use with heat-styling tools.</p>\n<p>Best of all? Ghost Mist brings on the shine! This stuff does more than just rejuvenate and protect! Spritz on this high-shine Finishing Spray, comb it through, and put on your shades on.</p>\n<p>Ghost Mist Finishing Spray is your daily finishing touch. Try it out to shine, nourish and protect your hair with confidence!</p>\n",
+  "vendor": "Professional Hair Labs",
+  "product_type": "Hair Care",
+  "created_at": "2023-11-13T09:23:41-05:00",
+  "handle": "professional-hair-labs-ghostmist-argan-oil-conditioner-finishing-spray-6-oz",
+  "updated_at": "2025-07-29T21:45:33-04:00",
+  "published_at": "2023-11-13T09:23:38-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "conditioner, leave-in conditioner, uv protector",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805765386401",
+  "variants": [
+    {
+      "id": 43408724820129,
+      "product_id": 7805765386401,
+      "title": "6 oz",
+      "price": "19.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "6 oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:23:41-05:00",
+      "updated_at": "2024-10-02T12:05:00-04:00",
+      "taxable": false,
+      "barcode": "628586868939",
+      "fulfillment_service": "manual",
+      "grams": 184,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "PHGM06",
+      "weight": 0.406,
+      "weight_unit": "lb",
+      "inventory_item_id": 45510012534945,
+      "inventory_quantity": 21,
+      "old_inventory_quantity": 21,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408724820129",
+      "image_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": 9945509560481,
+      "product_id": 7805765386401,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "6 oz"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899801723041,
+      "alt": "Ghost Mist UV Protector Finishing Conditioner Spray - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805765386401,
+      "created_at": "2023-11-13T09:23:41-05:00",
+      "updated_at": "2023-12-15T10:47:39-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899801723041",
+      "width": 800,
+      "height": 800,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-2-professional-hair-labs-ghost-mist-6oz-800x800.jpg?v=1702655259",
+      "variant_ids": []
+    },
+    {
+      "id": 37899801755809,
+      "alt": "Ghost Mist UV Protector Finishing Conditioner Spray - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805765386401,
+      "created_at": "2023-11-13T09:23:41-05:00",
+      "updated_at": "2023-12-15T10:47:24-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899801755809",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-1-professional-hair-labs-ghost-mist-6oz-600x600.jpg?v=1702655243",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37899801723041,
+    "alt": "Ghost Mist UV Protector Finishing Conditioner Spray - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805765386401,
+    "created_at": "2023-11-13T09:23:41-05:00",
+    "updated_at": "2023-12-15T10:47:39-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899801723041",
+    "width": 800,
+    "height": 800,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-2-professional-hair-labs-ghost-mist-6oz-800x800.jpg?v=1702655259",
+    "variant_ids": []
+  }
+}

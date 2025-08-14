@@ -1,0 +1,137 @@
+{
+  "id": 7809718321313,
+  "title": "Full Lace",
+  "body_html": "\n    <p> </p>\n    <h2>Men's Lightweight Lace Hair System</h2>\n    <p>Men's Lightweight Lace Hair System: Ultimate Comfort and Realism \n Experience a new level of comfort and natural appearance with our Men's Lightweight Lace Hair System. Designed using premium lace material, this hair replacement system is ideal for those who prioritize breathability and a seamless look. \n Perfect for newcomers and those with active lifestyles, this system offers an easy-to-manage solution for male pattern baldness or thinning hair. \n While the lace material requires less adhesive for attachment, it's worth noting that more frequent maintenance is needed to keep it in optimal condition. \n Base Material \n Superior-Quality Mesh/Lace \n Standard Dimensions \n 10 x 8 inches (Length x Width) \n Hair Quality \n Premium A-Grade Indian Hair \n Density Level \n Medium-light (90%-110%) \n Wave Style \n Classic Body Wave \n Expected Lifespan \n 4 to 6 months\n\n\ud83d\udca1 Why Choose This Hair System?\n- Ultra-thin, natural-looking base for seamless blending\n- Lightweight and breathable for all-day comfort\n- Designed for durability with proper maintenance\n- Ideal for achieving a natural hairline with a secure fit\n\n\ud83d\uded2 Order now and enjoy a confidence-boosting, natural look!</p>\n    <h4>Key Features:</h4>\n    <ul>\n        <li>\n<strong>Base Material:</strong> High-quality polyurethane</li>\n        <li>\n<strong>Default Size:</strong> Standard dimensions available</li>\n        <li>\n<strong>Hair Quality:</strong> Premium Indian Remy hair</li>\n        <li>\n<strong>Density:</strong> Medium-light for a natural look</li>\n        <li>\n<strong>Wave/Curl Pattern:</strong> Standard body wave</li>\n        <li>\n<strong>Lifespan:</strong> 3-6 months with proper care</li>\n    </ul>\n    <p>Designed for comfort, durability, and a seamless natural appearance.</p>\n    ",
+  "vendor": "OneHead Hair Solutions",
+  "product_type": "Men's Hair Systems",
+  "created_at": "2023-11-17T10:54:54-05:00",
+  "handle": "french-lace-hair-system",
+  "updated_at": "2025-07-07T16:33:21-04:00",
+  "published_at": "2023-11-17T10:54:53-05:00",
+  "template_suffix": "premade-hair-systems",
+  "published_scope": "web",
+  "tags": "lace, Lace Base, Lace Front, Ready-to-wear",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7809718321313",
+  "variants": [
+    {
+      "id": 43433050144929,
+      "product_id": 7809718321313,
+      "title": "Default Title",
+      "price": "299.00",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-17T10:54:54-05:00",
+      "updated_at": "2025-01-24T17:14:24-05:00",
+      "taxable": true,
+      "barcode": null,
+      "fulfillment_service": "manual",
+      "grams": 385,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": null,
+      "weight": 385.0,
+      "weight_unit": "g",
+      "inventory_item_id": 45534303584417,
+      "inventory_quantity": 1000,
+      "old_inventory_quantity": 1000,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43433050144929",
+      "image_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": 9949621682337,
+      "product_id": 7809718321313,
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37925659279521,
+      "alt": "Premier Lace | High-Grade French Lace Hair System - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7809718321313,
+      "created_at": "2023-11-17T10:55:05-05:00",
+      "updated_at": "2025-02-12T10:31:31-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925659279521",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/full-lace-hair-system-image-1_316be73f-b6a5-4969-adcc-d095beb5ce73.jpg?v=1739374291",
+      "variant_ids": []
+    },
+    {
+      "id": 37925659312289,
+      "alt": "Premier Lace | High-Grade French Lace Hair System - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7809718321313,
+      "created_at": "2023-11-17T10:55:05-05:00",
+      "updated_at": "2025-02-12T10:31:31-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925659312289",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/lace-hairline-image-3_15a26e85-4aed-4f22-80ff-6f887e9002c0.jpg?v=1739374291",
+      "variant_ids": []
+    },
+    {
+      "id": 37925659345057,
+      "alt": "Premier Lace | High-Grade French Lace Hair System - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7809718321313,
+      "created_at": "2023-11-17T10:55:05-05:00",
+      "updated_at": "2025-02-12T10:31:31-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925659345057",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/top-quality-lace-hair-piece-for-men-toupee-view-2_40e734dc-bb42-4df1-9cf8-0febbbb0f700.jpg?v=1739374291",
+      "variant_ids": []
+    },
+    {
+      "id": 37925659869345,
+      "alt": "Premier Lace | High-Grade French Lace Hair System - OneHead Hair Solutions",
+      "position": 4,
+      "product_id": 7809718321313,
+      "created_at": "2023-11-17T10:55:05-05:00",
+      "updated_at": "2025-02-12T10:31:31-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925659869345",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/top-quality-lace-hair-piece-for-men-toupee-view-3_9fefd586-7068-41b6-ba13-5990f5fb63e7.jpg?v=1739374291",
+      "variant_ids": []
+    },
+    {
+      "id": 37925660623009,
+      "alt": "Premier Lace | High-Grade French Lace Hair System - OneHead Hair Solutions",
+      "position": 5,
+      "product_id": 7809718321313,
+      "created_at": "2023-11-17T10:55:05-05:00",
+      "updated_at": "2025-02-12T10:31:31-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925660623009",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/top-quality-lace-hair-piece-for-men-toupee-view-5_60b9fd11-7acd-4e47-b648-4b3fc07bd2b2.jpg?v=1739374291",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37925659279521,
+    "alt": "Premier Lace | High-Grade French Lace Hair System - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7809718321313,
+    "created_at": "2023-11-17T10:55:05-05:00",
+    "updated_at": "2025-02-12T10:31:31-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37925659279521",
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/full-lace-hair-system-image-1_316be73f-b6a5-4969-adcc-d095beb5ce73.jpg?v=1739374291",
+    "variant_ids": []
+  }
+}

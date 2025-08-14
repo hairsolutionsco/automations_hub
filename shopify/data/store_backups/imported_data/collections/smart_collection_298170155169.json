@@ -1,0 +1,42 @@
+{
+  "id": 298170155169,
+  "handle": "hair-care",
+  "title": "Hair Care",
+  "updated_at": "2025-07-07T16:49:36-04:00",
+  "body_html": "<meta charset=\"utf-8\">\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Explore our exclusive range of hair care products, specially formulated for hair systems and hairpieces. Ensure the longevity and natural appearance of your hair replacement solutions with OneHead Hair Solutions</li>\n</ul>",
+  "published_at": "2023-11-16T02:55:24-05:00",
+  "sort_order": "best-selling",
+  "template_suffix": "",
+  "disjunctive": true,
+  "rules": [
+    {
+      "column": "type",
+      "relation": "equals",
+      "condition": "Hair Care"
+    },
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "shampoo"
+    },
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "conditioner"
+    },
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "leave-in conditioner"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/298170155169",
+  "image": {
+    "created_at": "2023-11-16T02:55:23-05:00",
+    "alt": null,
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collection-image-hair-care.jpg?v=1702654044"
+  }
+}

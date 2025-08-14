@@ -1,0 +1,89 @@
+{
+  "id": 8202152116385,
+  "title": "Walker's Ultra Hold Mini Tab, Double Sided Tape WKR-UHT-M-2PK Custom 72 Count (Pack of 2)",
+  "body_html": "<div><div id=\"productDescription\" class=\"a-section a-spacing-small\">\n <p><span>For over 25 years Walker\u2019s has developed innovative solutions for hearing protection &amp; enhancement. The Walker\u2019s line of products are widely considered the industry standard for shooting protection and safety.</span></p>\n</div></div><div><div id=\"feature-bullets\" class=\"a-section a-spacing-medium a-spacing-top-small\">\n <h2 class=\"a-size-base-plus a-text-bold\">About this item</h2>\n <ul class=\"a-unordered-list a-vertical a-spacing-mini\">\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> #1 HAIR SYSTEM TAPE | This is the number one hair tape on the market. It\u2019s versatile, long-lasting results will leave you satisfied and looking great all the time. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> LONG LASTING | Ultra-Hold Tape is the most tacky, flexible, and long lasting tape we make. Comparable to Super Tape, Air Flex, and GeoBond you will get the longest hold you've ever had from a tape. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> DOUBLE SIDED | Ultra-Hold Tape is designed to be the most reliable hair system tape on the market, and it is just that. It's double sided to keep your hair in place at all times </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> VERSATILE SHAPE | The mini shape of the tape is extremely versatile. Feel free to use it on the front hair line, the sides, the back, or wherever you want that consistent strong hold. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> Bundle Includes 2 Packages </span></li>\n </ul>\n <div data-csa-c-content-id=\"voyager-product-details-jumplink\" data-csa-c-slot-id=\"voyager-product-details-jumplink\" data-csa-c-type=\"link\" class=\"a-section aok-hidden\">\n<span class=\"caretnext\">\u203a</span> <a id=\"seeMoreDetailsLink\" class=\"a-link-normal\" href=\"#productDetails\"> See more product details </a>\n </div>\n</div></div><div><div class=\"a-section a-spacing-small a-spacing-top-small\">\n <table class=\"a-normal a-spacing-micro\">\n  <tbody>\n   <tr class=\"a-spacing-small po-brand\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Brand</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Walker's</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-color\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Color</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">White</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-material\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Material</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Lace base</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-number_of_items\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Number of Items</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">2</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-recommended_uses_for_product\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Recommended Uses For Product</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Hair System</span></td>\n   </tr>\n  </tbody>\n </table>\n</div></div>",
+  "vendor": "OneHead Hair Solutions",
+  "product_type": "",
+  "created_at": "2025-02-11T12:11:01-05:00",
+  "handle": "walkers-ultra-hold-mini-tab-double-sided-tape-wkr-uht-m-2pk-custom-72-count-pack-of-2",
+  "updated_at": "2025-07-04T20:52:04-04:00",
+  "published_at": null,
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/8202152116385",
+  "variants": [
+    {
+      "id": 44844223692961,
+      "product_id": 8202152116385,
+      "title": "Default Title",
+      "price": "15.39",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": "15.39",
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "created_at": "2025-02-11T12:11:01-05:00",
+      "updated_at": "2025-02-11T12:11:03-05:00",
+      "taxable": true,
+      "barcode": "B075CD2XZL",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": null,
+      "requires_shipping": true,
+      "sku": "B075CD2XZL",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 46957815857313,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/44844223692961",
+      "image_id": 41032315961505
+    }
+  ],
+  "options": [
+    {
+      "id": 10416381460641,
+      "product_id": 8202152116385,
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 41032315961505,
+      "alt": null,
+      "position": 1,
+      "product_id": 8202152116385,
+      "created_at": "2025-02-11T12:11:01-05:00",
+      "updated_at": "2025-02-11T12:11:03-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41032315961505",
+      "width": 1200,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/610Dwj3b-TL._SL1500.jpg?v=1739293863",
+      "variant_ids": [
+        44844223692961
+      ]
+    }
+  ],
+  "image": {
+    "id": 41032315961505,
+    "alt": null,
+    "position": 1,
+    "product_id": 8202152116385,
+    "created_at": "2025-02-11T12:11:01-05:00",
+    "updated_at": "2025-02-11T12:11:03-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/41032315961505",
+    "width": 1200,
+    "height": 1500,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/610Dwj3b-TL._SL1500.jpg?v=1739293863",
+    "variant_ids": [
+      44844223692961
+    ]
+  }
+}

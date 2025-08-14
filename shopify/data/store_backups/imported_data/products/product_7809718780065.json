@@ -1,0 +1,137 @@
+{
+  "id": 7809718780065,
+  "title": "0.06 mm Super Thin Skin",
+  "body_html": "\n    <p> </p>\n    <h2>Ultra-Light 0.06mm Thin Skin Hair System with A-Grade Indian Hair \n Introducing our Ultra-Light Thin Skin Hair System, designed for the active, modern man. Featuring a 0.06mm ultra-thin polyurethane base, this hairpiece seamlessly blends realism and durability. \n Crafted for those on the go, this hair system offers a low-maintenance solution without sacrificing a natural look. Each strand of A-grade Indian hair adds an element of authenticity, resulting in a truly lifelike appearance. \n Our state-of-the-art adhesive technology creates a formidable bond between the skin base and your scalp. This ensures greater longevity and significantly reduces the need for frequent touch-ups, making it more durable than traditional lace-based systems. \n Key Features</h2>\n    <p>Ultra-Light 0.06mm Thin Skin Hair System with A-Grade Indian Hair \n Introducing our Ultra-Light Thin Skin Hair System, designed for the active, modern man. Featuring a 0.06mm ultra-thin polyurethane base, this hairpiece seamlessly blends realism and durability. \n Crafted for those on the go, this hair system offers a low-maintenance solution without sacrificing a natural look. Each strand of A-grade Indian hair adds an element of authenticity, resulting in a truly lifelike appearance. \n Our state-of-the-art adhesive technology creates a formidable bond between the skin base and your scalp. This ensures greater longevity and significantly reduces the need for frequent touch-ups, making it more durable than traditional lace-based systems. \n Key Features: \n \n \n Base Material:  Ultra-thin 0.06 mm Polyurethane \n \n Default Size:  10 x 8 inches (Length x Width) \n \n Hair Quality:  A-Grade Indian Hair \n \n Density:  Medium-light (90%-110%) \n \n Wave/Curl Pattern:  Natural Body Wave \n \n Lifespan:  3-4 Months \n \n Choose our Ultra-Light Thin Skin Hair System for a long-lasting and realistic hair replacement experience.\n\n\ud83d\udca1 Why Choose This Hair System?\n- Ultra-thin, natural-looking base for seamless blending\n- Lightweight and breathable for all-day comfort\n- Designed for durability with proper maintenance\n- Ideal for achieving a natural hairline with a secure fit\n\n\ud83d\uded2 Order now and enjoy a confidence-boosting, natural look!</p>\n    <h4>Key Features:</h4>\n    <ul>\n        <li>\n<strong>Base Material:</strong> High-quality polyurethane</li>\n        <li>\n<strong>Default Size:</strong> Standard dimensions available</li>\n        <li>\n<strong>Hair Quality:</strong> Premium Indian Remy hair</li>\n        <li>\n<strong>Density:</strong> Medium-light for a natural look</li>\n        <li>\n<strong>Wave/Curl Pattern:</strong> Standard body wave</li>\n        <li>\n<strong>Lifespan:</strong> 3-6 months with proper care</li>\n    </ul>\n    <p>Designed for comfort, durability, and a seamless natural appearance.</p>\n    ",
+  "vendor": "OneHead Hair Solutions",
+  "product_type": "Men's Hair Systems",
+  "created_at": "2023-11-17T10:57:29-05:00",
+  "handle": "0-06-mm-super-thin-skin-hair-system",
+  "updated_at": "2025-07-07T16:33:21-04:00",
+  "published_at": "2023-11-17T10:57:29-05:00",
+  "template_suffix": "premade-hair-systems",
+  "published_scope": "web",
+  "tags": "Lace Base, Ready-to-wear, Skin Base, Super Thin Skin, Ultra Thin Skin",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7809718780065",
+  "variants": [
+    {
+      "id": 43433056960673,
+      "product_id": 7809718780065,
+      "title": "Default Title",
+      "price": "299.00",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-17T10:57:30-05:00",
+      "updated_at": "2025-01-24T17:14:21-05:00",
+      "taxable": true,
+      "barcode": null,
+      "fulfillment_service": "manual",
+      "grams": 385,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": null,
+      "weight": 385.0,
+      "weight_unit": "g",
+      "inventory_item_id": 45534310400161,
+      "inventory_quantity": 1000,
+      "old_inventory_quantity": 1000,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43433056960673",
+      "image_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": 9949622304929,
+      "product_id": 7809718780065,
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37925679038625,
+      "alt": "Super Skin 06 | Ultra-Light 0.06 mm Super Thin Skin Hair System - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7809718780065,
+      "created_at": "2023-11-17T10:57:40-05:00",
+      "updated_at": "2025-02-12T10:31:38-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925679038625",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/super-thin-skin-006mm-hair-system-image-1_84b40eea-0dc7-4ae4-95eb-5ff30c7101a5.jpg?v=1739374298",
+      "variant_ids": []
+    },
+    {
+      "id": 37925679071393,
+      "alt": "Super Skin 06 | Ultra-Light 0.06 mm Super Thin Skin Hair System - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7809718780065,
+      "created_at": "2023-11-17T10:57:41-05:00",
+      "updated_at": "2025-02-12T10:31:38-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925679071393",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/skin-hairline-image-2_e6b5e4c6-1daa-4d9d-9c04-4838bc1c2669.jpg?v=1739374298",
+      "variant_ids": []
+    },
+    {
+      "id": 37925679104161,
+      "alt": "Super Skin 06 | Ultra-Light 0.06 mm Super Thin Skin Hair System - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7809718780065,
+      "created_at": "2023-11-17T10:57:41-05:00",
+      "updated_at": "2025-02-12T10:31:38-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925679104161",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/thin-poly-skin-006-v-loop-hair-system-for-men-view-3_11b72f00-a708-4f36-8d6a-74d4204f3e0c.jpg?v=1739374298",
+      "variant_ids": []
+    },
+    {
+      "id": 37925679136929,
+      "alt": "Super Skin 06 | Ultra-Light 0.06 mm Super Thin Skin Hair System - OneHead Hair Solutions",
+      "position": 4,
+      "product_id": 7809718780065,
+      "created_at": "2023-11-17T10:57:41-05:00",
+      "updated_at": "2025-02-12T10:31:38-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925679136929",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/thin-poly-skin-006-v-loop-hair-system-for-men-view-2_a4e61cbc-f215-48d0-8dd5-485ffcca220f.jpg?v=1739374298",
+      "variant_ids": []
+    },
+    {
+      "id": 37925679628449,
+      "alt": "Super Skin 06 | Ultra-Light 0.06 mm Super Thin Skin Hair System - OneHead Hair Solutions",
+      "position": 5,
+      "product_id": 7809718780065,
+      "created_at": "2023-11-17T10:57:41-05:00",
+      "updated_at": "2025-02-12T10:31:38-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925679628449",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/thin-poly-skin-006-v-loop-hair-system-for-men-view-6_41c57911-d1e6-4421-8fa4-fa4d287f5827.jpg?v=1739374298",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37925679038625,
+    "alt": "Super Skin 06 | Ultra-Light 0.06 mm Super Thin Skin Hair System - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7809718780065,
+    "created_at": "2023-11-17T10:57:40-05:00",
+    "updated_at": "2025-02-12T10:31:38-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37925679038625",
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/super-thin-skin-006mm-hair-system-image-1_84b40eea-0dc7-4ae4-95eb-5ff30c7101a5.jpg?v=1739374298",
+    "variant_ids": []
+  }
+}

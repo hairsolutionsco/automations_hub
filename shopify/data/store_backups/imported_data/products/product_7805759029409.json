@@ -1,0 +1,230 @@
+{
+  "id": 7805759029409,
+  "title": "Gold Cloth Contour Tape Strips",
+  "body_html": "<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">This tape has been a standard in the hair replacement industry for years. Ideal for lace systems or poly systems. The liner paper on the tape is brown and the tape is a cream color. Hold lasts between 1-2 weeks. Gold Cloth is also effective in combination with perimeter fusion attachments.\u00a0</span></p>\n<h2 data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"><small data-mce-fragment=\"1\">Directions:\u00a0</small></span></h2>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Step 1: Peel the scored line on strips and contours<br data-mce-fragment=\"1\">Step 2: Place tape onto the system where you want it, carefully avoiding touching the adhesive.\u00a0<br data-mce-fragment=\"1\">Step 3: Remove the remaining liner, and apply it to your client's scalp.</span></p>\n<p data-mce-fragment=\"1\">\u00a0</p>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">All contours come in packs of 36 except Bulk Bags which comes in a pack of 1,000.\u00a0</span></p>",
+  "vendor": "Sunshine Tape",
+  "product_type": "Tape Contour Strips",
+  "created_at": "2023-11-13T09:12:45-05:00",
+  "handle": "gold-cloth-contours",
+  "updated_at": "2025-07-07T16:32:58-04:00",
+  "published_at": null,
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "contours, tape",
+  "status": "archived",
+  "admin_graphql_api_id": "gid://shopify/Product/7805759029409",
+  "variants": [
+    {
+      "id": 43408633954465,
+      "product_id": 7805759029409,
+      "title": "CC Contour Shape / 3/4\" width",
+      "price": "0.00",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "CC Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:12:45-05:00",
+      "updated_at": "2024-03-02T05:51:41-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45509921669281,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408633954465",
+      "image_id": 37899769807009
+    },
+    {
+      "id": 43408633987233,
+      "product_id": 7805759029409,
+      "title": "C Contour Shape / 3/4\" width",
+      "price": "0.00",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "C Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:12:45-05:00",
+      "updated_at": "2024-03-02T05:51:41-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45509921702049,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408633987233",
+      "image_id": 37899769839777
+    },
+    {
+      "id": 43408634020001,
+      "product_id": 7805759029409,
+      "title": "AA Contour Shape / 3/4\" width",
+      "price": "0.00",
+      "position": 3,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "AA Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:12:45-05:00",
+      "updated_at": "2024-03-02T05:51:41-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45509921734817,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408634020001",
+      "image_id": 37899769741473
+    },
+    {
+      "id": 43408634052769,
+      "product_id": 7805759029409,
+      "title": "A Contour Shape / 3/4\" width",
+      "price": "0.00",
+      "position": 4,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "A Contour Shape",
+      "option2": "3/4\" width",
+      "option3": null,
+      "created_at": "2023-11-13T09:12:45-05:00",
+      "updated_at": "2024-03-02T05:51:41-05:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45509921767585,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408634052769",
+      "image_id": 37899769774241
+    }
+  ],
+  "options": [
+    {
+      "id": 9945503236257,
+      "product_id": 7805759029409,
+      "name": "Contour Shape",
+      "position": 1,
+      "values": [
+        "CC Contour Shape",
+        "C Contour Shape",
+        "AA Contour Shape",
+        "A Contour Shape"
+      ]
+    },
+    {
+      "id": 9945503269025,
+      "product_id": 7805759029409,
+      "name": "Width",
+      "position": 2,
+      "values": [
+        "3/4\" width"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899769741473,
+      "alt": "Gold Cloth Contour Tape Strips - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805759029409,
+      "created_at": "2023-11-13T09:12:45-05:00",
+      "updated_at": "2023-11-13T16:21:33-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899769741473",
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST-GoldCloth-AACurve_2000x_a78b13f6-caff-432c-8ed8-5b2249b38c2a.webp?v=1702654907",
+      "variant_ids": [
+        43408634020001
+      ]
+    },
+    {
+      "id": 37899769774241,
+      "alt": "Gold Cloth Contour Tape Strips - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805759029409,
+      "created_at": "2023-11-13T09:12:45-05:00",
+      "updated_at": "2023-12-15T10:58:44-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899769774241",
+      "width": 400,
+      "height": 400,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST-GoldCloth-ACurve_400x_56a39863-677e-4576-8aee-b7bc590f7457.webp?v=1702655924",
+      "variant_ids": [
+        43408634052769
+      ]
+    },
+    {
+      "id": 37899769807009,
+      "alt": "Gold Cloth Contour Tape Strips - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7805759029409,
+      "created_at": "2023-11-13T09:12:45-05:00",
+      "updated_at": "2023-11-13T16:21:34-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899769807009",
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST-GoldCloth-CCCurve_2000x_f0eb7b6c-f053-4c72-97df-49191820fcf2.webp?v=1699884765",
+      "variant_ids": [
+        43408633954465
+      ]
+    },
+    {
+      "id": 37899769839777,
+      "alt": "Gold Cloth Contour Tape Strips - OneHead Hair Solutions",
+      "position": 4,
+      "product_id": 7805759029409,
+      "created_at": "2023-11-13T09:12:45-05:00",
+      "updated_at": "2023-11-13T16:21:34-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899769839777",
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST-GoldCloth-BackCurve_2000x_fc790992-ffa1-4949-9725-6ec499695da1.webp?v=1702654919",
+      "variant_ids": [
+        43408633987233
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899769741473,
+    "alt": "Gold Cloth Contour Tape Strips - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805759029409,
+    "created_at": "2023-11-13T09:12:45-05:00",
+    "updated_at": "2023-11-13T16:21:33-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899769741473",
+    "width": 2000,
+    "height": 2000,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ST-GoldCloth-AACurve_2000x_a78b13f6-caff-432c-8ed8-5b2249b38c2a.webp?v=1702654907",
+    "variant_ids": [
+      43408634020001
+    ]
+  }
+}

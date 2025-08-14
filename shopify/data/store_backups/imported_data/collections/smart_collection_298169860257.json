@@ -1,0 +1,42 @@
+{
+  "id": 298169860257,
+  "handle": "prep-scalp-treatment",
+  "title": "Scalp Prep & Treatment",
+  "updated_at": "2025-07-07T16:49:36-04:00",
+  "body_html": "",
+  "published_at": "2023-11-16T02:01:54-05:00",
+  "sort_order": "best-selling",
+  "template_suffix": "",
+  "disjunctive": true,
+  "rules": [
+    {
+      "column": "type",
+      "relation": "equals",
+      "condition": "Preparation"
+    },
+    {
+      "column": "type",
+      "relation": "equals",
+      "condition": "Skin Care"
+    },
+    {
+      "column": "type",
+      "relation": "equals",
+      "condition": "Scalp Protector"
+    },
+    {
+      "column": "type",
+      "relation": "equals",
+      "condition": "Scalp Treatments"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/298169860257",
+  "image": {
+    "created_at": "2023-11-16T02:43:54-05:00",
+    "alt": null,
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collection-image-pre-scalp-treatments-1200x1200.jpg?v=1702654058"
+  }
+}

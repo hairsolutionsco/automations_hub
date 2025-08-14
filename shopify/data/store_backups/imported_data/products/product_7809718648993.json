@@ -1,0 +1,137 @@
+{
+  "id": 7809718648993,
+  "title": "Lace Hair System With Skin Perimeters",
+  "body_html": "\n    <p> </p>\n    <h2>Lace with Skin Perimeter Hair System</h2>\n    <p>Lace with Skin Perimeter Hair System: Unmatched Comfort and Durability \n Discover an exceptional balance between breathability and strong bonding with our Lace Hair System, featuring skin perimeters. This men's hairpiece is expertly crafted from premium lace and is fortified with a 1.5-inch polyurethane reinforcement strip around the edges. This cutting-edge pairing allows for the airiness of lace alongside the steadfast bonding qualities of polyurethane. \n This dual-base architecture opens the door to various secure bonding methods, making the system compatible with both tapes and liquid adhesives. As an addition to our diverse collection of all-lace and all-skin options, this hair system is designed to suit a wide array of lifestyle requirements, preferences, and necessities. \n Key Features: \n \n \n Base Material:  Superior mesh/lace paired with a 0.06 mm polyurethane edge, offering the pinnacle of comfort and resilience. \n \n Default Size:  Available in a convenient standard size of 10 x 8 inches (Length x Width), primed for effortless customization. \n \n Hair Grade:  Comes with premium A-Grade Indian Hair for a convincingly natural aesthetic. \n \n Wave/Curl:  Fashioned with a standard body wave to ensure maximum styling flexibility. \n \n Lifespan:  Engineered for a lifespan of 4 to 6 months with regular maintenance. \n \n Choose our Lace with Skin Perimeter Hair System for a tailored, breathable, and enduring hair replacement solution. Ideal for both newcomers and veterans of hair systems, this product aims to fulfill your individual needs while delivering a broad spectrum of styling options.\n\n\ud83d\udca1 Why Choose This Hair System?\n- Ultra-thin, natural-looking base for seamless blending\n- Lightweight and breathable for all-day comfort\n- Designed for durability with proper maintenance\n- Ideal for achieving a natural hairline with a secure fit\n\n\ud83d\uded2 Order now and enjoy a confidence-boosting, natural look!</p>\n    <h4>Key Features:</h4>\n    <ul>\n        <li>\n<strong>Base Material:</strong> High-quality polyurethane</li>\n        <li>\n<strong>Default Size:</strong> Standard dimensions available</li>\n        <li>\n<strong>Hair Quality:</strong> Premium Indian Remy hair</li>\n        <li>\n<strong>Density:</strong> Medium-light for a natural look</li>\n        <li>\n<strong>Wave/Curl Pattern:</strong> Standard body wave</li>\n        <li>\n<strong>Lifespan:</strong> 3-6 months with proper care</li>\n    </ul>\n    <p>Designed for comfort, durability, and a seamless natural appearance.</p>\n    ",
+  "vendor": "OneHead Hair Solutions",
+  "product_type": "Men's Hair Systems",
+  "created_at": "2023-11-17T10:56:16-05:00",
+  "handle": "french-lace-hair-system-with-skin-perimeters",
+  "updated_at": "2025-07-07T16:33:21-04:00",
+  "published_at": "2023-11-17T10:56:15-05:00",
+  "template_suffix": "premade-hair-systems",
+  "published_scope": "web",
+  "tags": "lace, Lace Base, Lace Front, Ready-to-wear, Skin Base, Super Thin Skin, Ultra Thin Skin",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7809718648993",
+  "variants": [
+    {
+      "id": 43433054797985,
+      "product_id": 7809718648993,
+      "title": "Default Title",
+      "price": "299.00",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-17T10:56:16-05:00",
+      "updated_at": "2025-01-24T17:14:24-05:00",
+      "taxable": true,
+      "barcode": null,
+      "fulfillment_service": "manual",
+      "grams": 385,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": null,
+      "weight": 385.0,
+      "weight_unit": "g",
+      "inventory_item_id": 45534308237473,
+      "inventory_quantity": 1000,
+      "old_inventory_quantity": 1000,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43433054797985",
+      "image_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": 9949622141089,
+      "product_id": 7809718648993,
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37925670289569,
+      "alt": "Pro-Edge Lace | High-Grade French Lace Hair System With Skin Perimeters - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7809718648993,
+      "created_at": "2023-11-17T10:56:26-05:00",
+      "updated_at": "2025-02-12T10:31:35-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925670289569",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/lace-with-skin-perimeter-hair-system-image-1_63609de0-2448-411e-9aaa-fd6d5deb1814.jpg?v=1739374295",
+      "variant_ids": []
+    },
+    {
+      "id": 37925670322337,
+      "alt": "Pro-Edge Lace | High-Grade French Lace Hair System With Skin Perimeters - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7809718648993,
+      "created_at": "2023-11-17T10:56:27-05:00",
+      "updated_at": "2025-02-12T10:31:35-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925670322337",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/lace-hairline-image-3_0279a38c-1f0f-4cac-83da-c52c7d24dbf3.jpg?v=1739374295",
+      "variant_ids": []
+    },
+    {
+      "id": 37925670355105,
+      "alt": "Pro-Edge Lace | High-Grade French Lace Hair System With Skin Perimeters - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7809718648993,
+      "created_at": "2023-11-17T10:56:27-05:00",
+      "updated_at": "2025-02-12T10:31:36-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925670355105",
+      "width": 1200,
+      "height": 1200,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/french-lace-with-skin-edges-medium-density-image-3_f0b675a6-9201-4626-a80e-84709d97335a.jpg?v=1739374296",
+      "variant_ids": []
+    },
+    {
+      "id": 37925670387873,
+      "alt": "Pro-Edge Lace | High-Grade French Lace Hair System With Skin Perimeters - OneHead Hair Solutions",
+      "position": 4,
+      "product_id": 7809718648993,
+      "created_at": "2023-11-17T10:56:27-05:00",
+      "updated_at": "2025-02-12T10:31:36-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925670387873",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/hybrid-lace-skin-edges-hairpiece-toupee-view-3_67c0dfa5-47b0-444c-aadf-91bc25127684.jpg?v=1739374296",
+      "variant_ids": []
+    },
+    {
+      "id": 37925670420641,
+      "alt": "Pro-Edge Lace | High-Grade French Lace Hair System With Skin Perimeters - OneHead Hair Solutions",
+      "position": 5,
+      "product_id": 7809718648993,
+      "created_at": "2023-11-17T10:56:27-05:00",
+      "updated_at": "2025-02-12T10:31:36-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37925670420641",
+      "width": 600,
+      "height": 600,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/hybrid-lace-skin-edges-hairpiece-toupee-view-4_58a5eba2-07c7-4033-a2d3-a99bef8b44b2.jpg?v=1739374296",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37925670289569,
+    "alt": "Pro-Edge Lace | High-Grade French Lace Hair System With Skin Perimeters - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7809718648993,
+    "created_at": "2023-11-17T10:56:26-05:00",
+    "updated_at": "2025-02-12T10:31:35-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37925670289569",
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/lace-with-skin-perimeter-hair-system-image-1_63609de0-2448-411e-9aaa-fd6d5deb1814.jpg?v=1739374295",
+    "variant_ids": []
+  }
+}

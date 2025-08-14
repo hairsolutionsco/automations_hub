@@ -1,0 +1,154 @@
+{
+  "id": 8202735059105,
+  "title": "Pro Series Daily Care Shampoo & Conditioner Set | Sulfate-Free, Moisturizing, Anti-Frizz, Color-Safe for Wigs & Hair Systems - 8 Fl Oz each",
+  "body_html": "<div><div id=\"productDescription\" class=\"a-section a-spacing-small\">\n <p><span>Hydrate, protect, and add shine to lace wigs and hair systems daily with Pro Series sulfate-free shampoo and conditioner, formulated to prevent dryness, reduce frizz, and maintain color vibrancy.</span></p>\n</div></div><div><div id=\"feature-bullets\" class=\"a-section a-spacing-medium a-spacing-top-small\">\n <ul class=\"a-unordered-list a-vertical a-spacing-mini\">\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> COMPLETE DAILY CARE FOR WIGS &amp; HAIR SYSTEMS The Pro Series Shampoo &amp; Conditioner Combo offers a gentle, sulfate-free solution tailored for wigs, toupees, and hair systems. This daily care duo, made in Ireland, keeps hair soft, vibrant, and frizz-free, ensuring a fresh, manageable look without damage. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> NATURAL INGREDIENTS FOR NOURISHING CLEANSE Our shampoo is enriched with Aloe, Argan, Panthenol, and Rosemary extracts, gently cleansing hair systems to remove buildup and oil while leaving hair refreshed. The conditioner hydrates with Aloe Vera, Cucumber, and Argan Oil, enhancing shine and softness. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> ANTI-FRIZZ, MOISTURIZING FORMULA FOR HEALTHY HAIR Say goodbye to dryness and hello to shine! This combo protects color vibrancy and prevents frizz, restoring moisture and elasticity to keep hair looking bouncy and healthy. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> REVITALIZES AND STRENGTHENS HAIR SYSTEMS The protein-rich formula with hydrolyzed proteins repairs damaged hair, reduces breakage, and strengthens hair systems. It\u2019s ideal for maintaining the beauty of lace wigs, toupees, and hairpieces. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> SAFE FOR YOU &amp; THE PLANET Crafted with eco-friendly ingredients, this combo is free from sulfates, parabens, and harsh chemicals. Enjoy vibrant, healthy hair with cruelty-free formulas that care for your hair and the environment. </span></li>\n </ul>\n <div data-csa-c-content-id=\"voyager-product-details-jumplink\" data-csa-c-slot-id=\"voyager-product-details-jumplink\" data-csa-c-type=\"link\" class=\"a-section aok-hidden\">\n<span class=\"caretnext\">\u203a</span> <a id=\"seeMoreDetailsLink\" class=\"a-link-normal\" href=\"#productDetails\"> See more product details </a>\n </div>\n</div></div><div><div class=\"a-section a-spacing-small a-spacing-top-small\">\n <table class=\"a-normal a-spacing-micro\">\n  <tbody>\n   <tr class=\"a-spacing-small po-item_form\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Item Form</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Liquid</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-brand\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Brand</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Professional Hair Labs</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-hair_type\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Hair Type</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">All</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-scent\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Scent</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Rosemary</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-number_of_items\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Number of Items</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">1</span></td>\n   </tr>\n  </tbody>\n </table>\n</div></div>",
+  "vendor": "OneHead Hair Solutions",
+  "product_type": "",
+  "created_at": "2025-02-13T06:05:18-05:00",
+  "handle": "pro-series-daily-care-shampoo-conditioner-set-sulfate-free-moisturizing-anti-frizz-color-safe-for-wigs-hair-systems-8-fl-oz-each",
+  "updated_at": "2025-07-04T20:52:08-04:00",
+  "published_at": null,
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/8202735059105",
+  "variants": [
+    {
+      "id": 44846216478881,
+      "product_id": 8202735059105,
+      "title": "Default Title",
+      "price": "34.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": "34.99",
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "created_at": "2025-02-13T06:05:18-05:00",
+      "updated_at": "2025-02-13T06:05:20-05:00",
+      "taxable": true,
+      "barcode": "B0DLBP6XKQ",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": null,
+      "requires_shipping": true,
+      "sku": "B0DLBP6XKQ",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 46959823421601,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/44846216478881",
+      "image_id": 41040768729249
+    }
+  ],
+  "options": [
+    {
+      "id": 10417053171873,
+      "product_id": 8202735059105,
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 41040768729249,
+      "alt": null,
+      "position": 1,
+      "product_id": 8202735059105,
+      "created_at": "2025-02-13T06:05:18-05:00",
+      "updated_at": "2025-02-13T06:05:20-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040768729249",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/61kN22G57gL._SL1500.jpg?v=1739444720",
+      "variant_ids": [
+        44846216478881
+      ]
+    },
+    {
+      "id": 41040768762017,
+      "alt": null,
+      "position": 2,
+      "product_id": 8202735059105,
+      "created_at": "2025-02-13T06:05:18-05:00",
+      "updated_at": "2025-02-13T06:05:20-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040768762017",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/715wbBt4R7L._SL1500.jpg?v=1739444720",
+      "variant_ids": []
+    },
+    {
+      "id": 41040768827553,
+      "alt": null,
+      "position": 3,
+      "product_id": 8202735059105,
+      "created_at": "2025-02-13T06:05:18-05:00",
+      "updated_at": "2025-02-13T06:05:20-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040768827553",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/61t-uKY0VTL._SL1500.jpg?v=1739444720",
+      "variant_ids": []
+    },
+    {
+      "id": 41040768696481,
+      "alt": null,
+      "position": 4,
+      "product_id": 8202735059105,
+      "created_at": "2025-02-13T06:05:18-05:00",
+      "updated_at": "2025-02-13T06:05:20-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040768696481",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/51FGUQEWYdL._SL1500.jpg?v=1739444720",
+      "variant_ids": []
+    },
+    {
+      "id": 41040768860321,
+      "alt": null,
+      "position": 5,
+      "product_id": 8202735059105,
+      "created_at": "2025-02-13T06:05:18-05:00",
+      "updated_at": "2025-02-13T06:05:20-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040768860321",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/61SJvVsHi1L._SL1500.jpg?v=1739444720",
+      "variant_ids": []
+    },
+    {
+      "id": 41040768794785,
+      "alt": null,
+      "position": 6,
+      "product_id": 8202735059105,
+      "created_at": "2025-02-13T06:05:18-05:00",
+      "updated_at": "2025-02-13T06:05:20-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040768794785",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/919ppqEzXqL._SL1500.jpg?v=1739444720",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 41040768729249,
+    "alt": null,
+    "position": 1,
+    "product_id": 8202735059105,
+    "created_at": "2025-02-13T06:05:18-05:00",
+    "updated_at": "2025-02-13T06:05:20-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/41040768729249",
+    "width": 1500,
+    "height": 1500,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/61kN22G57gL._SL1500.jpg?v=1739444720",
+    "variant_ids": [
+      44846216478881
+    ]
+  }
+}

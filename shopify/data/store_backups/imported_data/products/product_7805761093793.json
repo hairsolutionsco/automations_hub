@@ -1,0 +1,185 @@
+{
+  "id": 7805761093793,
+  "title": "GhostBond Classic",
+  "body_html": "<div class=\"woocommerce-product-details__short-description\">\n<p>You can never go wrong with an original and GHOSTBOND Water Resistant Adhesive by Pro Hair Labs stands the test of time. Our first high-performance adhesive contains no harsh chemicals, no toxic ingredients, and no latex so you can feel confident that you will get a superior hold that is safe and gentle to your skin. GHOSTBOND is designed to be impervious to water and skin oils which gives it a strong bond that will last up to four weeks through strenuous physical activity, high humidity, rainstorms, and daily showers.</p>\n<ul>\n<li>GHOSTBOND Water Resistant Adhesive by Pro Hair Labs resists humidity, sweat, and water to provide a strong bond with your skin.</li>\n<li>Specially designed for high temperatures and humidity, heavy perspiration and oily scalps to give a reliable bond regardless of the conditions.</li>\n<li>The original GHOSTBOND Adhesive is a water-based copolymer that is formulated to give you four weeks of worry-free hold.</li>\n<li>Contains no harsh chemicals or toxins and no latex so it is 100% safe for your skin.</li>\n</ul>\n<div aria-labelledby=\"tab-title-description\" class=\"woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab\" id=\"tab-description\" role=\"tabpanel\" style=\"\">\n<p>GHOSTBOND Classic Water Resistant Adhesive by <a link=\"https://shop.prohairlabs.com/\">Pro Hair Labs</a> resists humidity, sweat, and water to provide a strong bond with your skin.</p>\n<span class=\"cp-load-after-post\"></span> </div>\n<div aria-labelledby=\"tab-title-additional_information\" class=\"woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab\" id=\"tab-additional_information\" role=\"tabpanel\"><table class=\"woocommerce-product-attributes shop_attributes\"><tbody>\n<tr class=\"woocommerce-product-attributes-item woocommerce-product-attributes-item--weight\">\n<th class=\"woocommerce-product-attributes-item__label\">Weight</th>\n<td class=\"woocommerce-product-attributes-item__value\">N/A</td>\n</tr>\n<tr class=\"woocommerce-product-attributes-item woocommerce-product-attributes-item--dimensions\">\n<th class=\"woocommerce-product-attributes-item__label\">Dimensions</th>\n<td class=\"woocommerce-product-attributes-item__value\">N/A</td>\n</tr>\n<tr class=\"woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_size\">\n<th class=\"woocommerce-product-attributes-item__label\">Size</th>\n<td class=\"woocommerce-product-attributes-item__value\"><p>1.3oz, 5oz</p></td>\n</tr>\n<tr class=\"woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_color\">\n<th class=\"woocommerce-product-attributes-item__label\">Color</th>\n<td class=\"woocommerce-product-attributes-item__value\"><p>White</p></td>\n</tr>\n<tr class=\"woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_gender\">\n<th class=\"woocommerce-product-attributes-item__label\">Gender</th>\n<td class=\"woocommerce-product-attributes-item__value\"><p>Unisex</p></td>\n</tr>\n</tbody></table></div>\n</div>",
+  "vendor": "Professional Hair Labs",
+  "product_type": "GHOSTBOND Adhesives, Full Head Adhesives",
+  "created_at": "2023-11-13T09:17:06-05:00",
+  "handle": "ghostbond-classic",
+  "updated_at": "2025-07-07T16:33:02-04:00",
+  "published_at": null,
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "",
+  "status": "archived",
+  "admin_graphql_api_id": "gid://shopify/Product/7805761093793",
+  "variants": [
+    {
+      "id": 43408671244449,
+      "product_id": 7805761093793,
+      "title": "1.3oz",
+      "price": "19.70",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "1.3oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:17:07-05:00",
+      "updated_at": "2024-03-02T05:51:44-05:00",
+      "taxable": true,
+      "barcode": "5391536570026",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": null,
+      "requires_shipping": true,
+      "sku": "PHL-GBCLASS-1",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45509958959265,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408671244449",
+      "image_id": 37899784683681
+    },
+    {
+      "id": 43408671277217,
+      "product_id": 7805761093793,
+      "title": "5oz",
+      "price": "59.56",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "5oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:17:07-05:00",
+      "updated_at": "2024-03-02T05:51:44-05:00",
+      "taxable": true,
+      "barcode": "5391536570019",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": null,
+      "requires_shipping": true,
+      "sku": "PHL-GBCLASS-5",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45509958992033,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408671277217",
+      "image_id": 37899784585377
+    }
+  ],
+  "options": [
+    {
+      "id": 9945505431713,
+      "product_id": 7805761093793,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "1.3oz",
+        "5oz"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899784585377,
+      "alt": "GhostBond Classic - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805761093793,
+      "created_at": "2023-11-13T09:17:07-05:00",
+      "updated_at": "2023-12-15T10:52:39-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899784585377",
+      "width": 1000,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ProHairLabs-54.jpg?v=1702655559",
+      "variant_ids": [
+        43408671277217
+      ]
+    },
+    {
+      "id": 37899784618145,
+      "alt": "GhostBond Classic - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805761093793,
+      "created_at": "2023-11-13T09:17:07-05:00",
+      "updated_at": "2023-12-15T10:52:42-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899784618145",
+      "width": 1000,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ProHairLabs-55.jpg?v=1702655562",
+      "variant_ids": []
+    },
+    {
+      "id": 37899784650913,
+      "alt": "GhostBond Classic - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7805761093793,
+      "created_at": "2023-11-13T09:17:07-05:00",
+      "updated_at": "2023-12-15T10:52:49-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899784650913",
+      "width": 1000,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ProHairLabs-56.jpg?v=1702655569",
+      "variant_ids": []
+    },
+    {
+      "id": 37899784683681,
+      "alt": "GhostBond Classic - OneHead Hair Solutions",
+      "position": 4,
+      "product_id": 7805761093793,
+      "created_at": "2023-11-13T09:17:07-05:00",
+      "updated_at": "2023-12-15T10:49:16-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899784683681",
+      "width": 1000,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ProHairLabs-111.jpg?v=1702655356",
+      "variant_ids": [
+        43408671244449
+      ]
+    },
+    {
+      "id": 37899784716449,
+      "alt": "GhostBond Classic - OneHead Hair Solutions",
+      "position": 5,
+      "product_id": 7805761093793,
+      "created_at": "2023-11-13T09:17:07-05:00",
+      "updated_at": "2023-12-15T10:49:18-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899784716449",
+      "width": 1000,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ProHairLabs-112.jpg?v=1702655358",
+      "variant_ids": []
+    },
+    {
+      "id": 37899784749217,
+      "alt": "GhostBond Classic - OneHead Hair Solutions",
+      "position": 6,
+      "product_id": 7805761093793,
+      "created_at": "2023-11-13T09:17:07-05:00",
+      "updated_at": "2023-12-15T10:49:20-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899784749217",
+      "width": 1000,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ProHairLabs-113.jpg?v=1702655360",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37899784585377,
+    "alt": "GhostBond Classic - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805761093793,
+    "created_at": "2023-11-13T09:17:07-05:00",
+    "updated_at": "2023-12-15T10:52:39-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899784585377",
+    "width": 1000,
+    "height": 1000,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/ProHairLabs-54.jpg?v=1702655559",
+    "variant_ids": [
+      43408671277217
+    ]
+  }
+}

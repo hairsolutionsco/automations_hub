@@ -1,0 +1,42 @@
+{
+  "id": 298367287457,
+  "handle": "maintenance-products",
+  "title": "Maintenance Products",
+  "updated_at": "2025-07-07T16:49:37-04:00",
+  "body_html": "<meta charset=\"utf-8\"><span data-mce-fragment=\"1\">Keep your hairpiece well bonded and in perfect condition with our hair systems attachment and maintenance products. From adhesive and tape to gentle cleansers and conditioners, find everything you need for optimal hair system care at OneHead Hair Solutions.</span>",
+  "published_at": "2023-11-20T15:26:46-05:00",
+  "sort_order": "best-selling",
+  "template_suffix": "",
+  "disjunctive": true,
+  "rules": [
+    {
+      "column": "vendor",
+      "relation": "equals",
+      "condition": "Lux Hair"
+    },
+    {
+      "column": "vendor",
+      "relation": "equals",
+      "condition": "Professional Hair Labs"
+    },
+    {
+      "column": "vendor",
+      "relation": "equals",
+      "condition": "Sunshine Tape"
+    },
+    {
+      "column": "vendor",
+      "relation": "equals",
+      "condition": "Walker Tape"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/298367287457",
+  "image": {
+    "created_at": "2023-11-20T15:27:16-05:00",
+    "alt": null,
+    "width": 1000,
+    "height": 1400,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/Home_-_Header_-_Mobile_-_JPG_-_Maintenance_Products_-_2160x1080_44645c19-41d2-4735-a9a6-800844e63296.jpg?v=1702654055"
+  }
+}

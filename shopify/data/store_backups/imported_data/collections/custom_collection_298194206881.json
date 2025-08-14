@@ -1,0 +1,12 @@
+{
+  "id": 298194206881,
+  "handle": "black-friday-sale",
+  "title": "Black Friday Sale",
+  "updated_at": "2025-07-07T16:49:36-04:00",
+  "body_html": "",
+  "published_at": "2023-11-17T10:40:45-05:00",
+  "sort_order": "manual",
+  "template_suffix": "collection",
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/298194206881"
+}

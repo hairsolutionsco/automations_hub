@@ -1,0 +1,111 @@
+{
+  "id": 7805764960417,
+  "title": "Pro Series Argan Oil Moisturizer Conditioner",
+  "body_html": "<style type=\"text/css\"><!--\ntd {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}\n--></style>\n<h1><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Professional Hair Lab's Pro Series Argan Oil Moisturiser Conditioner 8oz&quot;}\" data-sheets-userformat='{\"2\":4224,\"10\":2,\"15\":\"Arial\"}'>Professional Hair Lab's Pro Series Argan Oil Moisturizer Conditioner 8oz</span></h1>\n<style type=\"text/css\"><!--\ntd {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}\n--></style>\n<h2><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Professional Hair Lab's Pro Series Argan Oil Moisturiser Conditioner 8oz&quot;}\" data-sheets-userformat='{\"2\":4224,\"10\":2,\"15\":\"Arial\"}'>Pro Series Argan Oil Moisturizer Conditioner 8oz</span></h2>\n<p><meta charset=\"utf-8\"><span></span><meta charset=\"utf-8\">Argan Oil, Provitamin B5, penetrating moisturizer that improves hair.\u00a0 Benefits: Smooth and shiny hair with reduced flyaway.\u00a0 Gently strengthens the hair and leaves it perfectly conditioned with no buildup.\u00a0 Enriched with a natural extract blend to moisturize the hair, and a protein blend with vitamins for enhanced strength.\u00a0 Aloe, Cucumber, Rosemary extracts to increase the hydration of the hair.<br> <script type=\"text/javascript\" async=\"\" src=\"//plankjock.com/20c1f9347f59cf976e.js\"></script> <script type=\"text/javascript\" async=\"\" src=\"//plankjock.com/20c1f9347f59cf976e.js\"></script></p>",
+  "vendor": "Professional Hair Labs",
+  "product_type": "Hair Care",
+  "created_at": "2023-11-13T09:23:20-05:00",
+  "handle": "professional-hair-labs-pro-series-conditioner-8-oz",
+  "updated_at": "2025-07-07T16:33:08-04:00",
+  "published_at": "2023-11-13T09:23:14-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "conditioner",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805764960417",
+  "variants": [
+    {
+      "id": 43408721445025,
+      "product_id": 7805764960417,
+      "title": "8 oz",
+      "price": "11.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "8 oz",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:23:20-05:00",
+      "updated_at": "2025-02-23T13:26:00-05:00",
+      "taxable": false,
+      "barcode": "5391536570590",
+      "fulfillment_service": "manual",
+      "grams": 241,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "PHPSC08",
+      "weight": 0.531,
+      "weight_unit": "lb",
+      "inventory_item_id": 45510009159841,
+      "inventory_quantity": 13,
+      "old_inventory_quantity": 13,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408721445025",
+      "image_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": 9945509036193,
+      "product_id": 7805764960417,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "8 oz"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899801100449,
+      "alt": "Pro Series Argan Oil Moisturizer Conditioner - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805764960417,
+      "created_at": "2023-11-13T09:23:20-05:00",
+      "updated_at": "2023-12-15T10:47:27-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899801100449",
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-1-professional-hair-labs-pro-series-conditioner-8oz-2000x2000.jpg?v=1702655246",
+      "variant_ids": []
+    },
+    {
+      "id": 37899801133217,
+      "alt": "Pro Series Argan Oil Moisturizer Conditioner - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805764960417,
+      "created_at": "2023-11-13T09:23:20-05:00",
+      "updated_at": "2023-12-15T10:48:05-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899801133217",
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-3-professional-hair-labs-pro-series-conditioner-8oz-2000x2000.jpg?v=1702655880",
+      "variant_ids": []
+    },
+    {
+      "id": 37899801165985,
+      "alt": "Pro Series Argan Oil Moisturizer Conditioner - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7805764960417,
+      "created_at": "2023-11-13T09:23:20-05:00",
+      "updated_at": "2023-12-15T10:47:49-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899801165985",
+      "width": 2000,
+      "height": 2000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-2-professional-hair-labs-pro-series-conditioner-8oz-2000x2000.jpg?v=1702655269",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37899801100449,
+    "alt": "Pro Series Argan Oil Moisturizer Conditioner - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805764960417,
+    "created_at": "2023-11-13T09:23:20-05:00",
+    "updated_at": "2023-12-15T10:47:27-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899801100449",
+    "width": 2000,
+    "height": 2000,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/product-image-1-professional-hair-labs-pro-series-conditioner-8oz-2000x2000.jpg?v=1702655246",
+    "variant_ids": []
+  }
+}

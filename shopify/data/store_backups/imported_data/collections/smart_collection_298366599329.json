@@ -1,0 +1,57 @@
+{
+  "id": 298366599329,
+  "handle": "removers-solvents",
+  "title": "Removers & Solvents",
+  "updated_at": "2025-07-07T16:49:37-04:00",
+  "body_html": "",
+  "published_at": "2023-11-20T15:16:16-05:00",
+  "sort_order": "best-selling",
+  "template_suffix": "",
+  "disjunctive": true,
+  "rules": [
+    {
+      "column": "type",
+      "relation": "equals",
+      "condition": "Removers"
+    },
+    {
+      "column": "type",
+      "relation": "equals",
+      "condition": "Adhesive Remover"
+    },
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "solvent"
+    },
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "citrus solvent"
+    },
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "remover"
+    },
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "removers"
+    },
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "adhesive remover"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/298366599329",
+  "image": {
+    "created_at": "2023-11-20T15:16:15-05:00",
+    "alt": null,
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collection-image-removers.jpg?v=1700511376"
+  }
+}

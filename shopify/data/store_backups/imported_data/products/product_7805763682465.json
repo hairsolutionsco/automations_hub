@@ -1,0 +1,111 @@
+{
+  "id": 7805763682465,
+  "title": "Pro Series Shampoo",
+  "body_html": "<div class=\"woocommerce-product-details__short-description\">\n<p>Keep your hair replacement unit looking and feeling great with Pro Series Shampoo by Pro Hair Labs. Our professional-grade shampoo is specially formulated to be effective yet gentle enough for everyday use. Pro Series Shampoo is free of harsh chemicals so it is safe and caring for your hair and keeps each strand strong, healthy and looking great. Pro Series Shampoo helps to control itching and scalp oil, and removes all traces of styling products such as hair sprays and gels. Available in a 12.0-ounce bottle. Use daily with Pro Hair Lab\u2019s <a link=\"https://shop.prohairlabs.com/product/pro-series-leave-in/\">Pro Series Conditioner</a>.</p>\n<ul>\n<li>Pro Series Shampoo by Pro Hair Labs is specially formulated to keep your hair replacement unit looking great for years.</li>\n<li>Keeps your hair looking healthy and strong, controls itch and scalp oil and easily removes all traces of styling products.</li>\n<li>Professional-grade shampoo is gentle enough for everyday use. Use with Pro Series Conditioner for best results.</li>\n<li>No harsh chemical means it is 100% safe.</li>\n</ul>\n</div><div aria-labelledby=\"tab-title-description\" class=\"woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab\" id=\"tab-description\" role=\"tabpanel\" style=\"\">\n<p>Pro Series Shampoo is free of harsh chemicals so it is safe and caring for your hair and keeps each strand strong, healthy and looking great.</p>\n<span class=\"cp-load-after-post\"></span> </div><div aria-labelledby=\"tab-title-additional_information\" class=\"woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab\" id=\"tab-additional_information\" role=\"tabpanel\"><table class=\"woocommerce-product-attributes shop_attributes\"><tbody>\n<tr class=\"woocommerce-product-attributes-item woocommerce-product-attributes-item--weight\">\n<th class=\"woocommerce-product-attributes-item__label\">Weight</th>\n<td class=\"woocommerce-product-attributes-item__value\">0.5 kg</td>\n</tr>\n<tr class=\"woocommerce-product-attributes-item woocommerce-product-attributes-item--dimensions\">\n<th class=\"woocommerce-product-attributes-item__label\">Dimensions</th>\n<td class=\"woocommerce-product-attributes-item__value\">4.5 \u00d7 4.5 \u00d7 18 cm</td>\n</tr>\n<tr class=\"woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_color\">\n<th class=\"woocommerce-product-attributes-item__label\">Color</th>\n<td class=\"woocommerce-product-attributes-item__value\"><p>Purple</p></td>\n</tr>\n<tr class=\"woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_gender\">\n<th class=\"woocommerce-product-attributes-item__label\">Gender</th>\n<td class=\"woocommerce-product-attributes-item__value\"><p>Unisex</p></td>\n</tr>\n</tbody></table></div>",
+  "vendor": "Professional Hair Labs",
+  "product_type": "Pro Series Hair Care Line",
+  "created_at": "2023-11-13T09:21:44-05:00",
+  "handle": "pro-series-shampoo",
+  "updated_at": "2025-07-07T16:33:05-04:00",
+  "published_at": null,
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "",
+  "status": "archived",
+  "admin_graphql_api_id": "gid://shopify/Product/7805763682465",
+  "variants": [
+    {
+      "id": 43408706830497,
+      "product_id": 7805763682465,
+      "title": "Default Title",
+      "price": "18.32",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:21:44-05:00",
+      "updated_at": "2024-03-02T05:51:46-05:00",
+      "taxable": true,
+      "barcode": "5391536570583",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": null,
+      "requires_shipping": true,
+      "sku": "PHL-PROS-8",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 45509994545313,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408706830497",
+      "image_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": 9945507791009,
+      "product_id": 7805763682465,
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899796906145,
+      "alt": "Pro Series Shampoo - OneHead Hair Solutions",
+      "position": 1,
+      "product_id": 7805763682465,
+      "created_at": "2023-11-13T09:21:44-05:00",
+      "updated_at": "2023-12-15T10:46:22-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899796906145",
+      "width": 1707,
+      "height": 2560,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/PHL-19-02-20-FULL-RES-WFR01929-Edit-scaled.jpg?v=1702655182",
+      "variant_ids": []
+    },
+    {
+      "id": 37899796938913,
+      "alt": "Pro Series Shampoo - OneHead Hair Solutions",
+      "position": 2,
+      "product_id": 7805763682465,
+      "created_at": "2023-11-13T09:21:44-05:00",
+      "updated_at": "2023-12-15T10:46:28-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899796938913",
+      "width": 1707,
+      "height": 2560,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/PHL-19-02-20-FULL-RES-WFR01930-Edit-scaled.jpg?v=1702655188",
+      "variant_ids": []
+    },
+    {
+      "id": 37899796971681,
+      "alt": "Pro Series Shampoo - OneHead Hair Solutions",
+      "position": 3,
+      "product_id": 7805763682465,
+      "created_at": "2023-11-13T09:21:44-05:00",
+      "updated_at": "2023-12-15T10:46:33-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899796971681",
+      "width": 1707,
+      "height": 2560,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/PHL-19-02-20-FULL-RES-WFR01932-Edit-scaled.jpg?v=1702655192",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37899796906145,
+    "alt": "Pro Series Shampoo - OneHead Hair Solutions",
+    "position": 1,
+    "product_id": 7805763682465,
+    "created_at": "2023-11-13T09:21:44-05:00",
+    "updated_at": "2023-12-15T10:46:22-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899796906145",
+    "width": 1707,
+    "height": 2560,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/PHL-19-02-20-FULL-RES-WFR01929-Edit-scaled.jpg?v=1702655182",
+    "variant_ids": []
+  }
+}

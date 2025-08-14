@@ -1,0 +1,27 @@
+{
+  "id": 298170187937,
+  "handle": "sunshine-tape",
+  "title": "Sunshine Tape",
+  "updated_at": "2025-07-07T16:49:36-04:00",
+  "body_html": "",
+  "published_at": "2023-11-16T02:57:39-05:00",
+  "sort_order": "best-selling",
+  "template_suffix": "",
+  "disjunctive": true,
+  "rules": [
+    {
+      "column": "vendor",
+      "relation": "equals",
+      "condition": "Sunshine Tape"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/298170187937",
+  "image": {
+    "created_at": "2023-11-16T02:57:38-05:00",
+    "alt": "",
+    "width": 1600,
+    "height": 600,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/collection-banner-sunshine-tape.png?v=1700121458"
+  }
+}

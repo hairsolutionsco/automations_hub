@@ -1,0 +1,153 @@
+{
+  "id": 7805764862113,
+  "title": "Clean Red Contour Tape",
+  "body_html": "<meta charset=\"utf-8\">\n<p data-mce-fragment=\"1\">Here is the perfect balance between strong hold and ease of cleaning for your hair system maintenance: Our new Clean Red tape.</p>\n<p data-mce-fragment=\"1\">Clean red was created to fill the gap between our more aggressive tapes, which give you a longer hold, and the tapes focused on treating allergies, whose hold is too short for prolonged use. With this aim in mind, Clean red is conceived to offer you the most hygienic option and a relatively strong hold. Apart from providing appropriate hold, the ease of cleaning and non-aggressive adhesion makes it an ideal tape for everyday use.</p>\n<p data-mce-fragment=\"1\">\u00a0</p>\n<h5 class=\"et_pb_toggle_title\">Advantages</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img height=\"3\" width=\"44\" alt=\"\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" class=\"wp-image-145 alignnone size-full\"></p>\n</div>\n<ul>\n<li>Strong hold for up to 7 days.</li>\n<li>Maximum hygiene: minimal residue and very easy to clean.</li>\n<li>Ideal for users who are looking for a slightly longer duration than a few days, and who are also not looking for the longest duration.</li>\n<li>The liner is red, but the tape is transparent.</li>\n<li>Especially suitable for skin hairpieces and extensions.</li>\n<li>Available in a 3-metre cuttable format.</li>\n<li>Specific formulation for hair adhesion in prostheses, wigs, and extensions.</li>\n</ul>\n<p>\u00a0</p>\n<h5 class=\"et_pb_toggle_title\">Format</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img height=\"3\" width=\"44\" alt=\"\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" class=\"wp-image-145 alignnone size-full\"></p>\n<p>Each bag contains 36 tapes of 8,5 x 2 cm.</p>\n</div>\n<div class=\"et_pb_toggle_content clearfix\">\n<p>\u00a0<br></p>\n<h5 class=\"et_pb_toggle_title\">Recommendations for use</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img height=\"3\" width=\"44\" alt=\"\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" class=\"wp-image-145 alignnone size-full\"></p>\n<ul>\n<li>Remove the paper from one side and glue it on the scalp at the desired attachment points. At the edges, placing the tape 2 millimeters behind the reference line is recommended.</li>\n<li>Once placed on the scalp, remove the paper from the other side of the adhesive to glue the hair system.</li>\n<li>For backcombed toupees, where\u00a0a very natural hairline is desired, liquid adhesive is highly recommended.</li>\n</ul>\n</div>\n</div>",
+  "vendor": "Lux Hair",
+  "product_type": "Tapes",
+  "created_at": "2023-11-13T09:23:11-05:00",
+  "handle": "lux-hair-clean-red-contour-tape-36-pcs",
+  "updated_at": "2025-08-02T15:35:05-04:00",
+  "published_at": "2023-11-13T09:23:07-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "tape, tape contour strips",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805764862113",
+  "variants": [
+    {
+      "id": 43408721412257,
+      "product_id": 7805764862113,
+      "title": "36 pcs / CC Contour",
+      "price": "5.09",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "36 pcs",
+      "option2": "CC Contour",
+      "option3": null,
+      "created_at": "2023-11-13T09:23:11-05:00",
+      "updated_at": "2024-05-17T13:01:29-04:00",
+      "taxable": true,
+      "barcode": "B09JKYMBV3",
+      "fulfillment_service": "manual",
+      "grams": 26,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "LHCRCC",
+      "weight": 26.08,
+      "weight_unit": "g",
+      "inventory_item_id": 45510009127073,
+      "inventory_quantity": 1000,
+      "old_inventory_quantity": 1000,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408721412257",
+      "image_id": 37899800543393
+    },
+    {
+      "id": 44347171176609,
+      "product_id": 7805764862113,
+      "title": "36 pcs / Straight",
+      "price": "5.09",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "36 pcs",
+      "option2": "Straight",
+      "option3": null,
+      "created_at": "2024-05-19T13:46:02-04:00",
+      "updated_at": "2024-05-19T16:53:11-04:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 26,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "LHCRS",
+      "weight": 26.08,
+      "weight_unit": "g",
+      "inventory_item_id": 46448530817185,
+      "inventory_quantity": 999,
+      "old_inventory_quantity": 999,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/44347171176609",
+      "image_id": 39182609449121
+    }
+  ],
+  "options": [
+    {
+      "id": 9945508905121,
+      "product_id": 7805764862113,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "36 pcs"
+      ]
+    },
+    {
+      "id": 9945508937889,
+      "product_id": 7805764862113,
+      "name": "Shape Options",
+      "position": 2,
+      "values": [
+        "CC Contour",
+        "Straight"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899800510625,
+      "alt": "Lux Hair's Clean Red Contour Adhesive Tape 36pcs",
+      "position": 1,
+      "product_id": 7805764862113,
+      "created_at": "2023-11-13T09:23:11-05:00",
+      "updated_at": "2023-12-15T10:41:33-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899800510625",
+      "width": 932,
+      "height": 932,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/lux-hair-clean-red-contour-adhesive-tape-strips-36-pcs_1ed19125-7bd5-4f17-847e-c48b8ea014a9.jpg?v=1702654893",
+      "variant_ids": []
+    },
+    {
+      "id": 37899800543393,
+      "alt": "Clean Red Contour Tape - The Hair Solutions Store",
+      "position": 2,
+      "product_id": 7805764862113,
+      "created_at": "2023-11-13T09:23:11-05:00",
+      "updated_at": "2023-12-15T10:42:26-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899800543393",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/LUXHAIR-AMAZON-CLEANRED-CC-3_d9c15797-8d11-4718-92ae-aa6c8a665a74.jpg?v=1702654946",
+      "variant_ids": [
+        43408721412257
+      ]
+    },
+    {
+      "id": 39182609449121,
+      "alt": null,
+      "position": 3,
+      "product_id": 7805764862113,
+      "created_at": "2024-05-19T13:45:25-04:00",
+      "updated_at": "2024-05-19T13:46:02-04:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/39182609449121",
+      "width": 1450,
+      "height": 1000,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/Clean-Red-rectas.jpg?v=1716140727",
+      "variant_ids": [
+        44347171176609
+      ]
+    }
+  ],
+  "image": {
+    "id": 37899800510625,
+    "alt": "Lux Hair's Clean Red Contour Adhesive Tape 36pcs",
+    "position": 1,
+    "product_id": 7805764862113,
+    "created_at": "2023-11-13T09:23:11-05:00",
+    "updated_at": "2023-12-15T10:41:33-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899800510625",
+    "width": 932,
+    "height": 932,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/lux-hair-clean-red-contour-adhesive-tape-strips-36-pcs_1ed19125-7bd5-4f17-847e-c48b8ea014a9.jpg?v=1702654893",
+    "variant_ids": []
+  }
+}

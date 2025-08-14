@@ -1,0 +1,379 @@
+[
+  {
+    "id": 6715456225441,
+    "admin_graphql_api_id": "gid://shopify/Order/6715456225441",
+    "app_id": 580111,
+    "browser_ip": "50.117.146.222",
+    "buyer_accepts_marketing": true,
+    "cancel_reason": null,
+    "cancelled_at": null,
+    "cart_token": "hWN19QVE04QEcoIcoCLq15M2",
+    "checkout_id": 34557917331617,
+    "checkout_token": "d9fb27cb236316c804d329c010150226",
+    "client_details": {
+      "accept_language": "en-CA",
+      "browser_height": null,
+      "browser_ip": "50.117.146.222",
+      "browser_width": null,
+      "session_hash": null,
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1"
+    },
+    "closed_at": null,
+    "confirmation_number": "JVAPGKN0Q",
+    "confirmed": true,
+    "contact_email": "paul.mcfadyen@hotmail.com",
+    "created_at": "2025-07-28T12:32:51-04:00",
+    "currency": "USD",
+    "current_subtotal_price": "399.00",
+    "current_subtotal_price_set": {
+      "shop_money": {
+        "amount": "399.00",
+        "currency_code": "USD"
+      },
+      "presentment_money": {
+        "amount": "399.00",
+        "currency_code": "USD"
+      }
+    },
+    "current_total_additional_fees_set": null,
+    "current_total_discounts": "0.00",
+    "current_total_discounts_set": {
+      "shop_money": {
+        "amount": "0.00",
+        "currency_code": "USD"
+      },
+      "presentment_money": {
+        "amount": "0.00",
+        "currency_code": "USD"
+      }
+    },
+    "current_total_duties_set": null,
+    "current_total_price": "434.00",
+    "current_total_price_set": {
+      "shop_money": {
+        "amount": "434.00",
+        "currency_code": "USD"
+      },
+      "presentment_money": {
+        "amount": "434.00",
+        "currency_code": "USD"
+      }
+    },
+    "current_total_tax": "0.00",
+    "current_total_tax_set": {
+      "shop_money": {
+        "amount": "0.00",
+        "currency_code": "USD"
+      },
+      "presentment_money": {
+        "amount": "0.00",
+        "currency_code": "USD"
+      }
+    },
+    "customer_locale": "en-CA",
+    "device_id": null,
+    "discount_codes": [],
+    "email": "paul.mcfadyen@hotmail.com",
+    "estimated_taxes": false,
+    "financial_status": "paid",
+    "fulfillment_status": null,
+    "landing_site": "/checkout/27691155508/cn/hWN19QVE04QEcoIcoCLq15M2/shop_pay_callback?_cs=3.AMPS&authorization=aFhaOHdXUEUwZlFvczlSNWR3eE1hb1R5aUp0TW53TEtYRmtReHM3cEZzWW9DNSsvVldqZzhROTNGdktWNUhTUytsVktCMkZwVHlZNGYyVEpkT3laWFUxeG9rV3BVaFVUY2ladVNyTjdoNSs4QUowVmJML2NiWGNJZkgyTXo4YzZ6a1pyb1ZWTEthTC9vZk1KbHVMaXpBeHhnOGpuOU9aK2t1NkhMWnVZVmtuUEgvdjdpZHhJYmpsQWVBd0FqYWZuLS1RNTBuWjBjOXlOa1B0c0NVVDUrMDlBPT0=--a37c982895d5426544cff8d90c663a7525f553cc&checkout_profile_context=eyJpZCI6NTk0NTQyNzUzLCJwcm9maWxlTmFtZSI6Ik9uZUhlYWQgSGFpciBTb2x1dGlvbnMgY29uZmlndXJhdGlvbiIsImVkaXRlZEF0IjoiMjAyNS0wNi0wNCAxMDoxNDoxNCAtMDQwMCIsImlzUHVibGlzaGVkIjp0cnVlLCJhZG1pblVybCI6ImFkbWluLnNob3BpZnkuY29tIn0=&locale=en-CA&redirect_source=checkout_automatic_redirect&token=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaWQ6XC9cL3Nob3BpZnlcL1Nob3BcLzI3NjkxMTU1NTA4IiwibmJmIjoxNzUzNzIwMzA3LCJzZXNzaW9uX3Rva2VuIjoiQUFFQnJxdG5wTW5RYXE0SDVMMWNSOGRCZ09GR1Z0cnVuSV9RbldUMGIxVmhhTDIxRldHRUhqNWxqaF9IZktMTHA5SVJGcEk3U0IxT0JrNG92YVhpU241cEJEQmhxRlhvNGVwSDNmenlrdHFDZFRuZDJZZEd2REE5cy1ncFZOYzdFRkcxZklLN2lIanZKNk1aRVdhQy0zb2MySExaa1VkcFpFV1p2UkZfOW1tZFM5RlRQZ0VwUnJYU0FFNVlzNm1ZdWo2R0hzQ2NWQnJMMWlhNlFmb1VlY3g3NXciLCJsb2dpbl93aXRoX3Nob3BfY3VzdG9tZXJfaWQiOjUyMzIzNTMwMTgwMTcsInNob3BfYWNjb3VudF91dWlkIjoiOTJkMjMzYjItMTU3My00MzgwLTkzNTMtMjEwOTZhYTBhZmUxIiwic2hvcF9wYXlfZGF0YSI6IkNBSVNHWEJoZFd3dWJXTm1ZV1I1Wlc1QWFHOTBiV0ZwYkM1amIyMGFFZ1dQWEhpalhDOE9mQ3lmTzJ6M01PZlZCaUlRa3RJenNoVnpRNENUVXlFSmFxQ3Y0VGo5eUo3RUJrb1NFZHJ2Vk9fRjl2TE5yTzFhc182Wl82dFkiLCJpZGVudGl0eV9jdXN0b21lcl9pZCI6NTIzMjM1MzAxODAxNywiY3VzdG9tZXJfYXV0aGVudGljYXRpb25fYXV0aF9wcm92aWRlciI6ImNvcmVfaWRwIiwiZXhwIjoxNzUzNzQxOTA3LCJsYW5kaW5nX3BhZ2UiOiJcL2NvbGxlY3Rpb25zXC9tZW5zLWhhaXItc3lzdGVtcyJ9.i-zPussblBh4VAHdI9Ktjp64UoCv3pB3I-HBEaxHjuM&tracking_unique=0bc56b93-8b50-4c24-ac60-134071ca00bc&tracking_visit=fc6f4f90-3a5d-43ea-8d5f-3f2764d1c12a",
+    "landing_site_ref": null,
+    "location_id": null,
+    "merchant_of_record_app_id": null,
+    "name": "OHS-2025-1311",
+    "note": null,
+    "note_attributes": [],
+    "number": 311,
+    "order_number": 1311,
+    "order_status_url": "https://shop.oneheadhair.com/27691155508/orders/11dec52ba573ec7e0d0354a867422ab9/authenticate?key=e6ef4748162fb58525a5283c72ba3c63",
+    "original_total_additional_fees_set": null,
+    "original_total_duties_set": null,
+    "payment_gateway_names": [
+      "shopify_payments"
+    ],
+    "phone": "+18673322639",
+    "po_number": null,
+    "presentment_currency": "USD",
+    "processed_at": "2025-07-28T12:32:46-04:00",
+    "reference": null,
+    "referring_site": "https://shop.oneheadhair.com/",
+    "source_identifier": null,
+    "source_name": "web",
+    "source_url": null,
+    "subtotal_price": "399.00",
+    "subtotal_price_set": {
+      "shop_money": {
+        "amount": "399.00",
+        "currency_code": "USD"
+      },
+      "presentment_money": {
+        "amount": "399.00",
+        "currency_code": "USD"
+      }
+    },
+    "tags": "",
+    "tax_exempt": false,
+    "tax_lines": [],
+    "taxes_included": false,
+    "test": false,
+    "token": "11dec52ba573ec7e0d0354a867422ab9",
+    "total_discounts": "0.00",
+    "total_discounts_set": {
+      "shop_money": {
+        "amount": "0.00",
+        "currency_code": "USD"
+      },
+      "presentment_money": {
+        "amount": "0.00",
+        "currency_code": "USD"
+      }
+    },
+    "total_line_items_price": "399.00",
+    "total_line_items_price_set": {
+      "shop_money": {
+        "amount": "399.00",
+        "currency_code": "USD"
+      },
+      "presentment_money": {
+        "amount": "399.00",
+        "currency_code": "USD"
+      }
+    },
+    "total_outstanding": "0.00",
+    "total_price": "434.00",
+    "total_price_set": {
+      "shop_money": {
+        "amount": "434.00",
+        "currency_code": "USD"
+      },
+      "presentment_money": {
+        "amount": "434.00",
+        "currency_code": "USD"
+      }
+    },
+    "total_shipping_price_set": {
+      "shop_money": {
+        "amount": "35.00",
+        "currency_code": "USD"
+      },
+      "presentment_money": {
+        "amount": "35.00",
+        "currency_code": "USD"
+      }
+    },
+    "total_tax": "0.00",
+    "total_tax_set": {
+      "shop_money": {
+        "amount": "0.00",
+        "currency_code": "USD"
+      },
+      "presentment_money": {
+        "amount": "0.00",
+        "currency_code": "USD"
+      }
+    },
+    "total_tip_received": "0.00",
+    "total_weight": 385,
+    "updated_at": "2025-07-28T12:32:53-04:00",
+    "user_id": null,
+    "billing_address": {
+      "first_name": "Paul",
+      "address1": "1A Kluhini Cres",
+      "phone": "+18673322639",
+      "city": "Whitehorse",
+      "zip": "Y1A 3P3",
+      "province": "Yukon",
+      "country": "Canada",
+      "last_name": "McFadyen",
+      "address2": null,
+      "company": null,
+      "latitude": 60.709999,
+      "longitude": -135.033406,
+      "name": "Paul McFadyen",
+      "country_code": "CA",
+      "province_code": "YT"
+    },
+    "customer": {
+      "id": 5232353018017,
+      "created_at": "2021-05-05T02:54:50-04:00",
+      "updated_at": "2025-07-28T12:32:52-04:00",
+      "first_name": "Paul",
+      "last_name": "McFadyen",
+      "state": "enabled",
+      "note": null,
+      "verified_email": true,
+      "multipass_identifier": null,
+      "tax_exempt": false,
+      "email_marketing_consent": {
+        "state": "subscribed",
+        "opt_in_level": "single_opt_in",
+        "consent_updated_at": "2025-07-28T12:32:52-04:00"
+      },
+      "sms_marketing_consent": {
+        "state": "not_subscribed",
+        "opt_in_level": "single_opt_in",
+        "consent_updated_at": null,
+        "consent_collected_from": "OTHER"
+      },
+      "tags": "Login with Shop, Shop",
+      "email": "paul.mcfadyen@hotmail.com",
+      "phone": "+18673322639",
+      "currency": "USD",
+      "tax_exemptions": [],
+      "admin_graphql_api_id": "gid://shopify/Customer/5232353018017",
+      "default_address": {
+        "id": 9518188232865,
+        "customer_id": 5232353018017,
+        "first_name": "Paul",
+        "last_name": "McFadyen",
+        "company": null,
+        "address1": "1A Kluhini Cres",
+        "address2": null,
+        "city": "Whitehorse",
+        "province": "Yukon",
+        "country": "Canada",
+        "zip": "Y1A 3P3",
+        "phone": "+18673322639",
+        "name": "Paul McFadyen",
+        "province_code": "YT",
+        "country_code": "CA",
+        "country_name": "Canada",
+        "default": true
+      }
+    },
+    "discount_applications": [],
+    "fulfillments": [],
+    "line_items": [
+      {
+        "id": 16286533550241,
+        "admin_graphql_api_id": "gid://shopify/LineItem/16286533550241",
+        "attributed_staffs": [],
+        "current_quantity": 1,
+        "fulfillable_quantity": 1,
+        "fulfillment_service": "manual",
+        "fulfillment_status": null,
+        "gift_card": false,
+        "grams": 385,
+        "name": "Full Lace (Premium Remy Hair)",
+        "price": "399.00",
+        "price_set": {
+          "shop_money": {
+            "amount": "399.00",
+            "currency_code": "USD"
+          },
+          "presentment_money": {
+            "amount": "399.00",
+            "currency_code": "USD"
+          }
+        },
+        "product_exists": true,
+        "product_id": 7809718124705,
+        "properties": [
+          {
+            "name": "_has_gpo",
+            "value": "894945"
+          },
+          {
+            "name": "Hair Color",
+            "value": "#320"
+          },
+          {
+            "name": "Base Size Cut Service",
+            "value": "No need"
+          },
+          {
+            "name": "Perm (Waves/Curls)",
+            "value": "No need"
+          },
+          {
+            "name": "Edges Trim Service",
+            "value": "No need"
+          },
+          {
+            "name": "additional informations",
+            "value": "Hair colour is 320"
+          }
+        ],
+        "quantity": 1,
+        "requires_shipping": true,
+        "sku": null,
+        "taxable": true,
+        "title": "Full Lace (Premium Remy Hair)",
+        "total_discount": "0.00",
+        "total_discount_set": {
+          "shop_money": {
+            "amount": "0.00",
+            "currency_code": "USD"
+          },
+          "presentment_money": {
+            "amount": "0.00",
+            "currency_code": "USD"
+          }
+        },
+        "variant_id": 43433049391265,
+        "variant_inventory_management": "shopify",
+        "variant_title": null,
+        "vendor": "OneHead Hair Solutions",
+        "tax_lines": [],
+        "duties": [],
+        "discount_allocations": []
+      }
+    ],
+    "payment_terms": null,
+    "refunds": [],
+    "shipping_address": {
+      "first_name": "Paul",
+      "address1": "1A Kluhini Cres",
+      "phone": "+18673322639",
+      "city": "Whitehorse",
+      "zip": "Y1A 3P3",
+      "province": "Yukon",
+      "country": "Canada",
+      "last_name": "McFadyen",
+      "address2": null,
+      "company": null,
+      "latitude": 60.709999,
+      "longitude": -135.033406,
+      "name": "Paul McFadyen",
+      "country_code": "CA",
+      "province_code": "YT"
+    },
+    "shipping_lines": [
+      {
+        "id": 5454537752737,
+        "carrier_identifier": null,
+        "code": "Express Courrier",
+        "discounted_price": "35.00",
+        "discounted_price_set": {
+          "shop_money": {
+            "amount": "35.00",
+            "currency_code": "USD"
+          },
+          "presentment_money": {
+            "amount": "35.00",
+            "currency_code": "USD"
+          }
+        },
+        "is_removed": false,
+        "phone": null,
+        "price": "35.00",
+        "price_set": {
+          "shop_money": {
+            "amount": "35.00",
+            "currency_code": "USD"
+          },
+          "presentment_money": {
+            "amount": "35.00",
+            "currency_code": "USD"
+          }
+        },
+        "requested_fulfillment_service_id": null,
+        "source": "shopify",
+        "title": "Express Courrier",
+        "tax_lines": [],
+        "discount_allocations": []
+      }
+    ]
+  }
+]

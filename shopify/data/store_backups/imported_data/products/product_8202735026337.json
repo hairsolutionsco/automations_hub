@@ -1,0 +1,154 @@
+{
+  "id": 8202735026337,
+  "title": "Pro Series Daily Hair Care Set - Shampoo, Conditioner & Leave-In | Hydrating, Anti-Frizz, and Heat Protectant for Lace Wigs & Hair Systems | 8 Fl Oz each",
+  "body_html": "<div><div id=\"productDescription\" class=\"a-section a-spacing-small\">\n <p><span>Experience gentle cleansing, deep hydration, and lasting frizz control for your wigs and hair systems with our Pro Series Shampoo, Conditioner, and Leave-In Spray; apply shampoo and conditioner in the shower, then spritz the leave-in on wet or dry hair for softness, shine, and tangle-free styling all day.</span></p>\n</div></div><div><div id=\"feature-bullets\" class=\"a-section a-spacing-medium a-spacing-top-small\">\n <ul class=\"a-unordered-list a-vertical a-spacing-mini\">\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> GENTLE, EFFECTIVE CARE FOR YOUR WIG &amp; HAIR SYSTEM Maintain the health and vibrancy of your lace wigs, toupees, and hair systems with the Pro Series Shampoo, Conditioner, and Leave-In 8oz Set. Each product in this trio works together to cleanse, nourish, and protect, ensuring your hair systems look and feel their best. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> SULFATE-FREE SHAMPOO FOR GENTLE CLEANSING Our Pro Series Shampoo gently removes buildup, oil, and residue from your hair systems. Infused with natural ingredients like Aloe and Argan Oil, it refreshes your wig without stripping away moisture, keeping it soft and vibrant. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> CONDITIONER TO RESTORE MOISTURE AND SMOOTHNESS The Pro Series Conditioner provides intense hydration, leaving hair systems smooth and frizz-free. With a blend of Argan Oil and Cucumber, it detangles and strengthens hair, enhancing its shine and manageability. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> LEAVE-IN SPRAY FOR ALL-DAY HYDRATION AND FRIZZ CONTROL Our Pro Series Leave-In Conditioner Spray is a daily treatment designed to keep hair systems tangle-free and hydrated. This lightweight spray adds moisture, prevents matting, and provides a protective layer against heat and humidity for a polished finish. </span></li>\n  <li class=\"a-spacing-mini\"><span class=\"a-list-item\"> How to Use: Shampoo: Apply a small amount to wet hair, gently massage into the scalp and hair system, then rinse thoroughly for a clean, fresh finish. Conditioner: After shampooing, apply evenly through damp hair, focusing on the lengths and ends. Leave for 2-3 minutes, then rinse well. Leave-In Spray: Spray onto wet or dry hair, focusing on areas prone to tangles or frizz. Comb through to distribute evenly, then style as desired. </span></li>\n </ul>\n <div data-csa-c-content-id=\"voyager-product-details-jumplink\" data-csa-c-slot-id=\"voyager-product-details-jumplink\" data-csa-c-type=\"link\" class=\"a-section aok-hidden\">\n<span class=\"caretnext\">\u203a</span> <a id=\"seeMoreDetailsLink\" class=\"a-link-normal\" href=\"#productDetails\"> See more product details </a>\n </div>\n</div></div><div><div class=\"a-section a-spacing-small a-spacing-top-small\">\n <table class=\"a-normal a-spacing-micro\">\n  <tbody>\n   <tr class=\"a-spacing-small po-item_form\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Item Form</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Liquid</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-brand\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Brand</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Professional Hair Labs</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-hair_type\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Hair Type</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">All</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-scent\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Scent</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">Rosemary</span></td>\n   </tr>\n   <tr class=\"a-spacing-small po-number_of_items\">\n    <td class=\"a-span3\"><span class=\"a-size-base a-text-bold\">Number of Items</span></td>\n    <td class=\"a-span9\"><span class=\"a-size-base po-break-word\">1</span></td>\n   </tr>\n  </tbody>\n </table>\n</div></div>",
+  "vendor": "OneHead Hair Solutions",
+  "product_type": "",
+  "created_at": "2025-02-13T06:05:17-05:00",
+  "handle": "pro-series-daily-hair-care-set-shampoo-conditioner-leave-in-hydrating-anti-frizz-and-heat-protectant-for-lace-wigs-hair-systems-8-fl-oz-each",
+  "updated_at": "2025-07-04T20:52:07-04:00",
+  "published_at": null,
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/8202735026337",
+  "variants": [
+    {
+      "id": 44846216446113,
+      "product_id": 8202735026337,
+      "title": "Default Title",
+      "price": "48.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": "48.99",
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "created_at": "2025-02-13T06:05:17-05:00",
+      "updated_at": "2025-02-13T06:05:19-05:00",
+      "taxable": true,
+      "barcode": "B0DLBSTKWK",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": null,
+      "requires_shipping": true,
+      "sku": "B0DLBSTKWK",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 46959823388833,
+      "inventory_quantity": 0,
+      "old_inventory_quantity": 0,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/44846216446113",
+      "image_id": 41040767910049
+    }
+  ],
+  "options": [
+    {
+      "id": 10417053139105,
+      "product_id": 8202735026337,
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 41040767910049,
+      "alt": null,
+      "position": 1,
+      "product_id": 8202735026337,
+      "created_at": "2025-02-13T06:05:17-05:00",
+      "updated_at": "2025-02-13T06:05:19-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040767910049",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/71jgYRHoPCL._SL1500.jpg?v=1739444719",
+      "variant_ids": [
+        44846216446113
+      ]
+    },
+    {
+      "id": 41040767975585,
+      "alt": null,
+      "position": 2,
+      "product_id": 8202735026337,
+      "created_at": "2025-02-13T06:05:17-05:00",
+      "updated_at": "2025-02-13T06:05:19-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040767975585",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/712FYDMGh3L._SL1500.jpg?v=1739444719",
+      "variant_ids": []
+    },
+    {
+      "id": 41040767877281,
+      "alt": null,
+      "position": 3,
+      "product_id": 8202735026337,
+      "created_at": "2025-02-13T06:05:17-05:00",
+      "updated_at": "2025-02-13T06:05:19-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040767877281",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/719MaVIMXJL._SL1500.jpg?v=1739444719",
+      "variant_ids": []
+    },
+    {
+      "id": 41040767942817,
+      "alt": null,
+      "position": 4,
+      "product_id": 8202735026337,
+      "created_at": "2025-02-13T06:05:17-05:00",
+      "updated_at": "2025-02-13T06:05:19-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040767942817",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/51HlI9BN1lL._SL1500.jpg?v=1739444719",
+      "variant_ids": []
+    },
+    {
+      "id": 41040767844513,
+      "alt": null,
+      "position": 5,
+      "product_id": 8202735026337,
+      "created_at": "2025-02-13T06:05:17-05:00",
+      "updated_at": "2025-02-13T06:05:19-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040767844513",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/51WOc6HzT2L._SL1500.jpg?v=1739444718",
+      "variant_ids": []
+    },
+    {
+      "id": 41040768008353,
+      "alt": null,
+      "position": 6,
+      "product_id": 8202735026337,
+      "created_at": "2025-02-13T06:05:17-05:00",
+      "updated_at": "2025-02-13T06:05:19-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/41040768008353",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/51n4c0QcDTL._SL1500.jpg?v=1739444719",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 41040767910049,
+    "alt": null,
+    "position": 1,
+    "product_id": 8202735026337,
+    "created_at": "2025-02-13T06:05:17-05:00",
+    "updated_at": "2025-02-13T06:05:19-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/41040767910049",
+    "width": 1500,
+    "height": 1500,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/71jgYRHoPCL._SL1500.jpg?v=1739444719",
+    "variant_ids": [
+      44846216446113
+    ]
+  }
+}

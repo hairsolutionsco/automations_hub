@@ -1,0 +1,102 @@
+{
+  "id": 7805773349025,
+  "title": "Super Hold Water-base Liquid Adhesive",
+  "body_html": "<p><meta charset=\"utf-8\"><span data-mce-fragment=\"1\">Water-based liquid adhesive aimed at attaching hair prostheses or other hair systems, such as wigs and hair extensions, to the scalp. The result is matte, which gives a more natural finish, leaving the hair root loose and dull while providing an extra strong hold.</span></p>\n<p>\u00a0</p>\n<h5 class=\"et_pb_toggle_title\">Advantages</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img height=\"3\" width=\"44\" alt=\"\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" class=\"wp-image-145 alignnone size-full\"></p>\n<ul>\n<li>Matte and no-shine finish.</li>\n<li>Loos Hair root.</li>\n<li>Extra resistance to water, perspiration, and high temperatures.</li>\n<li>Long-lasting hold: Approximately 6 days with touch-up.</li>\n<li>The perfect solution for intensive physical activities.</li>\n<li>Specific formulation for hair systems such as hairpieces, wigs, and extensions.</li>\n</ul>\n<p>\u00a0<br></p>\n<h5 class=\"et_pb_toggle_title\">Format</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img class=\"wp-image-145 alignnone size-full\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" alt=\"\" width=\"44\" height=\"3\"></p>\n<p>Quantity: 38 ml.</p>\n<p>\u00a0<br></p>\n<h5 class=\"et_pb_toggle_title\">Recommendations for use</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<p><img class=\"wp-image-145 alignnone size-full\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" alt=\"\" width=\"44\" height=\"3\"></p>\n<ul>\n<li>Apply to the scalp and not to the hair system.</li>\n<li>Apply to the outer edge of the desired area to be bonded.\u00a0Then spread the product evenly, applying the right amount to create a thin layer.</li>\n<li>Applying at least 2 or 3 layers is highly recommended, allowing the glue to dry 2-3 minutes between each coat application.</li>\n<li>Allow the glue to dry for a few minutes before attaching your capillary system.</li>\n</ul>\n</div>\n</div>\n</div>\n<ul></ul>",
+  "vendor": "Lux Hair",
+  "product_type": "Liquid Adhesives",
+  "created_at": "2023-11-13T09:31:32-05:00",
+  "handle": "lux-hair-super-hold-adhesive-38-ml",
+  "updated_at": "2025-07-07T16:33:18-04:00",
+  "published_at": "2023-11-13T09:31:29-05:00",
+  "template_suffix": null,
+  "published_scope": "web",
+  "tags": "liquid adhesive, water-based, white glue",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/7805773349025",
+  "variants": [
+    {
+      "id": 43408827875489,
+      "product_id": 7805773349025,
+      "title": "38 ml",
+      "price": "26.99",
+      "position": 1,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "38 ml",
+      "option2": null,
+      "option3": null,
+      "created_at": "2023-11-13T09:31:32-05:00",
+      "updated_at": "2024-06-18T15:20:59-04:00",
+      "taxable": true,
+      "barcode": "B0869LLHZH",
+      "fulfillment_service": "manual",
+      "grams": 40,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "LHSHA38",
+      "weight": 40.0,
+      "weight_unit": "g",
+      "inventory_item_id": 45510115623073,
+      "inventory_quantity": 1000,
+      "old_inventory_quantity": 1000,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/43408827875489",
+      "image_id": 37899827970209
+    }
+  ],
+  "options": [
+    {
+      "id": 9945517359265,
+      "product_id": 7805773349025,
+      "name": "Size",
+      "position": 1,
+      "values": [
+        "38 ml"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 37899827970209,
+      "alt": "Super Hold Adhesive - hairreplacement.shop",
+      "position": 1,
+      "product_id": 7805773349025,
+      "created_at": "2023-11-13T09:31:32-05:00",
+      "updated_at": "2023-12-15T10:42:08-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899827970209",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/lux-hair-super-hold-liquid-adhesive-glue-38-ml.jpg?v=1702654927",
+      "variant_ids": [
+        43408827875489
+      ]
+    },
+    {
+      "id": 37899828002977,
+      "alt": "Super Hold Adhesive - 38 ml - hairreplacement.shop",
+      "position": 2,
+      "product_id": 7805773349025,
+      "created_at": "2023-11-13T09:31:32-05:00",
+      "updated_at": "2023-12-15T10:43:12-05:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/37899828002977",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/LUXHAIR-AMAZON-PEGAMENTOSLIQUIDOS-SUPERHOLD-2.jpg?v=1702654992",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 37899827970209,
+    "alt": "Super Hold Adhesive - hairreplacement.shop",
+    "position": 1,
+    "product_id": 7805773349025,
+    "created_at": "2023-11-13T09:31:32-05:00",
+    "updated_at": "2023-12-15T10:42:08-05:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/37899827970209",
+    "width": 1500,
+    "height": 1500,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/products/lux-hair-super-hold-liquid-adhesive-glue-38-ml.jpg?v=1702654927",
+    "variant_ids": [
+      43408827875489
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": 291638476961,
+  "handle": "tapes",
+  "title": "Tapes",
+  "updated_at": "2025-07-07T16:49:36-04:00",
+  "body_html": "<meta charset=\"utf-8\"><span data-mce-fragment=\"1\">Find strong, reliable tapes and adhesives for your hair systems at OneHead Hair. Our products ensure a secure fit and comfortable wear for your hairpieces, all day long.</span>",
+  "published_at": "2022-09-20T06:13:35-04:00",
+  "sort_order": "manual",
+  "template_suffix": "",
+  "disjunctive": true,
+  "rules": [
+    {
+      "column": "tag",
+      "relation": "equals",
+      "condition": "Tape"
+    },
+    {
+      "column": "type",
+      "relation": "equals",
+      "condition": "Tapes"
+    },
+    {
+      "column": "type",
+      "relation": "equals",
+      "condition": "Tape Roll"
+    },
+    {
+      "column": "type",
+      "relation": "equals",
+      "condition": "Tape Rolls"
+    }
+  ],
+  "published_scope": "web",
+  "admin_graphql_api_id": "gid://shopify/Collection/291638476961",
+  "image": {
+    "created_at": "2022-09-20T06:21:19-04:00",
+    "alt": "",
+    "width": 1200,
+    "height": 1200,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/collections/walker-tape-ultra-hold-c-contours.jpg?v=1700117711"
+  }
+}

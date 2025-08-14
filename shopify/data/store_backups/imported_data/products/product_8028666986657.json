@@ -1,0 +1,190 @@
+{
+  "id": 8028666986657,
+  "title": "LuxHair Smart Hold Tape Strips",
+  "body_html": "<p><meta charset=\"utf-8\"><span>Las cintas adhesivas LuxHair Smart Hold suponen un nuevo est\u00e1ndar de calidad, adherencia, durabilidad y cuidado del cuero cabelludo.</span><br><span>Adem\u00e1s, es la cinta adhesiva m\u00e1s equilibrada del mercado, ya que ofrece una duraci\u00f3n de hasta 4 semanas sin ser muy agresiva (al contrario que otras cintas de gran duraci\u00f3n), por lo que dif\u00edcilmente causa alergias y es f\u00e1cil de limpiar.</span></p>\n<p>\u00a0</p>\n<h5 class=\"et_pb_toggle_title\">Beneficios</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<img class=\"wp-image-145 alignnone size-full\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" alt=\"\" width=\"44\" height=\"3\">\n<ul>\n<li>Indicada para el 90% de los usuarios que realizan los mantenimientos de sus sistemas capilares entre 1 y 4 semanas.</li>\n<li>El adhesivo presente en las cintas Smart Hold es de baja agresividad, maximizando su flexibilidad y su facilidad de limpieza.</li>\n<li>Disponibles en diferentes contornos: Rectas, LF y CC.</li>\n</ul>\n<h5 class=\"et_pb_toggle_title\">Recomendaciones de uso</h5>\n<div class=\"et_pb_toggle_content clearfix\">\n<img class=\"wp-image-145 alignnone size-full\" src=\"https://luxhair.es/wp-content/uploads/2020/07/line_luxhair_2.png\" alt=\"\" width=\"44\" height=\"3\">\n<ul>\n<li>Retirar el papel de las caras y pegar sobre el curto cabelludo en los puntos de fijaci\u00f3n deseados. En los bordes, se recomienda colocar las cintas 2mm por detr\u00e1s de la l\u00ednea a pegar.</li>\n<li>Una vez colocadas las cintas en el cuero cabelludo, eliminar el papel protector de la cara superior y adherir el sistema capilar.</li>\n<li>Para frontales peinados hacia atr\u00e1s, se recomienda usar adhesivo l\u00edquido para maximizar la indetectabilidad.</li>\n</ul>\n</div>\n</div>\n<!---->",
+  "vendor": "Lux Hair",
+  "product_type": "",
+  "created_at": "2024-05-17T13:10:46-04:00",
+  "handle": "luxhair-smart-hold-tape-strips",
+  "updated_at": "2025-07-07T16:33:22-04:00",
+  "published_at": "2024-05-17T13:10:46-04:00",
+  "template_suffix": "",
+  "published_scope": "web",
+  "tags": "",
+  "status": "active",
+  "admin_graphql_api_id": "gid://shopify/Product/8028666986657",
+  "variants": [
+    {
+      "id": 44339083411617,
+      "product_id": 8028666986657,
+      "title": "CC",
+      "price": "9.99",
+      "position": 2,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "CC",
+      "option2": null,
+      "option3": null,
+      "created_at": "2024-05-17T13:10:48-04:00",
+      "updated_at": "2024-05-19T15:48:04-04:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "LHSHCC",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 46440439578785,
+      "inventory_quantity": 1000,
+      "old_inventory_quantity": 1000,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/44339083411617",
+      "image_id": 39173751668897
+    },
+    {
+      "id": 44339083444385,
+      "product_id": 8028666986657,
+      "title": "LF",
+      "price": "9.99",
+      "position": 3,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "LF",
+      "option2": null,
+      "option3": null,
+      "created_at": "2024-05-17T13:10:48-04:00",
+      "updated_at": "2024-05-19T15:48:03-04:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "LHSHLF",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 46440439611553,
+      "inventory_quantity": 1000,
+      "old_inventory_quantity": 1000,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/44339083444385",
+      "image_id": 39173751701665
+    },
+    {
+      "id": 44339083477153,
+      "product_id": 8028666986657,
+      "title": "Straight",
+      "price": "9.99",
+      "position": 4,
+      "inventory_policy": "deny",
+      "compare_at_price": null,
+      "option1": "Straight",
+      "option2": null,
+      "option3": null,
+      "created_at": "2024-05-17T13:10:48-04:00",
+      "updated_at": "2024-05-19T16:53:12-04:00",
+      "taxable": true,
+      "barcode": "",
+      "fulfillment_service": "manual",
+      "grams": 0,
+      "inventory_management": "shopify",
+      "requires_shipping": true,
+      "sku": "LHSHS",
+      "weight": 0.0,
+      "weight_unit": "kg",
+      "inventory_item_id": 46440439644321,
+      "inventory_quantity": 999,
+      "old_inventory_quantity": 999,
+      "admin_graphql_api_id": "gid://shopify/ProductVariant/44339083477153",
+      "image_id": 39173751734433
+    }
+  ],
+  "options": [
+    {
+      "id": 10208267042977,
+      "product_id": 8028666986657,
+      "name": "Hairline Shape",
+      "position": 1,
+      "values": [
+        "CC",
+        "LF",
+        "Straight"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": 39173751668897,
+      "alt": null,
+      "position": 1,
+      "product_id": 8028666986657,
+      "created_at": "2024-05-17T13:09:26-04:00",
+      "updated_at": "2024-05-17T13:10:46-04:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/39173751668897",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/CC.jpg?v=1715965768",
+      "variant_ids": [
+        44339083411617
+      ]
+    },
+    {
+      "id": 39173751701665,
+      "alt": null,
+      "position": 2,
+      "product_id": 8028666986657,
+      "created_at": "2024-05-17T13:09:26-04:00",
+      "updated_at": "2024-05-17T13:10:46-04:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/39173751701665",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/LF.jpg?v=1715965768",
+      "variant_ids": [
+        44339083444385
+      ]
+    },
+    {
+      "id": 39173751734433,
+      "alt": null,
+      "position": 3,
+      "product_id": 8028666986657,
+      "created_at": "2024-05-17T13:09:26-04:00",
+      "updated_at": "2024-05-17T13:10:46-04:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/39173751734433",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/RECTAS.jpg?v=1715965768",
+      "variant_ids": [
+        44339083477153
+      ]
+    },
+    {
+      "id": 39173751767201,
+      "alt": null,
+      "position": 4,
+      "product_id": 8028666986657,
+      "created_at": "2024-05-17T13:09:26-04:00",
+      "updated_at": "2024-05-17T13:10:46-04:00",
+      "admin_graphql_api_id": "gid://shopify/ProductImage/39173751767201",
+      "width": 1500,
+      "height": 1500,
+      "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/SmartHold3.jpg?v=1715965768",
+      "variant_ids": []
+    }
+  ],
+  "image": {
+    "id": 39173751668897,
+    "alt": null,
+    "position": 1,
+    "product_id": 8028666986657,
+    "created_at": "2024-05-17T13:09:26-04:00",
+    "updated_at": "2024-05-17T13:10:46-04:00",
+    "admin_graphql_api_id": "gid://shopify/ProductImage/39173751668897",
+    "width": 1500,
+    "height": 1500,
+    "src": "https://cdn.shopify.com/s/files/1/0276/9115/5508/files/CC.jpg?v=1715965768",
+    "variant_ids": [
+      44339083411617
+    ]
+  }
+}
