@@ -15,7 +15,8 @@ A comprehensive automation hub integrating **N8N**, **Notion**, **HubSpot**, and
 2. **Immediate Actions Available**:
    ```bash
    # N8N workflow management
-   cd n8n && npm run git:sync  # Interactive workflow Git sync
+   cd n8n && ./tools/export_workflows.sh  # Export workflows from cloud
+   cd n8n && ./tools/import_workflows.sh  # Import workflows to cloud
    
    # Notion operations
    cd notion && python analyze_empty_properties.py  # Database analysis
@@ -44,10 +45,13 @@ A comprehensive automation hub integrating **N8N**, **Notion**, **HubSpot**, and
 ```
 automation-hub/
 ├── n8n/                          # N8N Automation Platform
-│   ├── workflows/                # Workflow JSON definitions
-│   ├── n8n_package.json         # N8N CLI and scripts
-│   ├── n8n_package-lock.json    # Locked dependencies
-│   ├── n8n_README.md           # N8N platform documentation
+│   ├── src/workflows/            # Active workflow definitions
+│   ├── exports/                  # Exported workflows from cloud
+│   ├── config/                   # Configuration and environment setup
+│   ├── docs/                     # Comprehensive documentation
+│   ├── tools/                    # Management scripts and utilities
+│   ├── backup/                   # Backup and recovery files
+│   └── README.md                 # Complete n8n documentation
 │   └── n8n_examples.md         # Sample workflows
 ├── notion/                       # Notion Workspace Integration
 │   ├── databases/               # Database documentation (35 databases)

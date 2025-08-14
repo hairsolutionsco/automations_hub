@@ -1,0 +1,28 @@
+{
+  "name": "hubspot-automation",
+  "version": "1.0.0",
+  "description": "HubSpot automation tools and CLI",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'HubSpot CLI ready'",
+    "login": "hs auth",
+    "auth": "hs auth",
+    "whoami": "hs auth whoami",
+    "upload": "hs upload src dist",
+    "watch": "hs upload src dist --mode=watch",
+    "create:module": "hs create module",
+    "create:template": "hs create template",
+    "create:function": "hs create function",
+    "logs": "hs logs",
+    "list": "hs list",
+    "fetch": "hs fetch",
+    "deploy": "hs upload src dist && hs upload dist dist",
+    "mcp:start": "npx @hubspot/mcp-server",
+    "mcp:dev": "npx @hubspot/mcp-server --port 3001"
+  },
+  "dependencies": {
+    "@hubspot/cli": "^4.1.0",
+    "@hubspot/cli-lib": "^6.0.0",
+    "@hubspot/mcp-server": "^0.4.0"
+  }
+}

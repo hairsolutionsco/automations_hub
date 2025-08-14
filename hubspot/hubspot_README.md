@@ -1,50 +1,320 @@
-# HubSpot CRM Integration Platform
+# HubSpot Complete Access Platform
 
-This directory contains HubSpot CRM integration with **full read/write access** through MCP (Model Context Protocol) servers for advanced AI-enhanced customer relationship management and sales automation.
+This directory provides **100% FULL READ/WRITE ACCESS** to your entire HubSpot account through the official HubSpot MCP (Model Context Protocol) server, including CRM, CMS, Design Manager, Blog, Marketing, Sales, and Automation tools.
 
-## � Quick Agent Start Instructions
+## 🚀 Quick Agent Start Instructions
 
 ### For AI Agents & Developers:
 
-**System Status**: ✅ **FULLY OPERATIONAL** - HubSpot CRM with dual MCP servers ready
+**System Status**: ✅ **FULLY OPERATIONAL & AUTHENTICATED** - HubSpot MCP server ready
 
 **Immediate Actions**:
 ```bash
-# Start HubSpot MCP server
-npm run mcp:start
+# Start HubSpot MCP Server (Background)
+cd /workspaces/automations_hub/hubspot
+source .env
+nohup npm run mcp:start > hubspot_mcp.log 2>&1 &
 
-# Authenticate with HubSpot (if needed)
-npm run auth
+# Check server status (should show "Server connected. Waiting for requests...")
+cat hubspot_mcp.log
 
-# Quick CRM operations
-npm run contacts:list    # List all contacts
-npm run deals:sync      # Sync deals data
-npm run properties:list # List custom properties
-
-# Cross-platform sync
-npm run sync:notion     # Sync with Notion databases
+# Management scripts
+./mcp_manager.sh start    # Alternative server start
+./mcp_manager.sh status   # Check server status
+./mcp_manager.sh test     # Test full API access
 ```
 
 **Key Capabilities Ready**:
-- ✅ **Dual MCP Servers** - Official HubSpot + Golf custom integrations
-- ✅ **Full CRM Access** - Contacts, companies, deals, orders management
-- ✅ **Custom Properties** - Create and manage HubSpot properties
-- ✅ **Cross-Platform Sync** - Real-time data flow with Notion/N8N/Shopify
-- ✅ **Workflow Automation** - HubSpot workflows + N8N integrations
+- ✅ **Complete CRM Access** - Contacts, Companies, Deals, Tickets (full CRUD)
+- ✅ **CMS Management** - Pages, Templates, Modules (create, edit, publish)
+- ✅ **Design Manager** - Assets, Files, Templates (upload, organize)
+- ✅ **Blog Operations** - Posts, Authors, Topics (full content management)
+- ✅ **Marketing Tools** - Forms, Lists, Campaigns (complete automation)
+- ✅ **Sales Pipeline** - Pipelines, Quotes, Sequences (end-to-end management)
+- ✅ **Workflow Automation** - Custom workflows and properties
 
 **Quick Operations**:
-1. `npm run mcp:start` → Start HubSpot MCP server for AI operations
-2. `npm run auth` → Authenticate with HubSpot CRM
-3. `npm run objects:manage` → Manage CRM objects (contacts/companies/deals)
-4. `npm run workflows:deploy` → Deploy HubSpot workflow automation
+1. Start server: `source .env && nohup npm run mcp:start > hubspot_mcp.log 2>&1 &`
+2. VS Code integration: Automatic via MCP (server must be running)
+3. Access verification: `./mcp_manager.sh test`
+4. Server management: Use `./mcp_manager.sh` for all operations
 
-## �🔑 Access & Permissions via MCP
+**Server Details**:
+- **URL**: `http://127.0.0.1:3001`
+- **Authentication**: ✅ Pre-configured (access token in `.env`)
+- **VS Code Integration**: ✅ Ready (configured in `.vscode/settings.json`)
+- **Portal ID**: `26557089`
 
-**IMPORTANT**: This environment provides complete HubSpot CRM capabilities through:
-- **HubSpot MCP Server**: Official HubSpot MCP server with direct API access
-- **Golf MCP Server**: Additional HubSpot tools and cross-platform integrations
-- **Real-Time CRM Operations**: Live contact, company, deal, and order management
-- **Cross-Platform Sync**: Seamless data flow between HubSpot, Notion, N8N, and Shopify
+## 🔑 Authentication & Environment
+
+**⚠️ AUTHENTICATION ALREADY CONFIGURED** - Do not re-authenticate unless issues occur
+
+**Environment Variables** (`.env` file):
+```bash
+PRIVATE_APP_ACCESS_TOKEN=CLua4rSK... (full access token configured)
+HUBSPOT_PORTAL_ID=26557089
+MCP_SERVER_PORT=3001
+MCP_SERVER_HOST=127.0.0.1
+```
+
+**HubSpot Configuration** (`hubspot.config.yml`):
+- Portal authenticated and configured
+- Personal access key stored
+- Default portal set to 26557089
+
+### 📋 **COMPLETE HUBSPOT ACCESS AVAILABLE**
+
+**CRM Operations** (Full Read/Write):
+- ✅ **Contacts** - Create, update, delete, search all contact records
+- ✅ **Companies** - Complete company lifecycle management
+- ✅ **Deals** - Full sales pipeline and deal management
+- ✅ **Tickets** - Support ticket creation and tracking
+- ✅ **Custom Properties** - Create and manage custom fields
+
+**CMS & Website** (Full Read/Write):
+- ✅ **Pages** - Create, edit, publish website pages
+- ✅ **Templates** - Manage page and email templates
+- ✅ **Modules** - Custom module development
+- ✅ **Publish/Unpublish** - Complete content lifecycle
+
+**Design Manager** (Full Read/Write):
+- ✅ **File Upload/Download** - Complete file management
+- ✅ **Asset Management** - Images, CSS, JS, fonts
+- ✅ **Folder Management** - Organize design assets
+- ✅ **Template Files** - HTML/CSS template management
+
+**Blog Management** (Full Read/Write):
+- ✅ **Blog Posts** - Create, edit, publish, delete posts
+- ✅ **Authors** - Manage blog author profiles
+- ✅ **Topics** - Blog topic and category management
+- ✅ **SEO** - Meta descriptions, slugs, optimization
+
+**Marketing Tools** (Full Read/Write):
+- ✅ **Forms** - Create and manage marketing forms
+- ✅ **Lists** - Contact list creation and management
+- ✅ **Campaigns** - Marketing campaign operations
+- ✅ **Landing Pages** - Landing page creation and optimization
+
+**Sales Tools** (Full Read/Write):
+- ✅ **Pipelines** - Sales pipeline configuration
+- ✅ **Quotes** - Sales quote generation and management
+- ✅ **Sequences** - Email sequence automation
+- ✅ **Meetings** - Calendar and meeting management
+
+**Automation & Workflows** (Full Read/Write):
+- ✅ **Workflows** - Create and manage automation workflows
+- ✅ **Properties** - Custom property creation across all objects
+- ✅ **Integrations** - Third-party integration management
+- ✅ **Webhooks** - Event-driven automation setup
+
+## �️ **SERVER MANAGEMENT COMMANDS**
+
+### **Start Server (Standard Method)**
+```bash
+cd /workspaces/automations_hub/hubspot
+source .env
+nohup npm run mcp:start > hubspot_mcp.log 2>&1 &
+```
+
+### **Check Server Status**
+```bash
+# Check if server is running
+ps aux | grep @hubspot/mcp-server | grep -v grep
+
+# View server logs (should show "Server connected. Waiting for requests...")
+cat /workspaces/automations_hub/hubspot/hubspot_mcp.log
+
+# Follow live logs
+tail -f /workspaces/automations_hub/hubspot/hubspot_mcp.log
+```
+
+### **Stop Server**
+```bash
+# Stop HubSpot MCP server
+pkill -f @hubspot/mcp-server
+
+# Verify stopped
+ps aux | grep @hubspot/mcp-server | grep -v grep
+```
+
+### **Management Scripts Available**
+```bash
+# Use the management script for easy operations
+cd /workspaces/automations_hub/hubspot
+./mcp_manager.sh start    # Start server in background
+./mcp_manager.sh stop     # Stop server
+./mcp_manager.sh status   # Check server status
+./mcp_manager.sh logs     # View logs
+./mcp_manager.sh test     # Test API access
+```
+
+## 🔧 **TROUBLESHOOTING FOR AGENTS**
+
+### **Common Issues & Solutions**
+
+**Issue**: "Server not responding"
+```bash
+# Solution: Restart the server
+cd /workspaces/automations_hub/hubspot
+pkill -f @hubspot/mcp-server
+source .env
+nohup npm run mcp:start > hubspot_mcp.log 2>&1 &
+```
+
+**Issue**: "Authentication failed"
+```bash
+# Solution: Check environment variables
+cd /workspaces/automations_hub/hubspot
+source .env
+echo "Token configured: ${PRIVATE_APP_ACCESS_TOKEN:+YES}"
+```
+
+**Issue**: "MCP server freezes terminal"
+```bash
+# Solution: This is NORMAL behavior - the server should run in background
+# The message "Waiting for requests..." means it's working correctly
+# Always use nohup & to run in background
+```
+
+**Issue**: "VS Code can't connect"
+```bash
+# Solution: Verify VS Code settings
+cat /workspaces/automations_hub/.vscode/settings.json
+# Should contain: "hubspot": {"type": "sse", "url": "http://127.0.0.1:3001"}
+```
+
+### **Environment Variables Explained**
+
+**Location**: `/workspaces/automations_hub/hubspot/.env`
+```bash
+# HubSpot Access Token (DO NOT CHANGE unless re-authenticating)
+PRIVATE_APP_ACCESS_TOKEN=CLua4rSK... (long token)
+
+# HubSpot Portal ID
+HUBSPOT_PORTAL_ID=26557089
+
+# MCP Server Configuration
+MCP_SERVER_PORT=3001
+MCP_SERVER_HOST=127.0.0.1
+```
+
+**HubSpot Configuration**: `/workspaces/automations_hub/hubspot/hubspot.config.yml`
+- Contains authentication details and portal information
+- Generated by `npx hs init` command
+- ⚠️ **Do NOT modify unless re-authenticating**
+
+## 📊 **VS CODE INTEGRATION**
+
+### **MCP Server Configuration**
+The HubSpot MCP server is pre-configured in VS Code settings:
+
+**File**: `/workspaces/automations_hub/.vscode/settings.json`
+```json
+{
+  "mcp": {
+    "servers": {
+      "hubspot": {
+        "type": "sse",
+        "url": "http://127.0.0.1:3001"
+      }
+    }
+  }
+}
+```
+
+### **Using HubSpot in VS Code**
+1. **Start the server** (as shown above)
+2. **VS Code automatically connects** to the MCP server
+3. **Use Copilot chat** for HubSpot operations
+4. **Available through MCP tools** - no manual API calls needed
+
+## 🔄 **CROSS-PLATFORM INTEGRATION**
+
+### **Available Integrations**
+- **N8N Workflows**: HubSpot data flows to N8N automation
+- **Notion Databases**: CRM data synchronization with Notion
+- **Shopify Store**: Customer and order synchronization
+- **GitHub**: Workflow version control and deployment
+
+### **Integration Scripts**
+```bash
+# Sync HubSpot data with other platforms
+cd /workspaces/automations_hub/hubspot/scripts
+./data_sync.sh         # Cross-platform data synchronization
+./hubspot_manager.sh   # Complete HubSpot management interface
+```
+
+## 📚 **IMPORTANT FILES FOR AGENTS**
+
+### **Critical Files - DO NOT DELETE**
+```
+hubspot.config.yml           # Authentication configuration
+.env                         # Environment variables with access token
+package.json                 # NPM dependencies and scripts
+package-lock.json           # Locked dependency versions
+hubspot_mcp.log             # Server logs (created when running)
+```
+
+### **Management Scripts**
+```
+mcp_manager.sh              # Primary server management script
+hubspot_daemon.sh           # Alternative daemon-style management
+quick_start_mcp.sh          # Quick start script
+scripts/hubspot_manager.sh  # Legacy management script
+```
+
+### **VS Code Configuration**
+```
+../.vscode/settings.json    # MCP server configuration for VS Code
+```
+
+## ⚠️ **CRITICAL REMINDERS FOR AGENTS**
+
+1. **Server Behavior**: When you see "Waiting for requests..." - this is CORRECT and means the server is working
+2. **Background Running**: Always use `nohup ... &` to run the server in background
+3. **Authentication**: The access token is already configured - do NOT re-authenticate unless there are issues
+4. **Environment**: Always run `source .env` before starting the server
+5. **Port**: The server runs on port 3001 - ensure nothing else uses this port
+6. **Logs**: Check `hubspot_mcp.log` for server status and debugging
+7. **VS Code**: The MCP server must be running for VS Code to connect and use HubSpot tools
+
+## 🎯 **SUCCESS INDICATORS**
+
+**Server Running Correctly**:
+- Log shows: "Starting HubSpot MCP Server..." followed by "Server connected. Waiting for requests..."
+- Process visible: `ps aux | grep @hubspot/mcp-server`
+- Log file exists: `hubspot_mcp.log` with recent timestamps
+
+**VS Code Integration Working**:
+- MCP server running on port 3001
+- VS Code settings.json configured correctly
+- Copilot chat can access HubSpot tools
+
+**Full Access Confirmed**:
+- All HubSpot APIs (CRM, CMS, Blog, Design Manager) accessible
+- Authentication token valid and not expired
+- Environment variables properly loaded
+
+---
+
+## 🚀 **Quick Reference Commands**
+
+```bash
+# Start HubSpot MCP Server
+cd /workspaces/automations_hub/hubspot && source .env && nohup npm run mcp:start > hubspot_mcp.log 2>&1 &
+
+# Check Status
+cat /workspaces/automations_hub/hubspot/hubspot_mcp.log
+
+# Stop Server
+pkill -f @hubspot/mcp-server
+
+# View Configuration
+cat /workspaces/automations_hub/hubspot/.env
+cat /workspaces/automations_hub/hubspot/hubspot.config.yml
+```
+
+**🎉 You now have complete access to your entire HubSpot platform through the MCP server!**
 
 ## 🚀 Quick Start for New Agents
 

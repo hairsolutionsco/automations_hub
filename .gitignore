@@ -1,4 +1,10 @@
-# Dependencies
+# N8N sensitive exports and backups
+n8n/exports/backup_*/
+n8n/exports/**/backup_*/
+**/VsaLkCvopP9TByf8_Payment_Sync_to_Notion.json
+**/backup_*/**/*.json
+
+# Node modules and dependencies
 node_modules/
 */node_modules/
 
@@ -63,3 +69,6 @@ automations-mcp/dist/
 .n8n/
 .shopify/
 .hubspot/
+
+# HubSpot config file
+hubspot.config.yml
