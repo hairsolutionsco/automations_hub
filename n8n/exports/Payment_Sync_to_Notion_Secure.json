@@ -1,0 +1,129 @@
+{
+  "name": "Payment Sync to Notion (Secure)",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "stripeApi",
+        "url": "https://api.stripe.com/v1/payment_intents",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "status",
+              "value": "succeeded"
+            },
+            {
+              "name": "limit",
+              "value": "100"
+            }
+          ]
+        }
+      },
+      "name": "Fetch Stripe Payments",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [300, 200],
+      "id": "stripe-payments-node",
+      "credentials": {
+        "stripeApi": {
+          "id": "stripe-credentials",
+          "name": "Stripe API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "create",
+        "databaseId": "={{ $vars.NOTION_PAYMENTS_DATABASE_ID }}",
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Payment ID",
+              "textValue": "={{ $json.id }}"
+            },
+            {
+              "key": "Amount",
+              "numberValue": "={{ $json.amount / 100 }}"
+            },
+            {
+              "key": "Currency",
+              "selectValue": "={{ $json.currency.toUpperCase() }}"
+            },
+            {
+              "key": "Status",
+              "selectValue": "={{ $json.status }}"
+            },
+            {
+              "key": "Created",
+              "dateValue": "={{ new Date($json.created * 1000).toISOString() }}"
+            },
+            {
+              "key": "Customer Email",
+              "emailValue": "={{ $json.charges?.data[0]?.billing_details?.email || 'N/A' }}"
+            }
+          ]
+        }
+      },
+      "name": "Create Notion Record",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2,
+      "position": [600, 200],
+      "id": "notion-create-node",
+      "credentials": {
+        "notionApi": {
+          "id": "notion-credentials",
+          "name": "Notion API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# Payment Sync to Notion Workflow\n\n## Security Features\n✅ Uses n8n credentials (no hardcoded API keys)\n✅ Environment variables for database IDs\n✅ Secure authentication methods\n\n## Required Setup\n1. **Stripe Credentials**: Add your Stripe API key in n8n credentials\n2. **Notion Credentials**: Add your Notion API token in n8n credentials\n3. **Environment Variable**: Set NOTION_PAYMENTS_DATABASE_ID\n\n## Data Flow\n1. Fetch successful payments from Stripe\n2. Transform payment data\n3. Create records in Notion database"
+      },
+      "name": "Security Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [300, 400],
+      "id": "security-note-node"
+    }
+  ],
+  "connections": {
+    "Fetch Stripe Payments": {
+      "main": [
+        [
+          {
+            "node": "Create Notion Record",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "timezone": "America/New_York"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "secureVersion": true,
+    "originalWorkflow": "VsaLkCvopP9TByf8_Payment_Sync_to_Notion.json",
+    "credentialsRequired": [
+      "stripeApi",
+      "notionApi"
+    ],
+    "environmentVariables": [
+      "NOTION_PAYMENTS_DATABASE_ID"
+    ]
+  },
+  "tags": [
+    {
+      "createdAt": "2025-08-14T00:00:00.000Z",
+      "updatedAt": "2025-08-14T00:00:00.000Z",
+      "id": "secure",
+      "name": "secure"
+    }
+  ]
+}

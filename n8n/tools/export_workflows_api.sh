@@ -188,6 +188,27 @@ Environment variables required:
 EOF
     
     print_success "Summary generated: README.md"
+    
+    # Security check for sensitive data
+    print_status "Running security scan..."
+    local sensitive_found=false
+    
+    for file in *.json; do
+        if [[ -f "$file" ]]; then
+            if grep -l "sk_live\|sk_test\|whsec_\|pk_live" "$file" > /dev/null 2>&1; then
+                print_warning "⚠️  Sensitive data detected in: $file"
+                sensitive_found=true
+            fi
+        fi
+    done
+    
+    if [[ "$sensitive_found" == "true" ]]; then
+        print_error "🚨 SECURITY WARNING: Sensitive data found in exported workflows!"
+        print_error "Review and clean sensitive data before committing to Git"
+        print_error "See SECURITY_NOTICE.md for cleanup instructions"
+    else
+        print_success "✅ Security scan passed - no sensitive data detected"
+    fi
 }
 
 # Main execution

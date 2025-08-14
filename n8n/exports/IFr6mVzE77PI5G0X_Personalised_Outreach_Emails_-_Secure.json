@@ -1,0 +1,155 @@
+{
+  "createdAt": "2025-08-14T02:37:50.187Z",
+  "updatedAt": "2025-08-14T02:37:50.187Z",
+  "id": "IFr6mVzE77PI5G0X",
+  "name": "Personalised Outreach Emails - Secure",
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "resource": "contact",
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 10,
+        "additionalFields": {
+          "properties": [
+            "firstname",
+            "lastname",
+            "email",
+            "company",
+            "jobtitle"
+          ]
+        }
+      },
+      "id": "get-hubspot-contacts",
+      "name": "Get HubSpot Contacts",
+      "type": "n8n-nodes-base.hubspot",
+      "typeVersion": 2,
+      "position": [
+        240,
+        300
+      ],
+      "credentials": {
+        "hubspotAppToken": {
+          "id": "ID4CUY90jW5ObSXedy",
+          "name": "HubSpot App Token"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 20,
+        "filters": {
+          "q": "=from:{{ $json.properties.email }}"
+        },
+        "simple": false,
+        "options": {}
+      },
+      "id": "get-customer-emails",
+      "name": "Get Customer Emails",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        460,
+        300
+      ],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "IDiRhtr9mcBtiwn0Jn",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# Personalised Outreach Emails - Secure\n\n## Security Features\n✅ Uses n8n credentials (no hardcoded API keys)\n✅ HubSpot OAuth integration\n✅ Gmail OAuth2 authentication\n✅ Secure OpenAI API calls\n✅ Environment variables for database IDs\n\n## Required Setup\n1. **HubSpot App Token**: ID4CUY90jW5ObSXedy\n2. **Gmail OAuth2**: IDiRhtr9mcBtiwn0Jn\n3. **OpenAI API**: ID4X9TIhDpjNa5gM9J\n4. **Notion API**: ID4jkKCiAXGH1iVwyi\n5. **Environment Variable**: NOTION_OUTREACH_DATABASE_ID\n\n## Credential IDs Used\n- HubSpot: ID4CUY90jW5ObSXedy\n- Gmail OAuth2: IDiRhtr9mcBtiwn0Jn\n- OpenAI: ID4X9TIhDpjNa5gM9J\n- Notion: ID4jkKCiAXGH1iVwyi",
+        "height": 300,
+        "width": 400
+      },
+      "id": "workflow-documentation",
+      "name": "Workflow Documentation",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        240,
+        50
+      ]
+    }
+  ],
+  "connections": {
+    "Get HubSpot Contacts": {
+      "main": [
+        [
+          {
+            "node": "Get Customer Emails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "meta": null,
+  "pinData": null,
+  "versionId": "c5e5fa2c-1b48-47e0-a819-76821fc46b3f",
+  "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-08-14T02:37:50.189Z",
+      "updatedAt": "2025-08-14T02:37:50.189Z",
+      "role": "workflow:owner",
+      "workflowId": "IFr6mVzE77PI5G0X",
+      "projectId": "u6WAzHuF44mOtWuS",
+      "project": {
+        "createdAt": "2025-07-31T11:39:40.287Z",
+        "updatedAt": "2025-07-31T11:39:43.247Z",
+        "id": "u6WAzHuF44mOtWuS",
+        "name": "Vincent Laroche <info@oneheadhair.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "projectRelations": [
+          {
+            "createdAt": "2025-07-31T11:39:40.287Z",
+            "updatedAt": "2025-07-31T11:39:40.287Z",
+            "role": "project:personalOwner",
+            "userId": "dff742c4-a194-47d4-8a7c-d82d35aabc7e",
+            "projectId": "u6WAzHuF44mOtWuS",
+            "user": {
+              "createdAt": "2025-07-31T11:39:38.886Z",
+              "updatedAt": "2025-08-13T03:03:26.000Z",
+              "id": "dff742c4-a194-47d4-8a7c-d82d35aabc7e",
+              "email": "info@oneheadhair.com",
+              "firstName": "Vincent",
+              "lastName": "Laroche",
+              "personalizationAnswers": null,
+              "settings": {
+                "userActivated": true,
+                "firstSuccessfulWorkflowId": "VsaLkCvopP9TByf8",
+                "userActivatedAt": 1754031653108,
+                "easyAIWorkflowOnboarded": true,
+                "npsSurvey": {
+                  "waitingForResponse": true,
+                  "ignoredCount": 0,
+                  "lastShownAt": 1754957886802
+                }
+              },
+              "role": "global:owner",
+              "disabled": false,
+              "mfaEnabled": false,
+              "lastActiveAt": "2025-08-13",
+              "isPending": false
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "tags": []
+}

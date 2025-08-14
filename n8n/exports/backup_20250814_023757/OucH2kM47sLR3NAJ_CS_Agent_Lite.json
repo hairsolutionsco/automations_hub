@@ -1,0 +1,489 @@
+{
+  "createdAt": "2025-08-13T01:08:29.023Z",
+  "updatedAt": "2025-08-13T01:08:29.023Z",
+  "id": "OucH2kM47sLR3NAJ",
+  "name": "CS Agent Lite",
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "fe0157d2-4d73-4bbb-9821-b15c6080c023",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 3,
+      "position": [
+        -1104,
+        144
+      ],
+      "webhookId": "cs-agent-lite-ask",
+      "notes": "POST { message, ticketId, contactId, language }"
+    },
+    {
+      "parameters": {},
+      "id": "f3ba2bd1-337e-4776-aeef-227ece1580da",
+      "name": "Normalize Input",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [
+        -896,
+        144
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "headerAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "c3340343-d21f-471a-8c50-335d43dab1f1",
+      "name": "Classify Intent",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        -688,
+        144
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "b9d9bb4c-93c6-4260-ad3f-32e09f610ef6",
+      "name": "Parse Classification",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [
+        -464,
+        144
+      ]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "9c2fca64-ef84-4283-9262-744036ac61c5",
+      "name": "Route by Intent",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3,
+      "position": [
+        -240,
+        144
+      ]
+    },
+    {
+      "parameters": {
+        "url": "={{`https://api.hubapi.com/crm/v3/objects/tickets/${$json.ticketId}?properties=subject,content,hs_pipeline_stage,hs_lastmodifieddate,hs_ticket_category,hs_ticket_priority,hs_ticket_status`}}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "headerAuth",
+        "options": {}
+      },
+      "id": "e1795e51-2a88-4193-8e73-e313f3b85f0c",
+      "name": "Get Ticket",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.hubapi.com/crm/v3/objects/invoices/search",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "headerAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "6e23224b-8b4d-42d0-90fa-a298b2cf322a",
+      "name": "Search Invoices",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        0,
+        128
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.hubapi.com/crm/v3/objects/subscriptions/search",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "headerAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "16af10a6-b346-4d5a-ab62-3e7352a29d81",
+      "name": "Search Subscriptions",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        0,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.hubapi.com/crm/v3/objects/deals/search",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "headerAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "2a85b872-006b-4e42-bb26-714c38423ed6",
+      "name": "Search Deals (Order)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        0,
+        368
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "9f7bba89-67f3-465c-9784-e599f8f6d68b",
+      "name": "Normalize Live Object",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [
+        240,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "headerAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "b5b0c6a7-2582-4035-aa34-0d471f77404f",
+      "name": "Draft Live Reply",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        464,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.notion.com/v1/search",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "headerAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "ac621e56-4478-43e2-9403-cc9debef0aae",
+      "name": "Notion Search",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        0,
+        560
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "cc9183a7-052b-4c5a-bdb9-c8128fa32789",
+      "name": "Top 2 Pages",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [
+        224,
+        560
+      ]
+    },
+    {
+      "parameters": {
+        "url": "={{`https://api.notion.com/v1/blocks/${$json.pageId}/children?page_size=100`}}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "headerAuth",
+        "options": {}
+      },
+      "id": "bead6b9b-cb30-421e-97aa-d002689b1ef0",
+      "name": "Fetch Blocks",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        448,
+        560
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "4ac3aac3-c580-470d-aafa-a43247944c33",
+      "name": "Blocks → Text",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [
+        672,
+        560
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "e7eeb429-4c08-44ae-8123-cb34b3c9c063",
+      "name": "Merge Excerpts",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [
+        880,
+        560
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "headerAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "a7e1a3af-2c0c-4f78-976b-b4fb877451a2",
+      "name": "Draft KB Reply",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1104,
+        560
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "d5f48918-44dd-460b-b459-ffb7dd7b577a",
+      "name": "Select Answer",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [
+        1344,
+        304
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.hubapi.com/crm/v3/objects/notes",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "headerAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "1f6b1807-74db-4379-a64f-38f91723a81f",
+      "name": "Create Note",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1568,
+        304
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.hubapi.com/crm/v3/associations/notes/tickets/batch/create",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "headerAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "4fb8ad8f-a78f-42da-8bbb-7ea6f1b09b04",
+      "name": "Associate Note → Ticket",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1792,
+        304
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "ff0af321-a4f5-40cd-9218-4abec2d46a29",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [
+        2000,
+        304
+      ]
+    }
+  ],
+  "connections": {
+    "Route by Intent": {
+      "main": [
+        [
+          {
+            "node": "Get Ticket",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Search Invoices",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Search Subscriptions",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Search Deals (Order)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Notion Search",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Note": {
+      "main": [
+        [
+          {
+            "node": "Associate Note → Ticket",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Associate Note → Ticket": {
+      "main": [
+        [
+          {
+            "node": "Respond",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": null,
+  "pinData": {},
+  "versionId": "6dd45a96-d7dc-4f94-97b8-faac0fd7ff4a",
+  "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-08-13T01:08:29.025Z",
+      "updatedAt": "2025-08-13T01:08:29.025Z",
+      "role": "workflow:owner",
+      "workflowId": "OucH2kM47sLR3NAJ",
+      "projectId": "u6WAzHuF44mOtWuS",
+      "project": {
+        "createdAt": "2025-07-31T11:39:40.287Z",
+        "updatedAt": "2025-07-31T11:39:43.247Z",
+        "id": "u6WAzHuF44mOtWuS",
+        "name": "Vincent Laroche <info@oneheadhair.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "projectRelations": [
+          {
+            "createdAt": "2025-07-31T11:39:40.287Z",
+            "updatedAt": "2025-07-31T11:39:40.287Z",
+            "role": "project:personalOwner",
+            "userId": "dff742c4-a194-47d4-8a7c-d82d35aabc7e",
+            "projectId": "u6WAzHuF44mOtWuS",
+            "user": {
+              "createdAt": "2025-07-31T11:39:38.886Z",
+              "updatedAt": "2025-08-13T03:03:26.000Z",
+              "id": "dff742c4-a194-47d4-8a7c-d82d35aabc7e",
+              "email": "info@oneheadhair.com",
+              "firstName": "Vincent",
+              "lastName": "Laroche",
+              "personalizationAnswers": null,
+              "settings": {
+                "userActivated": true,
+                "firstSuccessfulWorkflowId": "VsaLkCvopP9TByf8",
+                "userActivatedAt": 1754031653108,
+                "easyAIWorkflowOnboarded": true,
+                "npsSurvey": {
+                  "waitingForResponse": true,
+                  "ignoredCount": 0,
+                  "lastShownAt": 1754957886802
+                }
+              },
+              "role": "global:owner",
+              "disabled": false,
+              "mfaEnabled": false,
+              "lastActiveAt": "2025-08-13",
+              "isPending": false
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "tags": []
+}

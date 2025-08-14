@@ -126,9 +126,14 @@ n8n import:workflow              # ❌ FAILS
 
 ## 📚 Documentation
 
+- `QUICK_REFERENCE.md` - Essential commands and credential IDs for quick lookup
+- `N8N_IMPORT_RULE_BOOK.md` - **Complete guide for successful workflow imports**
+- `N8N_IMPORT_TROUBLESHOOTING.md` - Solutions for common import errors
+- `CREDENTIALS_REFERENCE.md` - Available n8n credential IDs
+- `SECURITY_NOTICE.md` - Security cleanup information and best practices
 - `exports/README.md` - Detailed export information
+- `exports/SECURE_WORKFLOWS_README.md` - Guide for secure workflow versions
 - `N8N_GIT_INTEGRATION.md` - Updated integration guide
-- `n8n_README.md` - Platform overview
 
 ## 🚨 Critical Notes for Future Development
 

@@ -1,9 +1,9 @@
 {
-  "createdAt": "2025-08-12T01:33:29.983Z",
-  "updatedAt": "2025-08-12T02:17:15.000Z",
-  "id": "YKYcZEkyi0tldT9b",
-  "name": "My workflow 2",
-  "active": true,
+  "createdAt": "2025-08-11T23:30:32.110Z",
+  "updatedAt": "2025-08-12T01:29:04.000Z",
+  "id": "KKtOD2rBBDv13pTa",
+  "name": "My workflow",
+  "active": false,
   "isArchived": false,
   "nodes": [
     {
@@ -23,13 +23,13 @@
           "charge.refund.updated"
         ]
       },
-      "id": "434b3586-2892-4380-ab6f-3a7fccb17f08",
+      "id": "e73725d8-dd60-495b-aa49-b8f55c98a72a",
       "name": "Stripe Trigger",
       "type": "n8n-nodes-base.stripeTrigger",
       "typeVersion": 1,
       "position": [
-        -1568,
-        192
+        -1056,
+        16
       ],
       "webhookId": "8c6ab334-a080-4e07-ac55-3080a7c7edc9",
       "credentials": {
@@ -47,13 +47,13 @@
           ]
         }
       },
-      "id": "a53f93fd-f0b3-49ac-9126-20e8c32040fa",
+      "id": "f5919f4c-7345-45f4-b82f-c53bb660d0fa",
       "name": "Schedule Trigger",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
       "position": [
-        -1568,
-        368
+        -1056,
+        192
       ]
     },
     {
@@ -79,13 +79,13 @@
         "jsonHeaders": "{\n  \"GoCardless-Version\": \"2015-07-06\",\n  \"Accept\": \"application/json\"\n}",
         "options": {}
       },
-      "id": "0ad38c25-9216-4cad-9395-eb471c12fa2a",
+      "id": "20a0b421-14cb-44dc-8252-72764e3b009a",
       "name": "HTTP Request — GoCardless (confirmed,last_30d)",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        -1328,
-        368
+        -816,
+        192
       ],
       "credentials": {
         "httpBearerAuth": {
@@ -96,15 +96,39 @@
     },
     {
       "parameters": {},
-      "id": "1224d127-45e3-4a04-971c-092d4245e0e9",
+      "id": "3c617aae-34a1-4516-a83a-41681a15be70",
+      "name": "Function — Normalize Stripe",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [
+        -816,
+        -336
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "0ec1eb70-3ffa-405d-af5f-d530e55d3b66",
+      "name": "Function — Normalize GoCardless",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [
+        -592,
+        192
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "passThrough",
+        "options": {}
+      },
+      "id": "f7e999a4-d017-40ca-9568-bb53800441c8",
       "name": "Merge (Stripe+GC)",
       "type": "n8n-nodes-base.merge",
       "typeVersion": 2,
       "position": [
-        -464,
-        96
-      ],
-      "alwaysOutputData": true
+        -368,
+        -80
+      ]
     },
     {
       "parameters": {
@@ -116,13 +140,13 @@
         },
         "options": {}
       },
-      "id": "0a8cbbda-8e2b-423f-ba41-901bbb23fe21",
+      "id": "f71be57e-163f-4b1b-a20d-b68b08f0c919",
       "name": "Notion — Get by payment_id",
       "type": "n8n-nodes-base.notion",
       "typeVersion": 2,
       "position": [
-        -16,
-        96
+        80,
+        -80
       ],
       "credentials": {
         "notionApi": {
@@ -142,26 +166,26 @@
         },
         "options": {}
       },
-      "id": "ad4b8bec-b719-4f79-b89c-219e7bb25ea2",
+      "id": "e015e4b1-9129-4fba-9a2a-2dadb2a5525f",
       "name": "IF — Page exists?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        192,
-        96
+        288,
+        -80
       ]
     },
     {
       "parameters": {
         "operation": "update"
       },
-      "id": "45d4c1f3-3a52-4c67-8988-b4fd6e814323",
+      "id": "5c710394-9925-46aa-99e5-eeb3cbc16c07",
       "name": "Notion — Update Page",
       "type": "n8n-nodes-base.notion",
       "typeVersion": 2,
       "position": [
-        416,
-        0
+        512,
+        -176
       ],
       "credentials": {
         "notionApi": {
@@ -279,13 +303,13 @@
         },
         "options": {}
       },
-      "id": "ed38dc1c-d0e6-468f-b971-32ce798fc79a",
+      "id": "25cef17b-e19b-4b76-b972-26140ecbbef4",
       "name": "Notion — Create Page",
       "type": "n8n-nodes-base.notion",
       "typeVersion": 2,
       "position": [
-        416,
-        224
+        512,
+        48
       ],
       "credentials": {
         "notionApi": {
@@ -295,30 +319,15 @@
       }
     },
     {
-      "parameters": {
-        "jsCode": "// Normalize Stripe payments -> unified schema items\n// Accepts Stripe list payloads ({object:'list', data:[...]}) or a single object.\n\nconst toIso = (t) => (typeof t === 'number' ? new Date(t * 1000).toISOString() : t || undefined);\n\nconst pickFromCharge = (c) => ({\n  amount: typeof c.amount === 'number' ? c.amount / 100 : undefined,\n  currency: c.currency,\n  status: c.status || (c.paid ? 'succeeded' : undefined),\n  created_at: toIso(c.created),\n  captured_at: toIso(c.created),\n  customer_email: c.billing_details?.email,\n  customer_name: c.billing_details?.name,\n  reference: c.metadata?.reference || c.description || c.id,\n  amount_refunded: typeof c.amount_refunded === 'number' ? c.amount_refunded / 100 : undefined,\n  subscription_id: c.invoice?.subscription || c.metadata?.subscription_id,\n  metadata: c.metadata,\n});\n\nfunction mapStripe(p) {\n  const obj = p.object || '';\n  let core = {};\n\n  if (obj === 'payment_intent') {\n    const ch = p.charges?.data?.[0] || {};\n    core = {\n      amount: typeof p.amount === 'number' ? p.amount / 100 : undefined,\n      currency: p.currency,\n      status: p.status,\n      created_at: toIso(p.created),\n      captured_at: toIso(ch.created || p.created),\n      customer_email: ch.billing_details?.email || p.receipt_email,\n      customer_name: ch.billing_details?.name,\n      reference: p.metadata?.reference || p.description || p.id,\n      amount_refunded: typeof ch.amount_refunded === 'number' ? ch.amount_refunded / 100 : undefined,\n      subscription_id: p.invoice?.subscription || p.metadata?.subscription_id,\n      metadata: p.metadata,\n    };\n  } else if (obj === 'charge') {\n    core = pickFromCharge(p);\n  } else if (p.data && Array.isArray(p.data)) {\n    // list wrapper inside a single item: expand\n    return p.data.map(mapStripe).flat();\n  } else {\n    // Fallback: try best-effort fields\n    core = {\n      amount: typeof p.amount === 'number' ? p.amount / 100 : undefined,\n      currency: p.currency,\n      status: p.status,\n      created_at: toIso(p.created),\n      reference: p.metadata?.reference || p.description || p.id,\n      metadata: p.metadata,\n    };\n  }\n\n  const mapped = {\n    payment_id: p.id,\n    provider: 'stripe',\n    source: 'stripe',\n    ...core,\n  };\n\n  Object.keys(mapped).forEach(k => mapped[k] == null && delete mapped[k]);\n  return [{ json: mapped }];\n}\n\n// Build input list\nlet list = [];\nif ($json && $json.object === 'list' && Array.isArray($json.data)) {\n  list = $json.data;\n} else {\n  list = Array.isArray($json) ? $json : [$json];\n}\n\nreturn list.flatMap(mapStripe);\n"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
+      "parameters": {},
+      "type": "n8n-nodes-base.aiTransform",
+      "typeVersion": 1,
       "position": [
-        -1360,
-        192
+        -816,
+        -16
       ],
-      "id": "096d6b02-8f27-4e9a-ae8c-535697767401",
-      "name": "Stripe Payment Data Normalizer"
-    },
-    {
-      "parameters": {
-        "jsCode": "const list = $json.payments && Array.isArray($json.payments) ? $json.payments : [$json];\n\nreturn list.filter(Boolean).map(p => {\n  const amount = typeof p.amount === 'number' ? p.amount / 100 : undefined;\n  const mapped = {\n    payment_id: p.id,\n    provider: 'gocardless',\n    source: 'gocardless',\n    status: p.status,\n    amount,\n    currency: p.currency,\n    customer_email: p?.metadata?.email,\n    customer_name: p?.metadata?.name,\n    created_at: p.created_at,\n    captured_at: p.charge_date || p.created_at,\n    reference: p.reference,\n    amount_refunded: p.amount_refunded,\n    mandate_id: p?.links?.mandate,\n    creditor_id: p?.links?.creditor,\n    subscription_id: p?.links?.subscription,\n    metadata: p.metadata\n  };\n  Object.keys(mapped).forEach(k => mapped[k] === undefined || mapped[k] === null ? delete mapped[k] : 0);\n  return { json: mapped };\n});\n"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        -1120,
-        368
-      ],
-      "id": "a8aa76d9-cce9-4d32-a9ad-dad0e2a9f84c",
-      "name": "GoCardless Payment Data Normalizer"
+      "id": "8ca37f93-3821-4224-a8ec-3f27b7caea02",
+      "name": "AI Transform"
     }
   ],
   "connections": {
@@ -364,96 +373,26 @@
     },
     "Stripe Trigger": {
       "main": [
-        [
-          {
-            "node": "Stripe Payment Data Normalizer",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "HTTP Request — GoCardless (confirmed,last_30d)": {
-      "main": [
-        [
-          {
-            "node": "GoCardless Payment Data Normalizer",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Merge (Stripe+GC)": {
-      "main": [
-        [
-          {
-            "node": "Notion — Get by payment_id",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Stripe Payment Data Normalizer": {
-      "main": [
-        [
-          {
-            "node": "Merge (Stripe+GC)",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "GoCardless Payment Data Normalizer": {
-      "main": [
-        [
-          {
-            "node": "Merge (Stripe+GC)",
-            "type": "main",
-            "index": 1
-          }
-        ]
+        []
       ]
     }
   },
   "settings": {
     "executionOrder": "v1"
   },
-  "staticData": {
-    "node:Stripe Trigger": {
-      "webhookId": "we_1Rv7m3B4LTFfNure1SgBu9sN",
-      "webhookEvents": [
-        "payment_intent.succeeded",
-        "payment_intent.payment_failed",
-        "charge.refunded",
-        "payout.paid",
-        "charge.failed",
-        "charge.succeeded",
-        "charge.updated",
-        "charge.dispute.created",
-        "charge.dispute.closed",
-        "charge.dispute.funds_withdrawn",
-        "charge.dispute.updated",
-        "charge.refund.updated"
-      ],
-      "webhookSecret": "[WEBHOOK_SECRET_REMOVED_FOR_SECURITY]"
-    },
-    "node:Schedule Trigger": {
-      "recurrenceRules": []
-    }
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
   },
-  "meta": null,
   "pinData": {},
-  "versionId": "54b43791-3abe-441d-bc59-dbb8722e38cb",
-  "triggerCount": 2,
+  "versionId": "9a910012-b6b4-4dd2-b67b-2995b97a112a",
+  "triggerCount": 0,
   "shared": [
     {
-      "createdAt": "2025-08-12T01:33:29.985Z",
-      "updatedAt": "2025-08-12T01:33:29.985Z",
+      "createdAt": "2025-08-11T23:30:32.113Z",
+      "updatedAt": "2025-08-11T23:30:32.113Z",
       "role": "workflow:owner",
-      "workflowId": "YKYcZEkyi0tldT9b",
+      "workflowId": "KKtOD2rBBDv13pTa",
       "projectId": "u6WAzHuF44mOtWuS",
       "project": {
         "createdAt": "2025-07-31T11:39:40.287Z",

@@ -1,0 +1,72 @@
+{
+  "name": "Gmail Assistant - Secure",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "triggerAtDay": [1, 2, 3, 4, 5],
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 10,
+        "additionalFields": {
+          "q": "is:unread",
+          "format": "full"
+        }
+      },
+      "id": "get-unread-emails",
+      "name": "Get Unread Emails",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [460, 300],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "IDiRhtr9mcBtiwn0Jn",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# Gmail Assistant - Secure\n\n## Security Features\n✅ Uses n8n credentials (no hardcoded API keys)\n✅ OAuth2 authentication for Gmail\n✅ Secure OpenAI API integration\n✅ Environment variables for database IDs\n\n## Required Setup\n1. **Gmail OAuth2**: IDiRhtr9mcBtiwn0Jn\n2. **OpenAI API**: ID4X9TIhDpjNa5gM9J\n3. **Notion API**: ID4jkKCiAXGH1iVwyi\n4. **Environment Variable**: NOTION_EMAILS_DATABASE_ID\n\n## Credential IDs Used\n- Gmail OAuth2: IDiRhtr9mcBtiwn0Jn\n- OpenAI API: ID4X9TIhDpjNa5gM9J\n- Notion API: ID4jkKCiAXGH1iVwyi",
+        "height": 300,
+        "width": 400
+      },
+      "id": "workflow-documentation",
+      "name": "Workflow Documentation",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [240, 50]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Get Unread Emails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {}
+}

@@ -5,9 +5,9 @@ The n8n CLI does NOT work reliably with cloud instances.
 
 ## Export Summary
 
-- **Export Date**: Thu Aug 14 02:15:09 UTC 2025
-- **Total Workflows**: 9
-- **Total Size**: 404K
+- **Export Date**: Thu Aug 14 02:38:03 UTC 2025
+- **Total Workflows**: 12
+- **Total Size**: 684K
 - **Source**: https://hairsolutionsco.app.n8n.cloud
 - **Method**: REST API (proven working method)
 
@@ -15,10 +15,13 @@ The n8n CLI does NOT work reliably with cloud instances.
 
 | Workflow ID | File Name | Size |
 |-------------|-----------|------|
+| `1id7YeFhasJZUjxc` | 1id7YeFhasJZUjxc_Payment_Sync_to_Notion_-_Secure.json | 4.0K |
 | `E1O0hydINMSHjFCK` | E1O0hydINMSHjFCK_Personalise_Outreach_Emails_using_Customer_data_an.json | 24K |
 | `EQp3pxkcl5ctVSL3` | EQp3pxkcl5ctVSL3_AI_Assistant.json | 8.0K |
+| `IFr6mVzE77PI5G0X` | IFr6mVzE77PI5G0X_Personalised_Outreach_Emails_-_Secure.json | 8.0K |
 | `KKtOD2rBBDv13pTa` | KKtOD2rBBDv13pTa_My_workflow.json | 12K |
 | `OucH2kM47sLR3NAJ` | OucH2kM47sLR3NAJ_CS_Agent_Lite.json | 12K |
+| `PQpIGzJ3RNQrVMCa` | PQpIGzJ3RNQrVMCa_Gmail_Assistant_-_Secure.json | 8.0K |
 | `VsaLkCvopP9TByf8` | VsaLkCvopP9TByf8_Payment_Sync_to_Notion.json | 8.0K |
 | `YKYcZEkyi0tldT9b` | YKYcZEkyi0tldT9b_My_workflow_2.json | 16K |
 | `l53ruRcuopLiS8Ca` | l53ruRcuopLiS8Ca_Rag_2.0_Template.json | 68K |

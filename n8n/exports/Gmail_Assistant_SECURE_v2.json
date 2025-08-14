@@ -1,0 +1,292 @@
+{
+  "name": "Gmail Assistant - Secure",
+  "active": true,
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "triggerAtDay": [1, 2, 3, 4, 5],
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 10,
+        "additionalFields": {
+          "q": "is:unread",
+          "format": "full"
+        }
+      },
+      "id": "get-unread-emails",
+      "name": "Get Unread Emails",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [460, 300],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "IDiRhtr9mcBtiwn0Jn",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "gpt-4",
+        "messages": {
+          "messageValues": [
+            {
+              "role": "system",
+              "content": "You are a helpful Gmail assistant. Analyze the email content and provide a summary, priority level (High/Medium/Low), and suggested actions."
+            },
+            {
+              "role": "user", 
+              "content": "Analyze this email:\n\nFrom: {{ $json.payload.headers.find(h => h.name === 'From')?.value }}\nSubject: {{ $json.payload.headers.find(h => h.name === 'Subject')?.value }}\nContent: {{ $json.snippet }}\n\nProvide:\n1. Summary (2-3 sentences)\n2. Priority (High/Medium/Low)\n3. Suggested Actions\n4. Category (Business/Personal/Marketing/Other)"
+            }
+          ]
+        },
+        "options": {
+          "temperature": 0.3
+        }
+      },
+      "id": "analyze-email-content",
+      "name": "Analyze Email Content",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1.3,
+      "position": [680, 300],
+      "credentials": {
+        "openAiApi": {
+          "id": "ID4X9TIhDpjNa5gM9J",
+          "name": "OpenAI API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "email_id",
+              "value": "={{ $('Get Unread Emails').item.json.id }}"
+            },
+            {
+              "name": "from",
+              "value": "={{ $('Get Unread Emails').item.json.payload.headers.find(h => h.name === 'From')?.value }}"
+            },
+            {
+              "name": "subject", 
+              "value": "={{ $('Get Unread Emails').item.json.payload.headers.find(h => h.name === 'Subject')?.value }}"
+            },
+            {
+              "name": "snippet",
+              "value": "={{ $('Get Unread Emails').item.json.snippet }}"
+            },
+            {
+              "name": "ai_analysis",
+              "value": "={{ $json.choices[0].message.content }}"
+            },
+            {
+              "name": "received_date",
+              "value": "={{ new Date($('Get Unread Emails').item.json.internalDate * 1).toISOString() }}"
+            },
+            {
+              "name": "thread_id",
+              "value": "={{ $('Get Unread Emails').item.json.threadId }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "prepare-notion-data",
+      "name": "Prepare Notion Data",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "create",
+        "databaseId": {
+          "__rl": true,
+          "value": "={{ $env.NOTION_EMAILS_DATABASE_ID }}",
+          "mode": "id"
+        },
+        "title": "={{ $json.subject || 'No Subject' }}",
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Email_ID",
+              "textValue": "={{ $json.email_id }}"
+            },
+            {
+              "key": "From",
+              "emailValue": "={{ $json.from }}"
+            },
+            {
+              "key": "Subject",
+              "textValue": "={{ $json.subject }}"
+            },
+            {
+              "key": "Snippet",
+              "textValue": "={{ $json.snippet }}"
+            },
+            {
+              "key": "AI_Analysis",
+              "textValue": "={{ $json.ai_analysis }}"
+            },
+            {
+              "key": "Received_Date",
+              "dateValue": "={{ $json.received_date.split('T')[0] }}"
+            },
+            {
+              "key": "Thread_ID",
+              "textValue": "={{ $json.thread_id }}"
+            },
+            {
+              "key": "Status",
+              "selectValue": "Analyzed"
+            }
+          ]
+        }
+      },
+      "id": "create-email-record",
+      "name": "Create Email Record",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2,
+      "position": [1120, 300],
+      "credentials": {
+        "notionApi": {
+          "id": "ID4jkKCiAXGH1iVwyi",
+          "name": "Notion API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "markAsRead",
+        "messageId": "={{ $('Get Unread Emails').item.json.id }}"
+      },
+      "id": "mark-as-read",
+      "name": "Mark as Read",
+      "type": "n8n-nodes-base.gmail", 
+      "typeVersion": 2.1,
+      "position": [1340, 300],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "IDiRhtr9mcBtiwn0Jn",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# Gmail Assistant - Secure\n\n## Security Features\n✅ Uses n8n credentials (no hardcoded API keys)\n✅ OAuth2 authentication for Gmail\n✅ Secure OpenAI API integration\n✅ Environment variables for database IDs\n\n## Required Setup\n1. **Gmail OAuth2**: IDiRhtr9mcBtiwn0Jn\n2. **OpenAI API**: ID4X9TIhDpjNa5gM9J\n3. **Notion API**: ID4jkKCiAXGH1iVwyi\n4. **Environment Variable**: NOTION_EMAILS_DATABASE_ID\n\n## Workflow Features\n- Scheduled email check (weekdays 8am)\n- AI-powered email analysis\n- Automatic categorization\n- Notion database logging\n- Mark emails as read after processing\n\n## Credential IDs Used\n- Gmail OAuth2: IDiRhtr9mcBtiwn0Jn\n- OpenAI API: ID4X9TIhDpjNa5gM9J\n- Notion API: ID4jkKCiAXGH1iVwyi",
+        "height": 395.8834951456311,
+        "width": 392.6699029126214
+      },
+      "id": "workflow-documentation",
+      "name": "Workflow Documentation", 
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [240, 50]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Get Unread Emails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Unread Emails": {
+      "main": [
+        [
+          {
+            "node": "Analyze Email Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analyze Email Content": {
+      "main": [
+        [
+          {
+            "node": "Prepare Notion Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Notion Data": {
+      "main": [
+        [
+          {
+            "node": "Create Email Record",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Email Record": {
+      "main": [
+        [
+          {
+            "node": "Mark as Read",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "id": "gmail-automation",
+      "name": "Gmail Automation"
+    },
+    {
+      "id": "secure",
+      "name": "Secure"
+    }
+  ],
+  "triggerCount": 0,
+  "updatedAt": "2025-08-14T00:00:00.000Z",
+  "versionId": "secure-v1",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "secureCredentials": true,
+    "credentialIds": {
+      "gmail": "IDiRhtr9mcBtiwn0Jn",
+      "openai": "ID4X9TIhDpjNa5gM9J",
+      "notion": "ID4jkKCiAXGH1iVwyi"
+    }
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "name": "Payment Sync to Notion - Secure",
+  "active": true,
+  "nodes": [
+    {
+      "parameters": {
+        "resource": "charge",
+        "operation": "getAll",
+        "returnAll": true,
+        "additionalFields": {
+          "created": {
+            "gte": "={{ Math.floor((new Date().getTime() - 24 * 60 * 60 * 1000) / 1000) }}"
+          }
+        }
+      },
+      "id": "stripe-fetch-payments",
+      "name": "Fetch Stripe Payments",
+      "type": "n8n-nodes-base.stripe",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "credentials": {
+        "stripeApi": {
+          "id": "ID3q1LYGrkaZIDtJar",
+          "name": "Stripe API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "payment",
+        "operation": "getAll",
+        "returnAll": true,
+        "additionalFields": {
+          "created_at": {
+            "gte": "={{ new Date(new Date().getTime() - 24 * 60 * 60 * 1000).toISOString() }}"
+          }
+        },
+        "url": "https://api.gocardless.com/payments",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "httpBasicAuth",
+        "options": {
+          "timeout": 10000
+        },
+        "headerParametersUi": {
+          "parameter": [
+            {
+              "name": "GoCardless-Version",
+              "value": "2015-07-06"
+            }
+          ]
+        }
+      },
+      "id": "gocardless-fetch-payments",
+      "name": "Fetch GoCardless Payments",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [240, 500],
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "IDZjro27xRan8oQvXj",
+          "name": "GoCardless Bearer Auth"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "payment_id",
+              "value": "={{ $json.id }}"
+            },
+            {
+              "name": "amount",
+              "value": "={{ $json.amount / 100 }}"
+            },
+            {
+              "name": "currency",
+              "value": "={{ $json.currency.toUpperCase() }}"
+            },
+            {
+              "name": "status",
+              "value": "={{ $json.status }}"
+            },
+            {
+              "name": "payment_method",
+              "value": "stripe"
+            },
+            {
+              "name": "customer_email",
+              "value": "={{ $json.billing_details?.email || 'No email provided' }}"
+            },
+            {
+              "name": "created_date",
+              "value": "={{ new Date($json.created * 1000).toISOString().split('T')[0] }}"
+            },
+            {
+              "name": "description",
+              "value": "={{ $json.description || 'Stripe payment' }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "transform-stripe-data",
+      "name": "Transform Stripe Data",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "payment_id",
+              "value": "={{ $json.id }}"
+            },
+            {
+              "name": "amount",
+              "value": "={{ $json.amount / 100 }}"
+            },
+            {
+              "name": "currency",
+              "value": "{{ $json.currency }}"
+            },
+            {
+              "name": "status",
+              "value": "={{ $json.status }}"
+            },
+            {
+              "name": "payment_method",
+              "value": "gocardless"
+            },
+            {
+              "name": "customer_email",
+              "value": "={{ $json.links?.customer || 'No customer info' }}"
+            },
+            {
+              "name": "created_date",
+              "value": "={{ $json.created_at.split('T')[0] }}"
+            },
+            {
+              "name": "description",
+              "value": "={{ $json.description || 'GoCardless payment' }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "transform-gocardless-data",
+      "name": "Transform GoCardless Data",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [460, 500]
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combinationMode": "mergeByPosition",
+        "options": {}
+      },
+      "id": "merge-payment-data",
+      "name": "Merge Payment Data",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 2.1,
+      "position": [680, 400]
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "create",
+        "databaseId": {
+          "__rl": true,
+          "value": "={{ $env.NOTION_PAYMENTS_DATABASE_ID }}",
+          "mode": "id"
+        },
+        "title": "={{ $json.payment_method.toUpperCase() }} - {{ $json.amount }} {{ $json.currency }}",
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Payment_ID",
+              "textValue": "={{ $json.payment_id }}"
+            },
+            {
+              "key": "Amount",
+              "numberValue": "={{ parseFloat($json.amount) }}"
+            },
+            {
+              "key": "Currency",
+              "selectValue": "={{ $json.currency }}"
+            },
+            {
+              "key": "Status",
+              "selectValue": "={{ $json.status }}"
+            },
+            {
+              "key": "Payment_Method",
+              "selectValue": "={{ $json.payment_method }}"
+            },
+            {
+              "key": "Customer_Email",
+              "emailValue": "={{ $json.customer_email }}"
+            },
+            {
+              "key": "Created_Date",
+              "dateValue": "={{ $json.created_date }}"
+            },
+            {
+              "key": "Description",
+              "textValue": "={{ $json.description }}"
+            }
+          ]
+        }
+      },
+      "id": "create-notion-page",
+      "name": "Create Notion Page",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2,
+      "position": [900, 400],
+      "credentials": {
+        "notionApi": {
+          "id": "ID4jkKCiAXGH1iVwyi",
+          "name": "Notion API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# Payment Sync to Notion Workflow\n\n## Security Features\n✅ Uses n8n credentials (no hardcoded API keys)\n✅ Environment variables for database IDs\n✅ Secure authentication methods\n\n## Required Setup\n1. **Stripe Credentials**: ID3q1LYGrkaZIDtJar\n2. **GoCardless Credentials**: IDZjro27xRan8oQvXj\n3. **Notion Credentials**: ID4jkKCiAXGH1iVwyi\n4. **Environment Variable**: Set NOTION_PAYMENTS_DATABASE_ID\n\n## Data Flow\n1. Fetch successful payments from Stripe & GoCardless\n2. Transform payment data to standardized format\n3. Merge data from both sources\n4. Create records in Notion database\n\n## Credential IDs Used\n- Stripe API: ID3q1LYGrkaZIDtJar\n- GoCardless Bearer: IDZjro27xRan8oQvXj\n- Notion API: ID4jkKCiAXGH1iVwyi",
+        "height": 395.8834951456311,
+        "width": 392.6699029126214
+      },
+      "id": "workflow-documentation",
+      "name": "Workflow Documentation",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [240, 100]
+    }
+  ],
+  "connections": {
+    "Fetch Stripe Payments": {
+      "main": [
+        [
+          {
+            "node": "Transform Stripe Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch GoCardless Payments": {
+      "main": [
+        [
+          {
+            "node": "Transform GoCardless Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform Stripe Data": {
+      "main": [
+        [
+          {
+            "node": "Merge Payment Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform GoCardless Data": {
+      "main": [
+        [
+          {
+            "node": "Merge Payment Data",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge Payment Data": {
+      "main": [
+        [
+          {
+            "node": "Create Notion Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "id": "payment-sync",
+      "name": "Payment Sync"
+    },
+    {
+      "id": "secure",
+      "name": "Secure"
+    }
+  ],
+  "triggerCount": 0,
+  "updatedAt": "2025-08-14T00:00:00.000Z",
+  "versionId": "secure-v1",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "secureCredentials": true,
+    "credentialIds": {
+      "stripe": "ID3q1LYGrkaZIDtJar",
+      "gocardless": "IDZjro27xRan8oQvXj", 
+      "notion": "ID4jkKCiAXGH1iVwyi"
+    }
+  }
+}

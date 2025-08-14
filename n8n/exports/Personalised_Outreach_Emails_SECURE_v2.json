@@ -1,0 +1,374 @@
+{
+  "name": "Personalised Outreach Emails - Secure",
+  "active": true,
+  "nodes": [
+    {
+      "parameters": {
+        "resource": "contact",
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 10,
+        "additionalFields": {
+          "properties": ["firstname", "lastname", "email", "company", "jobtitle"]
+        }
+      },
+      "id": "get-hubspot-contacts",
+      "name": "Get HubSpot Contacts",
+      "type": "n8n-nodes-base.hubspot",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "credentials": {
+        "hubspotAppToken": {
+          "id": "ID4CUY90jW5ObSXedy",
+          "name": "HubSpot App Token"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "process-contacts-loop",
+      "name": "Process Contacts Loop",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "email",
+              "value": "={{ $json.properties.email }}"
+            },
+            {
+              "name": "firstname",
+              "value": "={{ $json.properties.firstname || 'Friend' }}"
+            },
+            {
+              "name": "lastname",
+              "value": "={{ $json.properties.lastname || '' }}"
+            },
+            {
+              "name": "company",
+              "value": "={{ $json.properties.company || 'your company' }}"
+            },
+            {
+              "name": "jobtitle",
+              "value": "={{ $json.properties.jobtitle || 'professional' }}"
+            },
+            {
+              "name": "product_to_sell",
+              "value": "AI partnerships: a consulting package of AI development and services. We help customers find a strong foothold on AI initiatives bringing them to life cost effectively and always with results."
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "prepare-variables",
+      "name": "Prepare Variables",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 20,
+        "filters": {
+          "q": "=from:{{ $json.email }}"
+        },
+        "simple": false,
+        "options": {}
+      },
+      "id": "get-customer-emails",
+      "name": "Get Customer Emails",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [900, 300],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "IDiRhtr9mcBtiwn0Jn",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "gpt-4",
+        "messages": {
+          "messageValues": [
+            {
+              "role": "system",
+              "content": "Your task is to build a persona of a customer or potential customer so that we may better serve them for our business. Analyse the recent correspondence and extract key personality and business traits."
+            },
+            {
+              "role": "user",
+              "content": "=Analyze emails from {{ $('Prepare Variables').item.json.email }} and create a detailed customer persona including:\n\n1. Decision making style (analytical vs intuitive)\n2. Communication preferences (formal vs casual, detail-oriented vs high-level)\n3. Pain points and challenges\n4. Professional goals and motivations\n5. Work style preferences\n6. Personality traits\n7. Buying behavior\n8. Business culture and values\n\nEmails to analyze:\n{{ $input.all().map(item => `Subject: ${item.json.subject}\nDate: ${item.json.snippet}\nContent: ${item.json.snippet}`).join('\n---\n') }}"
+            }
+          ]
+        },
+        "options": {
+          "temperature": 0.3
+        }
+      },
+      "id": "analyze-customer-persona",
+      "name": "Analyze Customer Persona",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1.3,
+      "position": [1120, 300],
+      "credentials": {
+        "openAiApi": {
+          "id": "ID4X9TIhDpjNa5gM9J",
+          "name": "OpenAI API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "gpt-4",
+        "messages": {
+          "messageValues": [
+            {
+              "role": "system",
+              "content": "=You are a sales representative drafting an email to close a potential customer on the following product: {{ $('Prepare Variables').item.json.product_to_sell }}\n\nUse the provided customer persona to draft a personalized email that reflects their communication style and addresses their values to convince them to inquire about or buy this product."
+            },
+            {
+              "role": "user",
+              "content": "=Customer: {{ $('Prepare Variables').item.json.firstname }} {{ $('Prepare Variables').item.json.lastname }}\nCompany: {{ $('Prepare Variables').item.json.company }}\nTitle: {{ $('Prepare Variables').item.json.jobtitle }}\n\nCustomer Persona:\n{{ $json.choices[0].message.content }}\n\nGenerate a personalized sales email with:\n1. Compelling subject line\n2. Professional email body in HTML format\n3. Clear call-to-action\n\nFormat as JSON with 'subject' and 'body' fields."
+            }
+          ]
+        },
+        "options": {
+          "temperature": 0.7
+        }
+      },
+      "id": "generate-sales-email",
+      "name": "Generate Sales Email",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1.3,
+      "position": [1340, 300],
+      "credentials": {
+        "openAiApi": {
+          "id": "ID4X9TIhDpjNa5gM9J",
+          "name": "OpenAI API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse the AI response to extract subject and body\nconst aiResponse = $input.first().json.choices[0].message.content;\nconst customerData = $('Prepare Variables').item.json;\n\n// Try to parse as JSON first\nlet emailContent;\ntry {\n  emailContent = JSON.parse(aiResponse);\n} catch (e) {\n  // If not JSON, extract manually\n  const subjectMatch = aiResponse.match(/(?:Subject|SUBJECT):\\s*(.+?)(?:\\n|$)/i);\n  const bodyMatch = aiResponse.match(/(?:Body|BODY):\\s*([\\s\\S]+?)(?:\\n\\n|$)/i);\n  \n  emailContent = {\n    subject: subjectMatch ? subjectMatch[1].trim() : `Partnership Opportunity - ${customerData.firstname}`,\n    body: bodyMatch ? bodyMatch[1].trim() : aiResponse\n  };\n}\n\nreturn {\n  subject: emailContent.subject,\n  body: emailContent.body,\n  to_email: customerData.email,\n  customer_name: `${customerData.firstname} ${customerData.lastname}`,\n  company: customerData.company\n};"
+      },
+      "id": "parse-email-content",
+      "name": "Parse Email Content",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1560, 300]
+    },
+    {
+      "parameters": {
+        "resource": "draft",
+        "operation": "create",
+        "emailType": "html",
+        "subject": "={{ $json.subject }}",
+        "message": "={{ $json.body }}",
+        "options": {
+          "sendTo": "={{ $json.to_email }}"
+        }
+      },
+      "id": "create-draft-email",
+      "name": "Create Draft Email",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [1780, 300],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "IDiRhtr9mcBtiwn0Jn",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "create",
+        "databaseId": {
+          "__rl": true,
+          "value": "={{ $env.NOTION_OUTREACH_DATABASE_ID }}",
+          "mode": "id"
+        },
+        "title": "={{ $('Parse Email Content').item.json.customer_name }} - {{ $('Parse Email Content').item.json.company }}",
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Customer_Name",
+              "textValue": "={{ $('Parse Email Content').item.json.customer_name }}"
+            },
+            {
+              "key": "Company",
+              "textValue": "={{ $('Parse Email Content').item.json.company }}"
+            },
+            {
+              "key": "Email",
+              "emailValue": "={{ $('Parse Email Content').item.json.to_email }}"
+            },
+            {
+              "key": "Subject",
+              "textValue": "={{ $('Parse Email Content').item.json.subject }}"
+            },
+            {
+              "key": "Status",
+              "selectValue": "Draft Created"
+            },
+            {
+              "key": "Created_Date",
+              "dateValue": "={{ new Date().toISOString().split('T')[0] }}"
+            },
+            {
+              "key": "Campaign_Type",
+              "selectValue": "AI Partnership Outreach"
+            }
+          ]
+        }
+      },
+      "id": "log-to-notion",
+      "name": "Log to Notion",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2,
+      "position": [2000, 300],
+      "credentials": {
+        "notionApi": {
+          "id": "ID4jkKCiAXGH1iVwyi",
+          "name": "Notion API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# Personalised Outreach Emails - Secure\n\n## Security Features\n✅ Uses n8n credentials (no hardcoded API keys)\n✅ HubSpot OAuth integration\n✅ Gmail OAuth2 authentication\n✅ Secure OpenAI API calls\n✅ Environment variables for database IDs\n\n## Required Setup\n1. **HubSpot App Token**: ID4CUY90jW5ObSXedy\n2. **Gmail OAuth2**: IDiRhtr9mcBtiwn0Jn\n3. **OpenAI API**: ID4X9TIhDpjNa5gM9J\n4. **Notion API**: ID4jkKCiAXGH1iVwyi\n5. **Environment Variable**: NOTION_OUTREACH_DATABASE_ID\n\n## Workflow Features\n- Fetch contacts from HubSpot\n- Analyze email history for persona building\n- AI-powered personalized email generation\n- Create draft emails for review\n- Log outreach activities to Notion\n\n## Credential IDs Used\n- HubSpot: ID4CUY90jW5ObSXedy\n- Gmail OAuth2: IDiRhtr9mcBtiwn0Jn\n- OpenAI: ID4X9TIhDpjNa5gM9J\n- Notion: ID4jkKCiAXGH1iVwyi",
+        "height": 395.8834951456311,
+        "width": 392.6699029126214
+      },
+      "id": "workflow-documentation",
+      "name": "Workflow Documentation",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [240, 50]
+    }
+  ],
+  "connections": {
+    "Get HubSpot Contacts": {
+      "main": [
+        [
+          {
+            "node": "Process Contacts Loop",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Contacts Loop": {
+      "main": [
+        [
+          {
+            "node": "Prepare Variables",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Variables": {
+      "main": [
+        [
+          {
+            "node": "Get Customer Emails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Customer Emails": {
+      "main": [
+        [
+          {
+            "node": "Analyze Customer Persona",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analyze Customer Persona": {
+      "main": [
+        [
+          {
+            "node": "Generate Sales Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Sales Email": {
+      "main": [
+        [
+          {
+            "node": "Parse Email Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Email Content": {
+      "main": [
+        [
+          {
+            "node": "Create Draft Email",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Log to Notion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "id": "sales-automation",
+      "name": "Sales Automation"
+    },
+    {
+      "id": "secure",
+      "name": "Secure"
+    }
+  ],
+  "triggerCount": 0,
+  "updatedAt": "2025-08-14T00:00:00.000Z",
+  "versionId": "secure-v1",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "secureCredentials": true,
+    "credentialIds": {
+      "hubspot": "ID4CUY90jW5ObSXedy",
+      "gmail": "IDiRhtr9mcBtiwn0Jn",
+      "openai": "ID4X9TIhDpjNa5gM9J",
+      "notion": "ID4jkKCiAXGH1iVwyi"
+    }
+  }
+}

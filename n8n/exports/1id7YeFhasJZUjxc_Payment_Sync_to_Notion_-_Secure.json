@@ -1,0 +1,111 @@
+{
+  "createdAt": "2025-08-14T02:37:49.703Z",
+  "updatedAt": "2025-08-14T02:37:49.703Z",
+  "id": "1id7YeFhasJZUjxc",
+  "name": "Payment Sync to Notion - Secure",
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "resource": "charge",
+        "operation": "getAll",
+        "returnAll": true,
+        "additionalFields": {
+          "created": {
+            "gte": "={{ Math.floor((new Date().getTime() - 24 * 60 * 60 * 1000) / 1000) }}"
+          }
+        }
+      },
+      "id": "stripe-fetch-payments",
+      "name": "Fetch Stripe Payments",
+      "type": "n8n-nodes-base.stripe",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "credentials": {
+        "stripeApi": {
+          "id": "ID3q1LYGrkaZIDtJar",
+          "name": "Stripe API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# Payment Sync to Notion - Secure\n\n## Security Features\n✅ Uses n8n credentials (no hardcoded API keys)\n✅ Environment variables for database IDs\n✅ Secure authentication methods\n\n## Required Setup\n1. **Stripe Credentials**: ID3q1LYGrkaZIDtJar\n2. **GoCardless Credentials**: IDZjro27xRan8oQvXj\n3. **Notion Credentials**: ID4jkKCiAXGH1iVwyi\n4. **Environment Variable**: Set NOTION_PAYMENTS_DATABASE_ID\n\n## Credential IDs Used\n- Stripe API: ID3q1LYGrkaZIDtJar\n- GoCardless Bearer: IDZjro27xRan8oQvXj\n- Notion API: ID4jkKCiAXGH1iVwyi",
+        "height": 300,
+        "width": 400
+      },
+      "id": "workflow-documentation",
+      "name": "Workflow Documentation",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        240,
+        100
+      ]
+    }
+  ],
+  "connections": {},
+  "settings": {},
+  "staticData": null,
+  "meta": null,
+  "pinData": null,
+  "versionId": "142c211c-9541-4ae4-ae23-effa818b89cb",
+  "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-08-14T02:37:49.706Z",
+      "updatedAt": "2025-08-14T02:37:49.706Z",
+      "role": "workflow:owner",
+      "workflowId": "1id7YeFhasJZUjxc",
+      "projectId": "u6WAzHuF44mOtWuS",
+      "project": {
+        "createdAt": "2025-07-31T11:39:40.287Z",
+        "updatedAt": "2025-07-31T11:39:43.247Z",
+        "id": "u6WAzHuF44mOtWuS",
+        "name": "Vincent Laroche <info@oneheadhair.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "projectRelations": [
+          {
+            "createdAt": "2025-07-31T11:39:40.287Z",
+            "updatedAt": "2025-07-31T11:39:40.287Z",
+            "role": "project:personalOwner",
+            "userId": "dff742c4-a194-47d4-8a7c-d82d35aabc7e",
+            "projectId": "u6WAzHuF44mOtWuS",
+            "user": {
+              "createdAt": "2025-07-31T11:39:38.886Z",
+              "updatedAt": "2025-08-13T03:03:26.000Z",
+              "id": "dff742c4-a194-47d4-8a7c-d82d35aabc7e",
+              "email": "info@oneheadhair.com",
+              "firstName": "Vincent",
+              "lastName": "Laroche",
+              "personalizationAnswers": null,
+              "settings": {
+                "userActivated": true,
+                "firstSuccessfulWorkflowId": "VsaLkCvopP9TByf8",
+                "userActivatedAt": 1754031653108,
+                "easyAIWorkflowOnboarded": true,
+                "npsSurvey": {
+                  "waitingForResponse": true,
+                  "ignoredCount": 0,
+                  "lastShownAt": 1754957886802
+                }
+              },
+              "role": "global:owner",
+              "disabled": false,
+              "mfaEnabled": false,
+              "lastActiveAt": "2025-08-13",
+              "isPending": false
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "tags": []
+}

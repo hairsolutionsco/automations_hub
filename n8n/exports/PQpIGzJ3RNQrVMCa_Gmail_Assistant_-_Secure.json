@@ -1,0 +1,150 @@
+{
+  "createdAt": "2025-08-14T02:37:49.225Z",
+  "updatedAt": "2025-08-14T02:37:49.225Z",
+  "id": "PQpIGzJ3RNQrVMCa",
+  "name": "Gmail Assistant - Secure",
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "triggerAtDay": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 10,
+        "additionalFields": {
+          "q": "is:unread",
+          "format": "full"
+        }
+      },
+      "id": "get-unread-emails",
+      "name": "Get Unread Emails",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        460,
+        300
+      ],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "IDiRhtr9mcBtiwn0Jn",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# Gmail Assistant - Secure\n\n## Security Features\n✅ Uses n8n credentials (no hardcoded API keys)\n✅ OAuth2 authentication for Gmail\n✅ Secure OpenAI API integration\n✅ Environment variables for database IDs\n\n## Required Setup\n1. **Gmail OAuth2**: IDiRhtr9mcBtiwn0Jn\n2. **OpenAI API**: ID4X9TIhDpjNa5gM9J\n3. **Notion API**: ID4jkKCiAXGH1iVwyi\n4. **Environment Variable**: NOTION_EMAILS_DATABASE_ID\n\n## Credential IDs Used\n- Gmail OAuth2: IDiRhtr9mcBtiwn0Jn\n- OpenAI API: ID4X9TIhDpjNa5gM9J\n- Notion API: ID4jkKCiAXGH1iVwyi",
+        "height": 300,
+        "width": 400
+      },
+      "id": "workflow-documentation",
+      "name": "Workflow Documentation",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        240,
+        50
+      ]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Get Unread Emails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "meta": null,
+  "pinData": null,
+  "versionId": "5d885d38-0628-4fc7-a0e3-6cf85a669b58",
+  "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2025-08-14T02:37:49.227Z",
+      "updatedAt": "2025-08-14T02:37:49.227Z",
+      "role": "workflow:owner",
+      "workflowId": "PQpIGzJ3RNQrVMCa",
+      "projectId": "u6WAzHuF44mOtWuS",
+      "project": {
+        "createdAt": "2025-07-31T11:39:40.287Z",
+        "updatedAt": "2025-07-31T11:39:43.247Z",
+        "id": "u6WAzHuF44mOtWuS",
+        "name": "Vincent Laroche <info@oneheadhair.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "projectRelations": [
+          {
+            "createdAt": "2025-07-31T11:39:40.287Z",
+            "updatedAt": "2025-07-31T11:39:40.287Z",
+            "role": "project:personalOwner",
+            "userId": "dff742c4-a194-47d4-8a7c-d82d35aabc7e",
+            "projectId": "u6WAzHuF44mOtWuS",
+            "user": {
+              "createdAt": "2025-07-31T11:39:38.886Z",
+              "updatedAt": "2025-08-13T03:03:26.000Z",
+              "id": "dff742c4-a194-47d4-8a7c-d82d35aabc7e",
+              "email": "info@oneheadhair.com",
+              "firstName": "Vincent",
+              "lastName": "Laroche",
+              "personalizationAnswers": null,
+              "settings": {
+                "userActivated": true,
+                "firstSuccessfulWorkflowId": "VsaLkCvopP9TByf8",
+                "userActivatedAt": 1754031653108,
+                "easyAIWorkflowOnboarded": true,
+                "npsSurvey": {
+                  "waitingForResponse": true,
+                  "ignoredCount": 0,
+                  "lastShownAt": 1754957886802
+                }
+              },
+              "role": "global:owner",
+              "disabled": false,
+              "mfaEnabled": false,
+              "lastActiveAt": "2025-08-13",
+              "isPending": false
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "tags": []
+}

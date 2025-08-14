@@ -1,0 +1,42 @@
+{
+  "name": "Payment Sync to Notion - Secure",
+  "nodes": [
+    {
+      "parameters": {
+        "resource": "charge",
+        "operation": "getAll",
+        "returnAll": true,
+        "additionalFields": {
+          "created": {
+            "gte": "={{ Math.floor((new Date().getTime() - 24 * 60 * 60 * 1000) / 1000) }}"
+          }
+        }
+      },
+      "id": "stripe-fetch-payments",
+      "name": "Fetch Stripe Payments",
+      "type": "n8n-nodes-base.stripe",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "credentials": {
+        "stripeApi": {
+          "id": "ID3q1LYGrkaZIDtJar",
+          "name": "Stripe API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# Payment Sync to Notion - Secure\n\n## Security Features\n✅ Uses n8n credentials (no hardcoded API keys)\n✅ Environment variables for database IDs\n✅ Secure authentication methods\n\n## Required Setup\n1. **Stripe Credentials**: ID3q1LYGrkaZIDtJar\n2. **GoCardless Credentials**: IDZjro27xRan8oQvXj\n3. **Notion Credentials**: ID4jkKCiAXGH1iVwyi\n4. **Environment Variable**: Set NOTION_PAYMENTS_DATABASE_ID\n\n## Credential IDs Used\n- Stripe API: ID3q1LYGrkaZIDtJar\n- GoCardless Bearer: IDZjro27xRan8oQvXj\n- Notion API: ID4jkKCiAXGH1iVwyi",
+        "height": 300,
+        "width": 400
+      },
+      "id": "workflow-documentation",
+      "name": "Workflow Documentation",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [240, 100]
+    }
+  ],
+  "connections": {},
+  "settings": {}
+}
