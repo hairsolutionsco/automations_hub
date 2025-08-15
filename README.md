@@ -14,6 +14,11 @@ A comprehensive automation hub integrating **N8N**, **Notion**, **HubSpot**, and
 
 2. **Immediate Actions Available**:
    ```bash
+   # Notion ↔ HubSpot Sync Management
+   cd n8n && ./scripts/monitor_contact_sync.sh     # Monitor active sync
+   cd n8n && ./scripts/test_contact_sync.sh        # Test sync functionality
+   cd n8n && ./scripts/generate_sync_template.sh deals DB_ID  # Create new object sync
+   
    # N8N workflow management
    cd n8n && ./tools/export_workflows.sh  # Export workflows from cloud
    cd n8n && ./tools/import_workflows.sh  # Import workflows to cloud
@@ -29,10 +34,12 @@ A comprehensive automation hub integrating **N8N**, **Notion**, **HubSpot**, and
    ```
 
 3. **Key Capabilities Ready for Use**:
+   - **Notion ↔ HubSpot 2-Way Sync** with 22 mapped properties
    - **Cross-platform automation** via N8N workflows
    - **Real-time data sync** between all platforms
    - **AI-enhanced operations** through MCP servers
    - **Git-based version control** for all configurations
+   - **Template system** for replicating sync workflows
 
 4. **Access Points**:
    - N8N: `http://localhost:5678` (when started)
@@ -51,7 +58,12 @@ automation-hub/
 │   ├── docs/                     # Comprehensive documentation
 │   ├── tools/                    # Management scripts and utilities
 │   ├── backup/                   # Backup and recovery files
-│   └── README.md                 # Complete n8n documentation
+│   ├── scripts/                  # Sync monitoring and testing scripts
+│   ├── workflows/               # Production sync workflows (Contact ↔ HubSpot)
+│   ├── CONTACT_SYNC_VERIFICATION.md  # Sync status and verification guide
+│   ├── WORKFLOW_REPLICATION_GUIDE.md # Complete guide for creating new syncs
+│   ├── AGENT_QUICK_REFERENCE.md      # Quick reference for AI agents
+│   ├── README.md                 # Complete n8n documentation
 │   └── n8n_examples.md         # Sample workflows
 ├── notion/                       # Notion Workspace Integration
 │   ├── databases/               # Database documentation (35 databases)
@@ -100,10 +112,13 @@ automation-hub/
 │   ├── shopify_README.md       # Shopify platform documentation
 │   └── shopify_examples.md     # Sample configurations
 └── automations-mcp/             # Golf MCP Server (Multi-tool)
-    ├── tools/                   # MCP tools for all platforms
+    ├── README.md               # Complete MCP server documentation
+    ├── tools/                  # MCP tools for all platforms
+    │   ├── README.md           # Detailed tool documentation
     │   ├── shopify/            # Shopify API tools
     │   ├── github_user.py      # GitHub integration
     │   ├── notion_api.py       # Notion tools
+    │   ├── hubspot_complete.py # HubSpot CRM integration
     │   └── n8n_workflows.py    # N8N management
     ├── resources/              # MCP resources
     ├── prompts/                # AI prompts
@@ -111,6 +126,15 @@ automation-hub/
 ```
 
 ## 🎯 **Latest Updates**
+
+### **Notion ↔ HubSpot Contact Sync System** (August 15, 2025)
+- ✅ **Complete 2-Way Sync**: Real-time contact synchronization between Notion and HubSpot
+- ✅ **Property Analysis**: Automated property mapping with 91.7% coverage (22/24 properties)
+- ✅ **Dual Workflows**: Webhook-based real-time + polling-based (5-minute intervals)
+- ✅ **Production Ready**: Deployed and active in n8n cloud with monitoring
+- ✅ **Template System**: Replicable for any object type (deals, companies, products, etc.)
+
+**Quick Start**: `cd n8n && ./scripts/monitor_contact_sync.sh`
 
 ### **N8N Native Git Integration System** (August 14, 2025)
 - ✅ **Native n8n Commands**: Using built-in `export:workflow` and `import:workflow` 
@@ -129,6 +153,11 @@ npm run n8n:start         # Start N8N locally
 npm run n8n:dev          # Start with tunnel for webhooks
 npm run n8n:export       # Export workflows to JSON
 npm run n8n:import       # Import workflows from JSON
+
+# Notion ↔ HubSpot Sync Management
+./scripts/monitor_contact_sync.sh           # Monitor active sync workflows
+./scripts/test_contact_sync.sh              # Test sync functionality
+./scripts/generate_sync_template.sh deals   # Generate sync for other objects
 ```
 
 ### HubSpot CRM Operations

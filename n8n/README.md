@@ -1,5 +1,30 @@
 # N8N Automation Platform
 
+Complete n8n workflow automation system with **proven REST API integration** for cloud instances and **production-ready Notion ↔ HubSpot sync workflows**.
+
+## 🎯 **Latest: Notion ↔ HubSpot Contact Sync**
+
+**✅ DEPLOYED & OPERATIONAL** - Complete 2-way sync system with 91.7% property coverage
+
+### Quick Status Check
+```bash
+./scripts/monitor_contact_sync.sh  # Check sync status and recent executions
+./scripts/test_contact_sync.sh     # Test webhook endpoints and functionality
+```
+
+### Sync System Features
+- **Real-time sync**: Webhook-based instant updates
+- **Polling backup**: 5-minute interval checks for reliability  
+- **22 mapped properties**: Email, phone, name, company, address, etc.
+- **Production monitoring**: Status dashboards and health checks
+- **Template system**: Replicate for deals, companies, products, etc.
+
+**📋 Workflow IDs**:
+- Webhook: `gJuzphWxKj2rYuAO` 
+- Polling: `dGlNn9kvIAjjq04f`
+
+## 📚 Complete Documentation Automation Platform
+
 Complete n8n workflow automation system with **proven REST API integration** for cloud instances.
 
 ## � Complete Documentation
@@ -23,20 +48,52 @@ Use the REST API scripts in the `scripts/` directory.
 
 ```
 n8n/
-├── N8N_WORKFLOWS_GUIDE.md       # 📖 COMPLETE GUIDE - Read This First!
-├── README.md                    # This file - quick overview
-├── scripts/                     # All working scripts & tools
-│   ├── export_workflows_api.sh  # ✅ Export from cloud (REST API)
-│   ├── import_workflows_api.sh  # ✅ Import to cloud (REST API)
-│   ├── n8n_workflow_manager.py  # Python workflow manager
+├── CONTACT_SYNC_VERIFICATION.md    # 📊 Sync status and verification guide
+├── WORKFLOW_REPLICATION_GUIDE.md   # 🏗️ Complete guide for new object syncs
+├── AGENT_QUICK_REFERENCE.md        # 🤖 Quick reference for AI agents
+├── N8N_WORKFLOWS_GUIDE.md          # 📖 COMPLETE GUIDE - Read This First!
+├── README.md                       # This file - quick overview
+├── scripts/                        # All working scripts & tools
+│   ├── export_workflows_api.sh     # ✅ Export from cloud (REST API)
+│   ├── import_workflows_api.sh     # ✅ Import to cloud (REST API)
+│   ├── monitor_contact_sync.sh     # 📊 Monitor sync status
+│   ├── test_contact_sync.sh        # 🧪 Test sync functionality
+│   ├── generate_sync_template.sh   # 🏗️ Generate new object syncs
+│   ├── setup_deals_sync.sh         # 📋 Example: Deals sync setup
+│   ├── n8n_workflow_manager.py     # Python workflow manager
 │   └── [other scripts...]
-├── exports/                     # 9 working workflows (196K total)
-├── docs/                       # 📚 N8N help center documentation
-├── credentials/                 # Credential storage (gitignored)
-└── workflows/                  # Development workflows
+├── workflows/                      # 🔄 Production sync workflows
+│   ├── notion_hubspot_contact_sync.json         # Webhook-based sync
+│   ├── notion_hubspot_contact_sync_polling.json # Polling-based sync
+│   └── [template workflows...]
+├── exports/                        # 9 working workflows (196K total)
+├── docs/                          # 📚 N8N help center documentation
+├── credentials/                   # Credential storage (gitignored)
+└── objects/                      # 📁 Generated sync templates (by object type)
 ```
 
 ## 🚀 Quick Start
+
+### Monitor Active Sync Workflows
+```bash
+# Check sync status and health
+./scripts/monitor_contact_sync.sh
+
+# Test webhook endpoints
+./scripts/test_contact_sync.sh
+
+# Open n8n dashboard
+open https://hairsolutionsco.app.n8n.cloud
+```
+
+### Create New Object Sync (e.g., Deals)
+```bash
+# Generate complete sync template
+./scripts/generate_sync_template.sh deals YOUR_NOTION_DATABASE_ID
+
+# Or use the example setup script
+./scripts/setup_deals_sync.sh
+```
 
 ### Export Workflows from Cloud
 ```bash

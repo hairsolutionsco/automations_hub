@@ -1,0 +1,438 @@
+{
+  "meta": {
+    "instanceId": "notion-hubspot-sync"
+  },
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "notion-contact-updated",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "webhook-notion-trigger",
+      "name": "Notion Contact Updated",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [260, 300],
+      "webhookId": "notion-contact-webhook"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "hubspot-contact-updated",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "webhook-hubspot-trigger",
+      "name": "HubSpot Contact Updated",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [260, 800],
+      "webhookId": "hubspot-contact-webhook"
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "get",
+        "databaseId": "226f4e0d-84e0-814c-ad70-d478cebeee30",
+        "pageId": "={{ $json.page_id }}"
+      },
+      "id": "notion-get-contact",
+      "name": "Get Notion Contact",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2,
+      "position": [480, 300],
+      "credentials": {
+        "notionApi": {
+          "id": "notion-api-creds",
+          "name": "Notion API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "contact",
+        "operation": "get",
+        "contactId": "={{ $json.contact_id }}"
+      },
+      "id": "hubspot-get-contact",
+      "name": "Get HubSpot Contact",
+      "type": "n8n-nodes-base.hubspot",
+      "typeVersion": 2,
+      "position": [480, 800],
+      "credentials": {
+        "hubspotApi": {
+          "id": "hubspot-api-creds",
+          "name": "HubSpot API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Transform Notion contact data to HubSpot format\nconst notionData = $input.first().json;\n\n// Property mapping based on our analysis\nconst propertyMapping = {\n  'Email': 'email',\n  'Access Point Location': 'access_point_location',\n  'Marketing contact status': 'hs_marketable_status',\n  'Address': 'address',\n  'Phone Number': 'phone',\n  'Shipping Profile': 'shipping_profile',\n  'Re-Engagement Notes': 'reengagementnotes',\n  'Lifecycle Stage': 'lifecyclestage',\n  'Contact Profile': 'contact_type',\n  'Country/Region': 'country',\n  'Sales Status': 'hs_lead_status',\n  'Order Email Text': 'order_email_text',\n  'Name': 'firstname', // Will need special handling for name splitting\n  'Id': 'notion_contact_id', // Custom field to track Notion ID\n  'Hubspot Contacts Record ID': 'hs_object_id'\n};\n\n// Extract properties from Notion format\nconst notionProperties = notionData.properties || {};\nconst hubspotProperties = {};\n\n// Map each property\nfor (const [notionProp, hubspotProp] of Object.entries(propertyMapping)) {\n  if (notionProperties[notionProp]) {\n    const notionValue = notionProperties[notionProp];\n    let hubspotValue = null;\n    \n    // Handle different Notion property types\n    switch (notionValue.type) {\n      case 'email':\n        hubspotValue = notionValue.email;\n        break;\n      case 'phone_number':\n        hubspotValue = notionValue.phone_number;\n        break;\n      case 'rich_text':\n        hubspotValue = notionValue.rich_text?.map(rt => rt.plain_text).join('') || '';\n        break;\n      case 'title':\n        hubspotValue = notionValue.title?.map(t => t.plain_text).join('') || '';\n        break;\n      case 'select':\n        hubspotValue = notionValue.select?.name || '';\n        break;\n      case 'multi_select':\n        hubspotValue = notionValue.multi_select?.map(ms => ms.name).join(';') || '';\n        break;\n      case 'number':\n        hubspotValue = notionValue.number?.toString() || '';\n        break;\n      case 'unique_id':\n        hubspotValue = notionValue.unique_id?.prefix + notionValue.unique_id?.number || '';\n        break;\n      default:\n        console.log(`Unhandled property type: ${notionValue.type} for ${notionProp}`);\n    }\n    \n    if (hubspotValue !== null) {\n      hubspotProperties[hubspotProp] = hubspotValue;\n    }\n  }\n}\n\n// Special handling for Name field - split into firstname and lastname\nif (hubspotProperties.firstname) {\n  const fullName = hubspotProperties.firstname;\n  const nameParts = fullName.trim().split(' ');\n  if (nameParts.length > 1) {\n    hubspotProperties.firstname = nameParts[0];\n    hubspotProperties.lastname = nameParts.slice(1).join(' ');\n  }\n}\n\n// Add sync metadata\nhubspotProperties.notion_sync_timestamp = new Date().toISOString();\nhubspotProperties.notion_page_id = notionData.id;\n\nreturn {\n  json: {\n    properties: hubspotProperties,\n    notion_id: notionData.id,\n    hubspot_id: hubspotProperties.hs_object_id || null\n  }\n};"
+      },
+      "id": "transform-notion-to-hubspot",
+      "name": "Transform Notion → HubSpot",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [700, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Transform HubSpot contact data to Notion format\nconst hubspotData = $input.first().json;\n\n// Reverse property mapping\nconst propertyMapping = {\n  'email': 'Email',\n  'access_point_location': 'Access Point Location',\n  'hs_marketable_status': 'Marketing contact status',\n  'address': 'Address',\n  'phone': 'Phone Number',\n  'shipping_profile': 'Shipping Profile',\n  'reengagementnotes': 'Re-Engagement Notes',\n  'lifecyclestage': 'Lifecycle Stage',\n  'contact_type': 'Contact Profile',\n  'country': 'Country/Region',\n  'hs_lead_status': 'Sales Status',\n  'order_email_text': 'Order Email Text',\n  'firstname': 'Name', // Will combine with lastname\n  'lastname': 'Name',\n  'notion_contact_id': 'Id',\n  'hs_object_id': 'Hubspot Contacts Record ID'\n};\n\n// Extract properties from HubSpot format\nconst hubspotProperties = hubspotData.properties || {};\nconst notionProperties = {};\n\n// Combine firstname and lastname\nlet fullName = '';\nif (hubspotProperties.firstname || hubspotProperties.lastname) {\n  fullName = [hubspotProperties.firstname, hubspotProperties.lastname]\n    .filter(Boolean)\n    .join(' ');\n}\n\n// Map each property\nfor (const [hubspotProp, notionProp] of Object.entries(propertyMapping)) {\n  if (hubspotProperties[hubspotProp] !== undefined) {\n    const hubspotValue = hubspotProperties[hubspotProp];\n    let notionValue = null;\n    \n    // Handle special cases\n    if (hubspotProp === 'firstname' || hubspotProp === 'lastname') {\n      if (fullName && !notionProperties['Name']) {\n        notionProperties['Name'] = {\n          title: [{\n            type: 'text',\n            text: { content: fullName },\n            plain_text: fullName\n          }]\n        };\n      }\n      continue;\n    }\n    \n    // Convert to appropriate Notion format\n    if (hubspotValue !== null && hubspotValue !== '') {\n      switch (notionProp) {\n        case 'Email':\n          notionProperties[notionProp] = {\n            email: hubspotValue\n          };\n          break;\n        case 'Phone Number':\n          notionProperties[notionProp] = {\n            phone_number: hubspotValue\n          };\n          break;\n        case 'Hubspot Contacts Record ID':\n          notionProperties[notionProp] = {\n            number: parseInt(hubspotValue) || 0\n          };\n          break;\n        case 'Id':\n          notionProperties[notionProp] = {\n            unique_id: {\n              prefix: 'CON',\n              number: parseInt(hubspotValue) || 0\n            }\n          };\n          break;\n        case 'Marketing contact status':\n        case 'Lifecycle Stage':\n        case 'Country/Region':\n        case 'Order Email Text':\n        case 'Sales Status':\n          notionProperties[notionProp] = {\n            select: {\n              name: hubspotValue\n            }\n          };\n          break;\n        case 'Contact Profile':\n        case 'Shipping Profile':\n          notionProperties[notionProp] = {\n            multi_select: hubspotValue.split(';').map(item => ({\n              name: item.trim()\n            }))\n          };\n          break;\n        default:\n          // Default to rich_text\n          notionProperties[notionProp] = {\n            rich_text: [{\n              type: 'text',\n              text: { content: hubspotValue.toString() },\n              plain_text: hubspotValue.toString()\n            }]\n          };\n      }\n    }\n  }\n}\n\n// Add sync metadata\nnotionProperties['Hubspot Sync Timestamp'] = {\n  rich_text: [{\n    type: 'text',\n    text: { content: new Date().toISOString() },\n    plain_text: new Date().toISOString()\n  }]\n};\n\nreturn {\n  json: {\n    properties: notionProperties,\n    hubspot_id: hubspotData.id,\n    notion_id: hubspotProperties.notion_page_id || null\n  }\n};"
+      },
+      "id": "transform-hubspot-to-notion",
+      "name": "Transform HubSpot → Notion",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [700, 800]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "existing-contact",
+              "leftValue": "={{ $json.hubspot_id }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "check-hubspot-contact-exists",
+      "name": "HubSpot Contact Exists?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [920, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "existing-contact",
+              "leftValue": "={{ $json.notion_id }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "check-notion-contact-exists",
+      "name": "Notion Contact Exists?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [920, 800]
+    },
+    {
+      "parameters": {
+        "resource": "contact",
+        "operation": "update",
+        "contactId": "={{ $json.hubspot_id }}",
+        "updateFields": {
+          "customFieldsUi": {
+            "customFieldsValues": "={{ $json.properties }}"
+          }
+        }
+      },
+      "id": "update-hubspot-contact",
+      "name": "Update HubSpot Contact",
+      "type": "n8n-nodes-base.hubspot",
+      "typeVersion": 2,
+      "position": [1140, 200],
+      "credentials": {
+        "hubspotApi": {
+          "id": "hubspot-api-creds",
+          "name": "HubSpot API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "contact",
+        "operation": "create",
+        "additionalFields": {
+          "customFieldsUi": {
+            "customFieldsValues": "={{ $json.properties }}"
+          }
+        }
+      },
+      "id": "create-hubspot-contact",
+      "name": "Create HubSpot Contact",
+      "type": "n8n-nodes-base.hubspot",
+      "typeVersion": 2,
+      "position": [1140, 400],
+      "credentials": {
+        "hubspotApi": {
+          "id": "hubspot-api-creds",
+          "name": "HubSpot API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "update",
+        "databaseId": "226f4e0d-84e0-814c-ad70-d478cebeee30",
+        "pageId": "={{ $json.notion_id }}",
+        "propertiesUi": {
+          "propertyValues": "={{ $json.properties }}"
+        }
+      },
+      "id": "update-notion-contact",
+      "name": "Update Notion Contact",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2,
+      "position": [1140, 700],
+      "credentials": {
+        "notionApi": {
+          "id": "notion-api-creds",
+          "name": "Notion API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "create",
+        "databaseId": "226f4e0d-84e0-814c-ad70-d478cebeee30",
+        "propertiesUi": {
+          "propertyValues": "={{ $json.properties }}"
+        }
+      },
+      "id": "create-notion-contact",
+      "name": "Create Notion Contact",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2,
+      "position": [1140, 900],
+      "credentials": {
+        "notionApi": {
+          "id": "notion-api-creds",
+          "name": "Notion API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Log successful sync and update cross-reference\nconst syncData = $input.first().json;\n\nconsole.log('Notion → HubSpot Sync Completed:', {\n  notion_id: syncData.notion_id || 'Unknown',\n  hubspot_id: syncData.id || 'Unknown',\n  timestamp: new Date().toISOString(),\n  operation: syncData.hubspot_id ? 'update' : 'create'\n});\n\n// Return success response\nreturn {\n  json: {\n    status: 'success',\n    direction: 'notion_to_hubspot',\n    notion_id: syncData.notion_id,\n    hubspot_id: syncData.id,\n    timestamp: new Date().toISOString()\n  }\n};"
+      },
+      "id": "log-notion-sync-success",
+      "name": "Log Notion Sync Success",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1360, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Log successful sync and update cross-reference\nconst syncData = $input.first().json;\n\nconsole.log('HubSpot → Notion Sync Completed:', {\n  hubspot_id: syncData.hubspot_id || 'Unknown',\n  notion_id: syncData.id || 'Unknown',\n  timestamp: new Date().toISOString(),\n  operation: syncData.notion_id ? 'update' : 'create'\n});\n\n// Return success response\nreturn {\n  json: {\n    status: 'success',\n    direction: 'hubspot_to_notion',\n    hubspot_id: syncData.hubspot_id,\n    notion_id: syncData.id,\n    timestamp: new Date().toISOString()\n  }\n};"
+      },
+      "id": "log-hubspot-sync-success",
+      "name": "Log HubSpot Sync Success",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1360, 800]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Error handling and logging\nconst error = $input.first().json;\n\nconsole.error('Sync Error:', {\n  error: error,\n  timestamp: new Date().toISOString(),\n  workflow: 'notion-hubspot-contact-sync'\n});\n\n// Send notification or alert here if needed\n// Could integrate with Slack, email, etc.\n\nreturn {\n  json: {\n    status: 'error',\n    error: error.message || 'Unknown error',\n    timestamp: new Date().toISOString()\n  }\n};"
+      },
+      "id": "handle-sync-errors",
+      "name": "Handle Sync Errors",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1140, 1100]
+    }
+  ],
+  "connections": {
+    "Notion Contact Updated": {
+      "main": [
+        [
+          {
+            "node": "Get Notion Contact",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HubSpot Contact Updated": {
+      "main": [
+        [
+          {
+            "node": "Get HubSpot Contact",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Notion Contact": {
+      "main": [
+        [
+          {
+            "node": "Transform Notion → HubSpot",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get HubSpot Contact": {
+      "main": [
+        [
+          {
+            "node": "Transform HubSpot → Notion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform Notion → HubSpot": {
+      "main": [
+        [
+          {
+            "node": "HubSpot Contact Exists?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform HubSpot → Notion": {
+      "main": [
+        [
+          {
+            "node": "Notion Contact Exists?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HubSpot Contact Exists?": {
+      "main": [
+        [
+          {
+            "node": "Update HubSpot Contact",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Create HubSpot Contact",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notion Contact Exists?": {
+      "main": [
+        [
+          {
+            "node": "Update Notion Contact",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Create Notion Contact",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update HubSpot Contact": {
+      "main": [
+        [
+          {
+            "node": "Log Notion Sync Success",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create HubSpot Contact": {
+      "main": [
+        [
+          {
+            "node": "Log Notion Sync Success",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update Notion Contact": {
+      "main": [
+        [
+          {
+            "node": "Log HubSpot Sync Success",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Notion Contact": {
+      "main": [
+        [
+          {
+            "node": "Log HubSpot Sync Success",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2025-08-15T04:58:00.000Z",
+      "updatedAt": "2025-08-15T04:58:00.000Z",
+      "id": "sync",
+      "name": "sync"
+    },
+    {
+      "createdAt": "2025-08-15T04:58:00.000Z",
+      "updatedAt": "2025-08-15T04:58:00.000Z",
+      "id": "contacts",
+      "name": "contacts"
+    }
+  ],
+  "triggerCount": 2,
+  "updatedAt": "2025-08-15T04:58:00.000Z",
+  "versionId": "1"
+}
