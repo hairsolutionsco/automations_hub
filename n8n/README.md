@@ -2,38 +2,46 @@
 
 Complete n8n workflow automation system with **proven REST API integration** for cloud instances.
 
-## 🚨 CRITICAL INFORMATION FOR FUTURE AGENTS
+## � Complete Documentation
+
+**👉 See [N8N_WORKFLOWS_GUIDE.md](./N8N_WORKFLOWS_GUIDE.md) for the complete, comprehensive guide**
+
+This guide contains everything you need:
+- ✅ Working commands and scripts
+- 📋 JSON workflow requirements
+- 🔐 Credentials management
+- 🛡️ Security guidelines
+- 🚀 Complete workflow processes
+- ⚡ Emergency commands
+
+## 🚨 CRITICAL FOR FUTURE AGENTS
 
 **n8n CLI commands DO NOT WORK with cloud instances.** 
-Use the REST API scripts in the `tools/` directory.
+Use the REST API scripts in the `scripts/` directory.
 
 ## 📁 Directory Structure
 
 ```
 n8n/
-├── README.md                    # This file - master guide
-├── exports/                     # Exported workflows (9 workflows, 196K)
-│   ├── README.md               # Export details and import instructions
-│   └── *.json                  # Individual workflow files
-├── tools/                       # Working scripts (REST API based)
-│   ├── export_workflows_api.sh  # ✅ Export from cloud (WORKS)
-│   └── import_workflows_api.sh  # ✅ Import to cloud (WORKS)
-├── scripts/                     # Legacy scripts (n8n CLI - mostly broken)
-│   ├── n8n_git_sync.sh         # ❌ Uses CLI (fails with cloud)
-│   └── *.sh                    # ❌ Other CLI-based scripts
-├── workflows/                   # Development workflows (broken files)
-├── credentials/                 # Credentials (gitignored)
-└── docs/                       # Documentation
-    ├── N8N_GIT_INTEGRATION.md  # Updated with correct methods
-    └── n8n_README.md           # Platform overview
+├── N8N_WORKFLOWS_GUIDE.md       # 📖 COMPLETE GUIDE - Read This First!
+├── README.md                    # This file - quick overview
+├── scripts/                     # All working scripts & tools
+│   ├── export_workflows_api.sh  # ✅ Export from cloud (REST API)
+│   ├── import_workflows_api.sh  # ✅ Import to cloud (REST API)
+│   ├── n8n_workflow_manager.py  # Python workflow manager
+│   └── [other scripts...]
+├── exports/                     # 9 working workflows (196K total)
+├── docs/                       # 📚 N8N help center documentation
+├── credentials/                 # Credential storage (gitignored)
+└── workflows/                  # Development workflows
 ```
 
-## 🚀 Quick Start (CORRECT METHODS)
+## 🚀 Quick Start
 
 ### Export Workflows from Cloud
 ```bash
 # Use this script - it WORKS
-./tools/export_workflows_api.sh
+./scripts/export_workflows_api.sh
 
 # Manual API call (if needed)
 curl -H "X-N8N-API-KEY: $N8N_API_KEY" \
@@ -42,27 +50,22 @@ curl -H "X-N8N-API-KEY: $N8N_API_KEY" \
 
 ### Import Workflows to Cloud
 ```bash
-# Import from exports directory
-./tools/import_workflows_api.sh
+# Test first with dry run
+./scripts/import_workflows_api.sh -d workflow.json
 
-# Import with dry run (recommended first)
-./tools/import_workflows_api.sh -d
-
-# Import with overwrite
-./tools/import_workflows_api.sh -o
+# Actual import
+./scripts/import_workflows_api.sh workflow.json
 ```
 
-### Environment Variables Required
-```bash
-export N8N_CLOUD_INSTANCE_URL="https://hairsolutionsco.app.n8n.cloud"
-export N8N_API_KEY="your-api-key"
-export N8N_USER_EMAIL="info@oneheadhair.com"  # Optional
-```
+### Full Documentation
+**👉 For complete instructions, see [N8N_WORKFLOWS_GUIDE.md](./N8N_WORKFLOWS_GUIDE.md)**
+
+---
 
 ## ✅ Current Status
 
 - **9 Workflows Exported**: All workflows successfully exported using REST API
-- **Export Size**: 196K total across all workflows
+- **Export Size**: 196K total across all workflows  
 - **API Connection**: Validated and working
 - **Scripts**: Proven working export/import scripts available
 
@@ -76,8 +79,13 @@ export N8N_USER_EMAIL="info@oneheadhair.com"  # Optional
 | CS Agent Lite | 12K | Customer service automation |
 | Payment Sync to Notion | 8K | Payment tracking integration |
 | AI Assistant | 8K | General AI assistant workflows |
-| My workflow | 12K | Custom workflow |
-| My workflow 2 | 16K | Custom workflow variant |
+
+## 🌍 Environment Variables
+```bash
+export N8N_CLOUD_INSTANCE_URL="https://hairsolutionsco.app.n8n.cloud"
+export N8N_API_KEY="your-api-key"
+export N8N_USER_EMAIL="info@oneheadhair.com"
+```
 | My workflow 3 | 12K | Custom workflow variant |
 
 ## ❌ What DOESN'T Work
@@ -126,6 +134,18 @@ n8n import:workflow              # ❌ FAILS
 
 ## 📚 Documentation
 
+### 🚀 New: Complete N8N Documentation Available
+- **`docs/N8N_DOCS_INTEGRATION.md`** - **Integration summary and quick access guide**
+- **`docs/docs/`** - **Complete n8n documentation repository** (1000+ pages)
+  - **Getting Started**: `docs/docs/index.md` - Introduction and quick start
+  - **API Reference**: `docs/docs/api/` - Complete REST API documentation
+  - **Integrations**: `docs/docs/integrations/` - 1000+ pre-built node integrations
+  - **Workflows**: `docs/_workflows/` - Example workflow templates
+  - **Advanced AI**: `docs/docs/advanced-ai/` - AI-powered automation features
+  - **Hosting**: `docs/docs/hosting/` - Self-hosting and deployment guides
+  - **Code Examples**: `docs/docs/code/` - Node.js and Python integration examples
+
+### Custom Documentation
 - `QUICK_REFERENCE.md` - Essential commands and credential IDs for quick lookup
 - `N8N_IMPORT_RULE_BOOK.md` - **Complete guide for successful workflow imports**
 - `N8N_IMPORT_TROUBLESHOOTING.md` - Solutions for common import errors
